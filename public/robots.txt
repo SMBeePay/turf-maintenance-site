@@ -1,0 +1,59 @@
+# Robots.txt for DFW Turf Pros - Artificial Turf Maintenance
+# https://turf-maintenance-site.vercel.app/robots.txt
+
+User-agent: *
+Allow: /
+
+# Priority pages for crawling
+Allow: /services
+Allow: /locations  
+Allow: /contact
+Allow: /about
+
+# Future pages to be created
+Allow: /football-field-maintenance
+Allow: /soccer-field-maintenance
+Allow: /baseball-field-maintenance
+Allow: /pricing
+Allow: /emergency-services
+
+# Static assets
+Allow: /favicon.svg
+Allow: /images/
+Allow: /_astro/
+
+# Disallow admin or temporary files
+Disallow: /admin/
+Disallow: /_temp/
+Disallow: /private/
+Disallow: *.log$
+Disallow: /test/
+
+# XML Sitemap location
+Sitemap: https://turf-maintenance-site.vercel.app/sitemap.xml
+
+# Crawl delay to be respectful to server resources
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Block known bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
