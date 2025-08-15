@@ -1,43 +1,47 @@
-# Astro Starter Kit: Minimal
+# DFW Turf Pros - Artificial Turf Maintenance Website
 
-```sh
-npm create astro@latest -- --template minimal
+A professional website for an artificial turf sport field maintenance business serving the Dallas Fort Worth area.
+
+## Built With
+
+- **Astro** - Modern static site generator
+- **HTML/CSS** - Custom styling with responsive design
+- **JavaScript** - Contact form functionality
+
+## Features
+
+- **Homepage** - Hero section with business overview and service preview
+- **Services** - Detailed service offerings including pricing
+- **Locations** - Service areas throughout Dallas Fort Worth metroplex
+- **About** - Company story, mission, and team expertise
+- **Contact** - Contact form with business information
+
+## Pages
+
+- `/` - Homepage
+- `/services` - Services page
+- `/locations` - Service locations
+- `/about` - About the company
+- `/contact` - Contact form and information
+
+## Development
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Deployment
 
-## 🚀 Project Structure
+This site is optimized for deployment on Vercel with automatic builds from the main branch.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Contact
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+**DFW Turf Pros**
+- Phone: (214) 555-TURF
+- Email: info@dfwturfpros.com
+- Service Area: Dallas Fort Worth Metroplex
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Built with ❤️ for professional artificial turf maintenance in DFW
