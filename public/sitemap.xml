@@ -52,26 +52,41 @@
         <priority>0.6</priority>
     </url>
     
-    <!-- Future Sport-Specific Pages (to be created) -->
+    <!-- Sport-Specific Pages -->
     <url>
-        <loc>https://turf-maintenance-site.vercel.app/football-field-maintenance</loc>
+        <loc>https://turf-maintenance-site.vercel.app/football-field-turf-maintenance</loc>
         <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://turf-maintenance-site.vercel.app/soccer-field-turf-maintenance</loc>
+        <lastmod>2025-01-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://turf-maintenance-site.vercel.app/soccer-field-maintenance</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://turf-maintenance-site.vercel.app/baseball-field-turf-maintenance</loc>
+        <lastmod>2025-01-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://turf-maintenance-site.vercel.app/baseball-field-maintenance</loc>
-        <lastmod>2025-01-15</lastmod>
+        <loc>https://turf-maintenance-site.vercel.app/indoor-turf-maintenance</loc>
+        <lastmod>2025-01-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+    </url>
+    
+    <!-- GMAX Testing Page -->
+    <url>
+        <loc>https://turf-maintenance-site.vercel.app/gmax-testing-dallas</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     
     <!-- Future Commercial Pages -->
