@@ -173,6 +173,31 @@ import Analytics from '../components/Analytics.astro';
 				</div>
 			</section>
 
+			<section class="artificial-vs-natural">
+				<div class="container">
+					<h2>Why Choose Artificial Turf Over Natural Grass?</h2>
+					<div class="comparison-content">
+						<div class="comparison-text">
+							<h3>Artificial Turf Advantages</h3>
+							<ul class="comparison-features">
+								<li>Year-round playability - no weather delays</li>
+								<li>Consistent surface quality for optimal performance</li>
+								<li>Lower long-term maintenance costs</li>
+								<li>No irrigation requirements - water conservation</li>
+								<li>Perfect field markings that stay crisp</li>
+								<li>Higher usage capacity - more games and practices</li>
+								<li>Predictable maintenance schedule</li>
+								<li>Enhanced player safety with proper maintenance</li>
+							</ul>
+						</div>
+						<div class="comparison-image">
+							<img src="/images/natural-grass-field-texture-optimized.jpg" alt="Natural grass field showing texture and maintenance challenges compared to artificial turf" class="grass-comparison-image" loading="lazy" />
+							<p class="image-caption">While natural grass requires constant watering, fertilizing, and weather-dependent care, artificial turf provides consistent quality year-round with professional maintenance.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section class="service-process">
 				<div class="container">
 					<h2>Our Service Process</h2>
@@ -380,8 +405,68 @@ import Analytics from '../components/Analytics.astro';
 				font-weight: bold;
 			}
 
-			.service-process {
+			.artificial-vs-natural {
 				background: #f8f9fa;
+				padding: 6rem 0;
+			}
+
+			.artificial-vs-natural h2 {
+				text-align: center;
+				margin-bottom: 3rem;
+				font-size: 2.5rem;
+				color: #2c5530;
+			}
+
+			.comparison-content {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 4rem;
+				align-items: center;
+			}
+
+			.comparison-text h3 {
+				color: #2c5530;
+				margin-bottom: 2rem;
+				font-size: 1.8rem;
+			}
+
+			.comparison-features {
+				list-style: none;
+			}
+
+			.comparison-features li {
+				padding: 0.8rem 0;
+				padding-left: 2rem;
+				position: relative;
+				font-size: 1.1rem;
+			}
+
+			.comparison-features li::before {
+				content: "✓";
+				position: absolute;
+				left: 0;
+				color: #4CAF50;
+				font-weight: bold;
+				font-size: 1.2rem;
+			}
+
+			.grass-comparison-image {
+				width: 100%;
+				height: auto;
+				border-radius: 15px;
+				box-shadow: 0 10px 30px rgba(0,0,0,.15);
+			}
+
+			.image-caption {
+				margin-top: 1rem;
+				font-style: italic;
+				color: #666;
+				font-size: 0.95rem;
+				text-align: center;
+			}
+
+			.service-process {
+				background: white;
 				padding: 6rem 0;
 			}
 
@@ -509,6 +594,23 @@ import Analytics from '../components/Analytics.astro';
 				}
 
 				.service-content h2 {
+					font-size: 1.5rem;
+				}
+
+				.comparison-content {
+					grid-template-columns: 1fr;
+					gap: 2rem;
+				}
+
+				.artificial-vs-natural {
+					padding: 4rem 0;
+				}
+
+				.artificial-vs-natural h2 {
+					font-size: 2rem;
+				}
+
+				.comparison-text h3 {
 					font-size: 1.5rem;
 				}
 			}
