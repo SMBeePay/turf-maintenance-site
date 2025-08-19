@@ -392,25 +392,84 @@ import Analytics from '../components/Analytics.astro';
 				</div>
 			</section>
 
-			<section class="services-preview">
+			<!-- Core Services Section - Clear and Professional -->
+			<section class="core-services">
 				<div class="container">
-					<h2>Our Specialized Services</h2>
+					<div class="services-header">
+						<h2>Professional Artificial Turf Maintenance Services</h2>
+						<p class="services-subtitle">Expert maintenance for sports fields, commercial properties, and recreational facilities across Texas</p>
+					</div>
+					
 					<div class="services-grid">
-						<div class="service-card">
-							<h3>Deep Cleaning</h3>
-							<p>Professional deep cleaning to remove dirt, debris, and organic matter from your artificial turf surface.</p>
+						<!-- Service 1: Grooming -->
+						<div class="service-item">
+							<div class="service-icon">🏟️</div>
+							<h3>Turf Grooming & Brushing</h3>
+							<p>Professional grooming to maintain proper fiber height and playing surface performance. Recommended every 150-200 hours of use for optimal field conditions.</p>
+							<a href="/services" class="service-link">Learn More →</a>
 						</div>
-						<div class="service-card">
-							<h3>Infill Replacement</h3>
-							<p>Complete infill refresh and leveling to restore proper drainage and playing surface performance.</p>
+						
+						<!-- Service 2: Deep Cleaning -->
+						<div class="service-item">
+							<div class="service-icon">🧽</div>
+							<h3>Deep Cleaning & Sanitization</h3>
+							<p>Industrial-grade cleaning to remove dirt, debris, organic matter, and bacteria. Specialized equipment and eco-friendly solutions for safe, thorough results.</p>
+							<a href="/services" class="service-link">Learn More →</a>
 						</div>
-						<div class="service-card">
-							<h3>Seam Repair</h3>
-							<p>Expert repair of damaged seams and edges to ensure field safety and longevity.</p>
+						
+						<!-- Service 3: Infill Services -->
+						<div class="service-item">
+							<div class="service-icon">⚽</div>
+							<h3>Infill Replacement & Leveling</h3>
+							<p>Complete infill refresh, cleaning, and precision leveling. Restores proper drainage, shock absorption, and playing surface characteristics.</p>
+							<a href="/services" class="service-link">Learn More →</a>
 						</div>
-						<div class="service-card">
-							<h3>Preventive Maintenance</h3>
-							<p>Regular maintenance programs to keep your artificial turf in optimal condition year-round.</p>
+						
+						<!-- Service 4: GMAX Testing -->
+						<div class="service-item">
+							<div class="service-icon">📊</div>
+							<h3>GMAX Safety Testing</h3>
+							<p>Professional GMAX impact testing for sports field safety compliance. Required for many athletic programs and insurance requirements.</p>
+							<a href="/gmax-testing-dallas" class="service-link">Learn More →</a>
+						</div>
+						
+						<!-- Service 5: Seam Repair -->
+						<div class="service-item">
+							<div class="service-icon">🔧</div>
+							<h3>Seam Repair & Restoration</h3>
+							<p>Expert repair of damaged seams, tears, and worn areas. Professional-grade materials and techniques ensure long-lasting, safe playing surfaces.</p>
+							<a href="/services" class="service-link">Learn More →</a>
+						</div>
+						
+						<!-- Service 6: Line Striping -->
+						<div class="service-item">
+							<div class="service-icon">📏</div>
+							<h3>Line Striping & Marking</h3>
+							<p>Precision line striping for football, soccer, baseball, and multi-sport fields. Professional equipment for crisp, durable field markings.</p>
+							<a href="/services" class="service-link">Learn More →</a>
+						</div>
+					</div>
+					
+					<!-- Clear Target Markets -->
+					<div class="target-markets">
+						<h3>We Serve</h3>
+						<div class="markets-grid">
+							<div class="market-item">
+								<strong>🏫 Schools & Universities</strong>
+								<p>K-12 schools, colleges, and universities across Texas</p>
+							</div>
+							<div class="market-item">
+								<strong>🏟️ Athletic Facilities</strong>
+								<p>Professional stadiums, training facilities, and sports complexes</p>
+							</div>
+							<div class="market-item">
+								<strong>🏢 Commercial Properties</strong>
+								<p>Corporate campuses, hotels, and large-scale commercial installations</p>
+							</div>
+							<div class="market-item">
+								<strong>🏘️ Community Centers</strong>
+								<p>Parks, recreation centers, and municipal facilities</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -487,14 +546,35 @@ import Analytics from '../components/Analytics.astro';
 
 		<!-- Non-critical CSS loaded asynchronously -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			/* Non-critical CSS - Below the fold content */
-			.services-preview,.why-choose{padding:6rem 0}
-			.services-preview h2,.why-choose h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
-			.services-grid,.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
-			.service-card,.benefit{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);transition:transform .3s ease;will-change:transform}
-			.service-card:hover,.benefit:hover{transform:translateY(-5px)}
-			.service-card h3,.benefit h3{color:#2c5530;margin-bottom:1rem}
-			.why-choose{background:#f8f9fa}
+			/* Core Services Section - Professional Layout */
+			.core-services{padding:6rem 0;background:#f8f9fa}
+			.services-header{text-align:center;margin-bottom:4rem}
+			.services-header h2{font-size:clamp(2rem,4vw,2.5rem);color:#2c5530;margin-bottom:1rem}
+			.services-subtitle{font-size:1.1rem;color:#666;max-width:700px;margin:0 auto}
+			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem;margin-bottom:4rem}
+			.service-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .3s ease,box-shadow .3s ease;border:1px solid #e9ecef}
+			.service-item:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.12)}
+			.service-icon{font-size:2.5rem;margin-bottom:1rem;display:block}
+			.service-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
+			.service-item p{color:#555;line-height:1.6;margin-bottom:1.5rem}
+			.service-link{color:#4CAF50;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:color .3s ease}
+			.service-link:hover{color:#2c5530}
+			
+			/* Target Markets Section */
+			.target-markets{background:#fff;padding:3rem;border-radius:10px;border:2px solid #4CAF50;margin-top:3rem}
+			.target-markets h3{text-align:center;color:#2c5530;font-size:1.8rem;margin-bottom:2rem}
+			.markets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+			.market-item{text-align:center;padding:1rem}
+			.market-item strong{color:#2c5530;font-size:1.1rem;display:block;margin-bottom:0.5rem}
+			.market-item p{color:#666;font-size:0.95rem}
+			
+			/* Existing styles */
+			.why-choose{padding:6rem 0;background:#fff}
+			.why-choose h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+			.benefit{background:#f8f9fa;padding:2rem;border-radius:10px;transition:transform .3s ease;border:1px solid #e9ecef}
+			.benefit:hover{transform:translateY(-3px)}
+			.benefit h3{color:#2c5530;margin-bottom:1rem}
 			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
@@ -505,6 +585,15 @@ import Analytics from '../components/Analytics.astro';
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
 			.footer-section a:hover{color:#4CAF50}
+			
+			/* Mobile Responsive */
+			@media (max-width:768px){
+				.services-grid{grid-template-columns:1fr;gap:1.5rem}
+				.service-item{padding:1.5rem}
+				.service-icon{font-size:2rem}
+				.markets-grid{grid-template-columns:1fr;gap:1rem}
+				.target-markets{padding:2rem 1rem}
+			}
 		</style>
 
 		<!-- Core Web Vitals & Performance optimizations -->
