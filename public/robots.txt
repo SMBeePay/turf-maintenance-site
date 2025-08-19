@@ -1,5 +1,5 @@
-# Robots.txt for DFW Turf Pros - Artificial Turf Maintenance
-# https://turf-maintenance-site.vercel.app/robots.txt
+# Robots.txt for Texas Turf Maintenance - Professional Artificial Turf Care
+# https://texasturfmaintenance.com/robots.txt
 
 User-agent: *
 Allow: /
@@ -9,13 +9,24 @@ Allow: /services
 Allow: /locations  
 Allow: /contact
 Allow: /about
+Allow: /blog
 
-# Future pages to be created
-Allow: /football-field-maintenance
-Allow: /soccer-field-maintenance
-Allow: /baseball-field-maintenance
-Allow: /pricing
-Allow: /emergency-services
+# Service pages
+Allow: /artificial-turf-sports-field-maintenance
+Allow: /football-field-turf-maintenance
+Allow: /soccer-field-turf-maintenance
+Allow: /baseball-field-turf-maintenance
+Allow: /indoor-turf-maintenance
+Allow: /gmax-testing-dallas
+
+# Location pages
+Allow: /locations/dallas-artificial-turf-maintenance
+Allow: /locations/fort-worth-artificial-turf-maintenance
+Allow: /locations/plano-artificial-turf-maintenance
+Allow: /locations/frisco-artificial-turf-maintenance
+Allow: /locations/irving-artificial-turf-maintenance
+Allow: /locations/arlington-artificial-turf-maintenance
+Allow: /locations/mckinney-artificial-turf-maintenance
 
 # Static assets
 Allow: /favicon.svg
@@ -30,7 +41,7 @@ Disallow: *.log$
 Disallow: /test/
 
 # XML Sitemap location
-Sitemap: https://turf-maintenance-site.vercel.app/sitemap.xml
+Sitemap: https://texasturfmaintenance.com/sitemap.xml
 
 # Crawl delay to be respectful to server resources
 Crawl-delay: 1

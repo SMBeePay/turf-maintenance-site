@@ -1,0 +1,227 @@
+---
+// Google Analytics 4 and Google Search Console setup
+const GA4_MEASUREMENT_ID = 'G-PYKPC1JTFZ' // Your actual GA4 measurement ID
+const GTM_ID = 'GTM-XXXXXXX' // Replace with actual Google Tag Manager ID if using
+---
+
+<!-- Google Analytics 4 (GA4) -->
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`}></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PYKPC1JTFZ', {
+    // Enhanced ecommerce and conversion tracking
+    send_page_view: true,
+    enhanced_measurement: {
+      file_downloads: true,
+      outbound_links: true,
+      scroll_percentage_thresholds: [10, 25, 50, 75, 90, 100],
+      video_engagement: true,
+      form_interactions: true,
+      site_search: true
+    },
+    // Custom dimensions for turf maintenance business
+    custom_parameters: {
+      business_type: 'turf_maintenance',
+      service_area: 'texas',
+      primary_service: 'artificial_turf_maintenance'
+    }
+  });
+
+  // Track phone call clicks
+  document.addEventListener('click', function(e) {
+    if (e.target.matches('a[href^="tel:"]')) {
+      gtag('event', 'phone_call_click', {
+        event_category: 'engagement',
+        event_label: e.target.href.replace('tel:', ''),
+        value: 1
+      });
+    }
+  });
+
+  // Track form submissions
+  document.addEventListener('submit', function(e) {
+    if (e.target.matches('form')) {
+      gtag('event', 'form_submit', {
+        event_category: 'engagement',
+        event_label: e.target.action || 'unknown_form',
+        value: 1
+      });
+    }
+  });
+
+  // Track emergency contact interactions
+  document.addEventListener('click', function(e) {
+    if (e.target.matches('.emergency-phone a, .btn-emergency')) {
+      gtag('event', 'emergency_contact', {
+        event_category: 'high_intent',
+        event_label: 'emergency_hotline',
+        value: 5
+      });
+    }
+  });
+
+  // Track service page visits
+  if (window.location.pathname.includes('/services') || 
+      window.location.pathname.includes('maintenance') ||
+      window.location.pathname.includes('gmax')) {
+    gtag('event', 'service_page_view', {
+      event_category: 'engagement',
+      event_label: window.location.pathname,
+      value: 2
+    });
+  }
+
+  // Track location page visits
+  if (window.location.pathname.includes('/locations/')) {
+    gtag('event', 'location_page_view', {
+      event_category: 'local_search',
+      event_label: window.location.pathname.split('/').pop(),
+      value: 3
+    });
+  }
+</script>
+
+<!-- Google Tag Manager (Optional - uncomment if using GTM) -->
+<!--
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM_ID');
+</script>
+-->
+
+<!-- Google Search Console Verification -->
+<!-- Replace content value with your actual Google Search Console verification code -->
+<meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE" />
+
+<!-- Bing Webmaster Tools Verification -->
+<meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
+
+<!-- Facebook Domain Verification -->
+<meta name="facebook-domain-verification" content="YOUR_FB_DOMAIN_VERIFICATION" />
+
+<!-- Additional Analytics for Turf Maintenance Business -->
+<script>
+  // Track scroll depth for long service pages
+  let scrollDepthTracked = {};
+  window.addEventListener('scroll', function() {
+    const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+    
+    [25, 50, 75, 90].forEach(threshold => {
+      if (scrollPercent >= threshold && !scrollDepthTracked[threshold]) {
+        scrollDepthTracked[threshold] = true;
+        gtag('event', 'scroll', {
+          event_category: 'engagement',
+          event_label: `${threshold}%`,
+          value: threshold
+        });
+      }
+    });
+  });
+
+  // Track time on page for service pages (business critical metric)
+  let startTime = new Date().getTime();
+  
+  window.addEventListener('beforeunload', function() {
+    const timeSpent = Math.round((new Date().getTime() - startTime) / 1000);
+    
+    if (timeSpent > 30) { // Only track if user spent more than 30 seconds
+      gtag('event', 'engaged_time', {
+        event_category: 'engagement',
+        event_label: window.location.pathname,
+        value: timeSpent
+      });
+    }
+  });
+
+  // Track clicks on location-specific content
+  document.addEventListener('click', function(e) {
+    // Track city-specific service clicks
+    if (e.target.closest('[class*="city"], [class*="location"]')) {
+      gtag('event', 'local_engagement', {
+        event_category: 'local_search',
+        event_label: e.target.textContent || 'unknown',
+        value: 2
+      });
+    }
+
+    // Track service-specific clicks
+    if (e.target.matches('a[href*="maintenance"], a[href*="gmax"], a[href*="service"]')) {
+      gtag('event', 'service_link_click', {
+        event_category: 'conversion_funnel',
+        event_label: e.target.href,
+        value: 3
+      });
+    }
+  });
+</script>
+
+<!-- Heat mapping and user behavior (Optional - replace with your service) -->
+<!--
+<script>
+  // Hotjar or similar heat mapping service
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:YOUR_HOTJAR_ID,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+-->
+
+<!-- Schema.org markup for business tracking -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Texas Turf Maintenance",
+  "description": "Professional artificial turf maintenance services across Texas",
+  "url": "https://texasturfmaintenance.com",
+  "telephone": "(214) 555-8873",
+  "email": "info@texasturfmaintenance.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "serviceArea": {
+    "@type": "State",
+    "name": "Texas"
+  },
+  "services": [
+    "Artificial Turf Maintenance",
+    "GMAX Safety Testing", 
+    "Sports Field Cleaning",
+    "Emergency Turf Repairs",
+    "Football Field Maintenance",
+    "Soccer Field Maintenance",
+    "Baseball Field Maintenance"
+  ],
+  "openingHours": "Mo,Tu,We,Th,Fr,Sa 06:00-18:00",
+  "priceRange": "$$",
+  "areaServed": [
+    "Dallas TX",
+    "Fort Worth TX", 
+    "Plano TX",
+    "Frisco TX",
+    "Irving TX",
+    "Arlington TX",
+    "McKinney TX"
+  ]
+}
+</script>
+
+<style>
+  /* Hide analytics scripts from accessibility tools */
+  script[src*="googletagmanager"],
+  script[src*="gtag"] {
+    display: none !important;
+  }
+</style>
