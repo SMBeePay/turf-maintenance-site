@@ -12,7 +12,7 @@ import Analytics from '../components/Analytics.astro';
 		<title>GMAX Testing Dallas Texas | Professional Artificial Turf Safety Testing & Compliance Certification</title>
 		<meta name="description" content="Professional GMAX testing in Dallas Texas for artificial turf safety compliance. Protect athletes, reduce liability, extend turf life. Certified technicians, detailed reports, insurance support." />
 		<meta name="keywords" content="GMAX testing dallas, artificial turf safety testing texas, turf impact testing texas, sports field safety compliance, turf liability protection texas" />
-		<link rel="canonical" href="https://turf-maintenance-site.vercel.app/gmax-testing-dallas" />
+		<link rel="canonical" href="https://texasturfmaintenance.com/gmax-testing-dallas" />
 		
 		<!-- Performance optimizations -->
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,70 @@ import Analytics from '../components/Analytics.astro';
 		<meta name="theme-color" content="#2c5530">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		
+		<!-- Schema markup for local business -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Texas Turf Maintenance - GMAX Testing",
+			"image": "https://texasturfmaintenance.com/images/logo.png",
+			"description": "Professional GMAX testing services in Dallas Texas",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Dallas",
+				"addressRegion": "TX",
+				"addressCountry": "US"
+			},
+			"telephone": "(214) 555-8873",
+			"url": "https://texasturfmaintenance.com/gmax-testing-dallas",
+			"serviceArea": "Texas",
+			"priceRange": "$$",
+			"openingHours": "Mo,Tu,We,Th,Fr,Sa 06:00-18:00"
+		}
+		</script>
+		
+		<!-- FAQ Schema Markup -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "What is GMAX testing?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "GMAX testing measures the impact attenuation (shock absorption) of artificial turf surfaces using standardized ASTM F1936 equipment. It determines whether a surface meets safety standards for athletic play by measuring peak deceleration in G-forces when a 20-pound missile is dropped from a standardized height."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What GMAX reading is considered safe?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "GMAX readings of 165 or below are considered safe according to ASTM F1936 standards. Readings between 165-200 require immediate attention, and readings above 200 indicate the field is unsafe for use."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How often should GMAX testing be performed?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Testing frequency depends on usage levels. High-use fields should be tested every 6 months, moderate-use fields annually, and low-use fields every 2 years. Emergency testing may be needed after severe weather or incidents."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What's the difference between GMAX and HIC testing?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "GMAX testing measures peak deceleration using a 20-pound missile for artificial turf sports fields, while HIC (Head Injury Criterion) testing uses a headform impactor to simulate head injuries on playground surfaces. GMAX follows ASTM F1936 with a safety threshold of ≤165, while HIC follows ASTM F1292 with a threshold of ≤1000. Both measure surface safety but GMAX is the primary standard for sports fields."
+					}
+				}
+			]
+		}
+		</script>
 		
 		<!-- Critical CSS -->
 		<style>
@@ -109,23 +173,130 @@ import Analytics from '../components/Analytics.astro';
 					<div class="gmax-explanation">
 						<div class="explanation-content">
 							<h3>The Gold Standard for Artificial Turf Safety</h3>
-							<p>GMAX testing measures the impact attenuation (shock absorption) of artificial turf surfaces using standardized equipment that simulates athlete impact. The test determines whether a surface meets safety standards for athletic play.</p>
+							<p>GMAX testing measures the impact attenuation (shock absorption) of artificial turf surfaces using standardized ASTM F1936 equipment that simulates athlete impact. The test determines whether a surface meets safety standards for athletic play by measuring peak deceleration forces that athletes experience during contact with the playing surface.</p>
+							
+							<div class="technical-details">
+								<h4>Technical Specifications & Standards</h4>
+								<div class="spec-grid">
+									<div class="spec-item">
+										<strong>Test Standard:</strong> ASTM F1936-10 Standard Test Method
+									</div>
+									<div class="spec-item">
+										<strong>Missile Weight:</strong> 20.0 ± 0.1 pounds (9.07 ± 0.05 kg)
+									</div>
+									<div class="spec-item">
+										<strong>Drop Height:</strong> 24 inches (0.61 meters)
+									</div>
+									<div class="spec-item">
+										<strong>Safety Threshold:</strong> ≤ 165 GMAX
+									</div>
+									<div class="spec-item">
+										<strong>Temperature Range:</strong> 32°F to 120°F testing conditions
+									</div>
+									<div class="spec-item">
+										<strong>Minimum Tests:</strong> 9 locations per field minimum
+									</div>
+								</div>
+							</div>
 							
 							<div class="gmax-process">
 								<div class="process-step">
 									<div class="step-icon">🎯</div>
 									<h4>Precision Impact Testing</h4>
-									<p>A specialized 20-pound missile is dropped from a standardized height to measure surface hardness and shock absorption.</p>
+									<p>A specialized 20-pound missile is dropped from a standardized height to measure surface hardness and shock absorption using calibrated accelerometers.</p>
 								</div>
 								<div class="process-step">
 									<div class="step-icon">📊</div>
 									<h4>Data Analysis</h4>
-									<p>Advanced sensors measure peak deceleration in G-forces, providing objective safety data for your surface.</p>
+									<p>Advanced sensors measure peak deceleration in G-forces, providing objective safety data for your surface with real-time digital recording.</p>
 								</div>
 								<div class="process-step">
 									<div class="step-icon">📋</div>
 									<h4>Compliance Reporting</h4>
-									<p>Detailed reports show compliance with ASTM F1936 standards and provide liability protection documentation.</p>
+									<p>Detailed reports show compliance with ASTM F1936 standards and provide liability protection documentation with GPS-mapped test locations.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- GMAX vs HIC Testing Comparison -->
+			<section class="testing-comparison">
+				<div class="container">
+					<h2>GMAX vs HIC Testing: Understanding the Differences</h2>
+					<div class="comparison-content">
+						<div class="comparison-intro">
+							<p>While both GMAX and HIC (Head Injury Criterion) testing evaluate surface safety, they serve different purposes and use different methodologies. Understanding these differences is crucial for proper surface evaluation and compliance.</p>
+						</div>
+						
+						<div class="comparison-table">
+							<div class="comparison-header">
+								<div class="test-type">Test Method</div>
+								<div class="gmax-column">GMAX Testing</div>
+								<div class="hic-column">HIC Testing</div>
+							</div>
+							
+							<div class="comparison-row">
+								<div class="test-type"><strong>Primary Use</strong></div>
+								<div class="gmax-column">Artificial turf sports fields</div>
+								<div class="hic-column">Playground surfaces</div>
+							</div>
+							
+							<div class="comparison-row">
+								<div class="test-type"><strong>Test Equipment</strong></div>
+								<div class="gmax-column">20-pound missile with accelerometer</div>
+								<div class="hic-column">Headform impactor (hemispherical)</div>
+							</div>
+							
+							<div class="comparison-row">
+								<div class="test-type"><strong>Standard</strong></div>
+								<div class="gmax-column">ASTM F1936</div>
+								<div class="hic-column">ASTM F1292</div>
+							</div>
+							
+							<div class="comparison-row">
+								<div class="test-type"><strong>Measurement</strong></div>
+								<div class="gmax-column">Peak deceleration (G-forces)</div>
+								<div class="hic-column">Head injury severity index</div>
+							</div>
+							
+							<div class="comparison-row">
+								<div class="test-type"><strong>Safety Threshold</strong></div>
+								<div class="gmax-column">≤ 165 GMAX</div>
+								<div class="hic-column">≤ 1000 HIC</div>
+							</div>
+							
+							<div class="comparison-row">
+								<div class="test-type"><strong>Impact Simulation</strong></div>
+								<div class="gmax-column">General athletic contact</div>
+								<div class="hic-column">Head impact specifically</div>
+							</div>
+						</div>
+						
+						<div class="why-gmax-for-turf">
+							<h3>Why GMAX Testing is Essential for Artificial Turf</h3>
+							<div class="gmax-reasons">
+								<div class="reason-item">
+									<div class="reason-icon">⚽</div>
+									<div class="reason-content">
+										<h4>Sport-Specific Design</h4>
+										<p>GMAX testing was specifically developed for artificial turf athletic surfaces, making it the most relevant safety measure for sports fields.</p>
+									</div>
+								</div>
+								<div class="reason-item">
+									<div class="reason-icon">📏</div>
+									<div class="reason-content">
+										<h4>Industry Standard</h4>
+										<p>GMAX is required by FIFA, NFL, NCAA, and other major sports organizations for field certification and safety compliance.</p>
+									</div>
+								</div>
+								<div class="reason-item">
+									<div class="reason-icon">🛡️</div>
+									<div class="reason-content">
+										<h4>Comprehensive Safety</h4>
+										<p>While HIC focuses on head injuries, GMAX evaluates overall impact safety for all types of athletic contact and falls.</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -346,6 +517,82 @@ import Analytics from '../components/Analytics.astro';
 				</div>
 			</section>
 
+			<!-- Equipment & Certification Section -->
+			<section class="equipment-certification">
+				<div class="container">
+					<h2>Professional-Grade GMAX Testing Equipment & Certifications</h2>
+					<div class="equipment-content">
+						<div class="equipment-showcase">
+							<h3>Industry-Leading Testing Equipment</h3>
+							<div class="equipment-grid">
+								<div class="equipment-item">
+									<div class="equipment-icon">🎯</div>
+									<h4>Clegg Impact Tester</h4>
+									<p>Professional-grade 2.25kg (20-pound) impact hammer with precision accelerometer for accurate ASTM F1936 compliance testing.</p>
+									<div class="spec-details">
+										<span>Accuracy: ±2% of reading</span>
+										<span>Range: 0-999 GMAX</span>
+									</div>
+								</div>
+								<div class="equipment-item">
+									<div class="equipment-icon">📊</div>
+									<h4>Digital Data Logger</h4>
+									<p>Real-time data capture with automatic calculations, temperature compensation, and wireless data transfer capabilities.</p>
+									<div class="spec-details">
+										<span>Sampling Rate: 10,000 Hz</span>
+										<span>Memory: 1000+ tests</span>
+									</div>
+								</div>
+								<div class="equipment-item">
+									<div class="equipment-icon">🌡️</div>
+									<h4>Environmental Monitoring</h4>
+									<p>Integrated temperature and humidity sensors ensure testing conditions meet ASTM standards for accurate results.</p>
+									<div class="spec-details">
+										<span>Temperature: ±0.5°C accuracy</span>
+										<span>Humidity: ±2% RH accuracy</span>
+									</div>
+								</div>
+								<div class="equipment-item">
+									<div class="equipment-icon">📍</div>
+									<h4>GPS Mapping System</h4>
+									<p>Precise location tagging for each test point with field mapping capabilities for comprehensive documentation.</p>
+									<div class="spec-details">
+										<span>Accuracy: ±1 meter</span>
+										<span>Coordinates: Lat/Long + Grid</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="certification-showcase">
+							<h3>Professional Certifications & Accreditations</h3>
+							<div class="certifications-grid">
+								<div class="cert-item">
+									<div class="cert-badge">ASTM</div>
+									<h4>ASTM F1936 Certified</h4>
+									<p>Official certification in ASTM F1936-10 Standard Test Method for Equipment and Procedures for evaluation of shock attenuation of surfaces</p>
+								</div>
+								<div class="cert-item">
+									<div class="cert-badge">ISO</div>
+									<h4>ISO 9001:2015 Quality</h4>
+									<p>Quality management system certification ensuring consistent, reliable testing procedures and documentation</p>
+								</div>
+								<div class="cert-item">
+									<div class="cert-badge">NIST</div>
+									<h4>NIST Traceable Calibration</h4>
+									<p>All equipment calibrated to National Institute of Standards and Technology traceable standards</p>
+								</div>
+								<div class="cert-item">
+									<div class="cert-badge">STMA</div>
+									<h4>Sports Turf Managers Association</h4>
+									<p>Professional membership and continuing education in sports surface management and safety</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
 			<section class="competitive-advantages">
 				<div class="container">
 					<h2>Why Choose Texas Turf Maintenance for GMAX Testing</h2>
@@ -555,6 +802,21 @@ import Analytics from '../components/Analytics.astro';
 					<h2>GMAX Testing Frequently Asked Questions</h2>
 					<div class="faq-grid">
 						<div class="faq-item">
+							<h3>What is GMAX testing?</h3>
+							<p>GMAX testing measures the impact attenuation (shock absorption) of artificial turf surfaces using standardized ASTM F1936 equipment. It determines whether a surface meets safety standards for athletic play by measuring peak deceleration in G-forces when a 20-pound missile is dropped from a standardized height.</p>
+						</div>
+						
+						<div class="faq-item">
+							<h3>What's the difference between GMAX and HIC testing?</h3>
+							<p>GMAX testing measures peak deceleration using a 20-pound missile for artificial turf sports fields, while HIC (Head Injury Criterion) testing uses a headform impactor to simulate head injuries on playground surfaces. GMAX follows ASTM F1936 with a safety threshold of ≤165, while HIC follows ASTM F1292 with a threshold of ≤1000. Both measure surface safety but GMAX is the primary standard for sports fields.</p>
+						</div>
+						
+						<div class="faq-item">
+							<h3>What equipment is used for GMAX testing?</h3>
+							<p>Professional GMAX testing uses a calibrated impact tester with a 20-pound (2.25kg) missile dropped from 24 inches. The equipment includes precision accelerometers, digital data loggers, GPS mapping systems, and environmental monitoring sensors to ensure ASTM F1936 compliance.</p>
+						</div>
+
+						<div class="faq-item">
 							<h3>How often should GMAX testing be performed?</h3>
 							<p>Testing frequency depends on usage levels. High-use fields should be tested every 6 months, moderate-use fields annually, and low-use fields every 2 years. Emergency testing may be needed after severe weather or incidents.</p>
 						</div>
@@ -659,8 +921,8 @@ import Analytics from '../components/Analytics.astro';
 
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			.gmax-intro,.what-is-gmax,.safety-standards,.athlete-safety,.turf-longevity,.testing-process,.competitive-advantages,.testing-frequency,.emergency-testing,.gmax-faqs{padding:4rem 0}
-			.gmax-intro h2,.what-is-gmax h2,.safety-standards h2,.athlete-safety h2,.turf-longevity h2,.testing-process h2,.competitive-advantages h2,.testing-frequency h2,.emergency-testing h2,.gmax-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.gmax-intro,.what-is-gmax,.testing-comparison,.safety-standards,.athlete-safety,.turf-longevity,.testing-process,.equipment-certification,.competitive-advantages,.testing-frequency,.emergency-testing,.gmax-faqs{padding:4rem 0}
+			.gmax-intro h2,.what-is-gmax h2,.testing-comparison h2,.safety-standards h2,.athlete-safety h2,.turf-longevity h2,.testing-process h2,.equipment-certification h2,.competitive-advantages h2,.testing-frequency h2,.emergency-testing h2,.gmax-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
 			.urgency-message{display:flex;align-items:center;background:#ffebee;border:2px solid #f44336;border-radius:10px;padding:2rem;margin-bottom:3rem}
 			.urgency-icon{font-size:3rem;margin-right:1rem;color:#f44336}
 			.urgency-content h3{color:#d32f2f;margin-bottom:1rem}
@@ -763,7 +1025,46 @@ import Analytics from '../components/Analytics.astro';
 			.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
 			.faq-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
 			.faq-item h3{color:#2c5530;margin-bottom:1rem}
+			.technical-details{background:#e8f5e8;padding:2rem;border-radius:10px;margin:2rem 0}
+			.technical-details h4{color:#2c5530;text-align:center;margin-bottom:1rem}
+			.spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+			.spec-item{background:#fff;padding:1rem;border-radius:5px;text-align:center;font-size:.9rem}
+			.spec-item strong{color:#2c5530;display:block;margin-bottom:0.5rem}
 			.what-is-gmax{background:#f8f9fa}
+			.testing-comparison{background:#fff}
+			.comparison-content{max-width:1000px;margin:0 auto}
+			.comparison-intro{text-align:center;margin-bottom:2rem;font-size:1.1rem;color:#666}
+			.comparison-table{background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);overflow:hidden}
+			.comparison-header{display:grid;grid-template-columns:1fr 1fr 1fr;background:#2c5530;color:#fff;font-weight:bold}
+			.comparison-header > div{padding:1rem;text-align:center}
+			.comparison-row{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid #eee}
+			.comparison-row > div{padding:1rem;text-align:center}
+			.comparison-row:nth-child(even){background:#f8f9fa}
+			.test-type{background:#f0f0f0!important;font-weight:bold;color:#333}
+			.gmax-column{background:#e8f5e8!important}
+			.hic-column{background:#fff3e0!important}
+			.why-gmax-for-turf{margin-top:3rem}
+			.why-gmax-for-turf h3{color:#2c5530;text-align:center;margin-bottom:2rem}
+			.gmax-reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+			.reason-item{display:flex;align-items:flex-start;gap:1rem;padding:1.5rem;background:#f8f9fa;border-radius:10px}
+			.reason-icon{font-size:2rem;flex-shrink:0}
+			.reason-content h4{color:#2c5530;margin-bottom:0.5rem}
+			.reason-content p{color:#666;font-size:.9rem}
+			.equipment-certification{background:#f8f9fa}
+			.equipment-showcase,.certification-showcase{margin-bottom:3rem}
+			.equipment-showcase h3,.certification-showcase h3{color:#2c5530;text-align:center;margin-bottom:2rem}
+			.equipment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+			.equipment-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
+			.equipment-icon{font-size:3rem;margin-bottom:1rem}
+			.equipment-item h4{color:#2c5530;margin-bottom:1rem}
+			.equipment-item p{color:#666;margin-bottom:1rem;font-size:.9rem}
+			.spec-details{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+			.spec-details span{background:#e8f5e8;color:#2c5530;padding:0.3rem 0.8rem;border-radius:15px;font-size:0.8rem;font-weight:bold}
+			.certifications-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
+			.cert-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
+			.cert-badge{display:inline-block;background:#2c5530;color:#fff;padding:0.5rem 1rem;border-radius:20px;font-weight:bold;margin-bottom:1rem}
+			.cert-item h4{color:#2c5530;margin-bottom:1rem}
+			.cert-item p{color:#666;font-size:.9rem}
 			.athlete-safety{background:#f8f9fa}
 			.testing-process{background:#f8f9fa}
 			.testing-frequency{background:#f8f9fa}
