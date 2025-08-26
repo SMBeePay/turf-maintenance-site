@@ -220,6 +220,14 @@
         <priority>0.7</priority>
     </url>
     
+    <!-- GMAX Testing Services -->
+    <url>
+        <loc>https://www.texasturfmaintenance.com/what-does-gmax-score-mean</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Residential Services -->
     <url>
         <loc>https://www.texasturfmaintenance.com/residential-artificial-turf-cleaning</loc>
