@@ -8,6 +8,9 @@ import Nav from '../../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>Professional Artificial Turf Maintenance in Dallas, TX | Texas Turf Maintenance</title>
 		<meta name="description" content="Expert artificial turf maintenance in Dallas, Texas. Deep cleaning, infill replacement, repairs for sports fields, schools, and facilities. Licensed, insured, 24/7 emergency service." />
 		<meta name="keywords" content="artificial turf maintenance dallas, synthetic grass cleaning dallas TX, sports field maintenance dallas, turf repair dallas texas, artificial grass service dallas" />
@@ -64,14 +67,14 @@ import Nav from '../../components/Nav.astro';
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover{color:#4CAF50}
-			.page-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover{color:#3FAE49}
+			.page-hero{background:linear-gradient(135deg,#123E2A,#0A2318);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.page-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.page-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9;margin-bottom:2rem}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -680,88 +683,88 @@ import Nav from '../../components/Nav.astro';
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.service-overview,.specific-services,.local-market-focus,.why-choose-us,.service-areas-coverage,.pricing-packages,.faq-section,.contact-booking{padding:4rem 0}
-			.service-overview h2,.specific-services h2,.local-market-focus h2,.why-choose-us h2,.service-areas-coverage h2,.pricing-packages h2,.faq-section h2,.contact-booking h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.service-overview h2,.specific-services h2,.local-market-focus h2,.why-choose-us h2,.service-areas-coverage h2,.pricing-packages h2,.faq-section h2,.contact-booking h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.overview-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem;align-items:start}
-			.overview-text h3{color:#2c5530;margin:2rem 0 1rem 0;font-size:1.4rem}
+			.overview-text h3{color:#123E2A;margin:2rem 0 1rem 0;font-size:1.4rem}
 			.benefits-list{list-style:none;margin:2rem 0}
 			.benefits-list li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.benefits-list li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.benefits-list li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.coverage-map{background:#f8f9fa;padding:2rem;border-radius:10px}
 			.service-areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:1rem}
-			.area-column h4{color:#2c5530;margin-bottom:1rem;font-size:1.1rem;border-bottom:2px solid #4CAF50;padding-bottom:.5rem}
+			.area-column h4{color:#123E2A;margin-bottom:1rem;font-size:1.1rem;border-bottom:2px solid #3FAE49;padding-bottom:.5rem}
 			.area-column ul{list-style:none}
 			.area-column ul li{padding:.3rem 0;color:#666}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.service-item{background:#fff;border-radius:10px;padding:2rem;box-shadow:0 5px 15px rgba(0,0,0,.1);border-top:4px solid #4CAF50}
-			.service-item h3{color:#2c5530;margin-bottom:1rem}
+			.service-item{background:#fff;border-radius:10px;padding:2rem;box-shadow:0 5px 15px rgba(0,0,0,.1);border-top:4px solid #3FAE49}
+			.service-item h3{color:#123E2A;margin-bottom:1rem}
 			.service-item ul{list-style:none;margin:1rem 0}
 			.service-item ul li{padding:.3rem 0;padding-left:1rem;position:relative}
-			.service-item ul li::before{content:"•";position:absolute;left:0;color:#4CAF50}
-			.service-price{background:#4CAF50;color:#fff;padding:.5rem 1rem;border-radius:20px;text-align:center;font-weight:bold;margin-top:1rem}
+			.service-item ul li::before{content:"•";position:absolute;left:0;color:#3FAE49}
+			.service-price{background:#3FAE49;color:#fff;padding:.5rem 1rem;border-radius:20px;text-align:center;font-weight:bold;margin-top:1rem}
 			.local-content{margin-top:2rem}
 			.climate-grid,.issues-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:2rem 0}
 			.climate-item,.issue-item{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
-			.climate-item h4,.issue-item h4{color:#2c5530;margin-bottom:1rem}
+			.climate-item h4,.issue-item h4{color:#123E2A;margin-bottom:1rem}
 			.regulation-list{list-style:none;margin:2rem 0}
 			.regulation-list li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.regulation-list li::before{content:"▶";position:absolute;left:0;color:#4CAF50}
+			.regulation-list li::before{content:"▶";position:absolute;left:0;color:#3FAE49}
 			.calendar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:2rem 0}
-			.season{background:#f8f9fa;padding:2rem;border-radius:10px;border-left:4px solid #4CAF50}
-			.season h4{color:#2c5530;margin-bottom:1rem}
+			.season{background:#f8f9fa;padding:2rem;border-radius:10px;border-left:4px solid #3FAE49}
+			.season h4{color:#123E2A;margin-bottom:1rem}
 			.season ul{list-style:none}
 			.season ul li{padding:.3rem 0;color:#666}
 			.credentials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
 			.credential-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.credential-item h3{color:#2c5530;margin-bottom:1rem}
-			.testimonial{background:#f0f8f0;padding:1.5rem;border-radius:8px;margin:1rem 0;border-left:4px solid #4CAF50}
+			.credential-item h3{color:#123E2A;margin-bottom:1rem}
+			.testimonial{background:#f0f8f0;padding:1.5rem;border-radius:8px;margin:1rem 0;border-left:4px solid #3FAE49}
 			.testimonial blockquote{font-style:italic;margin-bottom:1rem}
-			.testimonial cite{font-weight:bold;color:#2c5530}
+			.testimonial cite{font-weight:bold;color:#123E2A}
 			.coverage-details{margin-top:2rem}
 			.zip-codes,.extended-coverage{background:#f8f9fa;padding:2rem;border-radius:10px;margin:2rem 0}
 			.zip-grid,.radius-areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:1rem}
 			.zip-column ul,.radius-column ul{list-style:none}
 			.zip-column ul li,.radius-column ul li{padding:.2rem 0;font-size:.9rem}
-			.radius-column h4{color:#2c5530;margin-bottom:1rem;text-align:center}
+			.radius-column h4{color:#123E2A;margin-bottom:1rem;text-align:center}
 			.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin:3rem 0}
 			.package{background:#fff;border-radius:10px;padding:2rem;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center;position:relative}
-			.package.standard{border:3px solid #4CAF50;transform:scale(1.05)}
-			.package h3{color:#2c5530;margin-bottom:1rem}
-			.package-price{font-size:1.5rem;font-weight:bold;color:#4CAF50;margin:1rem 0}
+			.package.standard{border:3px solid #3FAE49;transform:scale(1.05)}
+			.package h3{color:#123E2A;margin-bottom:1rem}
+			.package-price{font-size:1.5rem;font-weight:bold;color:#3FAE49;margin:1rem 0}
 			.package-features{list-style:none;text-align:left;margin:2rem 0}
 			.package-features li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.package-features li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.package-features li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.package-note{font-style:italic;color:#666;margin-top:1rem}
-			.estimate-cta{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:3rem 2rem;border-radius:15px;text-align:center;margin:3rem 0}
+			.estimate-cta{background:linear-gradient(135deg,#123E2A,#0A2318);color:#fff;padding:3rem 2rem;border-radius:15px;text-align:center;margin:3rem 0}
 			.estimate-cta h3{margin-bottom:1rem;font-size:1.8rem}
 			.estimate-cta p{margin-bottom:2rem;font-size:1.1rem}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s;text-align:center;min-width:140px}
-			.btn-primary{background:#fff;color:#2c5530}
+			.btn-primary{background:#fff;color:#123E2A}
 			.btn-primary:hover{background:#f0f0f0;transform:translateY(-2px)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
 			.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:2rem}
 			.faq-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
-			.faq-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.2rem}
+			.faq-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.2rem}
 			.contact-methods{margin:2rem 0}
 			.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
 			.contact-method{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
-			.contact-method h3{color:#2c5530;margin-bottom:1rem}
-			.contact-highlight{font-size:1.3rem;font-weight:bold;color:#4CAF50;margin:1rem 0}
+			.contact-method h3{color:#123E2A;margin-bottom:1rem}
+			.contact-highlight{font-size:1.3rem;font-weight:bold;color:#3FAE49;margin:1rem 0}
 			.emergency-number{font-size:1.5rem;font-weight:bold;color:#d32f2f;margin:1rem 0}
-			.schedule-link{background:#4CAF50;color:#fff;padding:.5rem 1rem;border-radius:5px;text-decoration:none;display:inline-block;margin:.5rem 0}
-			.schedule-link:hover{background:#45a049}
+			.schedule-link{background:#3FAE49;color:#fff;padding:.5rem 1rem;border-radius:5px;text-decoration:none;display:inline-block;margin:.5rem 0}
+			.schedule-link:hover{background:#2F8C38}
 			.response-commitments{margin:3rem 0}
 			.commitments-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin:2rem 0}
 			.commitment{background:#f8f9fa;padding:1.5rem;border-radius:10px;text-align:center}
-			.commitment h4{color:#2c5530;margin-bottom:1rem}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.commitment h4{color:#123E2A;margin-bottom:1rem}
+			footer{background:#0A2318;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#3FAE49}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.overview-content{grid-template-columns:1fr}
 				.services-grid{grid-template-columns:1fr}

@@ -8,6 +8,9 @@ import Nav from '../../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>McKinney TX Artificial Turf Maintenance | Professional Sports Field Care | Texas Turf Maintenance</title>
 		<meta name="description" content="Professional artificial turf maintenance in McKinney Texas. Expert sports field cleaning, repair, GMAX testing. Serving McKinney ISD, youth leagues, community facilities. Championship field care." />
 		<meta name="keywords" content="mckinney artificial turf maintenance, mckinney isd turf care, sports field maintenance mckinney tx, youth soccer field maintenance mckinney, artificial grass cleaning mckinney" />
@@ -19,7 +22,7 @@ import Nav from '../../components/Nav.astro';
 		<link rel="prefetch" href="/gmax-testing-dallas">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		
@@ -56,14 +59,14 @@ import Nav from '../../components/Nav.astro';
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.city-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.city-hero{background:linear-gradient(135deg,#123E2A,#0A2318);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.city-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.city-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -491,53 +494,53 @@ import Nav from '../../components/Nav.astro';
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.city-intro,.mckinney-programs,.mckinney-services,.mckinney-advantages,.process-section,.testimonial-mckinney,.emergency-mckinney{padding:4rem 0}
 			.intro-text{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
-			.city-intro h2,.mckinney-programs h2,.mckinney-services h2,.mckinney-advantages h2,.process-section h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.city-intro h2,.mckinney-programs h2,.mckinney-services h2,.mckinney-advantages h2,.process-section h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.city-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
 			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.stat-number{font-size:3rem;font-weight:bold;color:#2c5530;margin-bottom:0.5rem}
+			.stat-number{font-size:3rem;font-weight:bold;color:#123E2A;margin-bottom:0.5rem}
 			.stat-label{color:#666;font-size:1.1rem}
 			.mckinney-programs{background:#f8f9fa}
 			.programs-grid{display:grid;gap:3rem}
 			.program-category{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
-			.program-category h3{color:#2c5530;margin-bottom:2rem;font-size:1.5rem;text-align:center}
+			.program-category h3{color:#123E2A;margin-bottom:2rem;font-size:1.5rem;text-align:center}
 			.program-content p{text-align:center;margin-bottom:2rem;color:#666}
 			.school-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
 			.school-item{background:#f8f9fa;padding:2rem;border-radius:10px}
-			.school-item h4{color:#2c5530;margin-bottom:1rem}
+			.school-item h4{color:#123E2A;margin-bottom:1rem}
 			.school-item ul{list-style:none;margin:0}
 			.school-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative;color:#555}
 			.school-item ul li::before{content:"🏟️";position:absolute;left:0}
 			.youth-programs,.community-facilities{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
 			.youth-item,.facility-item{background:#f8f9fa;padding:2rem;border-radius:10px}
-			.youth-item h4,.facility-item h4{color:#2c5530;margin-bottom:1rem}
+			.youth-item h4,.facility-item h4{color:#123E2A;margin-bottom:1rem}
 			.services-showcase{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
 			.service-item{background:#fff;padding:2.5rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);transition:transform .3s ease}
 			.service-item:hover{transform:translateY(-5px)}
 			.service-icon{font-size:3rem;margin-bottom:1rem;display:block}
-			.service-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
+			.service-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.service-item ul{list-style:none;margin-top:1rem}
 			.service-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.mckinney-advantages{background:#f8f9fa}
 			.advantages-layout{display:grid;gap:3rem;max-width:1100px;margin:0 auto}
 			.advantage-highlight{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);text-align:center}
-			.advantage-highlight h3{color:#2c5530;margin-bottom:1rem;font-size:1.8rem}
+			.advantage-highlight h3{color:#123E2A;margin-bottom:1rem;font-size:1.8rem}
 			.advantages-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
 			.advantage-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
-			.advantage-icon{font-size:2.5rem;margin-bottom:1rem;color:#2c5530}
-			.advantage-item h4{color:#2c5530;margin-bottom:1rem}
+			.advantage-icon{font-size:2.5rem;margin-bottom:1rem;color:#123E2A}
+			.advantage-item h4{color:#123E2A;margin-bottom:1rem}
 			.process-container{display:grid;gap:3rem;max-width:900px;margin:0 auto}
 			.process-intro{text-align:center;background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
-			.process-intro h3{color:#2c5530;margin-bottom:1rem;font-size:1.5rem}
+			.process-intro h3{color:#123E2A;margin-bottom:1rem;font-size:1.5rem}
 			.process-steps{display:grid;gap:2rem}
 			.process-step{display:flex;align-items:center;gap:2rem;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.step-number{background:#2c5530;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;flex-shrink:0}
-			.step-content h4{color:#2c5530;margin-bottom:1rem}
+			.step-number{background:#123E2A;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;flex-shrink:0}
+			.step-content h4{color:#123E2A;margin-bottom:1rem}
 			.testimonial-mckinney{background:#f8f9fa}
 			.testimonial-showcase{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:3rem}
 			.testimonial,.community-quote{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
 			.testimonial blockquote,.community-quote blockquote{font-size:1.1rem;color:#666;font-style:italic;margin-bottom:2rem;line-height:1.6}
-			.testimonial cite,.community-quote cite{color:#2c5530;font-weight:bold}
+			.testimonial cite,.community-quote cite{color:#123E2A;font-weight:bold}
 			.emergency-mckinney{background:#d32f2f}
 			.emergency-section{color:#fff}
 			.emergency-section h2{margin-bottom:2rem;color:#fff;text-align:center}
@@ -553,22 +556,22 @@ import Nav from '../../components/Nav.astro';
 			.emergency-phone a{color:#fff;text-decoration:none}
 			.emergency-box p{margin-bottom:1rem}
 			.priority-support{background:rgba(255,255,255,.1);padding:1rem;border-radius:5px;font-size:.9rem}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.cta{background:#123E2A;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem);max-width:600px;margin-left:auto;margin-right:auto}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#fff;color:#2c5530}
+			.btn-primary{background:#fff;color:#123E2A}
 			.btn-primary:hover{background:#f0f0f0;transform:translateY(-2px)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
+			footer{background:#0A2318;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#3FAE49}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.city-stats{grid-template-columns:repeat(2,1fr)}
 				.school-list{grid-template-columns:1fr}

@@ -9,6 +9,9 @@ import Nav from '../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>Texas Turf Maintenance - #1 Artificial Turf Maintenance Across Texas | Statewide Sports Field Experts</title>
 		<meta name="description" content="Professional artificial turf maintenance across Texas. Expert cleaning, infill replacement, seam repair for football, soccer & baseball fields in Dallas, Houston, Austin, San Antonio. 24/7 emergency service. Get free quote!" />
@@ -17,12 +20,7 @@ import Nav from '../components/Nav.astro';
 		
 		<!-- Preload critical resources -->
 		<link rel="preload" href="/_astro/critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="dns-prefetch" href="//fonts.googleapis.com">
-		
-		<!-- Optimized font loading -->
-		<link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
-		
+
 		<!-- Resource hints for performance -->
 		<link rel="prefetch" href="/services">
 		<link rel="prefetch" href="/contact">
@@ -31,18 +29,18 @@ import Nav from '../components/Nav.astro';
 		<style>
 			/* Critical CSS - Reset and base styles */
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
 			
 			/* Critical - Navigation */
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
 			
 			/* Critical - Hero section (LCP element) */
-			.hero{background:linear-gradient(rgba(44,85,48,0.8),rgba(26,58,29,0.9)),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;background-attachment:fixed;color:#fff;padding:8rem 0;text-align:center;contain:layout style paint}
+			.hero{background:linear-gradient(rgba(18,62,42,0.8),rgba(10,35,24,0.9)),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;background-attachment:fixed;color:#fff;padding:8rem 0;text-align:center;contain:layout style paint}
 			.hero-content{max-width:800px;margin:0 auto;padding:0 20px}
 			.hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.hero-subtitle{font-size:clamp(1rem,3vw,1.2rem);margin-bottom:2rem;opacity:.9}
@@ -50,10 +48,10 @@ import Nav from '../components/Nav.astro';
 			
 			/* Critical - Button styles */
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#FF6B35;color:#fff;box-shadow:0 2px 8px rgba(255,107,53,0.3)}
-			.btn-primary:hover{background:#E55A2B;transform:translateY(-2px);box-shadow:0 4px 12px rgba(255,107,53,0.4)}
+			.btn-primary{background:#3FAE49;color:#fff;box-shadow:0 2px 8px rgba(63,174,73,0.3)}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px);box-shadow:0 4px 12px rgba(63,174,73,0.4)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
 			
 			/* Critical - Container */
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -525,6 +523,7 @@ import Nav from '../components/Nav.astro';
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional artificial turf maintenance services across Texas - serving Dallas, Houston, Austin, San Antonio and all major Texas markets.</p>
 					</div>
 					<div class="footer-section">
@@ -565,54 +564,54 @@ import Nav from '../components/Nav.astro';
 			/* Core Services Section - Professional Layout */
 			.core-services{padding:6rem 0;background:#F8F9FA}
 			.services-header{text-align:center;margin-bottom:4rem}
-			.services-header h2{font-size:clamp(2rem,4vw,2.5rem);color:#2c5530;margin-bottom:1rem}
-			.services-subtitle{font-size:1.1rem;color:#6B7280;max-width:700px;margin:0 auto}
+			.services-header h2{font-size:clamp(2rem,4vw,2.5rem);color:#123E2A;margin-bottom:1rem}
+			.services-subtitle{font-size:1.1rem;color:#6B6F72;max-width:700px;margin:0 auto}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem;margin-bottom:4rem}
-			.service-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .3s ease,box-shadow .3s ease;border:1px solid #E5E7EB}
+			.service-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .3s ease,box-shadow .3s ease;border:1px solid #E5E7E9}
 			.service-item:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.12)}
-			.service-icon{font-size:2.5rem;margin-bottom:1rem;display:block;color:#6B7280;font-weight:normal}
-			.service-item h3{color:#374151;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
-			.service-item p{color:#6B7280;line-height:1.6;margin-bottom:1.5rem}
-			.service-link{color:#FF6B35;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:color .3s ease}
-			.service-link:hover{color:#E55A2B}
+			.service-icon{font-size:2.5rem;margin-bottom:1rem;display:block;color:#6B6F72;font-weight:normal}
+			.service-item h3{color:#111111;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
+			.service-item p{color:#6B6F72;line-height:1.6;margin-bottom:1.5rem}
+			.service-link{color:#3FAE49;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:color .3s ease}
+			.service-link:hover{color:#2F8C38}
 			
 			/* Target Markets Section */
-			.target-markets{background:#fff;padding:3rem;border-radius:10px;border:2px solid #E5E7EB;margin-top:3rem;box-shadow:0 4px 15px rgba(0,0,0,.05)}
-			.target-markets h3{text-align:center;color:#2c5530;font-size:1.8rem;margin-bottom:2rem}
+			.target-markets{background:#fff;padding:3rem;border-radius:10px;border:2px solid #E5E7E9;margin-top:3rem;box-shadow:0 4px 15px rgba(0,0,0,.05)}
+			.target-markets h3{text-align:center;color:#123E2A;font-size:1.8rem;margin-bottom:2rem}
 			.markets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
 			.market-item{text-align:center;padding:1rem}
-			.market-item strong{color:#374151;font-size:1.1rem;display:block;margin-bottom:0.5rem}
-			.market-item p{color:#6B7280;font-size:0.95rem}
+			.market-item strong{color:#111111;font-size:1.1rem;display:block;margin-bottom:0.5rem}
+			.market-item p{color:#6B6F72;font-size:0.95rem}
 			
 			/* Why Choose Section */
 			.why-choose{padding:6rem 0;background:#F8F9FA}
-			.why-choose h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.why-choose h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
-			.benefit{background:#fff;padding:2rem;border-radius:10px;transition:transform .3s ease;border:1px solid #E5E7EB;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+			.benefit{background:#fff;padding:2rem;border-radius:10px;transition:transform .3s ease;border:1px solid #E5E7E9;box-shadow:0 2px 8px rgba(0,0,0,.06)}
 			.benefit:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
-			.benefit h3{color:#374151;margin-bottom:1rem}
+			.benefit h3{color:#111111;margin-bottom:1rem}
 			/* Lead Magnets Section */
-			.lead-magnets{background:#fff;padding:6rem 0;border-top:1px solid #E5E7EB}
-			.lead-magnets h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
-			.lead-magnets .section-intro{text-align:center;font-size:1.1rem;color:#6B7280;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
+			.lead-magnets{background:#fff;padding:6rem 0;border-top:1px solid #E5E7E9}
+			.lead-magnets h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.lead-magnets .section-intro{text-align:center;font-size:1.1rem;color:#6B6F72;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
 			.magnets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
 			.magnet-item{background:#F8F9FA;padding:2.5rem;border-radius:15px;text-align:center;border:2px solid transparent;transition:all .3s ease}
-			.magnet-item:hover{border-color:#FF6B35;box-shadow:0 8px 25px rgba(0,0,0,.1);transform:translateY(-3px)}
-			.magnet-icon{font-size:2.5rem;color:#FF6B35;margin-bottom:1.5rem}
-			.magnet-item h3{color:#374151;margin-bottom:1rem;font-size:1.4rem;font-weight:600}
-			.magnet-item p{color:#6B7280;margin-bottom:2rem;line-height:1.6}
-			.magnet-item .btn-secondary{background:#FF6B35;color:#fff;border:none;font-weight:600;padding:0.875rem 1.5rem}
-			.magnet-item .btn-secondary:hover{background:#E55A2B;transform:translateY(-1px)}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.magnet-item:hover{border-color:#3FAE49;box-shadow:0 8px 25px rgba(0,0,0,.1);transform:translateY(-3px)}
+			.magnet-icon{font-size:2.5rem;color:#3FAE49;margin-bottom:1.5rem}
+			.magnet-item h3{color:#111111;margin-bottom:1rem;font-size:1.4rem;font-weight:600}
+			.magnet-item p{color:#6B6F72;margin-bottom:2rem;line-height:1.6}
+			.magnet-item .btn-secondary{background:#3FAE49;color:#fff;border:none;font-weight:600;padding:0.875rem 1.5rem}
+			.magnet-item .btn-secondary:hover{background:#2F8C38;transform:translateY(-1px)}
+			.cta{background:#123E2A;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			footer{background:#0A2318;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#3FAE49}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			
 			/* Mobile Responsive */
 			@media (max-width:768px){

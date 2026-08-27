@@ -20,8 +20,11 @@ const { active = '' } = Astro.props;
 </nav>
 
 <style>
+	/* Brand colors (see BRAND in src/lib/site.js) are literal hex here and
+	   across the site's page-level styles rather than CSS custom properties —
+	   a future cleanup, not required for this rebrand pass. */
 	nav {
-		background: #2c5530;
+		background: #123E2A;
 		padding: 1rem 0;
 		position: sticky;
 		top: 0;
@@ -58,7 +61,7 @@ const { active = '' } = Astro.props;
 	}
 	.nav-links a:hover,
 	.nav-links a.active {
-		color: #4CAF50;
+		color: #3FAE49;
 	}
 	@media (max-width: 768px) {
 		.nav-container {

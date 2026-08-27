@@ -8,6 +8,9 @@ import Nav from '../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>Texas Artificial Turf Maintenance Service Areas | Dallas, Houston, Austin, San Antonio + Statewide Coverage</title>
 		<meta name="description" content="Artificial turf maintenance services throughout Texas. Serving Dallas, Houston, Austin, San Antonio, Fort Worth, El Paso, Corpus Christi + statewide coverage. 24/7 emergency response." />
 		<meta name="keywords" content="artificial turf maintenance texas, synthetic turf cleaning houston, turf repair austin, sports field maintenance san antonio, artificial grass cleaning statewide texas" />
@@ -296,6 +299,7 @@ import Nav from '../components/Nav.astro';
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional artificial turf maintenance services across Texas - serving all major markets statewide.</p>
 					</div>
 					<div class="footer-section">
@@ -333,9 +337,9 @@ import Nav from '../components/Nav.astro';
 			}
 
 			body {
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 				line-height: 1.6;
-				color: #333;
+				color: #111111;
 			}
 
 			.container {
@@ -345,7 +349,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			nav {
-				background: #2c5530;
+				background: #123E2A;
 				padding: 1rem 0;
 				position: sticky;
 				top: 0;
@@ -381,11 +385,11 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.nav-links a:hover, .nav-links a.active {
-				color: #4CAF50;
+				color: #3FAE49;
 			}
 
 			.page-hero {
-				background: linear-gradient(135deg, #4CAF50, #2c5530);
+				background: linear-gradient(135deg, #3FAE49, #123E2A);
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -411,7 +415,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.areas-intro h2 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 				font-size: 2.5rem;
 			}
@@ -443,12 +447,12 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.location-card.featured {
-				border-top: 4px solid #4CAF50;
+				border-top: 4px solid #3FAE49;
 				background: linear-gradient(145deg, #fff, #f8f9fa);
 			}
 
 			.location-card h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 				font-size: 1.5rem;
 			}
@@ -472,7 +476,7 @@ import Nav from '../components/Nav.astro';
 				content: "•";
 				position: absolute;
 				left: 0;
-				color: #4CAF50;
+				color: #3FAE49;
 				font-weight: bold;
 			}
 
@@ -484,7 +488,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.additional-areas h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 2rem;
 				text-align: center;
 			}
@@ -509,16 +513,16 @@ import Nav from '../components/Nav.astro';
 				content: "✓";
 				position: absolute;
 				left: 0;
-				color: #4CAF50;
+				color: #3FAE49;
 				font-weight: bold;
 			}
 
 			.city-column h4 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 				font-size: 1.2rem;
 				text-align: center;
-				border-bottom: 2px solid #4CAF50;
+				border-bottom: 2px solid #3FAE49;
 				padding-bottom: 0.5rem;
 			}
 
@@ -531,7 +535,7 @@ import Nav from '../components/Nav.astro';
 				text-align: center;
 				margin-bottom: 3rem;
 				font-size: 2.5rem;
-				color: #2c5530;
+				color: #123E2A;
 			}
 
 			.facility-grid {
@@ -548,7 +552,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.facility-type h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 			}
 
@@ -560,7 +564,7 @@ import Nav from '../components/Nav.astro';
 				text-align: center;
 				margin-bottom: 3rem;
 				font-size: 2.5rem;
-				color: #2c5530;
+				color: #123E2A;
 			}
 
 			.radius-info p {
@@ -588,12 +592,12 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.coverage-item h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 			}
 
 			.cta {
-				background: #2c5530;
+				background: #123E2A;
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -612,7 +616,7 @@ import Nav from '../components/Nav.astro';
 			.btn-primary {
 				display: inline-block;
 				background: white;
-				color: #2c5530;
+				color: #123E2A;
 				padding: 1rem 2rem;
 				text-decoration: none;
 				border-radius: 5px;
@@ -626,7 +630,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			footer {
-				background: #1a3a1d;
+				background: #0A2318;
 				color: white;
 				padding: 3rem 0;
 			}
@@ -638,8 +642,17 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.footer-section h3 {
-				margin-bottom: 1rem;
-				color: #4CAF50;
+				margin-bottom: 0.5rem;
+				color: #3FAE49;
+			}
+
+			.footer-tagline {
+				color: #3FAE49;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				margin-bottom: 0.75rem;
+				font-size: 0.85rem;
+				text-transform: uppercase;
 			}
 
 			.footer-section ul {
@@ -657,7 +670,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.footer-section a:hover {
-				color: #4CAF50;
+				color: #3FAE49;
 			}
 
 			@media (max-width: 768px) {

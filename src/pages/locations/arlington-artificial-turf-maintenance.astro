@@ -8,6 +8,9 @@ import Nav from '../../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>Arlington TX Artificial Turf Maintenance | Professional Sports Field Care | Texas Turf Maintenance</title>
 		<meta name="description" content="Professional artificial turf maintenance in Arlington Texas. Expert sports field cleaning, repair, GMAX testing. Serving UTA, Arlington ISD, Rangers complex. Major event facility maintenance." />
 		<meta name="keywords" content="arlington artificial turf maintenance, uta turf care, arlington isd field maintenance, rangers ballpark turf, sports field maintenance arlington tx" />
@@ -19,7 +22,7 @@ import Nav from '../../components/Nav.astro';
 		<link rel="prefetch" href="/gmax-testing-dallas">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		
@@ -56,14 +59,14 @@ import Nav from '../../components/Nav.astro';
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.city-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.city-hero{background:linear-gradient(135deg,#123E2A,#0A2318);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.city-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.city-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -436,19 +439,19 @@ import Nav from '../../components/Nav.astro';
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.city-intro,.arlington-venues,.arlington-services,.arlington-excellence,.major-events,.testimonial-arlington,.emergency-arlington{padding:4rem 0}
 			.intro-text{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
-			.city-intro h2,.arlington-venues h2,.arlington-services h2,.arlington-excellence h2,.major-events h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.city-intro h2,.arlington-venues h2,.arlington-services h2,.arlington-excellence h2,.major-events h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.arlington-highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
 			.highlight-card{background:#fff;padding:2.5rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);text-align:center;transition:transform .3s ease}
 			.highlight-card:hover{transform:translateY(-5px)}
-			.highlight-icon{font-size:3rem;margin-bottom:1rem;color:#2c5530}
-			.highlight-card h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
+			.highlight-icon{font-size:3rem;margin-bottom:1rem;color:#123E2A}
+			.highlight-card h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.arlington-venues{background:#f8f9fa}
 			.venue-categories{display:grid;gap:3rem}
 			.venue-category{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
-			.venue-category h3{color:#2c5530;margin-bottom:2rem;font-size:1.5rem;text-align:center}
+			.venue-category h3{color:#123E2A;margin-bottom:2rem;font-size:1.5rem;text-align:center}
 			.venue-showcase{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:2rem}
-			.venue-item{background:#f8f9fa;padding:2.5rem;border-radius:10px;border-left:4px solid #4CAF50}
-			.venue-item h4{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
+			.venue-item{background:#f8f9fa;padding:2.5rem;border-radius:10px;border-left:4px solid #3FAE49}
+			.venue-item h4{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.venue-item p{margin-bottom:1rem;color:#666}
 			.venue-item ul{list-style:none;margin:0}
 			.venue-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative;color:#555}
@@ -457,32 +460,32 @@ import Nav from '../../components/Nav.astro';
 			.service-item{background:#fff;padding:2.5rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);transition:transform .3s ease}
 			.service-item:hover{transform:translateY(-5px)}
 			.service-icon{font-size:3rem;margin-bottom:1rem;display:block}
-			.service-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
+			.service-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.service-item ul{list-style:none;margin-top:1rem}
 			.service-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.arlington-excellence{background:#f8f9fa}
 			.excellence-content{display:grid;gap:3rem;max-width:1100px;margin:0 auto}
 			.excellence-intro{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);text-align:center}
-			.excellence-intro h3{color:#2c5530;margin-bottom:1rem;font-size:1.8rem}
+			.excellence-intro h3{color:#123E2A;margin-bottom:1rem;font-size:1.8rem}
 			.excellence-features{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
 			.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
 			.feature-item{text-align:center;padding:1.5rem}
-			.feature-icon{font-size:2.5rem;margin-bottom:1rem;color:#2c5530}
-			.feature-item h4{color:#2c5530;margin-bottom:1rem}
-			.excellence-commitment{background:#2c5530;color:#fff;padding:2rem;border-radius:10px;text-align:center}
+			.feature-icon{font-size:2.5rem;margin-bottom:1rem;color:#123E2A}
+			.feature-item h4{color:#123E2A;margin-bottom:1rem}
+			.excellence-commitment{background:#123E2A;color:#fff;padding:2rem;border-radius:10px;text-align:center}
 			.excellence-commitment h4{margin-bottom:1rem;font-size:1.3rem}
 			.major-events{background:#fff}
 			.events-content{display:grid;gap:3rem;max-width:1000px;margin:0 auto}
 			.events-intro{text-align:center;background:#f8f9fa;padding:3rem;border-radius:15px}
-			.events-intro h3{color:#2c5530;margin-bottom:1rem;font-size:1.5rem}
+			.events-intro h3{color:#123E2A;margin-bottom:1rem;font-size:1.5rem}
 			.events-capabilities{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.capability-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);border-left:4px solid #4CAF50}
-			.capability-item h4{color:#2c5530;margin-bottom:1rem}
+			.capability-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);border-left:4px solid #3FAE49}
+			.capability-item h4{color:#123E2A;margin-bottom:1rem}
 			.testimonial-arlington{background:#f8f9fa}
 			.testimonial-content{background:#fff;padding:4rem;border-radius:20px;box-shadow:0 15px 40px rgba(0,0,0,.1);text-align:center;max-width:900px;margin:0 auto}
 			.testimonial-content blockquote{font-size:1.4rem;color:#666;font-style:italic;margin-bottom:2rem;line-height:1.6}
-			.testimonial-content cite{color:#2c5530;font-weight:bold;font-size:1.1rem}
+			.testimonial-content cite{color:#123E2A;font-weight:bold;font-size:1.1rem}
 			.emergency-arlington{background:#d32f2f}
 			.emergency-content{text-align:center;color:#fff;max-width:1100px;margin:0 auto}
 			.emergency-content h2{margin-bottom:1rem;color:#fff;font-size:2.5rem}
@@ -496,22 +499,22 @@ import Nav from '../../components/Nav.astro';
 			.emergency-phone a{color:#fff;text-decoration:none}
 			.emergency-support{font-size:1.2rem;margin-bottom:2rem}
 			.priority-note{background:rgba(255,255,255,.1);padding:1.5rem;border-radius:10px;font-size:.9rem}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.cta{background:#123E2A;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#fff;color:#2c5530}
+			.btn-primary{background:#fff;color:#123E2A}
 			.btn-primary:hover{background:#f0f0f0;transform:translateY(-2px)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
+			footer{background:#0A2318;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#3FAE49}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.arlington-highlights{grid-template-columns:1fr}
 				.venue-showcase{grid-template-columns:1fr}

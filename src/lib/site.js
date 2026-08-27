@@ -4,6 +4,20 @@
 // find-and-replace across 30 files.
 
 export const SITE_NAME = 'Texas Turf Maintenance';
+export const TAGLINE = 'Clean. Safe. Game Ready.';
+
+// Brand palette, per the Texas Turf Maintenance brand book (v1.0).
+// Applied directly as literal hex values across pages for now — see the
+// note in Nav.astro about migrating to CSS custom properties.
+export const BRAND = {
+	green900: '#123E2A', // primary dark green (PMS 3435 C)
+	green900Deep: '#0A2318', // footer/deepest shade
+	green500: '#3FAE49', // accent green (PMS 362 C)
+	green500Hover: '#2F8C38',
+	gray200: '#E5E7E9', // PMS Cool Gray 2 C
+	gray500: '#6B6F72', // PMS Cool Gray 9 C
+	black: '#111111', // PMS Black 6 C
+};
 
 // Canonical domain (apex, no www — matches robots.txt and the Vercel
 // deployment doc's www -> apex redirect). Do not add a trailing slash.

@@ -9,6 +9,9 @@ import Nav from '../../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>5 Signs Your Artificial Turf Needs Professional Maintenance | Texas Turf Maintenance</title>
 		<meta name="description" content="Learn the warning signs that indicate your artificial turf field needs professional maintenance. Athletic directors and facility managers guide to turf care." />
@@ -20,21 +23,21 @@ import Nav from '../../components/Nav.astro';
 		<link rel="prefetch" href="/contact">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.page-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.page-hero{background:linear-gradient(135deg,#123E2A,#0A2318);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.page-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.page-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -183,6 +186,7 @@ import Nav from '../../components/Nav.astro';
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional artificial turf maintenance services across Texas. Specializing in athletic field care and safety compliance.</p>
 					</div>
 					<div class="footer-section">
@@ -215,31 +219,31 @@ import Nav from '../../components/Nav.astro';
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.blog-content{padding:4rem 0;max-width:800px;margin:0 auto}
-			.article-meta{display:flex;gap:2rem;margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid #E5E7EB}
-			.category{background:#FF6B35;color:#fff;padding:0.5rem 1rem;border-radius:20px;font-size:0.9rem;font-weight:600}
-			.read-time{color:#6B7280;font-style:italic}
-			.article-intro{margin-bottom:4rem;font-size:1.1rem;color:#374151;line-height:1.7}
+			.article-meta{display:flex;gap:2rem;margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid #E5E7E9}
+			.category{background:#3FAE49;color:#fff;padding:0.5rem 1rem;border-radius:20px;font-size:0.9rem;font-weight:600}
+			.read-time{color:#6B6F72;font-style:italic}
+			.article-intro{margin-bottom:4rem;font-size:1.1rem;color:#111111;line-height:1.7}
 			.article-intro p{margin-bottom:1.5rem}
 			.sign-section{margin-bottom:4rem;padding:2rem 0;border-bottom:1px solid #F3F4F6}
-			.sign-section h2{color:#2c5530;margin-bottom:2rem;font-size:1.8rem}
-			.sign-content h3{color:#374151;margin:2rem 0 1rem;font-size:1.3rem}
+			.sign-section h2{color:#123E2A;margin-bottom:2rem;font-size:1.8rem}
+			.sign-content h3{color:#111111;margin:2rem 0 1rem;font-size:1.3rem}
 			.sign-content ul{margin:1rem 0;padding-left:2rem}
-			.sign-content ul li{margin-bottom:0.5rem;color:#6B7280}
-			.sign-content p{margin-bottom:1.5rem;color:#374151;line-height:1.7}
+			.sign-content ul li{margin-bottom:0.5rem;color:#6B6F72}
+			.sign-content p{margin-bottom:1.5rem;color:#111111;line-height:1.7}
 			.action-section{background:#F8F9FA;padding:3rem;border-radius:15px;margin-top:4rem;text-align:center}
-			.action-section h2{color:#2c5530;margin-bottom:1rem}
-			.cta-box{background:#fff;padding:2rem;border-radius:10px;margin-top:2rem;border:2px solid #FF6B35}
-			.cta-box h3{color:#374151;margin-bottom:1rem}
-			.cta-box p{color:#6B7280;margin-bottom:2rem}
-			.btn-primary{background:#FF6B35;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:600;display:inline-block;transition:all .3s ease}
-			.btn-primary:hover{background:#E55A2B;transform:translateY(-2px)}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.action-section h2{color:#123E2A;margin-bottom:1rem}
+			.cta-box{background:#fff;padding:2rem;border-radius:10px;margin-top:2rem;border:2px solid #3FAE49}
+			.cta-box h3{color:#111111;margin-bottom:1rem}
+			.cta-box p{color:#6B6F72;margin-bottom:2rem}
+			.btn-primary{background:#3FAE49;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:600;display:inline-block;transition:all .3s ease}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px)}
+			footer{background:#0A2318;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#3FAE49}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:0.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.blog-content{padding:3rem 0}
 				.article-meta{flex-direction:column;gap:1rem}

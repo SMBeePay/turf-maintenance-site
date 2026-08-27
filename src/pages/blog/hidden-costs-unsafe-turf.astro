@@ -8,6 +8,9 @@ import Nav from '../../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>The Hidden Costs of Unsafe Turf: Why Athletic Directors Can't Afford to Skip GMAX Testing | Texas Turf Maintenance</title>
 		<meta name="description" content="Discover the real financial impact of unsafe artificial turf surfaces - from $2.3M lawsuit settlements to insurance claims. Learn how a $2,000 GMAX test can save you millions in liability costs." />
 		<meta name="keywords" content="GMAX testing costs, artificial turf liability, sports field safety lawsuits, turf injury prevention, athletic director insurance" />
@@ -19,7 +22,7 @@ import Nav from '../../components/Nav.astro';
 		<link rel="prefetch" href="/gmax-testing-dallas">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		
@@ -51,14 +54,14 @@ import Nav from '../../components/Nav.astro';
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.article-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.article-hero{background:linear-gradient(135deg,#123E2A,#0A2318);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.article-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.article-hero .article-meta{font-size:clamp(0.9rem,2.5vw,1rem);opacity:.8;margin-bottom:2rem}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -334,6 +337,7 @@ import Nav from '../../components/Nav.astro';
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Dallas Fort Worth's leading artificial turf safety testing and maintenance experts. Protecting athletes and facilities since 2018.</p>
 					</div>
 					<div class="footer-section">
@@ -370,45 +374,45 @@ import Nav from '../../components/Nav.astro';
 			.blog-article{padding:4rem 0;background:#fff}
 			.article-intro{margin-bottom:3rem;padding-bottom:2rem;border-bottom:2px solid #f0f0f0}
 			.lead{font-size:1.3rem;line-height:1.7;color:#555;margin-bottom:2rem}
-			.lead a{color:#2c5530;text-decoration:none;font-weight:bold}
+			.lead a{color:#123E2A;text-decoration:none;font-weight:bold}
 			.lead a:hover{text-decoration:underline}
 			.key-stat-callout{background:linear-gradient(135deg,#ffebee,#f3e5f5);padding:2rem;border-radius:10px;border-left:4px solid #d32f2f}
 			.key-stat-callout h3{color:#d32f2f;margin-bottom:1rem;font-size:1.3rem}
 			.key-stat-callout ul{list-style:none}
-			.key-stat-callout ul li{padding:.5rem 0;font-size:1.1rem;color:#333}
+			.key-stat-callout ul li{padding:.5rem 0;font-size:1.1rem;color:#111111}
 			.article-content{line-height:1.8;color:#444}
-			.article-content h2{color:#2c5530;font-size:2rem;margin:3rem 0 1.5rem 0;padding-bottom:.5rem;border-bottom:2px solid #4CAF50}
-			.article-content h3{color:#2c5530;font-size:1.4rem;margin:2rem 0 1rem 0}
-			.article-content h4{color:#2c5530;font-size:1.2rem;margin:1.5rem 0 1rem 0}
+			.article-content h2{color:#123E2A;font-size:2rem;margin:3rem 0 1.5rem 0;padding-bottom:.5rem;border-bottom:2px solid #3FAE49}
+			.article-content h3{color:#123E2A;font-size:1.4rem;margin:2rem 0 1rem 0}
+			.article-content h4{color:#123E2A;font-size:1.2rem;margin:1.5rem 0 1rem 0}
 			.article-content p{margin-bottom:1.5rem;font-size:1.1rem}
-			.article-content a{color:#2c5530;text-decoration:none;font-weight:500}
-			.article-content a:hover{text-decoration:underline;color:#1a3a1d}
-			.case-study{background:#f8f9fa;padding:2rem;margin:2rem 0;border-left:4px solid #4CAF50;border-radius:0 10px 10px 0}
-			.case-study h4{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
+			.article-content a{color:#123E2A;text-decoration:none;font-weight:500}
+			.article-content a:hover{text-decoration:underline;color:#0A2318}
+			.case-study{background:#f8f9fa;padding:2rem;margin:2rem 0;border-left:4px solid #3FAE49;border-radius:0 10px 10px 0}
+			.case-study h4{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.impact-list{background:#fff3e0;padding:1.5rem;border-radius:10px;margin:2rem 0}
 			.impact-list li{margin-bottom:1rem;font-size:1.1rem}
 			.impact-list strong{color:#f57c00}
 			.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin:2rem 0}
 			.benefit-item{background:#f8f9fa;padding:1.5rem;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
-			.benefit-item h4{color:#2c5530;margin-bottom:1rem}
-			.performance-stats{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:3rem 2rem;border-radius:15px;margin:3rem 0;text-align:center}
+			.benefit-item h4{color:#123E2A;margin-bottom:1rem}
+			.performance-stats{background:linear-gradient(135deg,#123E2A,#0A2318);color:#fff;padding:3rem 2rem;border-radius:15px;margin:3rem 0;text-align:center}
 			.performance-stats h3{margin-bottom:2rem;font-size:1.5rem}
 			.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2rem}
 			.stat-item{text-align:center}
-			.stat-number{font-size:3rem;font-weight:bold;color:#4CAF50;line-height:1}
+			.stat-number{font-size:3rem;font-weight:bold;color:#3FAE49;line-height:1}
 			.stat-label{font-size:1rem;margin-top:.5rem;opacity:.9}
 			.urgent-testing{background:#ffebee;padding:2rem;border-radius:10px;border-left:4px solid #d32f2f;margin:2rem 0}
 			.urgent-testing h4{color:#d32f2f;margin-bottom:1rem}
 			.urgent-testing ul li{margin-bottom:.5rem}
-			.action-plan{background:#e8f5e8;padding:2rem;border-radius:10px;border-left:4px solid #4CAF50;margin:2rem 0}
-			.action-plan h3{color:#2c5530;margin-bottom:1rem}
+			.action-plan{background:#e8f5e8;padding:2rem;border-radius:10px;border-left:4px solid #3FAE49;margin:2rem 0}
+			.action-plan h3{color:#123E2A;margin-bottom:1rem}
 			.action-plan ol li{margin-bottom:1rem;font-size:1.1rem}
 			.cost-comparison{display:flex;align-items:center;gap:2rem;margin:2rem 0;justify-content:center;flex-wrap:wrap}
 			.cost-item{background:#f8f9fa;padding:2rem;border-radius:10px;text-align:center;flex:1;min-width:200px}
 			.cost-item.risk{background:#ffebee}
-			.cost-item h4{color:#2c5530;margin-bottom:1rem}
+			.cost-item h4{color:#123E2A;margin-bottom:1rem}
 			.cost-item.risk h4{color:#d32f2f}
-			.cost{font-size:2rem;font-weight:bold;color:#4CAF50;margin-bottom:.5rem}
+			.cost{font-size:2rem;font-weight:bold;color:#3FAE49;margin-bottom:.5rem}
 			.cost-item.risk .cost{color:#d32f2f}
 			.description{font-size:.9rem;color:#666}
 			.vs{font-size:2rem;font-weight:bold;color:#666;flex-shrink:0}
@@ -420,35 +424,35 @@ import Nav from '../../components/Nav.astro';
 			.btn-emergency:hover{background:#f0f0f0;transform:translateY(-2px)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s;display:inline-block}
 			.btn-secondary:hover{background:#fff;color:#d32f2f}
-			.final-cta{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:3rem 2rem;border-radius:15px;margin:3rem 0;text-align:center}
+			.final-cta{background:linear-gradient(135deg,#123E2A,#0A2318);color:#fff;padding:3rem 2rem;border-radius:15px;margin:3rem 0;text-align:center}
 			.final-cta h3{margin-bottom:1rem;font-size:1.8rem}
 			.final-cta p{margin-bottom:2rem;font-size:1.1rem}
-			.btn-primary{background:#4CAF50;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s;display:inline-block}
-			.btn-primary:hover{background:#45a049;transform:translateY(-2px)}
+			.btn-primary{background:#3FAE49;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s;display:inline-block}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px)}
 			.article-footer{margin-top:4rem;padding-top:3rem;border-top:2px solid #f0f0f0}
 			.author-bio{background:#f8f9fa;padding:2rem;border-radius:10px;margin-bottom:2rem}
-			.author-bio h3{color:#2c5530;margin-bottom:1rem}
+			.author-bio h3{color:#123E2A;margin-bottom:1rem}
 			.related-services{background:#fff;padding:2rem;border:1px solid #e0e0e0;border-radius:10px}
-			.related-services h3{color:#2c5530;margin-bottom:1rem}
+			.related-services h3{color:#123E2A;margin-bottom:1rem}
 			.related-services ul{list-style:none}
 			.related-services ul li{margin-bottom:.5rem}
-			.related-services ul li a{color:#4CAF50;text-decoration:none;font-weight:500}
+			.related-services ul li a{color:#3FAE49;text-decoration:none;font-weight:500}
 			.related-services ul li a:hover{text-decoration:underline}
 			.newsletter-signup{background:#f8f9fa;padding:4rem 0;text-align:center}
-			.newsletter-signup h2{color:#2c5530;margin-bottom:1rem}
+			.newsletter-signup h2{color:#123E2A;margin-bottom:1rem}
 			.newsletter-signup p{color:#666;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
 			.newsletter-form{display:flex;gap:1rem;justify-content:center;margin:2rem 0;flex-wrap:wrap}
 			.newsletter-form input{flex:1;max-width:300px;padding:1rem;border:2px solid #ddd;border-radius:5px;font-size:1rem}
-			.newsletter-form button{background:#2c5530;color:#fff;padding:1rem 2rem;border:none;border-radius:5px;font-weight:bold;cursor:pointer;transition:background .3s}
-			.newsletter-form button:hover{background:#1a3a1d}
+			.newsletter-form button{background:#123E2A;color:#fff;padding:1rem 2rem;border:none;border-radius:5px;font-weight:bold;cursor:pointer;transition:background .3s}
+			.newsletter-form button:hover{background:#0A2318}
 			.privacy-note{color:#999;font-size:.9rem}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			footer{background:#0A2318;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#3FAE49}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.benefits-grid{grid-template-columns:1fr}
 				.stats-grid{grid-template-columns:repeat(2,1fr)}

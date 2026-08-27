@@ -9,6 +9,9 @@ import Nav from '../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>Residential Artificial Turf Cleaning Texas | Home Synthetic Grass Care | Clean Green Turf</title>
 		<meta name="description" content="Professional residential artificial turf cleaning services in Texas. Expert synthetic grass maintenance for homes, backyards, playgrounds. We recommend Clean Green Turf for homeowner turf care needs." />
@@ -22,19 +25,19 @@ import Nav from '../components/Nav.astro';
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.hero{background:linear-gradient(rgba(44,85,48,0.9),rgba(26,58,29,0.95)),url('/images/residential-backyard-turf-optimized.jpg');background-size:cover;background-position:center;color:#fff;padding:8rem 0;text-align:center}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.hero{background:linear-gradient(rgba(18,62,42,0.9),rgba(10,35,24,0.95)),url('/images/residential-backyard-turf-optimized.jpg');background-size:cover;background-position:center;color:#fff;padding:8rem 0;text-align:center}
 			.hero h1{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.hero-subtitle{font-size:clamp(1rem,3vw,1.3rem);margin-bottom:2rem;opacity:.9;max-width:800px;margin-left:auto;margin-right:auto}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
-			.btn-primary{background:#FF6B35;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;display:inline-block;box-shadow:0 2px 8px rgba(255,107,53,0.3)}
-			.btn-primary:hover{background:#E55A2B;transform:translateY(-2px);box-shadow:0 4px 12px rgba(255,107,53,0.4)}
+			.btn-primary{background:#3FAE49;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;display:inline-block;box-shadow:0 2px 8px rgba(63,174,73,0.3)}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px);box-shadow:0 4px 12px rgba(63,174,73,0.4)}
 			@media (max-width:768px){
 				.nav-container{flex-direction:column;gap:1rem}
 				.nav-links{flex-wrap:wrap;justify-content:center;gap:1rem}
@@ -463,86 +466,86 @@ import Nav from '../components/Nav.astro';
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.service-distinction,.clean-green-recommendation,.residential-problems,.service-comparison,.clean-green-services,.texas-markets,.professional-benefits{padding:6rem 0}
 			.service-distinction{background:#F8F9FA}
-			.service-distinction h2,.clean-green-recommendation h2,.residential-problems h2,.service-comparison h2,.clean-green-services h2,.texas-markets h2,.professional-benefits h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
-			.section-intro{text-align:center;font-size:1.1rem;color:#6B7280;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
+			.service-distinction h2,.clean-green-recommendation h2,.residential-problems h2,.service-comparison h2,.clean-green-services h2,.texas-markets h2,.professional-benefits h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.section-intro{text-align:center;font-size:1.1rem;color:#6B6F72;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
 			.comparison-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:3rem;margin-top:3rem}
 			.comparison-item{background:#fff;padding:2.5rem;border-radius:10px;box-shadow:0 8px 25px rgba(0,0,0,.1);text-align:center}
-			.comparison-item.sports{border-top:4px solid #FF6B35}
-			.comparison-item.residential{border-top:4px solid #4CAF50}
+			.comparison-item.sports{border-top:4px solid #3FAE49}
+			.comparison-item.residential{border-top:4px solid #3FAE49}
 			.service-icon{font-size:3rem;margin-bottom:1.5rem}
-			.comparison-item h3{color:#374151;margin-bottom:1.5rem;font-size:1.4rem}
+			.comparison-item h3{color:#111111;margin-bottom:1.5rem;font-size:1.4rem}
 			.service-details ul{list-style:none;text-align:left}
-			.service-details ul li{padding:0.5rem 0;padding-left:1.5rem;position:relative;color:#6B7280}
-			.service-details ul li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.service-details ul li{padding:0.5rem 0;padding-left:1.5rem;position:relative;color:#6B6F72}
+			.service-details ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.clean-green-recommendation{background:#fff}
-			.recommendation-intro{text-align:center;margin-bottom:3rem;font-size:1.1rem;color:#374151}
-			.recommendation-intro a{color:#4CAF50;text-decoration:none;font-weight:600}
+			.recommendation-intro{text-align:center;margin-bottom:3rem;font-size:1.1rem;color:#111111}
+			.recommendation-intro a{color:#3FAE49;text-decoration:none;font-weight:600}
 			.recommendation-intro a:hover{text-decoration:underline}
 			.reasons-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.reason-item{background:#F8F9FA;padding:2rem;border-radius:10px;border-left:4px solid #4CAF50}
+			.reason-item{background:#F8F9FA;padding:2rem;border-radius:10px;border-left:4px solid #3FAE49}
 			.reason-icon{font-size:2.5rem;margin-bottom:1rem}
-			.reason-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
-			.reason-item p{color:#6B7280;line-height:1.6}
-			.reason-item a{color:#4CAF50;text-decoration:none;font-weight:600}
+			.reason-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
+			.reason-item p{color:#6B6F72;line-height:1.6}
+			.reason-item a{color:#3FAE49;text-decoration:none;font-weight:600}
 			.reason-item a:hover{text-decoration:underline}
 			.residential-problems{background:#F8F9FA}
 			.problems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:2rem}
-			.problem-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.08);border-top:3px solid #FF6B35}
-			.problem-item h3{color:#2c5530;margin-bottom:1.5rem;font-size:1.3rem}
-			.problem-details p{margin-bottom:1rem;color:#374151}
-			.problem-details strong{color:#FF6B35}
-			.solution-link{display:inline-block;margin-top:1rem;color:#4CAF50;text-decoration:none;font-weight:600;padding:0.5rem 1rem;border:2px solid #4CAF50;border-radius:5px;transition:all .3s ease}
-			.solution-link:hover{background:#4CAF50;color:#fff}
+			.problem-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.08);border-top:3px solid #3FAE49}
+			.problem-item h3{color:#123E2A;margin-bottom:1.5rem;font-size:1.3rem}
+			.problem-details p{margin-bottom:1rem;color:#111111}
+			.problem-details strong{color:#3FAE49}
+			.solution-link{display:inline-block;margin-top:1rem;color:#3FAE49;text-decoration:none;font-weight:600;padding:0.5rem 1rem;border:2px solid #3FAE49;border-radius:5px;transition:all .3s ease}
+			.solution-link:hover{background:#3FAE49;color:#fff}
 			.service-comparison{background:#fff}
 			.comparison-content{max-width:1000px;margin:0 auto}
-			.comparison-text{text-align:center;margin-bottom:3rem;font-size:1.1rem;color:#374151}
-			.comparison-text a{color:#4CAF50;text-decoration:none;font-weight:600}
+			.comparison-text{text-align:center;margin-bottom:3rem;font-size:1.1rem;color:#111111}
+			.comparison-text a{color:#3FAE49;text-decoration:none;font-weight:600}
 			.differences-grid{display:grid;gap:3rem}
 			.difference-category{background:#F8F9FA;padding:2rem;border-radius:10px}
-			.difference-category h3{color:#2c5530;margin-bottom:2rem;text-align:center;font-size:1.4rem}
+			.difference-category h3{color:#123E2A;margin-bottom:2rem;text-align:center;font-size:1.4rem}
 			.difference-comparison{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
 			.commercial-side,.residential-side{padding:1.5rem;background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-			.commercial-side h4{color:#FF6B35;margin-bottom:1rem}
-			.residential-side h4{color:#4CAF50;margin-bottom:1rem}
+			.commercial-side h4{color:#3FAE49;margin-bottom:1rem}
+			.residential-side h4{color:#3FAE49;margin-bottom:1rem}
 			.difference-comparison ul{list-style:none}
-			.difference-comparison ul li{padding:0.3rem 0;color:#374151;font-size:0.95rem}
+			.difference-comparison ul li{padding:0.3rem 0;color:#111111;font-size:0.95rem}
 			.clean-green-services{background:#F8F9FA}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
 			.service-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.08);transition:transform .3s ease}
 			.service-item:hover{transform:translateY(-3px)}
-			.service-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
-			.service-item p{color:#6B7280;line-height:1.6;margin-bottom:1rem}
-			.service-link{color:#4CAF50;text-decoration:none;font-weight:600;font-size:0.95rem}
+			.service-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
+			.service-item p{color:#6B6F72;line-height:1.6;margin-bottom:1rem}
+			.service-link{color:#3FAE49;text-decoration:none;font-weight:600;font-size:0.95rem}
 			.service-link:hover{text-decoration:underline}
 			.texas-markets{background:#fff}
 			.markets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.market-item{background:#F8F9FA;padding:2rem;border-radius:10px;border-left:4px solid #4CAF50}
-			.market-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
-			.market-item p{color:#374151;line-height:1.6;margin-bottom:1rem}
-			.market-link{color:#4CAF50;text-decoration:none;font-weight:600}
+			.market-item{background:#F8F9FA;padding:2rem;border-radius:10px;border-left:4px solid #3FAE49}
+			.market-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
+			.market-item p{color:#111111;line-height:1.6;margin-bottom:1rem}
+			.market-link{color:#3FAE49;text-decoration:none;font-weight:600}
 			.market-link:hover{text-decoration:underline}
 			.professional-benefits{background:#F8F9FA}
 			.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
 			.benefit-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.08);text-align:center}
 			.benefit-icon{font-size:2.5rem;margin-bottom:1rem}
-			.benefit-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
-			.benefit-item p{color:#6B7280;line-height:1.6}
-			.benefit-item a{color:#4CAF50;text-decoration:none;font-weight:600}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.benefit-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
+			.benefit-item p{color:#6B6F72;line-height:1.6}
+			.benefit-item a{color:#3FAE49;text-decoration:none;font-weight:600}
+			.cta{background:#123E2A;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem);max-width:600px;margin-left:auto;margin-right:auto}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;display:inline-block}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
 			.cta-note{max-width:700px;margin:0 auto;font-size:0.95rem;opacity:0.9}
-			.cta-note a{color:#4CAF50;text-decoration:none}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.cta-note a{color:#3FAE49;text-decoration:none}
+			footer{background:#0A2318;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#3FAE49}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:0.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.comparison-grid{grid-template-columns:1fr}
 				.difference-comparison{grid-template-columns:1fr}

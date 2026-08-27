@@ -9,6 +9,9 @@ import Nav from '../../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>El Paso Sports Field Turf Maintenance | Desert Athletic Fields | Texas Turf Maintenance</title>
 		<meta name="description" content="Professional sports field turf maintenance in El Paso, TX. Expert artificial turf cleaning, repair, and GMAX testing for desert climate athletic facilities. Serving UTEP, EPISD, Las Cruces region." />
@@ -104,19 +107,19 @@ import Nav from '../../components/Nav.astro';
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.hero{background:linear-gradient(rgba(44,85,48,0.9),rgba(26,58,29,0.95)),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;color:#fff;padding:8rem 0;text-align:center}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.hero{background:linear-gradient(rgba(18,62,42,0.9),rgba(10,35,24,0.95)),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;color:#fff;padding:8rem 0;text-align:center}
 			.hero h1{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.hero-subtitle{font-size:clamp(1rem,3vw,1.3rem);margin-bottom:2rem;opacity:.9;max-width:800px;margin-left:auto;margin-right:auto}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
-			.btn-primary{background:#FF6B35;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;display:inline-block;box-shadow:0 2px 8px rgba(255,107,53,0.3)}
-			.btn-primary:hover{background:#E55A2B;transform:translateY(-2px);box-shadow:0 4px 12px rgba(255,107,53,0.4)}
+			.btn-primary{background:#3FAE49;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;display:inline-block;box-shadow:0 2px 8px rgba(63,174,73,0.3)}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px);box-shadow:0 4px 12px rgba(63,174,73,0.4)}
 			@media (max-width:768px){
 				.nav-container{flex-direction:column;gap:1rem}
 				.nav-links{flex-wrap:wrap;justify-content:center;gap:1rem}
@@ -447,49 +450,49 @@ import Nav from '../../components/Nav.astro';
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.desert-challenges,.utep-athletics,.service-areas,.school-districts,.desert-solutions,.border-services,.emergency-services,.local-success{padding:6rem 0}
 			.desert-challenges{background:#F8F9FA}
-			.desert-challenges h2,.utep-athletics h2,.service-areas h2,.school-districts h2,.desert-solutions h2,.border-services h2,.emergency-services h2,.local-success h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
-			.section-intro{text-align:center;font-size:1.1rem;color:#6B7280;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
+			.desert-challenges h2,.utep-athletics h2,.service-areas h2,.school-districts h2,.desert-solutions h2,.border-services h2,.emergency-services h2,.local-success h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.section-intro{text-align:center;font-size:1.1rem;color:#6B6F72;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
 			.challenges-grid,.utep-services,.areas-grid,.districts-grid,.solutions-grid,.border-grid,.emergency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
-			.challenge-item,.utep-item,.district-item,.solution-item,.border-item,.emergency-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);border:1px solid #E5E7EB}
+			.challenge-item,.utep-item,.district-item,.solution-item,.border-item,.emergency-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);border:1px solid #E5E7E9}
 			.challenge-item:hover,.utep-item:hover,.district-item:hover,.solution-item:hover,.border-item:hover,.emergency-item:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.12)}
 			.challenge-icon{font-size:2.5rem;margin-bottom:1rem;display:block;text-align:center}
-			.challenge-item h3,.utep-item h4,.district-item h4,.solution-item h3,.border-item h3,.emergency-item h3{color:#374151;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
-			.challenge-item p,.utep-item p,.district-item p,.solution-item p,.border-item p,.emergency-item p{color:#6B7280;line-height:1.6}
+			.challenge-item h3,.utep-item h4,.district-item h4,.solution-item h3,.border-item h3,.emergency-item h3{color:#111111;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
+			.challenge-item p,.utep-item p,.district-item p,.solution-item p,.border-item p,.emergency-item p{color:#6B6F72;line-height:1.6}
 			.utep-athletics{background:#fff}
 			.utep-content,.districts-content{max-width:1000px;margin:0 auto;text-align:center}
-			.utep-content h3,.districts-content h3{color:#2c5530;margin-bottom:2rem;font-size:1.6rem}
-			.utep-content p{color:#6B7280;margin-bottom:3rem;font-size:1.1rem}
+			.utep-content h3,.districts-content h3{color:#123E2A;margin-bottom:2rem;font-size:1.6rem}
+			.utep-content p{color:#6B6F72;margin-bottom:3rem;font-size:1.1rem}
 			.service-areas{background:#F8F9FA}
-			.area-group{background:#fff;padding:2rem;border-radius:10px;border:1px solid #E5E7EB}
-			.area-group h3{color:#2c5530;margin-bottom:1.5rem;font-size:1.4rem;text-align:center}
-			.zip-list{list-style:none;color:#374151}
-			.zip-list li{padding:0.5rem 0;border-bottom:1px solid #E5E7EB;font-size:0.95rem}
+			.area-group{background:#fff;padding:2rem;border-radius:10px;border:1px solid #E5E7E9}
+			.area-group h3{color:#123E2A;margin-bottom:1.5rem;font-size:1.4rem;text-align:center}
+			.zip-list{list-style:none;color:#111111}
+			.zip-list li{padding:0.5rem 0;border-bottom:1px solid #E5E7E9;font-size:0.95rem}
 			.zip-list li:last-child{border-bottom:none}
 			.school-districts{background:#fff}
 			.desert-solutions{background:#F8F9FA}
-			.solution-item strong{color:#FF6B35;display:block;margin-bottom:0.5rem}
+			.solution-item strong{color:#3FAE49;display:block;margin-bottom:0.5rem}
 			.border-services{background:#fff}
-			.emergency-services{background:#F0F9FF;border-top:1px solid #E5E7EB}
+			.emergency-services{background:#F0F9FF;border-top:1px solid #E5E7E9}
 			.local-success{background:#F8F9FA;text-align:center}
 			.success-content{max-width:800px;margin:0 auto}
-			.success-content blockquote{font-size:1.3rem;color:#374151;font-style:italic;margin-bottom:2rem;line-height:1.6}
-			.success-content cite{color:#6B7280;font-style:normal}
-			.success-content cite strong{color:#2c5530;display:block;margin-bottom:0.5rem}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.success-content blockquote{font-size:1.3rem;color:#111111;font-style:italic;margin-bottom:2rem;line-height:1.6}
+			.success-content cite{color:#6B6F72;font-style:normal}
+			.success-content cite strong{color:#123E2A;display:block;margin-bottom:0.5rem}
+			.cta{background:#123E2A;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem);max-width:600px;margin-left:auto;margin-right:auto}
 			.cta-buttons,.hero-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;display:inline-block}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
 			.cta .btn-secondary{color:#fff;border-color:#fff}
-			.cta .btn-secondary:hover{background:#fff;color:#2c5530}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.cta .btn-secondary:hover{background:#fff;color:#123E2A}
+			footer{background:#0A2318;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#3FAE49}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:0.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.desert-challenges,.utep-athletics,.service-areas,.school-districts,.desert-solutions,.border-services,.emergency-services,.local-success{padding:4rem 0}
 				.challenges-grid,.utep-services,.areas-grid,.districts-grid,.solutions-grid,.border-grid,.emergency-grid{grid-template-columns:1fr;gap:1.5rem}
