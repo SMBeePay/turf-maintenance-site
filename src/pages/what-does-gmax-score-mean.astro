@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -112,24 +113,7 @@ import Analytics from '../components/Analytics.astro';
 		</style>
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/artificial-turf-sports-field-maintenance">Field Maintenance</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/baseball-field-turf-maintenance">Baseball Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas" class="active">GMAX Testing</a></li>
-					<li><a href="/locations">Locations</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="gmax" />
 
 		<section class="breadcrumb">
 			<div class="container">
@@ -656,7 +640,7 @@ import Analytics from '../components/Analytics.astro';
 					<p>Professional GMAX testing and score interpretation provides the safety information you need to protect athletes and reduce liability. Get expert analysis of your field's scores today.</p>
 					<div class="cta-buttons">
 						<a href="/contact" class="btn-primary">Schedule GMAX Testing</a>
-						<a href="tel:2145558873" class="btn-secondary">Emergency Testing: (214) 555-TURF</a>
+						<a href="tel:+10000000000" class="btn-secondary">Emergency Testing: (000) 000-0000</a>
 					</div>
 					<div class="cta-guarantee">
 						<p><strong>Expert Guarantee:</strong> We'll explain exactly what your scores mean and provide clear recommendations for any necessary improvements.</p>
@@ -692,7 +676,7 @@ import Analytics from '../components/Analytics.astro';
 					</div>
 					<div class="footer-section">
 						<h3>Emergency Support</h3>
-						<p>Emergency Hotline: (214) 555-TURF</p>
+						<p>Emergency Hotline: (000) 000-0000</p>
 						<p>24/7 GMAX Score Emergency Response</p>
 						<p>Texas Statewide Coverage</p>
 					</div>

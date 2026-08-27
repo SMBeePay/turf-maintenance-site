@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -9,29 +10,13 @@ import Analytics from '../components/Analytics.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<Analytics />
-		<title>Contact Texas Turf Maintenance | Free Artificial Turf Maintenance Quote Dallas Fort Worth | (214) 555-TURF</title>
-		<meta name="description" content="Get your FREE artificial turf maintenance quote! Call (214) 555-TURF or request online assessment. 2-hour response time, 24/7 emergency service in Dallas Fort Worth area." />
+		<title>Contact Texas Turf Maintenance | Free Artificial Turf Maintenance Quote Dallas Fort Worth | (000) 000-0000</title>
+		<meta name="description" content="Get your FREE artificial turf maintenance quote! Call (000) 000-0000 or request online assessment. 2-hour response time, 24/7 emergency service in Dallas Fort Worth area." />
 		<meta name="keywords" content="contact DFW turf pros, artificial turf maintenance quote dallas, free turf cleaning estimate, emergency turf repair fort worth" />
 		<link rel="canonical" href="https://texasturfmaintenance.com/contact" />
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/baseball-field-turf-maintenance">Baseball Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
-					<li><a href="/locations">Locations</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact" class="active">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="contact" />
 
 		<main>
 			<section class="page-hero">
@@ -47,19 +32,19 @@ import Analytics from '../components/Analytics.astro';
 						<div class="contact-method">
 							<div class="contact-icon">📞</div>
 							<h3>Call Us</h3>
-							<p><a href="tel:2145558873">(214) 555-TURF</a></p>
+							<p><a href="tel:+10000000000">(000) 000-0000</a></p>
 							<p class="contact-note">Available 24/7 for emergencies</p>
 						</div>
 						<div class="contact-method">
 							<div class="contact-icon">✉️</div>
 							<h3>Email Us</h3>
-							<p><a href="mailto:info@dfwturfpros.com">info@dfwturfpros.com</a></p>
+							<p><a href="mailto:andrew@texasturfmaintenance.com">andrew@texasturfmaintenance.com</a></p>
 							<p class="contact-note">Response within 2 hours</p>
 						</div>
 						<div class="contact-method">
 							<div class="contact-icon">⚡</div>
 							<h3>Emergency Service</h3>
-							<p><a href="tel:2145558873">(214) 555-TURF</a></p>
+							<p><a href="tel:+10000000000">(000) 000-0000</a></p>
 							<p class="contact-note">24/7 rapid response available</p>
 						</div>
 					</div>
@@ -74,7 +59,9 @@ import Analytics from '../components/Analytics.astro';
 							<p>Fill out the form below and we'll contact you within 2 hours to schedule your free turf assessment and provide a detailed service proposal.</p>
 						</div>
 
-						<form class="contact-form" name="contact" method="POST" data-netlify="true">
+						<form class="contact-form" id="contact-form" method="POST" action="/api/contact">
+							<p class="form-status" id="form-status" role="status" hidden></p>
+							<input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 							<div class="form-row">
 								<div class="form-group">
 									<label for="firstName">First Name*</label>
@@ -197,6 +184,36 @@ import Analytics from '../components/Analytics.astro';
 
 							<button type="submit" class="btn-submit">Request Free Assessment</button>
 						</form>
+						<script>
+							const form = document.getElementById('contact-form') as HTMLFormElement | null;
+							const status = document.getElementById('form-status');
+							form?.addEventListener('submit', async (event) => {
+								event.preventDefault();
+								if (!status) return;
+								const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+								if (submitButton) submitButton.disabled = true;
+								status.hidden = false;
+								status.className = 'form-status';
+								status.textContent = 'Sending...';
+								try {
+									const response = await fetch(form.action, { method: 'POST', body: new FormData(form) });
+									const result = await response.json();
+									if (response.ok && result.ok) {
+										status.classList.add('success');
+										status.textContent = "Thanks! We'll be in touch within 2 hours.";
+										form.reset();
+									} else {
+										status.classList.add('error');
+										status.textContent = result.error || 'Something went wrong. Please call us directly.';
+									}
+								} catch {
+									status.classList.add('error');
+									status.textContent = 'Something went wrong. Please call us directly.';
+								} finally {
+									if (submitButton) submitButton.disabled = false;
+								}
+							});
+						</script>
 					</div>
 				</div>
 			</section>
@@ -303,8 +320,8 @@ import Analytics from '../components/Analytics.astro';
 					</div>
 					<div class="footer-section">
 						<h3>Contact</h3>
-						<p>Phone: (214) 555-TURF</p>
-						<p>Email: info@dfwturfpros.com</p>
+						<p>Phone: (000) 000-0000</p>
+						<p>Email: andrew@texasturfmaintenance.com</p>
 					</div>
 				</div>
 			</div>
@@ -530,6 +547,38 @@ import Analytics from '../components/Analytics.astro';
 
 			.btn-submit:hover {
 				background: #45a049;
+			}
+
+			.btn-submit:disabled {
+				opacity: 0.7;
+				cursor: not-allowed;
+			}
+
+			.hp-field {
+				position: absolute;
+				left: -9999px;
+				width: 1px;
+				height: 1px;
+				overflow: hidden;
+			}
+
+			.form-status {
+				padding: 0.75rem 1rem;
+				border-radius: 5px;
+				margin-bottom: 1.5rem;
+				font-weight: bold;
+			}
+
+			.form-status.success {
+				background: #e6f4ea;
+				color: #1e6b34;
+				border: 1px solid #b7e0c4;
+			}
+
+			.form-status.error {
+				background: #fdecea;
+				color: #a3271f;
+				border: 1px solid #f3c1bc;
 			}
 
 			.business-info {

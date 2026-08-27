@@ -1,6 +1,6 @@
-# DFW Turf Pros - Artificial Turf Maintenance Website
+# Texas Turf Maintenance - Artificial Turf Maintenance Website
 
-A professional website for an artificial turf sport field maintenance business serving the Dallas Fort Worth area.
+A professional website for an artificial turf sport field maintenance business serving Texas, expanding into commercial turf cleaning.
 
 ## Built With
 
@@ -12,17 +12,15 @@ A professional website for an artificial turf sport field maintenance business s
 
 - **Homepage** - Hero section with business overview and service preview
 - **Services** - Detailed service offerings including pricing
-- **Locations** - Service areas throughout Dallas Fort Worth metroplex
+- **Locations** - Service areas throughout Texas
+- **Blog** - Educational content and case studies
 - **About** - Company story, mission, and team expertise
 - **Contact** - Contact form with business information
 
-## Pages
+## Site config
 
-- `/` - Homepage
-- `/services` - Services page
-- `/locations` - Service locations
-- `/about` - About the company
-- `/contact` - Contact form and information
+Business name, phone, email, and nav links live in one place: `src/lib/site.js`.
+Update values there instead of editing individual pages.
 
 ## Development
 
@@ -37,11 +35,11 @@ This site is optimized for deployment on Vercel with automatic builds from the m
 
 ## Contact
 
-**DFW Turf Pros**
-- Phone: (214) 555-TURF
-- Email: info@dfwturfpros.com
-- Service Area: Dallas Fort Worth Metroplex
+**Texas Turf Maintenance**
+- Phone: see `src/lib/site.js` (placeholder pending a final business number)
+- Email: andrew@texasturfmaintenance.com
+- Service Area: Texas, statewide
 
 ---
 
-Built with ❤️ for professional artificial turf maintenance in DFW
+Built for professional artificial turf maintenance across Texas.
