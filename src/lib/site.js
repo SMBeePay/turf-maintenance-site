@@ -32,14 +32,24 @@ export const PHONE_TEL = 'tel:+10000000000';
 
 export const EMAIL = 'andrew@texasturfmaintenance.com';
 
+// Top-level nav items. An item with `children` renders as a dropdown on
+// desktop and an expanded sub-list on mobile — used to keep the sport-page
+// links reachable (and their internal-linking SEO value intact) without
+// crowding the top-level bar with all 11 links at once.
 export const NAV_LINKS = [
 	{ href: '/', label: 'Home', key: 'home' },
-	{ href: '/services', label: 'Services', key: 'services' },
-	{ href: '/football-field-turf-maintenance', label: 'Football Fields', key: 'football' },
-	{ href: '/soccer-field-turf-maintenance', label: 'Soccer Fields', key: 'soccer' },
-	{ href: '/baseball-field-turf-maintenance', label: 'Baseball Fields', key: 'baseball' },
-	{ href: '/indoor-turf-maintenance', label: 'Indoor Turf', key: 'indoor' },
-	{ href: '/gmax-testing-dallas', label: 'GMAX Testing', key: 'gmax' },
+	{
+		href: '/services',
+		label: 'Services',
+		key: 'services',
+		children: [
+			{ href: '/football-field-turf-maintenance', label: 'Football Fields', key: 'football' },
+			{ href: '/soccer-field-turf-maintenance', label: 'Soccer Fields', key: 'soccer' },
+			{ href: '/baseball-field-turf-maintenance', label: 'Baseball Fields', key: 'baseball' },
+			{ href: '/indoor-turf-maintenance', label: 'Indoor Turf', key: 'indoor' },
+			{ href: '/gmax-testing-dallas', label: 'GMAX Testing', key: 'gmax' },
+		],
+	},
 	{ href: '/blog', label: 'Blog', key: 'blog' },
 	{ href: '/locations', label: 'Locations', key: 'locations' },
 	{ href: '/about', label: 'About', key: 'about' },
