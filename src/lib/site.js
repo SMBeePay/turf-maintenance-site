@@ -23,12 +23,9 @@ export const BRAND = {
 // deployment doc's www -> apex redirect). Do not add a trailing slash.
 export const SITE_URL = 'https://texasturfmaintenance.com';
 
-// PLACEHOLDER — Andrew hasn't decided yet between forwarding his cell via
-// Google Voice / a call-tracking number, or listing it directly. Replace
-// both values below with the final number before launch; every page pulls
-// from here so this is the only place that needs to change.
-export const PHONE_DISPLAY = '(000) 000-0000';
-export const PHONE_TEL = 'tel:+10000000000';
+// Google Voice number (Dallas area code), forwards to Andrew's cell.
+export const PHONE_DISPLAY = '(469) 981-9247';
+export const PHONE_TEL = 'tel:+14699819247';
 
 export const EMAIL = 'andrew@texasturfmaintenance.com';
 

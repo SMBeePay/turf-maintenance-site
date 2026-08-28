@@ -36,7 +36,7 @@ This site is optimized for deployment on Vercel with automatic builds from the m
 ## Contact
 
 **Texas Turf Maintenance**
-- Phone: see `src/lib/site.js` (placeholder pending a final business number)
+- Phone: (469) 981-9247
 - Email: andrew@texasturfmaintenance.com
 - Service Area: Texas, statewide
 
