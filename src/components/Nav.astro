@@ -1,0 +1,237 @@
+---
+import { SITE_NAME, NAV_LINKS } from '../lib/site.js';
+
+interface Props {
+	active?: string;
+}
+
+const { active = '' } = Astro.props;
+
+function isActive(link) {
+	if (link.key === active) return true;
+	return (link.children ?? []).some((child) => child.key === active);
+}
+---
+
+<nav>
+	<div class="nav-container">
+		<a href="/" class="logo">
+			<img src="/images/brand/nav-logo-reverse-green.png" alt={SITE_NAME} width="487" height="170" />
+		</a>
+
+		<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+			<span class="sr-only">Menu</span>
+			<span class="nav-toggle-bar"></span>
+			<span class="nav-toggle-bar"></span>
+			<span class="nav-toggle-bar"></span>
+		</button>
+
+		<ul class="nav-links" id="primary-nav">
+			{NAV_LINKS.map((link) => (
+				<li class={link.children ? 'has-children' : undefined}>
+					<a href={link.href} class={isActive(link) ? 'active' : undefined}>
+						{link.label}
+						{link.children && <span class="caret" aria-hidden="true">▾</span>}
+					</a>
+					{link.children && (
+						<ul class="dropdown">
+							{link.children.map((child) => (
+								<li><a href={child.href} class={child.key === active ? 'active' : undefined}>{child.label}</a></li>
+							))}
+						</ul>
+					)}
+				</li>
+			))}
+		</ul>
+	</div>
+</nav>
+
+<script>
+	const toggle = document.querySelector('.nav-toggle');
+	const links = document.getElementById('primary-nav');
+
+	toggle?.addEventListener('click', () => {
+		const isOpen = links?.classList.toggle('open');
+		toggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
+	});
+
+	// Tap-to-open dropdowns on touch/mobile, where :hover doesn't apply.
+	document.querySelectorAll('.nav-links > li.has-children > a').forEach((trigger) => {
+		trigger.addEventListener('click', (event) => {
+			if (window.innerWidth > 768) return;
+			const parent = trigger.parentElement;
+			if (parent && !parent.classList.contains('dropdown-open')) {
+				event.preventDefault();
+				document.querySelectorAll('.nav-links > li.has-children').forEach((li) => li.classList.remove('dropdown-open'));
+				parent.classList.add('dropdown-open');
+			}
+		});
+	});
+</script>
+
+<style>
+	/* Brand colors (see BRAND in src/lib/site.js) are literal hex here and
+	   across the site's page-level styles rather than CSS custom properties —
+	   a future cleanup, not required for this rebrand pass. */
+	nav {
+		background: #123E2A;
+		padding: 0.75rem 0;
+		position: sticky;
+		top: 0;
+		z-index: 100;
+	}
+	.nav-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+	}
+	.logo img {
+		height: 40px;
+		width: auto;
+		display: block;
+	}
+
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+	}
+
+	.nav-toggle {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5px;
+		background: none;
+		border: none;
+		padding: 8px;
+		cursor: pointer;
+	}
+	.nav-toggle-bar {
+		width: 24px;
+		height: 2px;
+		background: #fff;
+		border-radius: 1px;
+	}
+
+	.nav-links {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+	}
+	.nav-links > li {
+		position: relative;
+	}
+	.nav-links a {
+		display: block;
+		padding: 0.5rem 0.75rem;
+		color: #fff;
+		text-decoration: none;
+		font-size: 0.95rem;
+		white-space: nowrap;
+		transition: color 0.3s ease;
+	}
+	.nav-links a:hover,
+	.nav-links a.active {
+		color: #3FAE49;
+	}
+	.caret {
+		font-size: 0.7em;
+		margin-left: 2px;
+	}
+
+	/* Desktop dropdown */
+	.dropdown {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		min-width: 220px;
+		background: #fff;
+		border-radius: 8px;
+		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+		padding: 0.5rem 0;
+		margin: 0;
+		list-style: none;
+		z-index: 10;
+	}
+	.has-children:hover > .dropdown,
+	.has-children:focus-within > .dropdown,
+	.has-children.dropdown-open > .dropdown {
+		display: block;
+	}
+	.dropdown a {
+		color: #111111;
+		padding: 0.6rem 1.1rem;
+		font-size: 0.92rem;
+	}
+	.dropdown a:hover,
+	.dropdown a.active {
+		color: #3FAE49;
+		background: #E5E7E9;
+	}
+
+	@media (max-width: 768px) {
+		.nav-toggle {
+			display: flex;
+		}
+
+		.nav-links {
+			display: none;
+			flex-direction: column;
+			align-items: stretch;
+			width: 100%;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background: #123E2A;
+			padding: 0.5rem 0 1rem;
+			box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+		}
+		.nav-links.open {
+			display: flex;
+		}
+		.nav-links > li {
+			width: 100%;
+		}
+		.nav-links a {
+			padding: 0.75rem 20px;
+		}
+
+		.dropdown {
+			position: static;
+			box-shadow: none;
+			background: #0A2318;
+			border-radius: 0;
+			padding: 0;
+			display: none;
+		}
+		.has-children.dropdown-open > .dropdown {
+			display: block;
+		}
+		.dropdown a {
+			color: #fff;
+			padding: 0.65rem 20px 0.65rem 2.5rem;
+			font-size: 0.9rem;
+		}
+		.dropdown a:hover,
+		.dropdown a.active {
+			background: transparent;
+			color: #3FAE49;
+		}
+	}
+</style>

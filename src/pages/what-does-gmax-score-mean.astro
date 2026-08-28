@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -8,6 +9,9 @@ import Analytics from '../components/Analytics.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>What Does Your GMAX Score Mean? | Complete Guide to Turf Safety Testing | Texas Turf Maintenance</title>
 		<meta name="description" content="Understanding GMAX scores: What 165 means, how testing works, safety implications, and steps to improve dangerous scores. Expert guide to artificial turf safety measurements." />
@@ -20,7 +24,7 @@ import Analytics from '../components/Analytics.astro';
 		<link rel="prefetch" href="/gmax-testing-dallas">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		
@@ -89,19 +93,19 @@ import Analytics from '../components/Analytics.astro';
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.article-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.article-hero{background:linear-gradient(135deg,#111111,#2E332F);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.article-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.article-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
 			.breadcrumb{background:#f8f9fa;padding:1rem 0;font-size:.9rem}
-			.breadcrumb a{color:#2c5530;text-decoration:none}
+			.breadcrumb a{color:#123E2A;text-decoration:none}
 			.breadcrumb a:hover{text-decoration:underline}
 			.breadcrumb span{color:#666;margin:0 0.5rem}
 			@media (max-width:768px){
@@ -112,24 +116,7 @@ import Analytics from '../components/Analytics.astro';
 		</style>
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/artificial-turf-sports-field-maintenance">Field Maintenance</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/baseball-field-turf-maintenance">Baseball Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas" class="active">GMAX Testing</a></li>
-					<li><a href="/locations">Locations</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="gmax" />
 
 		<section class="breadcrumb">
 			<div class="container">
@@ -656,7 +643,7 @@ import Analytics from '../components/Analytics.astro';
 					<p>Professional GMAX testing and score interpretation provides the safety information you need to protect athletes and reduce liability. Get expert analysis of your field's scores today.</p>
 					<div class="cta-buttons">
 						<a href="/contact" class="btn-primary">Schedule GMAX Testing</a>
-						<a href="tel:2145558873" class="btn-secondary">Emergency Testing: (214) 555-TURF</a>
+						<a href="tel:+14699819247" class="btn-secondary">Emergency Testing: (469) 981-9247</a>
 					</div>
 					<div class="cta-guarantee">
 						<p><strong>Expert Guarantee:</strong> We'll explain exactly what your scores mean and provide clear recommendations for any necessary improvements.</p>
@@ -670,6 +657,7 @@ import Analytics from '../components/Analytics.astro';
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional GMAX testing and artificial turf maintenance across Texas. Expert analysis of safety scores with comprehensive improvement strategies.</p>
 					</div>
 					<div class="footer-section">
@@ -692,7 +680,7 @@ import Analytics from '../components/Analytics.astro';
 					</div>
 					<div class="footer-section">
 						<h3>Emergency Support</h3>
-						<p>Emergency Hotline: (214) 555-TURF</p>
+						<p>Emergency Hotline: (469) 981-9247</p>
 						<p>24/7 GMAX Score Emergency Response</p>
 						<p>Texas Statewide Coverage</p>
 					</div>
@@ -703,48 +691,48 @@ import Analytics from '../components/Analytics.astro';
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.score-introduction,.score-breakdown,.score-factors,.improvement-strategies,.testing-frequency,.case-studies,.gmax-faqs,.expert-recommendations,.next-steps{padding:4rem 0}
-			.score-introduction h2,.score-breakdown h2,.score-factors h2,.improvement-strategies h2,.testing-frequency h2,.case-studies h2,.gmax-faqs h2,.expert-recommendations h2,.next-steps h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.score-introduction h2,.score-breakdown h2,.score-factors h2,.improvement-strategies h2,.testing-frequency h2,.case-studies h2,.gmax-faqs h2,.expert-recommendations h2,.next-steps h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.content-wrapper{max-width:900px;margin:0 auto}
 			.lead{font-size:1.2rem;color:#666;text-align:center;margin-bottom:2rem;line-height:1.8}
-			.key-insight{display:flex;align-items:flex-start;gap:1.5rem;background:#e8f5e8;padding:2rem;border-radius:10px;margin:2rem 0}
+			.key-insight{display:flex;align-items:flex-start;gap:1.5rem;background:#e8f5e8;padding:2rem;border-radius:4px;margin:2rem 0}
 			.insight-icon{font-size:2.5rem;flex-shrink:0}
-			.insight-content h3{color:#2c5530;margin-bottom:0.5rem}
+			.insight-content h3{color:#123E2A;margin-bottom:0.5rem}
 			.insight-content p{color:#666;margin:0}
 			.score-ranges{display:grid;gap:2rem;margin-top:2rem}
-			.score-range{background:#fff;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);overflow:hidden}
+			.score-range{background:#fff;border-radius:4px;overflow:hidden}
 			.range-header{padding:2rem;text-align:center}
 			.score-number{font-size:3rem;font-weight:bold;margin-bottom:0.5rem}
 			.range-status{font-size:1.1rem;font-weight:bold;letter-spacing:1px}
-			.score-range.safe .score-number,.score-range.safe .range-status{color:#2c5530}
+			.score-range.safe .score-number,.score-range.safe .range-status{color:#123E2A}
 			.score-range.warning .score-number,.score-range.warning .range-status{color:#f57c00}
 			.score-range.danger .score-number,.score-range.danger .range-status{color:#d32f2f}
 			.score-range.safe .range-header{background:#e8f5e8}
 			.score-range.warning .range-header{background:#fff3e0}
 			.score-range.danger .range-header{background:#ffebee}
 			.range-content{padding:0 2rem 2rem}
-			.range-content h3{color:#333;margin-bottom:1rem}
+			.range-content h3{color:#111111;margin-bottom:1rem}
 			.range-content p{color:#666;margin-bottom:1.5rem}
-			.range-details{background:#f8f9fa;padding:1.5rem;border-radius:10px;margin:1rem 0}
-			.range-details h4{color:#2c5530;margin-bottom:1rem}
+			.range-details{background:#f8f9fa;padding:1.5rem;border-radius:4px;margin:1rem 0}
+			.range-details h4{color:#123E2A;margin-bottom:1rem}
 			.range-details ul{list-style:none;margin:0}
 			.range-details ul li{padding:0.5rem 0;padding-left:1.5rem;position:relative}
-			.range-details ul li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.range-details ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.action-required{padding:1rem;border-radius:5px;margin-top:1rem;font-weight:bold}
-			.action-required{background:#e8f5e8;color:#2c5530}
+			.action-required{background:#e8f5e8;color:#123E2A}
 			.action-required.urgent{background:#fff3e0;color:#f57c00}
 			.action-required.emergency{background:#ffebee;color:#d32f2f}
 			.factors-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.factor-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
+			.factor-item{background:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.factor-icon{font-size:3rem;margin-bottom:1rem}
-			.factor-item h3{color:#2c5530;margin-bottom:1rem}
+			.factor-item h3{color:#123E2A;margin-bottom:1rem}
 			.factor-item p{color:#666;margin-bottom:1rem}
-			.factor-impact{background:#f8f9fa;padding:1rem;border-radius:5px;color:#2c5530;font-size:.9rem}
+			.factor-impact{background:#f8f9fa;padding:1rem;border-radius:5px;color:#123E2A;font-size:.9rem}
 			.improvement-content{max-width:1000px;margin:0 auto}
 			.strategy-overview{text-align:center;margin-bottom:3rem}
-			.strategy-overview h3{color:#2c5530;margin-bottom:1rem}
+			.strategy-overview h3{color:#123E2A;margin-bottom:1rem}
 			.strategy-overview p{color:#666;font-size:1.1rem}
 			.strategies-grid{display:grid;gap:2rem}
-			.strategy-item{background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);overflow:hidden}
+			.strategy-item{background:#fff;border-radius:4px;overflow:hidden}
 			.strategy-header{padding:2rem;text-align:center}
 			.strategy-icon{font-size:2.5rem;margin-bottom:1rem}
 			.strategy-header h4{margin-bottom:0.5rem}
@@ -753,55 +741,55 @@ import Analytics from '../components/Analytics.astro';
 			.strategy-item.moderate .strategy-header{background:#fff3e0}
 			.strategy-item.longterm .strategy-header{background:#e3f2fd}
 			.strategy-content{padding:0 2rem 2rem}
-			.strategy-content h5{color:#2c5530;margin:1.5rem 0 0.5rem;font-size:1.1rem}
+			.strategy-content h5{color:#123E2A;margin:1.5rem 0 0.5rem;font-size:1.1rem}
 			.strategy-content p{color:#666;margin-bottom:1rem}
 			.effectiveness,.cost-range{background:#f8f9fa;padding:0.8rem;border-radius:5px;margin:0.5rem 0;font-size:.9rem}
 			.frequency-guidelines{max-width:900px;margin:0 auto}
 			.frequency-intro{text-align:center;margin-bottom:2rem}
 			.frequency-intro p{color:#666;font-size:1.1rem}
 			.frequency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-bottom:3rem}
-			.frequency-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
-			.usage-type{font-size:1.3rem;font-weight:bold;color:#2c5530;margin-bottom:0.5rem}
+			.frequency-item{background:#fff;padding:2rem;border-radius:4px;text-align:center}
+			.usage-type{font-size:1.3rem;font-weight:bold;color:#123E2A;margin-bottom:0.5rem}
 			.usage-description{color:#666;font-size:.9rem;margin-bottom:1rem}
-			.test-frequency{font-size:2rem;font-weight:bold;color:#FF6B35;margin-bottom:0.5rem}
+			.test-frequency{font-size:2rem;font-weight:bold;color:#3FAE49;margin-bottom:0.5rem}
 			.rationale{color:#666;font-size:.9rem;font-style:italic}
-			.emergency-testing{background:#ffebee;padding:2rem;border-radius:10px}
+			.emergency-testing{background:#ffebee;padding:2rem;border-radius:4px}
 			.emergency-testing h3{color:#d32f2f;margin-bottom:1rem}
 			.emergency-triggers ul{list-style:none;margin:0}
 			.emergency-triggers ul li{padding:0.5rem 0;color:#666}
 			.case-studies-grid{display:grid;gap:3rem}
-			.case-study{background:#fff;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);overflow:hidden}
+			.case-study{background:#fff;border-radius:4px;overflow:hidden}
 			.case-header{background:#f8f9fa;padding:2rem;text-align:center}
-			.case-header h3{color:#2c5530;margin-bottom:1rem}
+			.case-header h3{color:#123E2A;margin-bottom:1rem}
 			.case-stats{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
 			.case-stats span{padding:0.5rem 1rem;border-radius:20px;font-weight:bold}
 			.before{background:#ffebee;color:#d32f2f}
-			.after{background:#e8f5e8;color:#2c5530}
+			.after{background:#e8f5e8;color:#123E2A}
 			.case-content{padding:2rem}
-			.case-content h4{color:#2c5530;margin:1.5rem 0 0.5rem}
+			.case-content h4{color:#123E2A;margin:1.5rem 0 0.5rem}
 			.case-content p{color:#666;margin-bottom:1rem}
 			.case-content ul{list-style:none;margin:0}
 			.case-content ul li{padding:0.3rem 0;padding-left:1.5rem;position:relative;color:#666}
-			.case-content ul li::before{content:"•";position:absolute;left:0;color:#4CAF50}
+			.case-content ul li::before{content:"•";position:absolute;left:0;color:#3FAE49}
 			.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.faq-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.faq-item h3{color:#2c5530;margin-bottom:1rem}
+			.faq-item{background:#fff;padding:2rem;border-radius:4px;}
+			.faq-item h3{color:#123E2A;margin-bottom:1rem}
 			.faq-item p{color:#666}
 			.recommendations-content{max-width:1000px;margin:0 auto}
 			.recommendation-categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.recommendation-category{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.recommendation-category h3{color:#2c5530;margin-bottom:1rem}
+			.recommendation-category{background:#fff;padding:2rem;border-radius:4px;}
+			.recommendation-category h3{color:#123E2A;margin-bottom:1rem}
 			.recommendation-category ul{list-style:none;margin:0}
 			.recommendation-category ul li{padding:0.5rem 0;padding-left:1.5rem;position:relative;color:#666}
-			.recommendation-category ul li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.recommendation-category ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.action-steps{max-width:1000px;margin:0 auto}
 			.step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.step-item{background:#fff;padding:2rem;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);text-align:center}
-			.step-number{background:#2c5530;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;margin:0 auto 1rem}
-			.step-content h3{color:#2c5530;margin-bottom:1rem}
+			.step-item{background:#fff;padding:2rem;border-radius:4px;text-align:center}
+			.step-number{background:#123E2A;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;margin:0 auto 1rem}
+			.step-content h3{color:#123E2A;margin-bottom:1rem}
 			.step-content p{color:#666;margin-bottom:1.5rem}
-			.step-action{background:#FF6B35;color:#fff;padding:0.8rem 1.5rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;display:inline-block}
-			.step-action:hover{background:#E55A2B;transform:translateY(-2px)}
+			.step-action{background:#3FAE49;color:#fff;padding:0.8rem 1.5rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;display:inline-block}
+			.step-action:hover{background:#2F8C38;transform:translateY(-2px)}
 			.score-breakdown{background:#f8f9fa}
 			.score-factors{background:#fff}
 			.improvement-strategies{background:#f8f9fa}
@@ -810,23 +798,23 @@ import Analytics from '../components/Analytics.astro';
 			.gmax-faqs{background:#fff}
 			.expert-recommendations{background:#f8f9fa}
 			.next-steps{background:#fff}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.cta{background:#111111;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
 			.cta-guarantee{background:rgba(255,255,255,.1);padding:1rem;border-radius:5px;margin-top:2rem}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#FF6B35;color:#fff}
-			.btn-primary:hover{background:#E55A2B;transform:translateY(-2px)}
+			.btn-primary{background:#3FAE49;color:#fff}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
+			footer{background:#111111;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#fff}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.key-insight{flex-direction:column;text-align:center}
 				.case-stats{flex-direction:column;align-items:center}

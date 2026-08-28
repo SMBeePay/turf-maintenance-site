@@ -1,5 +1,5 @@
 ---
-
+import Nav from '../../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -8,6 +8,9 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>Arlington TX Artificial Turf Maintenance | Professional Sports Field Care | Texas Turf Maintenance</title>
 		<meta name="description" content="Professional artificial turf maintenance in Arlington Texas. Expert sports field cleaning, repair, GMAX testing. Serving UTA, Arlington ISD, Rangers complex. Major event facility maintenance." />
 		<meta name="keywords" content="arlington artificial turf maintenance, uta turf care, arlington isd field maintenance, rangers ballpark turf, sports field maintenance arlington tx" />
@@ -19,7 +22,7 @@
 		<link rel="prefetch" href="/gmax-testing-dallas">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		
@@ -37,7 +40,7 @@
 				"addressRegion": "TX",
 				"addressCountry": "US"
 			},
-			"telephone": "(214) 555-8873",
+			"telephone": "(469) 981-9247",
 			"url": "https://texasturfmaintenance.com/locations/arlington-artificial-turf-maintenance",
 			"serviceArea": {
 				"@type": "GeoCircle",
@@ -56,14 +59,14 @@
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.city-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.city-hero{background:linear-gradient(135deg,#111111,#2E332F);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.city-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.city-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -75,24 +78,7 @@
 		</style>
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/artificial-turf-sports-field-maintenance">Field Maintenance</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/baseball-field-turf-maintenance">Baseball Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
-					<li><a href="/locations" class="active">Locations</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="locations" />
 
 		<main>
 			<section class="city-hero">
@@ -390,7 +376,7 @@
 						<div class="emergency-contact-section">
 							<div class="emergency-phone-section">
 								<div class="emergency-phone">
-									<a href="tel:2145558873">(214) 555-TURF</a>
+									<a href="tel:+14699819247">(469) 981-9247</a>
 								</div>
 								<p class="emergency-support">24/7 Emergency Response for Arlington's Premier Facilities</p>
 								<div class="priority-note">
@@ -408,7 +394,7 @@
 					<p>Experience the major league turf maintenance that keeps Arlington at the forefront of Texas sports entertainment.</p>
 					<div class="cta-buttons">
 						<a href="/contact" class="btn-primary">Schedule Major Event Assessment</a>
-						<a href="tel:2145558873" class="btn-secondary">Call (214) 555-TURF</a>
+						<a href="tel:+14699819247" class="btn-secondary">Call (469) 981-9247</a>
 					</div>
 				</div>
 			</section>
@@ -441,8 +427,8 @@
 					</div>
 					<div class="footer-section">
 						<h3>Contact Arlington</h3>
-						<p>Major Event Hotline: (214) 555-TURF</p>
-						<p>Email: info@texasturfmaintenance.com</p>
+						<p>Major Event Hotline: (469) 981-9247</p>
+						<p>Email: andrew@texasturfmaintenance.com</p>
 						<p>Serving Texas Entertainment Capital</p>
 					</div>
 				</div>
@@ -453,82 +439,82 @@
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.city-intro,.arlington-venues,.arlington-services,.arlington-excellence,.major-events,.testimonial-arlington,.emergency-arlington{padding:4rem 0}
 			.intro-text{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
-			.city-intro h2,.arlington-venues h2,.arlington-services h2,.arlington-excellence h2,.major-events h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.city-intro h2,.arlington-venues h2,.arlington-services h2,.arlington-excellence h2,.major-events h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.arlington-highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
-			.highlight-card{background:#fff;padding:2.5rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);text-align:center;transition:transform .3s ease}
+			.highlight-card{background:#fff;padding:2.5rem;border-radius:4px;text-align:center;transition:transform .3s ease}
 			.highlight-card:hover{transform:translateY(-5px)}
-			.highlight-icon{font-size:3rem;margin-bottom:1rem;color:#2c5530}
-			.highlight-card h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
+			.highlight-icon{font-size:3rem;margin-bottom:1rem;color:#123E2A}
+			.highlight-card h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.arlington-venues{background:#f8f9fa}
 			.venue-categories{display:grid;gap:3rem}
-			.venue-category{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
-			.venue-category h3{color:#2c5530;margin-bottom:2rem;font-size:1.5rem;text-align:center}
+			.venue-category{background:#fff;padding:3rem;border-radius:4px;}
+			.venue-category h3{color:#123E2A;margin-bottom:2rem;font-size:1.5rem;text-align:center}
 			.venue-showcase{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:2rem}
-			.venue-item{background:#f8f9fa;padding:2.5rem;border-radius:10px;border-left:4px solid #4CAF50}
-			.venue-item h4{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
+			.venue-item{background:#f8f9fa;padding:2.5rem;border-radius:4px;border-left:4px solid #3FAE49}
+			.venue-item h4{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.venue-item p{margin-bottom:1rem;color:#666}
 			.venue-item ul{list-style:none;margin:0}
 			.venue-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative;color:#555}
 			.venue-item ul li::before{content:"🏟️";position:absolute;left:0}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.service-item{background:#fff;padding:2.5rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);transition:transform .3s ease}
+			.service-item{background:#fff;padding:2.5rem;border-radius:4px;transition:transform .3s ease}
 			.service-item:hover{transform:translateY(-5px)}
 			.service-icon{font-size:3rem;margin-bottom:1rem;display:block}
-			.service-item h3{color:#2c5530;margin-bottom:1rem;font-size:1.3rem}
+			.service-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.service-item ul{list-style:none;margin-top:1rem}
 			.service-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.arlington-excellence{background:#f8f9fa}
 			.excellence-content{display:grid;gap:3rem;max-width:1100px;margin:0 auto}
-			.excellence-intro{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);text-align:center}
-			.excellence-intro h3{color:#2c5530;margin-bottom:1rem;font-size:1.8rem}
-			.excellence-features{background:#fff;padding:3rem;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
+			.excellence-intro{background:#fff;padding:3rem;border-radius:4px;text-align:center}
+			.excellence-intro h3{color:#123E2A;margin-bottom:1rem;font-size:1.8rem}
+			.excellence-features{background:#fff;padding:3rem;border-radius:4px;}
 			.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
 			.feature-item{text-align:center;padding:1.5rem}
-			.feature-icon{font-size:2.5rem;margin-bottom:1rem;color:#2c5530}
-			.feature-item h4{color:#2c5530;margin-bottom:1rem}
-			.excellence-commitment{background:#2c5530;color:#fff;padding:2rem;border-radius:10px;text-align:center}
+			.feature-icon{font-size:2.5rem;margin-bottom:1rem;color:#123E2A}
+			.feature-item h4{color:#123E2A;margin-bottom:1rem}
+			.excellence-commitment{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.excellence-commitment h4{margin-bottom:1rem;font-size:1.3rem}
 			.major-events{background:#fff}
 			.events-content{display:grid;gap:3rem;max-width:1000px;margin:0 auto}
-			.events-intro{text-align:center;background:#f8f9fa;padding:3rem;border-radius:15px}
-			.events-intro h3{color:#2c5530;margin-bottom:1rem;font-size:1.5rem}
+			.events-intro{text-align:center;background:#f8f9fa;padding:3rem;border-radius:4px}
+			.events-intro h3{color:#123E2A;margin-bottom:1rem;font-size:1.5rem}
 			.events-capabilities{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.capability-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);border-left:4px solid #4CAF50}
-			.capability-item h4{color:#2c5530;margin-bottom:1rem}
+			.capability-item{background:#fff;padding:2rem;border-radius:4px;border-left:4px solid #3FAE49}
+			.capability-item h4{color:#123E2A;margin-bottom:1rem}
 			.testimonial-arlington{background:#f8f9fa}
-			.testimonial-content{background:#fff;padding:4rem;border-radius:20px;box-shadow:0 15px 40px rgba(0,0,0,.1);text-align:center;max-width:900px;margin:0 auto}
+			.testimonial-content{background:#fff;padding:4rem;border-radius:20px;text-align:center;max-width:900px;margin:0 auto}
 			.testimonial-content blockquote{font-size:1.4rem;color:#666;font-style:italic;margin-bottom:2rem;line-height:1.6}
-			.testimonial-content cite{color:#2c5530;font-weight:bold;font-size:1.1rem}
+			.testimonial-content cite{color:#123E2A;font-weight:bold;font-size:1.1rem}
 			.emergency-arlington{background:#d32f2f}
 			.emergency-content{text-align:center;color:#fff;max-width:1100px;margin:0 auto}
 			.emergency-content h2{margin-bottom:1rem;color:#fff;font-size:2.5rem}
 			.emergency-intro{margin-bottom:3rem;font-size:1.2rem;max-width:800px;margin-left:auto;margin-right:auto}
 			.emergency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0}
-			.emergency-service{background:rgba(255,255,255,.1);padding:2.5rem;border-radius:15px}
+			.emergency-service{background:rgba(255,255,255,.1);padding:2.5rem;border-radius:4px}
 			.emergency-icon{font-size:3rem;margin-bottom:1rem}
 			.emergency-service h3{margin-bottom:1rem;font-size:1.3rem}
-			.emergency-contact-section{margin-top:4rem;background:rgba(255,255,255,.1);padding:3rem;border-radius:15px}
+			.emergency-contact-section{margin-top:4rem;background:rgba(255,255,255,.1);padding:3rem;border-radius:4px}
 			.emergency-phone{font-size:3rem;font-weight:bold;margin-bottom:1rem}
 			.emergency-phone a{color:#fff;text-decoration:none}
 			.emergency-support{font-size:1.2rem;margin-bottom:2rem}
-			.priority-note{background:rgba(255,255,255,.1);padding:1.5rem;border-radius:10px;font-size:.9rem}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.priority-note{background:rgba(255,255,255,.1);padding:1.5rem;border-radius:4px;font-size:.9rem}
+			.cta{background:#111111;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#fff;color:#2c5530}
+			.btn-primary{background:#fff;color:#123E2A}
 			.btn-primary:hover{background:#f0f0f0;transform:translateY(-2px)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
+			footer{background:#111111;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#fff}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.arlington-highlights{grid-template-columns:1fr}
 				.venue-showcase{grid-template-columns:1fr}

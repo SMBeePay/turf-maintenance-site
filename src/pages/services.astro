@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -8,6 +9,9 @@ import Analytics from '../components/Analytics.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>Artificial Turf Maintenance Services Dallas Fort Worth | Deep Cleaning, Infill Replacement & Repair</title>
 		<meta name="description" content="Professional artificial turf services in DFW: deep cleaning ($0.50/sq ft), infill replacement ($1.25/sq ft), seam repair, emergency services. Sports field specialists with 24/7 availability." />
@@ -19,28 +23,12 @@ import Analytics from '../components/Analytics.astro';
 		<link rel="prefetch" href="/contact">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services" class="active">Services</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/baseball-field-turf-maintenance">Baseball Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
-					<li><a href="/locations">Locations</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="services" />
 
 		<main>
 			<section class="page-hero">
@@ -240,6 +228,7 @@ import Analytics from '../components/Analytics.astro';
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional artificial turf maintenance services across Dallas Fort Worth metroplex.</p>
 					</div>
 					<div class="footer-section">
@@ -262,8 +251,8 @@ import Analytics from '../components/Analytics.astro';
 					</div>
 					<div class="footer-section">
 						<h3>Contact</h3>
-						<p>Phone: (214) 555-TURF</p>
-						<p>Email: info@dfwturfpros.com</p>
+						<p>Phone: (469) 981-9247</p>
+						<p>Email: andrew@texasturfmaintenance.com</p>
 					</div>
 				</div>
 			</div>
@@ -277,9 +266,9 @@ import Analytics from '../components/Analytics.astro';
 			}
 
 			body {
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 				line-height: 1.6;
-				color: #333;
+				color: #111111;
 			}
 
 			.container {
@@ -289,7 +278,7 @@ import Analytics from '../components/Analytics.astro';
 			}
 
 			nav {
-				background: #2c5530;
+				background: #123E2A;
 				padding: 1rem 0;
 				position: sticky;
 				top: 0;
@@ -325,11 +314,11 @@ import Analytics from '../components/Analytics.astro';
 			}
 
 			.nav-links a:hover, .nav-links a.active {
-				color: #4CAF50;
+				color: #3FAE49;
 			}
 
 			.page-hero {
-				background: linear-gradient(135deg, #4CAF50, #2c5530);
+				background: linear-gradient(135deg, #111111, #2E332F);
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -352,8 +341,8 @@ import Analytics from '../components/Analytics.astro';
 			.service-item {
 				margin-bottom: 4rem;
 				background: white;
-				border-radius: 10px;
-				box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+				border-radius: 4px;
+				
 				overflow: hidden;
 			}
 
@@ -362,7 +351,7 @@ import Analytics from '../components/Analytics.astro';
 			}
 
 			.service-content h2 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 				font-size: 2rem;
 			}
@@ -370,7 +359,7 @@ import Analytics from '../components/Analytics.astro';
 			.service-content p {
 				margin-bottom: 1.5rem;
 				font-size: 1.1rem;
-				color: #6B7280;
+				color: #6B6F72;
 			}
 
 			.service-features {
@@ -388,7 +377,7 @@ import Analytics from '../components/Analytics.astro';
 				content: "✓";
 				position: absolute;
 				left: 0;
-				color: #4CAF50;
+				color: #3FAE49;
 				font-weight: bold;
 			}
 
@@ -398,7 +387,7 @@ import Analytics from '../components/Analytics.astro';
 
 			.price {
 				display: inline-block;
-				background: #4CAF50;
+				background: #3FAE49;
 				color: white;
 				padding: 0.5rem 1rem;
 				border-radius: 25px;
@@ -414,7 +403,7 @@ import Analytics from '../components/Analytics.astro';
 				text-align: center;
 				margin-bottom: 3rem;
 				font-size: 2.5rem;
-				color: #2c5530;
+				color: #123E2A;
 			}
 
 			.comparison-content {
@@ -425,7 +414,7 @@ import Analytics from '../components/Analytics.astro';
 			}
 
 			.comparison-text h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 2rem;
 				font-size: 1.8rem;
 			}
@@ -445,7 +434,7 @@ import Analytics from '../components/Analytics.astro';
 				content: "✓";
 				position: absolute;
 				left: 0;
-				color: #FF6B35;
+				color: #3FAE49;
 				font-weight: bold;
 				font-size: 1.2rem;
 			}
@@ -453,14 +442,14 @@ import Analytics from '../components/Analytics.astro';
 			.grass-comparison-image {
 				width: 100%;
 				height: auto;
-				border-radius: 15px;
-				box-shadow: 0 10px 30px rgba(0,0,0,.15);
+				border-radius: 4px;
+				
 			}
 
 			.image-caption {
 				margin-top: 1rem;
 				font-style: italic;
-				color: #6B7280;
+				color: #6B6F72;
 				font-size: 0.95rem;
 				text-align: center;
 			}
@@ -474,7 +463,7 @@ import Analytics from '../components/Analytics.astro';
 				text-align: center;
 				margin-bottom: 3rem;
 				font-size: 2.5rem;
-				color: #2c5530;
+				color: #123E2A;
 			}
 
 			.process-steps {
@@ -492,7 +481,7 @@ import Analytics from '../components/Analytics.astro';
 				display: inline-block;
 				width: 60px;
 				height: 60px;
-				background: #4CAF50;
+				background: #3FAE49;
 				color: white;
 				border-radius: 50%;
 				line-height: 60px;
@@ -502,12 +491,12 @@ import Analytics from '../components/Analytics.astro';
 			}
 
 			.step h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 			}
 
 			.cta {
-				background: #2c5530;
+				background: #111111;
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -525,24 +514,24 @@ import Analytics from '../components/Analytics.astro';
 
 			.btn-primary {
 				display: inline-block;
-				background: #FF6B35;
+				background: #3FAE49;
 				color: white;
 				padding: 1rem 2rem;
 				text-decoration: none;
 				border-radius: 5px;
 				font-weight: bold;
 				transition: all 0.3s;
-				box-shadow: 0 2px 8px rgba(255,107,53,0.3);
+				
 			}
 
 			.btn-primary:hover {
-				background: #E55A2B;
+				background: #2F8C38;
 				transform: translateY(-2px);
-				box-shadow: 0 4px 12px rgba(255,107,53,0.4);
+				
 			}
 
 			footer {
-				background: #1a3a1d;
+				background: #111111;
 				color: white;
 				padding: 3rem 0;
 			}
@@ -554,8 +543,17 @@ import Analytics from '../components/Analytics.astro';
 			}
 
 			.footer-section h3 {
-				margin-bottom: 1rem;
-				color: #4CAF50;
+				margin-bottom: 0.5rem;
+				color: #fff;
+			}
+
+			.footer-tagline {
+				color: #3FAE49;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				margin-bottom: 0.75rem;
+				font-size: 0.85rem;
+				text-transform: uppercase;
 			}
 
 			.footer-section ul {
@@ -573,7 +571,7 @@ import Analytics from '../components/Analytics.astro';
 			}
 
 			.footer-section a:hover {
-				color: #4CAF50;
+				color: #3FAE49;
 			}
 
 			@media (max-width: 768px) {

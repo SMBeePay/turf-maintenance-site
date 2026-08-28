@@ -1,5 +1,5 @@
 ---
-
+import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -8,6 +8,9 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>Baseball Field Turf Maintenance Dallas Texas | Professional Artificial Baseball Turf Cleaning & Care</title>
 		<meta name="description" content="Expert baseball & softball field turf maintenance in Dallas Texas. Specialized pitcher's mound, base path, and infield care. Advanced disinfecting cleaning technology. High school & college baseball." />
 		<meta name="keywords" content="baseball field turf maintenance dallas, artificial baseball turf cleaning texas, softball field maintenance DFW, pitcher mound turf care, baseball turf disinfection" />
@@ -18,21 +21,21 @@
 		<link rel="prefetch" href="/contact">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.page-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.page-hero{background:linear-gradient(135deg,#111111,#2E332F);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.page-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.page-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -44,23 +47,7 @@
 		</style>
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/artificial-turf-sports-field-maintenance">Field Maintenance</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
-					<li><a href="/locations">Locations</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="baseball" />
 
 		<main>
 			<section class="page-hero">
@@ -426,7 +413,7 @@
 							<div class="emergency-box">
 								<h3>Baseball Field Emergency Hotline</h3>
 								<div class="phone-number">
-									<a href="tel:2145558873">(214) 555-TURF</a>
+									<a href="tel:+14699819247">(469) 981-9247</a>
 								</div>
 								<p>Available 24/7 for baseball field emergencies</p>
 								<div class="game-day-note">
@@ -501,7 +488,7 @@
 					<p>Contact Texas Turf Maintenance today for professional baseball and softball field maintenance with our revolutionary disinfecting cleaning technology. Safe, powerful, and effective.</p>
 					<div class="cta-buttons">
 						<a href="/contact" class="btn-primary">Schedule Field Assessment</a>
-						<a href="tel:2145558873" class="btn-secondary">Call (214) 555-TURF</a>
+						<a href="tel:+14699819247" class="btn-secondary">Call (469) 981-9247</a>
 					</div>
 				</div>
 			</section>
@@ -512,6 +499,7 @@
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional baseball and softball field turf maintenance across Texas. Specializing in youth, high school, and college artificial turf care with advanced cleaning technology.</p>
 					</div>
 					<div class="footer-section">
@@ -534,7 +522,7 @@
 					</div>
 					<div class="footer-section">
 						<h3>Emergency Service</h3>
-						<p>Game Day Hotline: (214) 555-TURF</p>
+						<p>Game Day Hotline: (469) 981-9247</p>
 						<p>24/7 Baseball Field Emergency Response</p>
 						<p>Texas Statewide Coverage</p>
 					</div>
@@ -546,81 +534,81 @@
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.baseball-intro,.advanced-cleaning,.baseball-services,.baseball-problems,.baseball-specialties,.season-maintenance,.emergency-baseball,.baseball-faqs{padding:4rem 0}
 			.section-intro{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
-			.baseball-intro h2,.advanced-cleaning h2,.baseball-services h2,.baseball-problems h2,.baseball-specialties h2,.season-maintenance h2,.emergency-baseball h2,.baseball-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
+			.baseball-intro h2,.advanced-cleaning h2,.baseball-services h2,.baseball-problems h2,.baseball-specialties h2,.season-maintenance h2,.emergency-baseball h2,.baseball-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.field-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
-			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.stat-number{font-size:3rem;font-weight:bold;color:#2c5530;margin-bottom:0.5rem}
+			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;}
+			.stat-number{font-size:3rem;font-weight:bold;color:#123E2A;margin-bottom:0.5rem}
 			.stat-label{color:#666;font-size:1.1rem}
-			.cleaning-highlight{background:#fff;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);padding:3rem;margin-top:2rem}
-			.cleaning-content h3{color:#2c5530;margin-bottom:1rem;font-size:1.8rem;text-align:center}
+			.cleaning-highlight{background:#fff;border-radius:4px;padding:3rem;margin-top:2rem}
+			.cleaning-content h3{color:#123E2A;margin-bottom:1rem;font-size:1.8rem;text-align:center}
 			.cleaning-content p{text-align:center;font-size:1.1rem;color:#666;margin-bottom:2rem}
 			.cleaning-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
 			.benefit-item{text-align:center;padding:1.5rem}
 			.benefit-icon{font-size:2.5rem;margin-bottom:1rem}
-			.benefit-item h4{color:#2c5530;margin-bottom:1rem}
+			.benefit-item h4{color:#123E2A;margin-bottom:1rem}
 			.benefit-item p{color:#666;font-size:.9rem}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.service-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);transition:transform .3s ease}
+			.service-item{background:#fff;padding:2rem;border-radius:4px;transition:transform .3s ease}
 			.service-item:hover{transform:translateY(-5px)}
 			.service-icon{font-size:3rem;margin-bottom:1rem}
-			.service-item h3{color:#2c5530;margin-bottom:1rem}
+			.service-item h3{color:#123E2A;margin-bottom:1rem}
 			.service-item ul{list-style:none;margin-top:1rem}
 			.service-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#4CAF50;font-weight:bold}
+			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.problems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.problem-item{background:#f8f9fa;padding:2rem;border-radius:10px;border-left:4px solid #2c5530}
-			.problem-item h3{color:#2c5530;margin-bottom:1rem}
+			.problem-item{background:#f8f9fa;padding:2rem;border-radius:4px;border-left:4px solid #123E2A}
+			.problem-item h3{color:#123E2A;margin-bottom:1rem}
 			.problem-item p{margin-bottom:1rem}
-			.problem-item strong{color:#2c5530}
+			.problem-item strong{color:#123E2A}
 			.level-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.level-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.level-item h3{color:#2c5530;margin-bottom:1rem;border-bottom:2px solid #4CAF50;padding-bottom:0.5rem}
+			.level-item{background:#fff;padding:2rem;border-radius:4px;}
+			.level-item h3{color:#123E2A;margin-bottom:1rem;border-bottom:2px solid #3FAE49;padding-bottom:0.5rem}
 			.level-features p{margin-bottom:1rem;color:#666}
 			.level-features ul{list-style:none}
 			.level-features ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.level-features ul li::before{content:"⚾";position:absolute;left:0}
 			.schedule-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
-			.schedule-phase{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.schedule-phase h3{color:#2c5530;margin-bottom:1rem}
-			.phase-timing{background:#4CAF50;color:#fff;padding:.5rem 1rem;border-radius:20px;display:inline-block;margin-bottom:1rem;font-weight:bold}
+			.schedule-phase{background:#fff;padding:2rem;border-radius:4px;}
+			.schedule-phase h3{color:#123E2A;margin-bottom:1rem}
+			.phase-timing{background:#3FAE49;color:#fff;padding:.5rem 1rem;border-radius:20px;display:inline-block;margin-bottom:1rem;font-weight:bold}
 			.schedule-phase ul{list-style:none}
 			.schedule-phase ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.schedule-phase ul li::before{content:"📅";position:absolute;left:0}
 			.emergency-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem}
-			.emergency-types h4,.response-guarantees h4{color:#2c5530;margin:2rem 0 1rem}
+			.emergency-types h4,.response-guarantees h4{color:#123E2A;margin:2rem 0 1rem}
 			.emergency-types ul{list-style:none}
 			.emergency-types ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.emergency-types ul li::before{content:"⚠️";position:absolute;left:0}
 			.response-grid{display:grid;gap:1rem;margin-top:1rem}
 			.response-item{display:flex;justify-content:space-between;padding:1rem;background:#f8f9fa;border-radius:5px}
-			.emergency-box{background:#2c5530;color:#fff;padding:2rem;border-radius:10px;text-align:center}
+			.emergency-box{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.phone-number{font-size:2rem;font-weight:bold;margin:1rem 0}
 			.phone-number a{color:#fff;text-decoration:none}
 			.game-day-note{margin-top:1rem;font-size:.9rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:5px}
 			.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.faq-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-			.faq-item h3{color:#2c5530;margin-bottom:1rem}
+			.faq-item{background:#fff;padding:2rem;border-radius:4px;}
+			.faq-item h3{color:#123E2A;margin-bottom:1rem}
 			.advanced-cleaning{background:#f8f9fa}
 			.baseball-problems{background:#f8f9fa}
 			.baseball-specialties{background:#f8f9fa}
 			.season-maintenance{background:#f8f9fa}
 			.baseball-faqs{background:#f8f9fa}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.cta{background:#111111;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#fff;color:#2c5530}
+			.btn-primary{background:#fff;color:#123E2A}
 			.btn-primary:hover{background:#f0f0f0;transform:translateY(-2px)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
+			footer{background:#111111;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#fff}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.emergency-content{grid-template-columns:1fr}
 				.field-stats{grid-template-columns:repeat(2,1fr)}

@@ -1,5 +1,5 @@
 ---
-
+import Nav from '../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -8,35 +8,22 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Texas Artificial Turf Maintenance Service Areas | Dallas, Houston, Austin, San Antonio + Statewide Coverage</title>
-		<meta name="description" content="Artificial turf maintenance services throughout Texas. Serving Dallas, Houston, Austin, San Antonio, Fort Worth, El Paso, Corpus Christi + statewide coverage. 24/7 emergency response." />
-		<meta name="keywords" content="artificial turf maintenance texas, synthetic turf cleaning houston, turf repair austin, sports field maintenance san antonio, artificial grass cleaning statewide texas" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<title>Artificial Turf Maintenance Service Areas | Texas + Oklahoma, Arkansas &amp; Louisiana | Texas Turf Maintenance</title>
+		<meta name="description" content="Artificial turf maintenance throughout Texas, plus our new regional expansion into Oklahoma City, Tulsa, Shreveport, Little Rock, and Fort Smith. Serving Dallas, Houston, Austin, San Antonio and beyond." />
+		<meta name="keywords" content="artificial turf maintenance texas, synthetic turf cleaning houston, turf repair austin, sports field maintenance san antonio, artificial grass cleaning statewide texas, artificial turf maintenance oklahoma, artificial turf maintenance arkansas, artificial turf maintenance louisiana" />
 		<link rel="canonical" href="https://texasturfmaintenance.com/locations" />
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/baseball-field-turf-maintenance">Baseball Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
-					<li><a href="/locations" class="active">Locations</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="locations" />
 
 		<main>
 			<section class="page-hero">
 				<div class="container">
-					<h1>Texas Service Areas</h1>
-					<p>Professional artificial turf maintenance throughout Texas - serving all major markets statewide</p>
+					<h1>Service Areas</h1>
+					<p>Professional artificial turf maintenance throughout Texas, now expanding into Oklahoma, Arkansas and Louisiana</p>
 				</div>
 			</section>
 
@@ -243,6 +230,42 @@
 				</div>
 			</section>
 
+			<section class="regional-expansion">
+				<div class="container">
+					<div class="areas-intro">
+						<h2>Now Expanding Beyond Texas</h2>
+						<p>Based in Dallas, we regularly service artificial turf fields within about a 6-hour drive — which puts a growing list of Oklahoma, Arkansas, and Louisiana cities within reach. These are scheduled service runs from our Dallas base, not local branches, so we plan visits in advance to keep travel efficient.</p>
+					</div>
+					<div class="locations-grid">
+						<div class="location-card">
+							<h3>Oklahoma City, OK</h3>
+							<p>~3.5 hours from Dallas. Serving OKC, Norman, Edmond, Moore and Yukon.</p>
+							<a href="/locations/oklahoma-city-artificial-turf-maintenance" class="card-link">View Oklahoma City coverage →</a>
+						</div>
+						<div class="location-card">
+							<h3>Tulsa, OK</h3>
+							<p>~4 hours from Dallas. Serving Tulsa, Broken Arrow, Owasso, Jenks and Bixby.</p>
+							<a href="/locations/tulsa-artificial-turf-maintenance" class="card-link">View Tulsa coverage →</a>
+						</div>
+						<div class="location-card">
+							<h3>Shreveport-Bossier, LA</h3>
+							<p>~3 hours from Dallas. Serving Shreveport, Bossier City, Haughton and Benton.</p>
+							<a href="/locations/shreveport-artificial-turf-maintenance" class="card-link">View Shreveport coverage →</a>
+						</div>
+						<div class="location-card">
+							<h3>Fort Smith, AR</h3>
+							<p>~3.5 hours from Dallas. Serving Fort Smith, Van Buren and Greenwood.</p>
+							<a href="/locations/fort-smith-artificial-turf-maintenance" class="card-link">View Fort Smith coverage →</a>
+						</div>
+						<div class="location-card">
+							<h3>Little Rock, AR</h3>
+							<p>~5.5 hours from Dallas. Serving Little Rock, North Little Rock, Conway, Benton and Bryant.</p>
+							<a href="/locations/little-rock-artificial-turf-maintenance" class="card-link">View Little Rock coverage →</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section class="facility-types">
 				<div class="container">
 					<h2>Facilities We Service</h2>
@@ -312,6 +335,7 @@
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional artificial turf maintenance services across Texas - serving all major markets statewide.</p>
 					</div>
 					<div class="footer-section">
@@ -334,8 +358,8 @@
 					</div>
 					<div class="footer-section">
 						<h3>Contact</h3>
-						<p>Phone: (844) 588-TURF</p>
-						<p>Email: info@texasturfmaintenance.com</p>
+						<p>Phone: (469) 981-9247</p>
+						<p>Email: andrew@texasturfmaintenance.com</p>
 					</div>
 				</div>
 			</div>
@@ -349,9 +373,9 @@
 			}
 
 			body {
-				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 				line-height: 1.6;
-				color: #333;
+				color: #111111;
 			}
 
 			.container {
@@ -361,7 +385,7 @@
 			}
 
 			nav {
-				background: #2c5530;
+				background: #123E2A;
 				padding: 1rem 0;
 				position: sticky;
 				top: 0;
@@ -397,11 +421,11 @@
 			}
 
 			.nav-links a:hover, .nav-links a.active {
-				color: #4CAF50;
+				color: #3FAE49;
 			}
 
 			.page-hero {
-				background: linear-gradient(135deg, #4CAF50, #2c5530);
+				background: linear-gradient(135deg, #111111, #2E332F);
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -427,7 +451,7 @@
 			}
 
 			.areas-intro h2 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 				font-size: 2.5rem;
 			}
@@ -449,8 +473,8 @@
 			.location-card {
 				background: white;
 				padding: 2rem;
-				border-radius: 10px;
-				box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+				border-radius: 4px;
+				
 				transition: transform 0.3s;
 			}
 
@@ -459,12 +483,12 @@
 			}
 
 			.location-card.featured {
-				border-top: 4px solid #4CAF50;
+				border-top: 4px solid #3FAE49;
 				background: linear-gradient(145deg, #fff, #f8f9fa);
 			}
 
 			.location-card h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 				font-size: 1.5rem;
 			}
@@ -488,19 +512,19 @@
 				content: "•";
 				position: absolute;
 				left: 0;
-				color: #4CAF50;
+				color: #3FAE49;
 				font-weight: bold;
 			}
 
 			.additional-areas {
 				background: #f8f9fa;
 				padding: 3rem;
-				border-radius: 10px;
+				border-radius: 4px;
 				margin-bottom: 4rem;
 			}
 
 			.additional-areas h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 2rem;
 				text-align: center;
 			}
@@ -525,17 +549,38 @@
 				content: "✓";
 				position: absolute;
 				left: 0;
-				color: #4CAF50;
+				color: #3FAE49;
 				font-weight: bold;
 			}
 
 			.city-column h4 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 				font-size: 1.2rem;
 				text-align: center;
-				border-bottom: 2px solid #4CAF50;
+				border-bottom: 2px solid #3FAE49;
 				padding-bottom: 0.5rem;
+			}
+
+			.regional-expansion {
+				background: #E5E7E9;
+				padding: 6rem 0;
+			}
+
+			.regional-expansion .location-card {
+				border-top: 4px solid #3FAE49;
+			}
+
+			.card-link {
+				display: inline-block;
+				color: #3FAE49;
+				text-decoration: none;
+				font-weight: 600;
+				margin-top: 0.5rem;
+			}
+
+			.card-link:hover {
+				color: #2F8C38;
 			}
 
 			.facility-types {
@@ -547,7 +592,7 @@
 				text-align: center;
 				margin-bottom: 3rem;
 				font-size: 2.5rem;
-				color: #2c5530;
+				color: #123E2A;
 			}
 
 			.facility-grid {
@@ -559,12 +604,12 @@
 			.facility-type {
 				background: white;
 				padding: 2rem;
-				border-radius: 10px;
-				box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+				border-radius: 4px;
+				
 			}
 
 			.facility-type h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 			}
 
@@ -576,7 +621,7 @@
 				text-align: center;
 				margin-bottom: 3rem;
 				font-size: 2.5rem;
-				color: #2c5530;
+				color: #123E2A;
 			}
 
 			.radius-info p {
@@ -599,17 +644,17 @@
 				text-align: center;
 				padding: 2rem;
 				background: white;
-				border-radius: 10px;
-				box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+				border-radius: 4px;
+				
 			}
 
 			.coverage-item h3 {
-				color: #2c5530;
+				color: #123E2A;
 				margin-bottom: 1rem;
 			}
 
 			.cta {
-				background: #2c5530;
+				background: #111111;
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -628,7 +673,7 @@
 			.btn-primary {
 				display: inline-block;
 				background: white;
-				color: #2c5530;
+				color: #123E2A;
 				padding: 1rem 2rem;
 				text-decoration: none;
 				border-radius: 5px;
@@ -642,7 +687,7 @@
 			}
 
 			footer {
-				background: #1a3a1d;
+				background: #111111;
 				color: white;
 				padding: 3rem 0;
 			}
@@ -654,8 +699,17 @@
 			}
 
 			.footer-section h3 {
-				margin-bottom: 1rem;
-				color: #4CAF50;
+				margin-bottom: 0.5rem;
+				color: #fff;
+			}
+
+			.footer-tagline {
+				color: #3FAE49;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				margin-bottom: 0.75rem;
+				font-size: 0.85rem;
+				text-transform: uppercase;
 			}
 
 			.footer-section ul {
@@ -673,7 +727,7 @@
 			}
 
 			.footer-section a:hover {
-				color: #4CAF50;
+				color: #3FAE49;
 			}
 
 			@media (max-width: 768px) {

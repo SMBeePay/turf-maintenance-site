@@ -6,7 +6,7 @@
     
     <!-- Homepage - Highest Priority -->
     <url>
-        <loc>https://www.texasturfmaintenance.com/</loc>
+        <loc>https://texasturfmaintenance.com/</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,21 +14,21 @@
     
     <!-- Main Pages -->
     <url>
-        <loc>https://www.texasturfmaintenance.com/about</loc>
+        <loc>https://texasturfmaintenance.com/about</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/contact</loc>
+        <loc>https://texasturfmaintenance.com/contact</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations</loc>
+        <loc>https://texasturfmaintenance.com/locations</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -36,49 +36,49 @@
     
     <!-- Service Pages - High Priority -->
     <url>
-        <loc>https://www.texasturfmaintenance.com/services</loc>
+        <loc>https://texasturfmaintenance.com/services</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/artificial-turf-sports-field-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/artificial-turf-sports-field-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/football-field-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/football-field-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/soccer-field-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/soccer-field-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/baseball-field-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/baseball-field-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/indoor-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/indoor-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/gmax-testing-dallas</loc>
+        <loc>https://texasturfmaintenance.com/gmax-testing-dallas</loc>
         <lastmod>2025-08-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -86,7 +86,7 @@
     
     <!-- Target Market Pages -->
     <url>
-        <loc>https://www.texasturfmaintenance.com/school-districts</loc>
+        <loc>https://texasturfmaintenance.com/school-districts</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -94,42 +94,42 @@
     
     <!-- Blog Pages -->
     <url>
-        <loc>https://www.texasturfmaintenance.com/blog</loc>
+        <loc>https://texasturfmaintenance.com/blog</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/blog/hidden-costs-unsafe-turf</loc>
+        <loc>https://texasturfmaintenance.com/blog/hidden-costs-unsafe-turf</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/blog/5-signs-your-artificial-turf-needs-professional-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/blog/5-signs-your-artificial-turf-needs-professional-maintenance</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/blog/gmax-testing-what-athletic-directors-need-to-know</loc>
+        <loc>https://texasturfmaintenance.com/blog/gmax-testing-what-athletic-directors-need-to-know</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/blog/how-proper-maintenance-extends-field-life-by-40-percent</loc>
+        <loc>https://texasturfmaintenance.com/blog/how-proper-maintenance-extends-field-life-by-40-percent</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/blog/case-study-westlake-academy-field-transformation</loc>
+        <loc>https://texasturfmaintenance.com/blog/case-study-westlake-academy-field-transformation</loc>
         <lastmod>2025-08-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -137,84 +137,84 @@
     
     <!-- Location Pages - High Priority for Local SEO -->
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/dallas-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/dallas-artificial-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/houston-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/houston-artificial-turf-maintenance</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/austin-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/austin-artificial-turf-maintenance</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/san-antonio-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/san-antonio-artificial-turf-maintenance</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/corpus-christi-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/corpus-christi-artificial-turf-maintenance</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/el-paso-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/el-paso-artificial-turf-maintenance</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/fort-worth-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/fort-worth-artificial-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/plano-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/plano-artificial-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/frisco-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/frisco-artificial-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/irving-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/irving-artificial-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/arlington-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/arlington-artificial-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://www.texasturfmaintenance.com/locations/mckinney-artificial-turf-maintenance</loc>
+        <loc>https://texasturfmaintenance.com/locations/mckinney-artificial-turf-maintenance</loc>
         <lastmod>2025-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -222,7 +222,7 @@
     
     <!-- GMAX Testing Services -->
     <url>
-        <loc>https://www.texasturfmaintenance.com/what-does-gmax-score-mean</loc>
+        <loc>https://texasturfmaintenance.com/what-does-gmax-score-mean</loc>
         <lastmod>2025-08-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -230,10 +230,54 @@
 
     <!-- Residential Services -->
     <url>
-        <loc>https://www.texasturfmaintenance.com/residential-artificial-turf-cleaning</loc>
+        <loc>https://texasturfmaintenance.com/residential-artificial-turf-cleaning</loc>
         <lastmod>2025-08-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
+
+    <!-- Commercial Services -->
+    <url>
+        <loc>https://texasturfmaintenance.com/commercial-artificial-turf-cleaning</loc>
+        <lastmod>2026-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Regional Expansion: Oklahoma, Arkansas, Louisiana -->
+    <url>
+        <loc>https://texasturfmaintenance.com/locations/oklahoma-city-artificial-turf-maintenance</loc>
+        <lastmod>2026-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://texasturfmaintenance.com/locations/tulsa-artificial-turf-maintenance</loc>
+        <lastmod>2026-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://texasturfmaintenance.com/locations/shreveport-artificial-turf-maintenance</loc>
+        <lastmod>2026-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://texasturfmaintenance.com/locations/little-rock-artificial-turf-maintenance</loc>
+        <lastmod>2026-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://texasturfmaintenance.com/locations/fort-smith-artificial-turf-maintenance</loc>
+        <lastmod>2026-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>

@@ -18,6 +18,7 @@ Allow: /soccer-field-turf-maintenance
 Allow: /baseball-field-turf-maintenance
 Allow: /indoor-turf-maintenance
 Allow: /gmax-testing-dallas
+Allow: /commercial-artificial-turf-cleaning
 
 # Location pages
 Allow: /locations/dallas-artificial-turf-maintenance
@@ -27,6 +28,13 @@ Allow: /locations/frisco-artificial-turf-maintenance
 Allow: /locations/irving-artificial-turf-maintenance
 Allow: /locations/arlington-artificial-turf-maintenance
 Allow: /locations/mckinney-artificial-turf-maintenance
+
+# Regional expansion location pages
+Allow: /locations/oklahoma-city-artificial-turf-maintenance
+Allow: /locations/tulsa-artificial-turf-maintenance
+Allow: /locations/shreveport-artificial-turf-maintenance
+Allow: /locations/little-rock-artificial-turf-maintenance
+Allow: /locations/fort-smith-artificial-turf-maintenance
 
 # Static assets
 Allow: /favicon.svg

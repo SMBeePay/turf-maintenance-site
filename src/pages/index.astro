@@ -1,5 +1,7 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import Nav from '../components/Nav.astro';
+import Icon from '../components/Icon.astro';
 ---
 
 <html lang="en">
@@ -8,6 +10,9 @@ import Analytics from '../components/Analytics.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>Texas Turf Maintenance - #1 Artificial Turf Maintenance Across Texas | Statewide Sports Field Experts</title>
 		<meta name="description" content="Professional artificial turf maintenance across Texas. Expert cleaning, infill replacement, seam repair for football, soccer & baseball fields in Dallas, Houston, Austin, San Antonio. 24/7 emergency service. Get free quote!" />
@@ -16,12 +21,7 @@ import Analytics from '../components/Analytics.astro';
 		
 		<!-- Preload critical resources -->
 		<link rel="preload" href="/_astro/critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="dns-prefetch" href="//fonts.googleapis.com">
-		
-		<!-- Optimized font loading -->
-		<link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
-		
+
 		<!-- Resource hints for performance -->
 		<link rel="prefetch" href="/services">
 		<link rel="prefetch" href="/contact">
@@ -30,29 +30,30 @@ import Analytics from '../components/Analytics.astro';
 		<style>
 			/* Critical CSS - Reset and base styles */
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
 			
 			/* Critical - Navigation */
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
 			
 			/* Critical - Hero section (LCP element) */
-			.hero{background:linear-gradient(rgba(44,85,48,0.8),rgba(26,58,29,0.9)),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;background-attachment:fixed;color:#fff;padding:8rem 0;text-align:center;contain:layout style paint}
-			.hero-content{max-width:800px;margin:0 auto;padding:0 20px}
-			.hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
-			.hero-subtitle{font-size:clamp(1rem,3vw,1.2rem);margin-bottom:2rem;opacity:.9}
+			.hero{background:linear-gradient(rgba(10,10,10,0.6),rgba(10,10,10,0.93)),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;background-attachment:fixed;color:#fff;padding:9rem 0 7rem;text-align:center;contain:layout style paint;border-bottom:4px solid #3FAE49}
+			.hero-content{max-width:820px;margin:0 auto;padding:0 20px}
+			.hero-eyebrow{font-size:0.8rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3FAE49;margin-bottom:1.25rem}
+			.hero h1{font-size:clamp(2.3rem,5.5vw,3.6rem);margin-bottom:1.25rem;font-weight:800;line-height:1.08;letter-spacing:-0.02em}
+			.hero-subtitle{font-size:clamp(1rem,3vw,1.2rem);margin-bottom:2rem;opacity:.92}
 			.hero-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
-			
+
 			/* Critical - Button styles */
-			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#FF6B35;color:#fff;box-shadow:0 2px 8px rgba(255,107,53,0.3)}
-			.btn-primary:hover{background:#E55A2B;transform:translateY(-2px);box-shadow:0 4px 12px rgba(255,107,53,0.4)}
+			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2.25rem;text-decoration:none;border-radius:4px;font-weight:700;transition:all .2s ease;text-align:center;min-width:140px;text-transform:uppercase;font-size:0.9rem;letter-spacing:0.04em}
+			.btn-primary{background:#3FAE49;color:#fff}
+			.btn-primary:hover{background:#2F8C38}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#2c5530}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
 			
 			/* Critical - Container */
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -76,12 +77,12 @@ import Analytics from '../components/Analytics.astro';
 				"@id": "https://texasturfmaintenance.com/#organization",
 				"name": "Texas Turf Maintenance",
 				"alternateName": "Texas Artificial Turf Professionals",
-				"description": "Professional artificial turf maintenance services for sports fields across Texas - Dallas, Houston, Austin, San Antonio and statewide",
+				"description": "Professional artificial turf maintenance services for sports fields across Texas, serving Dallas-Fort Worth, Houston, Austin, San Antonio and communities statewide",
 				"url": "https://texasturfmaintenance.com",
 				"logo": "https://texasturfmaintenance.com/logo.png",
-				"image": "https://texasturfmaintenance.com/hero-image.jpg",
-				"telephone": "+18445887873",
-				"email": "info@texasturfmaintenance.com",
+				"image": "https://texasturfmaintenance.com/images/sports-complex-aerial-view-optimized.jpg",
+				"telephone": "+14699819247",
+				"email": "andrew@texasturfmaintenance.com",
 				"priceRange": "$0.50-$2.00",
 				"currenciesAccepted": "USD",
 				"paymentAccepted": "Cash, Credit Card, Check, ACH Transfer",
@@ -157,6 +158,31 @@ import Analytics from '../components/Analytics.astro';
 						"@type": "City",
 						"name": "Lubbock",
 						"addressRegion": "TX"
+					},
+					{
+						"@type": "City",
+						"name": "Oklahoma City",
+						"addressRegion": "OK"
+					},
+					{
+						"@type": "City",
+						"name": "Tulsa",
+						"addressRegion": "OK"
+					},
+					{
+						"@type": "City",
+						"name": "Shreveport",
+						"addressRegion": "LA"
+					},
+					{
+						"@type": "City",
+						"name": "Little Rock",
+						"addressRegion": "AR"
+					},
+					{
+						"@type": "City",
+						"name": "Fort Smith",
+						"addressRegion": "AR"
 					}
 				],
 				"serviceArea": {
@@ -340,7 +366,7 @@ import Analytics from '../components/Analytics.astro';
 				"availableChannel": {
 					"@type": "ServiceChannel",
 					"availableLanguage": "English",
-					"servicePhone": "+18445887873"
+					"servicePhone": "+14699819247"
 				},
 				"hoursAvailable": {
 					"@type": "OpeningHoursSpecification",
@@ -362,29 +388,14 @@ import Analytics from '../components/Analytics.astro';
 		</script>
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/baseball-field-turf-maintenance">Baseball Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
-					<li><a href="/locations">Locations</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="home" />
 
 		<main>
 			<section class="hero">
 				<div class="hero-content">
+					<p class="hero-eyebrow">Texas &middot; Sports Fields &middot; Commercial Properties</p>
 					<h1>Professional Artificial Turf Maintenance</h1>
-					<p class="hero-subtitle">Expert cleaning, repair, and restoration services for artificial turf sport fields across Texas - Dallas, Houston, Austin, San Antonio and statewide</p>
+					<p class="hero-subtitle">Expert cleaning, repair, and restoration for artificial turf sports fields — proudly serving Dallas-Fort Worth, Houston, Austin, San Antonio and communities across Texas</p>
 					<div class="hero-buttons">
 						<a href="/contact" class="btn-primary">Get Free Quote</a>
 						<a href="/football-field-turf-maintenance" class="btn-secondary">Football Field Maintenance</a>
@@ -392,84 +403,125 @@ import Analytics from '../components/Analytics.astro';
 				</div>
 			</section>
 
-			<!-- Core Services Section - Clear and Professional -->
+			<section class="trust-bar">
+				<div class="container">
+					<div class="trust-grid">
+						<div class="trust-item">
+							<Icon name="shield-check" />
+							<span>Safe &amp; Eco-Friendly</span>
+						</div>
+						<div class="trust-item">
+							<Icon name="sparkles" />
+							<span>Deep Cleaning</span>
+						</div>
+						<div class="trust-item">
+							<Icon name="clipboard-check" />
+							<span>Pro Results</span>
+						</div>
+						<div class="trust-item">
+							<Icon name="clock" />
+							<span>Reliable &amp; Efficient</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Core Services Section -->
 			<section class="core-services">
 				<div class="container">
 					<div class="services-header">
+						<p class="eyebrow">What We Do</p>
 						<h2>Professional Artificial Turf Maintenance Services</h2>
 						<p class="services-subtitle">Expert maintenance for sports fields, commercial properties, and recreational facilities across Texas</p>
 					</div>
-					
+
 					<div class="services-grid">
-						<!-- Service 1: Grooming -->
-						<div class="service-item">
-							<div class="service-icon">▦</div>
-							<h3>Turf Grooming & Brushing</h3>
-							<p>Professional grooming to maintain proper fiber height and playing surface performance. Recommended every 150-200 hours of use for optimal field conditions.</p>
-							<a href="/services" class="service-link">Learn More →</a>
+						<div class="service-row">
+							<span class="service-num">01</span>
+							<div class="service-icon"><Icon name="stripes" size={26} /></div>
+							<div class="service-copy">
+								<h3>Turf Grooming &amp; Brushing</h3>
+								<p>Professional grooming to maintain proper fiber height and playing surface performance. Recommended every 150-200 hours of use for optimal field conditions.</p>
+								<a href="/services" class="service-link">Learn More →</a>
+							</div>
 						</div>
-						
-						<!-- Service 2: Deep Cleaning -->
-						<div class="service-item">
-							<div class="service-icon">◉</div>
-							<h3>Deep Cleaning & Sanitization</h3>
-							<p>Industrial-grade cleaning to remove dirt, debris, organic matter, and bacteria. Specialized equipment and eco-friendly solutions for safe, thorough results.</p>
-							<a href="/services" class="service-link">Learn More →</a>
+
+						<div class="service-row">
+							<span class="service-num">02</span>
+							<div class="service-icon"><Icon name="spray" size={26} /></div>
+							<div class="service-copy">
+								<h3>Deep Cleaning &amp; Sanitization</h3>
+								<p>Industrial-grade cleaning to remove dirt, debris, organic matter, and bacteria. Specialized equipment and eco-friendly solutions for safe, thorough results.</p>
+								<a href="/services" class="service-link">Learn More →</a>
+							</div>
 						</div>
-						
-						<!-- Service 3: Infill Services -->
-						<div class="service-item">
-							<div class="service-icon">◎</div>
-							<h3>Infill Replacement & Leveling</h3>
-							<p>Complete infill refresh, cleaning, and precision leveling. Restores proper drainage, shock absorption, and playing surface characteristics.</p>
-							<a href="/services" class="service-link">Learn More →</a>
+
+						<div class="service-row">
+							<span class="service-num">03</span>
+							<div class="service-icon"><Icon name="layers" size={26} /></div>
+							<div class="service-copy">
+								<h3>Infill Replacement &amp; Leveling</h3>
+								<p>Complete infill refresh, cleaning, and precision leveling. Restores proper drainage, shock absorption, and playing surface characteristics.</p>
+								<a href="/services" class="service-link">Learn More →</a>
+							</div>
 						</div>
-						
-						<!-- Service 4: GMAX Testing -->
-						<div class="service-item">
-							<div class="service-icon">▤</div>
-							<h3>GMAX Safety Testing</h3>
-							<p>Professional GMAX impact testing for sports field safety compliance. Required for many athletic programs and insurance requirements.</p>
-							<a href="/gmax-testing-dallas" class="service-link">Learn More →</a>
+
+						<div class="service-row">
+							<span class="service-num">04</span>
+							<div class="service-icon"><Icon name="gauge" size={26} /></div>
+							<div class="service-copy">
+								<h3>GMAX Safety Testing</h3>
+								<p>Professional GMAX impact testing for sports field safety compliance. Required for many athletic programs and insurance requirements.</p>
+								<a href="/gmax-testing-dallas" class="service-link">Learn More →</a>
+							</div>
 						</div>
-						
-						<!-- Service 5: Seam Repair -->
-						<div class="service-item">
-							<div class="service-icon">◈</div>
-							<h3>Seam Repair & Restoration</h3>
-							<p>Expert repair of damaged seams, tears, and worn areas. Professional-grade materials and techniques ensure long-lasting, safe playing surfaces.</p>
-							<a href="/services" class="service-link">Learn More →</a>
+
+						<div class="service-row">
+							<span class="service-num">05</span>
+							<div class="service-icon"><Icon name="scissors" size={26} /></div>
+							<div class="service-copy">
+								<h3>Seam Repair &amp; Restoration</h3>
+								<p>Expert repair of damaged seams, tears, and worn areas. Professional-grade materials and techniques ensure long-lasting, safe playing surfaces.</p>
+								<a href="/services" class="service-link">Learn More →</a>
+							</div>
 						</div>
-						
-						<!-- Service 6: Line Striping -->
-						<div class="service-item">
-							<div class="service-icon">▦</div>
-							<h3>Line Striping & Marking</h3>
-							<p>Precision line striping for football, soccer, baseball, and multi-sport fields. Professional equipment for crisp, durable field markings.</p>
-							<a href="/services" class="service-link">Learn More →</a>
+
+						<div class="service-row">
+							<span class="service-num">06</span>
+							<div class="service-icon"><Icon name="stripes" size={26} /></div>
+							<div class="service-copy">
+								<h3>Line Striping &amp; Marking</h3>
+								<p>Precision line striping for football, soccer, baseball, and multi-sport fields. Professional equipment for crisp, durable field markings.</p>
+								<a href="/services" class="service-link">Learn More →</a>
+							</div>
 						</div>
 					</div>
-					
-					<!-- Clear Target Markets -->
-					<div class="target-markets">
-						<h3>We Serve</h3>
-						<div class="markets-grid">
-							<div class="market-item">
-								<strong>▪ Schools & Universities</strong>
-								<p>K-12 schools, colleges, and universities across Texas</p>
-							</div>
-							<div class="market-item">
-								<strong>▪ Athletic Facilities</strong>
-								<p>Professional stadiums, training facilities, and sports complexes</p>
-							</div>
-							<div class="market-item">
-								<strong>▪ Commercial Properties</strong>
-								<p>Corporate campuses, hotels, and large-scale commercial installations</p>
-							</div>
-							<div class="market-item">
-								<strong>▪ Community Centers</strong>
-								<p>Parks, recreation centers, and municipal facilities</p>
-							</div>
+				</div>
+			</section>
+
+			<section class="we-serve">
+				<div class="container">
+					<p class="eyebrow">Who We Serve</p>
+					<div class="markets-grid">
+						<div class="market-item">
+							<Icon name="school" size={30} />
+							<strong>Schools &amp; Universities</strong>
+							<p>K-12 schools, colleges, and universities across Texas</p>
+						</div>
+						<div class="market-item">
+							<Icon name="trophy" size={30} />
+							<strong>Athletic Facilities</strong>
+							<p>Professional stadiums, training facilities, and sports complexes</p>
+						</div>
+						<div class="market-item">
+							<Icon name="briefcase" size={30} />
+							<strong>Commercial Properties</strong>
+							<p>Corporate campuses, hotels, restaurants — <a href="/commercial-artificial-turf-cleaning">see commercial services</a></p>
+						</div>
+						<div class="market-item">
+							<Icon name="map-pin" size={30} />
+							<strong>Community Centers</strong>
+							<p>Parks, recreation centers, and municipal facilities</p>
 						</div>
 					</div>
 				</div>
@@ -477,50 +529,45 @@ import Analytics from '../components/Analytics.astro';
 
 			<section class="why-choose">
 				<div class="container">
-					<h2>Why Choose Texas Turf Maintenance?</h2>
-					<div class="benefits-grid">
-						<div class="benefit">
-							<h3>Commercial Turf Experience</h3>
-							<p>Proven expertise cleaning and maintaining artificial turf for restaurants, dog daycares, and commercial properties</p>
+					<div class="why-choose-grid">
+						<div class="why-choose-intro">
+							<p class="eyebrow eyebrow-light">Why Texas Turf Maintenance</p>
+							<h2>Built on Sports-Field Standards, Applied Everywhere Else</h2>
+							<p>Athletic fields don't tolerate shortcuts — GMAX compliance and player safety leave no room for it. We hold every property we touch, commercial or competitive, to that same standard.</p>
 						</div>
-						<div class="benefit">
-							<h3>Texas Climate Expertise</h3>
-							<p>Deep understanding of Texas climate and diverse regional turf conditions</p>
-						</div>
-						<div class="benefit">
-							<h3>Professional Equipment</h3>
-							<p>Industrial-grade cleaning and maintenance equipment for thorough results</p>
-						</div>
-						<div class="benefit">
-							<h3>Quality Service</h3>
-							<p>Commitment to excellence and customer satisfaction on every project</p>
-						</div>
+						<ul class="why-choose-list">
+							<li><Icon name="check-square" size={22} /> Proven expertise across restaurants, dog daycares, and commercial properties</li>
+							<li><Icon name="check-square" size={22} /> Deep understanding of Texas climate and diverse regional turf conditions</li>
+							<li><Icon name="check-square" size={22} /> Industrial-grade cleaning and maintenance equipment for thorough results</li>
+							<li><Icon name="check-square" size={22} /> Commitment to excellence and customer satisfaction on every project</li>
+						</ul>
 					</div>
 				</div>
 			</section>
 
 			<section class="lead-magnets">
 				<div class="container">
-					<h2>Free Resources for Athletic Directors</h2>
+					<p class="eyebrow">Free Resources</p>
+					<h2>For Athletic Directors</h2>
 					<p class="section-intro">Get expert insights and tools to make informed turf maintenance decisions</p>
 					<div class="magnets-grid">
 						<div class="magnet-item">
-							<div class="magnet-icon">▦</div>
+							<div class="magnet-icon"><Icon name="book-open" /></div>
 							<h3>Athletic Director's Guide to Turf Maintenance</h3>
 							<p>Complete 15-page guide covering maintenance schedules, budget planning, and compliance requirements</p>
-							<a href="/contact?resource=athletic-guide" class="btn-secondary">Download Free Guide</a>
+							<a href="/contact?resource=athletic-guide" class="magnet-link">Download Free Guide →</a>
 						</div>
 						<div class="magnet-item">
-							<div class="magnet-icon">▤</div>
+							<div class="magnet-icon"><Icon name="calculator" /></div>
 							<h3>ROI Calculator</h3>
 							<p>Calculate the exact cost savings of professional maintenance vs. full field replacement</p>
-							<a href="/contact?resource=roi-calculator" class="btn-secondary">Get Calculator</a>
+							<a href="/contact?resource=roi-calculator" class="magnet-link">Get Calculator →</a>
 						</div>
 						<div class="magnet-item">
-							<div class="magnet-icon">◈</div>
+							<div class="magnet-icon"><Icon name="check-square" /></div>
 							<h3>GMAX Compliance Checklist</h3>
 							<p>Essential safety testing checklist to ensure your field meets all athletic program requirements</p>
-							<a href="/contact?resource=gmax-checklist" class="btn-secondary">Download Checklist</a>
+							<a href="/contact?resource=gmax-checklist" class="magnet-link">Download Checklist →</a>
 						</div>
 					</div>
 				</div>
@@ -540,6 +587,7 @@ import Analytics from '../components/Analytics.astro';
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional artificial turf maintenance services across Texas - serving Dallas, Houston, Austin, San Antonio and all major Texas markets.</p>
 					</div>
 					<div class="footer-section">
@@ -564,8 +612,8 @@ import Analytics from '../components/Analytics.astro';
 					</div>
 					<div class="footer-section">
 						<h3>Contact</h3>
-						<p>Phone: (844) 588-TURF</p>
-						<p>Email: info@texasturfmaintenance.com</p>
+						<p>Phone: (469) 981-9247</p>
+						<p>Email: andrew@texasturfmaintenance.com</p>
 					</div>
 				</div>
 			</div>
@@ -577,68 +625,87 @@ import Analytics from '../components/Analytics.astro';
 			@media (max-width:768px){
 				.hero{background-attachment:scroll}
 			}
-			/* Core Services Section - Professional Layout */
-			.core-services{padding:6rem 0;background:#F8F9FA}
-			.services-header{text-align:center;margin-bottom:4rem}
-			.services-header h2{font-size:clamp(2rem,4vw,2.5rem);color:#2c5530;margin-bottom:1rem}
-			.services-subtitle{font-size:1.1rem;color:#6B7280;max-width:700px;margin:0 auto}
-			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem;margin-bottom:4rem}
-			.service-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .3s ease,box-shadow .3s ease;border:1px solid #E5E7EB}
-			.service-item:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.12)}
-			.service-icon{font-size:2.5rem;margin-bottom:1rem;display:block;color:#6B7280;font-weight:normal}
-			.service-item h3{color:#374151;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
-			.service-item p{color:#6B7280;line-height:1.6;margin-bottom:1.5rem}
-			.service-link{color:#FF6B35;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:color .3s ease}
-			.service-link:hover{color:#E55A2B}
-			
-			/* Target Markets Section */
-			.target-markets{background:#fff;padding:3rem;border-radius:10px;border:2px solid #E5E7EB;margin-top:3rem;box-shadow:0 4px 15px rgba(0,0,0,.05)}
-			.target-markets h3{text-align:center;color:#2c5530;font-size:1.8rem;margin-bottom:2rem}
-			.markets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
-			.market-item{text-align:center;padding:1rem}
-			.market-item strong{color:#374151;font-size:1.1rem;display:block;margin-bottom:0.5rem}
-			.market-item p{color:#6B7280;font-size:0.95rem}
-			
-			/* Why Choose Section */
-			.why-choose{padding:6rem 0;background:#F8F9FA}
-			.why-choose h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
-			.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
-			.benefit{background:#fff;padding:2rem;border-radius:10px;transition:transform .3s ease;border:1px solid #E5E7EB;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-			.benefit:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
-			.benefit h3{color:#374151;margin-bottom:1rem}
+			/* Shared eyebrow label */
+			.eyebrow{font-size:0.78rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3FAE49;margin-bottom:0.75rem;text-align:center}
+			.eyebrow-light{color:#3FAE49}
+
+			/* Trust bar */
+			.trust-bar{background:#111111;padding:2rem 0;border-bottom:1px solid #2E332F}
+			.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+			.trust-item{display:flex;flex-direction:column;align-items:center;gap:0.6rem;color:#fff;text-align:center}
+			.trust-item svg{color:#3FAE49}
+			.trust-item span{font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em}
+
+			/* Core Services Section */
+			.core-services{padding:6rem 0;background:#fff}
+			.services-header{text-align:center;margin-bottom:3.5rem}
+			.services-header h2{font-size:clamp(2rem,4vw,2.5rem);color:#111111;margin-bottom:1rem;font-weight:800;letter-spacing:-0.01em}
+			.services-subtitle{font-size:1.1rem;color:#6B6F72;max-width:700px;margin:0 auto}
+			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:0;border-top:1px solid #E5E7E9}
+			.service-row{display:grid;grid-template-columns:auto auto 1fr;align-items:start;gap:1.25rem;padding:2rem 0.5rem;border-bottom:1px solid #E5E7E9}
+			.service-num{font-size:0.85rem;font-weight:700;color:#E5E7E9;font-variant-numeric:tabular-nums;padding-top:0.3rem}
+			.service-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1.5px solid #123E2A;border-radius:4px;color:#123E2A;flex-shrink:0}
+			.service-copy h3{color:#111111;margin-bottom:0.5rem;font-size:1.15rem;font-weight:700}
+			.service-copy p{color:#6B6F72;line-height:1.6;margin-bottom:0.75rem}
+			.service-link{color:#3FAE49;text-decoration:none;font-weight:700;font-size:0.92rem}
+			.service-link:hover{color:#2F8C38}
+
+			/* We Serve strip */
+			.we-serve{background:#F8F9FA;padding:4rem 0;border-top:1px solid #E5E7E9;border-bottom:1px solid #E5E7E9}
+			.markets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;margin-top:1rem}
+			.market-item{text-align:center;padding:0 1rem}
+			.market-item svg{color:#3FAE49;margin-bottom:0.75rem}
+			.market-item strong{color:#111111;font-size:1.05rem;display:block;margin-bottom:0.5rem}
+			.market-item p{color:#6B6F72;font-size:0.92rem}
+			.market-item a{color:#3FAE49;font-weight:700;text-decoration:none}
+			.market-item a:hover{color:#2F8C38}
+
+			/* Why Choose Section - dark, editorial two-column */
+			.why-choose{padding:6rem 0;background:#111111;color:#fff}
+			.why-choose-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+			.why-choose-intro .eyebrow{text-align:left}
+			.why-choose-intro h2{font-size:clamp(1.8rem,3.5vw,2.4rem);margin-bottom:1rem;font-weight:800;letter-spacing:-0.01em;text-wrap:balance}
+			.why-choose-intro p{color:#B8BDB6;line-height:1.7}
+			.why-choose-list{list-style:none}
+			.why-choose-list li{display:flex;align-items:flex-start;gap:0.85rem;padding:1rem 0;border-top:1px solid #2E332F;color:#E5E7E9;line-height:1.5}
+			.why-choose-list li:last-child{border-bottom:1px solid #2E332F}
+			.why-choose-list svg{color:#3FAE49;flex-shrink:0;margin-top:0.15rem}
+
 			/* Lead Magnets Section */
-			.lead-magnets{background:#fff;padding:6rem 0;border-top:1px solid #E5E7EB}
-			.lead-magnets h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#2c5530}
-			.lead-magnets .section-intro{text-align:center;font-size:1.1rem;color:#6B7280;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
-			.magnets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
-			.magnet-item{background:#F8F9FA;padding:2.5rem;border-radius:15px;text-align:center;border:2px solid transparent;transition:all .3s ease}
-			.magnet-item:hover{border-color:#FF6B35;box-shadow:0 8px 25px rgba(0,0,0,.1);transform:translateY(-3px)}
-			.magnet-icon{font-size:2.5rem;color:#FF6B35;margin-bottom:1.5rem}
-			.magnet-item h3{color:#374151;margin-bottom:1rem;font-size:1.4rem;font-weight:600}
-			.magnet-item p{color:#6B7280;margin-bottom:2rem;line-height:1.6}
-			.magnet-item .btn-secondary{background:#FF6B35;color:#fff;border:none;font-weight:600;padding:0.875rem 1.5rem}
-			.magnet-item .btn-secondary:hover{background:#E55A2B;transform:translateY(-1px)}
-			.cta{background:#2c5530;color:#fff;padding:6rem 0;text-align:center}
+			.lead-magnets{background:#fff;padding:6rem 0;border-top:1px solid #E5E7E9}
+			.lead-magnets h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#111111;font-weight:800}
+			.lead-magnets .section-intro{text-align:center;font-size:1.1rem;color:#6B6F72;margin-bottom:3.5rem;max-width:700px;margin-left:auto;margin-right:auto}
+			.magnets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+			.magnet-item{padding:2rem;border:1px solid #E5E7E9;border-top:3px solid #3FAE49}
+			.magnet-icon{color:#3FAE49;margin-bottom:1.25rem}
+			.magnet-item h3{color:#111111;margin-bottom:0.75rem;font-size:1.2rem;font-weight:700}
+			.magnet-item p{color:#6B6F72;margin-bottom:1.5rem;line-height:1.6}
+			.magnet-link{color:#3FAE49;font-weight:700;text-decoration:none;font-size:0.95rem}
+			.magnet-link:hover{color:#2F8C38}
+			.cta{background:#111111;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			footer{background:#111111;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#fff}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			
 			/* Mobile Responsive */
 			@media (max-width:768px){
-				.services-grid{grid-template-columns:1fr;gap:1.5rem}
-				.service-item{padding:1.5rem}
-				.service-icon{font-size:2rem}
-				.markets-grid{grid-template-columns:1fr;gap:1rem}
-				.target-markets{padding:2rem 1rem}
+				.trust-grid{grid-template-columns:repeat(2,1fr);gap:1.75rem 1rem}
+				.services-grid{grid-template-columns:1fr;gap:0}
+				.service-row{grid-template-columns:auto 1fr;padding:1.5rem 0}
+				.service-row .service-num{display:none}
+				.markets-grid{grid-template-columns:1fr;gap:2rem}
+				.why-choose-grid{grid-template-columns:1fr;gap:2.5rem}
+				.why-choose-intro .eyebrow,.why-choose-intro h2,.why-choose-intro p{text-align:center}
+				.why-choose-intro{text-align:center}
 				.magnets-grid{grid-template-columns:1fr;gap:1.5rem}
-				.magnet-item{padding:2rem 1.5rem}
 				.lead-magnets{padding:4rem 0}
+				.core-services,.we-serve,.why-choose{padding:4rem 0}
 			}
 		</style>
 
@@ -692,7 +759,6 @@ import Analytics from '../components/Analytics.astro';
 				style.textContent = `
 					.hero h1 { min-height: 72px; }
 					.btn-primary, .btn-secondary { min-height: 54px; min-width: 140px; }
-					.service-card, .benefit { min-height: 200px; }
 				`;
 				document.head.appendChild(style);
 			}
@@ -705,7 +771,6 @@ import Analytics from '../components/Analytics.astro';
 					style.textContent = `
 						@media (max-width: 768px) {
 							* { animation-duration: 0.1s !important; transition-duration: 0.1s !important; }
-							.service-card:hover, .benefit:hover { transform: none !important; }
 						}
 					`;
 					document.head.appendChild(style);

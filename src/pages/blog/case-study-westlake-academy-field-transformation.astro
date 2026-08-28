@@ -1,5 +1,6 @@
 ---
 import Analytics from '../../components/Analytics.astro';
+import Nav from '../../components/Nav.astro';
 ---
 
 <html lang="en">
@@ -8,6 +9,9 @@ import Analytics from '../../components/Analytics.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>Example Case Study: School Field Transformation | Texas Turf Maintenance</title>
 		<meta name="description" content="Example case study showing how professional turf maintenance can transform a failing school field into a championship-quality surface. ROI and safety results included." />
@@ -19,21 +23,21 @@ import Analytics from '../../components/Analytics.astro';
 		<link rel="prefetch" href="/contact">
 		
 		<!-- Mobile viewport optimization -->
-		<meta name="theme-color" content="#2c5530">
+		<meta name="theme-color" content="#123E2A">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;font-display:swap}
-			nav{background:#2c5530;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#4CAF50}
-			.page-hero{background:linear-gradient(135deg,#2c5530,#1a3a1d);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
+			.page-hero{background:linear-gradient(135deg,#111111,#2E332F);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.page-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.page-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -45,24 +49,7 @@ import Analytics from '../../components/Analytics.astro';
 		</style>
 	</head>
 	<body>
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">Texas Turf Maintenance</a>
-				<ul class="nav-links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="/football-field-turf-maintenance">Football Fields</a></li>
-					<li><a href="/soccer-field-turf-maintenance">Soccer Fields</a></li>
-					<li><a href="/baseball-field-turf-maintenance">Baseball Fields</a></li>
-					<li><a href="/indoor-turf-maintenance">Indoor Turf</a></li>
-					<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
-					<li><a href="/locations">Locations</a></li>
-					<li><a href="/blog" class="active">Blog</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<Nav active="blog" />
 
 		<main>
 			<section class="page-hero">
@@ -488,6 +475,7 @@ import Analytics from '../../components/Analytics.astro';
 				<div class="footer-content">
 					<div class="footer-section">
 						<h3>Texas Turf Maintenance</h3>
+							<p class="footer-tagline">Clean. Safe. Game Ready.</p>
 						<p>Professional artificial turf restoration and maintenance across Texas. Transforming failing fields into championship-quality surfaces.</p>
 					</div>
 					<div class="footer-section">
@@ -510,8 +498,8 @@ import Analytics from '../../components/Analytics.astro';
 					</div>
 					<div class="footer-section">
 						<h3>Contact</h3>
-						<p>Phone: (844) 588-TURF</p>
-						<p>Email: success@texasturfmaintenance.com</p>
+						<p>Phone: (469) 981-9247</p>
+						<p>Email: andrew@texasturfmaintenance.com</p>
 					</div>
 				</div>
 			</div>
@@ -520,120 +508,120 @@ import Analytics from '../../components/Analytics.astro';
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.blog-content{padding:4rem 0;max-width:1000px;margin:0 auto}
-			.article-meta{display:flex;gap:2rem;margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid #E5E7EB}
-			.category{background:#FF6B35;color:#fff;padding:0.5rem 1rem;border-radius:20px;font-size:0.9rem;font-weight:600}
-			.read-time{color:#6B7280;font-style:italic}
+			.article-meta{display:flex;gap:2rem;margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid #E5E7E9}
+			.category{background:#3FAE49;color:#fff;padding:0.5rem 1rem;border-radius:20px;font-size:0.9rem;font-weight:600}
+			.read-time{color:#6B6F72;font-style:italic}
 			.client-overview{margin-bottom:4rem}
-			.client-card{background:#F8F9FA;border:2px solid #E5E7EB;border-radius:15px;padding:2rem}
-			.client-card h2{color:#2c5530;margin-bottom:1.5rem;text-align:center}
+			.client-card{background:#F8F9FA;border:2px solid #E5E7E9;border-radius:4px;padding:2rem}
+			.client-card h2{color:#123E2A;margin-bottom:1.5rem;text-align:center}
 			.client-details{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
-			.detail-item{display:flex;justify-content:space-between;padding:0.75rem;background:#fff;border-radius:8px;border:1px solid #E5E7EB}
-			.detail-item strong{color:#374151}
+			.detail-item{display:flex;justify-content:space-between;padding:0.75rem;background:#fff;border-radius:8px;border:1px solid #E5E7E9}
+			.detail-item strong{color:#111111}
 			.content-section{margin-bottom:4rem;padding:2rem 0;border-bottom:1px solid #F3F4F6}
-			.content-section h2{color:#2c5530;margin-bottom:2rem;font-size:2rem}
-			.section-content h3{color:#374151;margin:2rem 0 1rem;font-size:1.4rem}
+			.content-section h2{color:#123E2A;margin-bottom:2rem;font-size:2rem}
+			.section-content h3{color:#111111;margin:2rem 0 1rem;font-size:1.4rem}
 			.section-content ul,.section-content ol{margin:1rem 0;padding-left:2rem}
-			.section-content ul li,.section-content ol li{margin-bottom:0.75rem;color:#6B7280;line-height:1.6}
-			.section-content p{margin-bottom:1.5rem;color:#374151;line-height:1.7}
-			.challenge-overview{background:#FFF8E1;border-left:4px solid #FF6B35;padding:2rem;margin:2rem 0;border-radius:0 10px 10px 0}
+			.section-content ul li,.section-content ol li{margin-bottom:0.75rem;color:#6B6F72;line-height:1.6}
+			.section-content p{margin-bottom:1.5rem;color:#111111;line-height:1.7}
+			.challenge-overview{background:#FFF8E1;border-left:4px solid #3FAE49;padding:2rem;margin:2rem 0;border-radius:0 10px 10px 0}
 			.problems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin:2rem 0}
-			.problem-item{padding:1.5rem;border-radius:10px;text-align:center}
+			.problem-item{padding:1.5rem;border-radius:4px;text-align:center}
 			.problem-item.severe{background:#FFEBEE;border:2px solid #D32F2F}
 			.problem-item.high{background:#FFF3E0;border:2px solid #F57C00}
 			.problem-item.moderate{background:#FFF8E1;border:2px solid #FBC02D}
-			.problem-item h3{margin-bottom:1rem;color:#374151}
+			.problem-item h3{margin-bottom:1rem;color:#111111}
 			.metric{margin:1rem 0}
 			.metric .value{display:block;font-size:2rem;font-weight:bold;color:#D32F2F}
-			.metric .label{font-size:0.9rem;color:#6B7280;text-transform:uppercase}
-			.problem-item p{font-size:0.95rem;color:#374151}
-			.crisis-quote{background:#FFEBEE;border:2px solid #D32F2F;padding:2rem;margin:3rem 0;border-radius:15px;text-align:center}
-			.crisis-quote blockquote{font-size:1.2rem;color:#374151;font-style:italic;margin-bottom:1rem}
-			.crisis-quote cite{color:#6B7280;font-style:normal}
+			.metric .label{font-size:0.9rem;color:#6B6F72;text-transform:uppercase}
+			.problem-item p{font-size:0.95rem;color:#111111}
+			.crisis-quote{background:#FFEBEE;border:2px solid #D32F2F;padding:2rem;margin:3rem 0;border-radius:4px;text-align:center}
+			.crisis-quote blockquote{font-size:1.2rem;color:#111111;font-style:italic;margin-bottom:1rem}
+			.crisis-quote cite{color:#6B6F72;font-style:normal}
 			.decision-analysis{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0}
-			.option-card{padding:2rem;border-radius:10px;border:2px solid transparent;position:relative}
+			.option-card{padding:2rem;border-radius:4px;border:2px solid transparent;position:relative}
 			.option-card.replacement{background:#FFEBEE;border-color:#FFCDD2}
 			.option-card.restoration{background:#E8F5E8;border-color:#A5D6A7}
-			.option-card.chosen{border-color:#2c5530;border-width:3px}
-			.chosen-badge{position:absolute;top:-10px;right:20px;background:#2c5530;color:#fff;padding:0.5rem 1rem;border-radius:20px;font-size:0.8rem;font-weight:bold}
-			.option-card h3{margin-bottom:1.5rem;text-align:center;color:#374151}
+			.option-card.chosen{border-color:#123E2A;border-width:3px}
+			.chosen-badge{position:absolute;top:-10px;right:20px;background:#123E2A;color:#fff;padding:0.5rem 1rem;border-radius:20px;font-size:0.8rem;font-weight:bold}
+			.option-card h3{margin-bottom:1.5rem;text-align:center;color:#111111}
 			.cost-summary{margin-bottom:1rem}
-			.cost-line{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #E5E7EB}
+			.cost-line{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid #E5E7E9}
 			.cost-line.total{border-top:2px solid #ccc;border-bottom:none;margin-top:1rem;padding-top:1rem;font-weight:bold}
 			.cost{color:#D32F2F;font-weight:bold}
-			.restoration .cost{color:#2c5530}
-			.timeline{text-align:center;font-style:italic;color:#6B7280;margin-top:1rem}
-			.decision-factors{background:#F0F9FF;padding:2rem;border-radius:10px;margin:2rem 0}
+			.restoration .cost{color:#123E2A}
+			.timeline{text-align:center;font-style:italic;color:#6B6F72;margin-top:1rem}
+			.decision-factors{background:#F0F9FF;padding:2rem;border-radius:4px;margin:2rem 0}
 			.decision-factors h3{color:#0369A1;margin-bottom:1rem}
 			.decision-factors ul{list-style:none}
 			.decision-factors ul li{padding:0.5rem 0;padding-left:1.5rem;position:relative}
 			.decision-factors ul li::before{content:"▸";position:absolute;left:0;color:#0369A1;font-weight:bold}
 			.solution-timeline{margin:2rem 0}
-			.phase-item{display:flex;gap:2rem;margin-bottom:2rem;padding:2rem;background:#F8F9FA;border-radius:10px}
-			.phase-number{display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:#FF6B35;color:#fff;border-radius:50%;font-size:1.5rem;font-weight:bold;flex-shrink:0}
-			.phase-content h3{color:#374151;margin-bottom:0.5rem}
-			.phase-content p{color:#6B7280;margin-bottom:1rem;font-style:italic}
+			.phase-item{display:flex;gap:2rem;margin-bottom:2rem;padding:2rem;background:#F8F9FA;border-radius:4px}
+			.phase-number{display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:#3FAE49;color:#fff;border-radius:50%;font-size:1.5rem;font-weight:bold;flex-shrink:0}
+			.phase-content h3{color:#111111;margin-bottom:0.5rem}
+			.phase-content p{color:#6B6F72;margin-bottom:1rem;font-style:italic}
 			.phase-content ul{list-style:none}
-			.phase-content ul li{padding:0.25rem 0;padding-left:1rem;position:relative;color:#374151}
-			.phase-content ul li::before{content:"•";position:absolute;left:0;color:#FF6B35}
+			.phase-content ul li{padding:0.25rem 0;padding-left:1rem;position:relative;color:#111111}
+			.phase-content ul li::before{content:"•";position:absolute;left:0;color:#3FAE49}
 			.results-comparison{margin:2rem 0}
 			.before-after-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-			.comparison-card{padding:2rem;border-radius:15px;text-align:center}
+			.comparison-card{padding:2rem;border-radius:4px;text-align:center}
 			.comparison-card.before{background:#FFEBEE;border:2px solid #D32F2F}
-			.comparison-card.after{background:#E8F5E8;border:2px solid #2c5530}
-			.comparison-card h3{margin-bottom:2rem;color:#374151}
+			.comparison-card.after{background:#E8F5E8;border:2px solid #123E2A}
+			.comparison-card h3{margin-bottom:2rem;color:#111111}
 			.metrics{display:grid;gap:1rem}
 			.metric-item{padding:1rem;border-radius:8px;background:rgba(255,255,255,0.7)}
 			.metric-item.danger .metric-value{color:#D32F2F}
 			.metric-item.warning .metric-value{color:#F57C00}
-			.metric-item.success .metric-value{color:#2c5530}
+			.metric-item.success .metric-value{color:#123E2A}
 			.metric-value{display:block;font-size:1.5rem;font-weight:bold}
-			.metric-label{font-size:0.9rem;color:#6B7280}
+			.metric-label{font-size:0.9rem;color:#6B6F72}
 			.impact-stats{margin:3rem 0}
-			.impact-stats h3{text-align:center;color:#2c5530;margin-bottom:2rem}
+			.impact-stats h3{text-align:center;color:#123E2A;margin-bottom:2rem}
 			.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}
-			.stat-item{background:#fff;padding:2rem;border-radius:10px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.1)}
-			.stat-number{display:block;font-size:2.5rem;font-weight:bold;color:#FF6B35;margin-bottom:0.5rem}
-			.stat-label{color:#6B7280;font-size:0.95rem}
+			.stat-item{background:#fff;padding:2rem;border-radius:4px;text-align:center;}
+			.stat-number{display:block;font-size:2.5rem;font-weight:bold;color:#3FAE49;margin-bottom:0.5rem}
+			.stat-label{color:#6B6F72;font-size:0.95rem}
 			.followup-results{margin:2rem 0}
 			.performance-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
-			.performance-item{background:#F8F9FA;padding:1.5rem;border-radius:10px}
-			.performance-item h4{color:#374151;margin-bottom:1rem}
-			.performance-item p{color:#6B7280;margin-bottom:1rem;font-size:0.95rem}
+			.performance-item{background:#F8F9FA;padding:1.5rem;border-radius:4px}
+			.performance-item h4{color:#111111;margin-bottom:1rem}
+			.performance-item p{color:#6B6F72;margin-bottom:1rem;font-size:0.95rem}
 			.status{padding:0.5rem 1rem;border-radius:20px;font-size:0.8rem;font-weight:bold;text-align:center}
-			.status.success{background:#E8F5E8;color:#2c5530}
+			.status.success{background:#E8F5E8;color:#123E2A}
 			.testimonial-section{margin:3rem 0}
 			.testimonial-card,.coach-testimonial{background:#F0F9FF;border-left:4px solid #0369A1;padding:2rem;margin:2rem 0;border-radius:0 10px 10px 0}
-			.testimonial-card blockquote,.coach-testimonial blockquote{font-size:1.1rem;color:#374151;font-style:italic;margin-bottom:1rem}
-			.testimonial-card cite,.coach-testimonial cite{color:#6B7280;font-style:normal}
+			.testimonial-card blockquote,.coach-testimonial blockquote{font-size:1.1rem;color:#111111;font-style:italic;margin-bottom:1rem}
+			.testimonial-card cite,.coach-testimonial cite{color:#6B6F72;font-style:normal}
 			.testimonial-card cite strong,.coach-testimonial cite strong{color:#0369A1;display:block;margin-bottom:0.25rem}
 			.lessons-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin:2rem 0}
-			.lesson-item{background:#E8F5E8;padding:1.5rem;border-radius:10px;border:1px solid #A5D6A7}
-			.lesson-item h3{color:#2c5530;margin-bottom:1rem}
-			.lesson-item p{color:#374151;font-size:0.95rem}
-			.roi-summary{background:#FFF8E1;border:2px solid #FF6B35;padding:2rem;border-radius:15px;margin:3rem 0}
-			.roi-summary h3{color:#FF6B35;margin-bottom:1.5rem;text-align:center}
+			.lesson-item{background:#E8F5E8;padding:1.5rem;border-radius:4px;border:1px solid #A5D6A7}
+			.lesson-item h3{color:#123E2A;margin-bottom:1rem}
+			.lesson-item p{color:#111111;font-size:0.95rem}
+			.roi-summary{background:#FFF8E1;border:2px solid #3FAE49;padding:2rem;border-radius:4px;margin:3rem 0}
+			.roi-summary h3{color:#3FAE49;margin-bottom:1.5rem;text-align:center}
 			.roi-breakdown{margin-bottom:2rem}
-			.roi-item{display:flex;justify-content:space-between;padding:0.75rem 0;border-bottom:1px solid #E5E7EB}
-			.roi-item.total{border-top:2px solid #FF6B35;border-bottom:none;margin-top:1rem;padding-top:1rem;font-weight:bold;font-size:1.1rem}
-			.roi-label{color:#374151}
-			.roi-value{color:#FF6B35;font-weight:bold}
-			.roi-percentage{text-align:center;padding-top:1rem;border-top:2px solid #E5E7EB}
-			.roi-number{display:block;font-size:3rem;font-weight:bold;color:#2c5530}
-			.roi-text{color:#6B7280;font-size:1.1rem}
-			.action-section{background:#F8F9FA;padding:3rem;border-radius:15px;margin-top:4rem;text-align:center}
-			.action-section h2{color:#2c5530;margin-bottom:1rem}
-			.cta-box{background:#fff;padding:2rem;border-radius:10px;margin-top:2rem;border:2px solid #FF6B35}
-			.cta-box h3{color:#374151;margin-bottom:1rem}
-			.cta-box p{color:#6B7280;margin-bottom:2rem}
-			.btn-primary{background:#FF6B35;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:600;display:inline-block;transition:all .3s ease}
-			.btn-primary:hover{background:#E55A2B;transform:translateY(-2px)}
-			footer{background:#1a3a1d;color:#fff;padding:3rem 0}
+			.roi-item{display:flex;justify-content:space-between;padding:0.75rem 0;border-bottom:1px solid #E5E7E9}
+			.roi-item.total{border-top:2px solid #3FAE49;border-bottom:none;margin-top:1rem;padding-top:1rem;font-weight:bold;font-size:1.1rem}
+			.roi-label{color:#111111}
+			.roi-value{color:#3FAE49;font-weight:bold}
+			.roi-percentage{text-align:center;padding-top:1rem;border-top:2px solid #E5E7E9}
+			.roi-number{display:block;font-size:3rem;font-weight:bold;color:#123E2A}
+			.roi-text{color:#6B6F72;font-size:1.1rem}
+			.action-section{background:#F8F9FA;padding:3rem;border-radius:4px;margin-top:4rem;text-align:center}
+			.action-section h2{color:#123E2A;margin-bottom:1rem}
+			.cta-box{background:#fff;padding:2rem;border-radius:4px;margin-top:2rem;border:2px solid #3FAE49}
+			.cta-box h3{color:#111111;margin-bottom:1rem}
+			.cta-box p{color:#6B6F72;margin-bottom:2rem}
+			.btn-primary{background:#3FAE49;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:4px;font-weight:700;display:inline-block;transition:background .2s ease;text-transform:uppercase;letter-spacing:0.04em;font-size:0.9rem}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px)}
+			footer{background:#111111;color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:1rem;color:#4CAF50}
+			.footer-section h3{margin-bottom:0.5rem;color:#fff}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:0.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#4CAF50}
+			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
 				.blog-content{padding:3rem 0}
 				.article-meta{flex-direction:column;gap:1rem}
