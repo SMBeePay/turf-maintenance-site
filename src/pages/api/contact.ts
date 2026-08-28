@@ -80,10 +80,7 @@ export const POST: APIRoute = async ({ request }) => {
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify({
-			// Until texasturfmaintenance.com is verified in Resend, sending must
-			// come from their shared onboarding domain. Once verified, switch
-			// this to e.g. "Texas Turf Maintenance <leads@texasturfmaintenance.com>".
-			from: 'Texas Turf Maintenance <onboarding@resend.dev>',
+			from: 'Texas Turf Maintenance <leads@texasturfmaintenance.com>',
 			to: [toAddress],
 			reply_to: email,
 			subject: `New quote request from ${firstName} ${lastName}`,
