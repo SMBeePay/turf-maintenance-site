@@ -1,0 +1,206 @@
+{
+  "01_Primary_Horizontal_Full_Color": {
+    "crop_box": [
+      32,
+      58,
+      690,
+      303
+    ],
+    "pixel_size": [
+      658,
+      245
+    ]
+  },
+  "02_Stacked_Full_Color": {
+    "crop_box": [
+      790,
+      35,
+      1110,
+      326
+    ],
+    "pixel_size": [
+      320,
+      291
+    ]
+  },
+  "03_Badge_Seal_Full_Color": {
+    "crop_box": [
+      1208,
+      35,
+      1510,
+      316
+    ],
+    "pixel_size": [
+      302,
+      281
+    ]
+  },
+  "04_Primary_Reverse_Green": {
+    "crop_box": [
+      34,
+      332,
+      545,
+      508
+    ],
+    "pixel_size": [
+      511,
+      176
+    ]
+  },
+  "05_Primary_Black": {
+    "crop_box": [
+      578,
+      337,
+      1003,
+      503
+    ],
+    "pixel_size": [
+      425,
+      166
+    ]
+  },
+  "06_Primary_Reverse_Black": {
+    "crop_box": [
+      1028,
+      340,
+      1510,
+      506
+    ],
+    "pixel_size": [
+      482,
+      166
+    ]
+  },
+  "07_Icon_Forest": {
+    "crop_box": [
+      45,
+      538,
+      225,
+      698
+    ],
+    "pixel_size": [
+      180,
+      160
+    ]
+  },
+  "08_Icon_Bright_Green": {
+    "crop_box": [
+      278,
+      538,
+      432,
+      698
+    ],
+    "pixel_size": [
+      154,
+      160
+    ]
+  },
+  "09_Icon_Black": {
+    "crop_box": [
+      494,
+      538,
+      649,
+      698
+    ],
+    "pixel_size": [
+      155,
+      160
+    ]
+  },
+  "10_Icon_Circle_Forest": {
+    "crop_box": [
+      676,
+      524,
+      861,
+      705
+    ],
+    "pixel_size": [
+      185,
+      181
+    ]
+  },
+  "11_Icon_Circle_Green": {
+    "crop_box": [
+      875,
+      521,
+      1061,
+      707
+    ],
+    "pixel_size": [
+      186,
+      186
+    ]
+  },
+  "12_Icon_Circle_White": {
+    "crop_box": [
+      1072,
+      521,
+      1267,
+      711
+    ],
+    "pixel_size": [
+      195,
+      190
+    ]
+  },
+  "13_Icon_Circle_Black": {
+    "crop_box": [
+      1288,
+      522,
+      1469,
+      706
+    ],
+    "pixel_size": [
+      181,
+      184
+    ]
+  },
+  "14_Horizontal_Compact": {
+    "crop_box": [
+      40,
+      712,
+      430,
+      840
+    ],
+    "pixel_size": [
+      390,
+      128
+    ]
+  },
+  "15_Texas_State_Lockup": {
+    "crop_box": [
+      500,
+      705,
+      925,
+      842
+    ],
+    "pixel_size": [
+      425,
+      137
+    ]
+  },
+  "16_App_Icon": {
+    "crop_box": [
+      982,
+      702,
+      1138,
+      850
+    ],
+    "pixel_size": [
+      156,
+      148
+    ]
+  },
+  "17_Compact_Wordmark": {
+    "crop_box": [
+      1186,
+      709,
+      1517,
+      843
+    ],
+    "pixel_size": [
+      331,
+      134
+    ]
+  }
+}
