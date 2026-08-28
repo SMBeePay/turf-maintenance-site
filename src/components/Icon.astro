@@ -1,0 +1,49 @@
+---
+// Small line-icon set matching the brand book's icon style (stroke-based,
+// single color, rounded caps) — replaces ad-hoc unicode glyphs (▦ ◉ ◎ etc.)
+// used across the site.
+interface Props {
+	name: string;
+	size?: number;
+}
+
+const { name, size = 28 } = Astro.props;
+
+const paths: Record<string, string> = {
+	shield: 'M12 2 4 5v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V5l-8-3Z',
+	spray: 'M9 3h4v4H9V3Zm2 4v3M5 21l2-9M19 21l-2-9M8 12h8l2 9H6l2-9Zm2-9 1.5 2M15 3l-1.5 2M6 3l2 2M18 3l-2 2',
+	layers: 'm12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5',
+	gauge: 'M12 4a9 9 0 0 0-7.6 13.8M12 4a9 9 0 0 1 7.6 13.8M12 4v3m0 5 4-3M4.4 17.8h15.2',
+	scissors: 'M8 6a2.5 2.5 0 1 1-2 4M8 18a2.5 2.5 0 1 1-2-4m11-8L6.5 19.5M6 6l14 11.5',
+	stripes: 'M4 5h16M4 10h16M4 15h16M4 20h16',
+	'shield-check': 'M12 2 4 5v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V5l-8-3Zm-3 9 2 2 4-4',
+	sparkles: 'M12 3v4M12 17v4M4 12h4M16 12h4M6 6l2.5 2.5M17.5 15.5 20 18M6 18l2.5-2.5M17.5 8.5 20 6',
+	'clipboard-check': 'M9 4h6v3H9V4ZM6 6h12v15H6V6Zm3 9 2 2 4-4',
+	clock: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-14v5l3 2',
+	school: 'M3 10 12 4l9 6-9 6-9-6Zm5 3v6l4 2 4-2v-6M3 10v6',
+	trophy: 'M8 4h8v4a4 4 0 0 1-8 0V4ZM6 5H4v2a4 4 0 0 0 4 4M18 5h2v2a4 4 0 0 1-4 4M10 15v3H8v2h8v-2h-2v-3',
+	briefcase: 'M4 8h16v11H4V8Zm4 0V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M4 13h16',
+	'map-pin': 'M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Zm0-8.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z',
+	'book-open': 'M12 6c-2-1.5-5-2-8-1.5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5v-13c-3-.5-6 0-8 1.5Zm0 0v13',
+	calculator: 'M6 3h12v18H6V3Zm2 4h8M8 11h2m3 0h2M8 15h2m3 0h2M8 19h2',
+	'check-square': 'M4 4h16v16H4V4Zm4 8 3 3 6-7',
+	seedling: 'M12 21v-7M12 14c0-4-3-6-7-6 0 4 3 7 7 7Zm0-1c0-5 3-8 7-8 0 4.5-3 8-7 8Z',
+	'building-2': 'M4 21V6l8-4 8 4v15M4 21h16M9 9h.01M15 9h.01M9 13h.01M15 13h.01M9 17h.01M15 17h.01',
+};
+
+const d = paths[name] ?? paths.shield;
+---
+
+<svg
+	width={size}
+	height={size}
+	viewBox="0 0 24 24"
+	fill="none"
+	stroke="currentColor"
+	stroke-width="1.7"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	aria-hidden="true"
+>
+	<path d={d} />
+</svg>
