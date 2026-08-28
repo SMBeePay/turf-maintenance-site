@@ -912,12 +912,12 @@ import Nav from '../components/Nav.astro';
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.gmax-intro,.what-is-gmax,.testing-comparison,.safety-standards,.athlete-safety,.turf-longevity,.testing-process,.equipment-certification,.competitive-advantages,.testing-frequency,.emergency-testing,.gmax-faqs{padding:4rem 0}
 			.gmax-intro h2,.what-is-gmax h2,.testing-comparison h2,.safety-standards h2,.athlete-safety h2,.turf-longevity h2,.testing-process h2,.equipment-certification h2,.competitive-advantages h2,.testing-frequency h2,.emergency-testing h2,.gmax-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
-			.urgency-message{display:flex;align-items:center;background:#ffebee;border:2px solid #f44336;border-radius:10px;padding:2rem;margin-bottom:3rem}
+			.urgency-message{display:flex;align-items:center;background:#ffebee;border:2px solid #f44336;border-radius:4px;padding:2rem;margin-bottom:3rem}
 			.urgency-icon{font-size:3rem;margin-right:1rem;color:#f44336}
 			.urgency-content h3{color:#d32f2f;margin-bottom:1rem}
 			.urgency-content p{color:#666;font-size:1.1rem}
 			.intro-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
-			.stat-item{text-align:center;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.stat-item{text-align:center;padding:2rem;border-radius:4px;}
 			.stat-item.danger{background:#ffebee;border:2px solid #f44336}
 			.stat-item.warning{background:#fff3e0;border:2px solid #ff9800}
 			.stat-item.success{background:#e8f5e8;border:2px solid #3FAE49}
@@ -926,7 +926,7 @@ import Nav from '../components/Nav.astro';
 			.stat-item.warning .stat-number{color:#f57c00}
 			.stat-item.success .stat-number{color:#123E2A}
 			.stat-label{color:#666;font-size:1rem}
-			.gmax-explanation{background:#fff;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);padding:3rem;margin-top:2rem}
+			.gmax-explanation{background:#fff;border-radius:4px;padding:3rem;margin-top:2rem}
 			.explanation-content h3{color:#123E2A;margin-bottom:1rem;font-size:1.8rem;text-align:center}
 			.explanation-content p{text-align:center;font-size:1.1rem;color:#666;margin-bottom:2rem}
 			.gmax-process{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
@@ -935,7 +935,7 @@ import Nav from '../components/Nav.astro';
 			.process-step h4{color:#123E2A;margin-bottom:1rem}
 			.process-step p{color:#666;font-size:.9rem}
 			.standards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.standard-item{padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.standard-item{padding:2rem;border-radius:4px;}
 			.standard-item.safe{background:#e8f5e8;border:3px solid #3FAE49}
 			.standard-item.warning{background:#fff3e0;border:3px solid #ff9800}
 			.standard-item.danger{background:#ffebee;border:3px solid #f44336}
@@ -961,7 +961,7 @@ import Nav from '../components/Nav.astro';
 			.injury-icon{font-size:2rem;margin-right:1rem}
 			.injury-item h5{color:#123E2A;margin-bottom:0.5rem}
 			.injury-item p{color:#666;font-size:.9rem}
-			.liability-box{background:#d32f2f;color:#fff;padding:2rem;border-radius:10px}
+			.liability-box{background:#d32f2f;color:#fff;padding:2rem;border-radius:4px}
 			.liability-box h3{margin-bottom:1rem}
 			.protection-stats{margin:1rem 0}
 			.protection-item{margin-bottom:1rem;padding:1rem;background:rgba(255,255,255,.1);border-radius:5px}
@@ -970,19 +970,19 @@ import Nav from '../components/Nav.astro';
 			.longevity-content h3{color:#123E2A;margin-bottom:1rem;text-align:center}
 			.investment-intro{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem}
 			.roi-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.roi-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.roi-item{background:#fff;padding:2rem;border-radius:4px;}
 			.roi-icon{font-size:2.5rem;margin-bottom:1rem;text-align:center}
 			.roi-item h4{color:#123E2A;margin-bottom:1rem;text-align:center}
 			.roi-item p{color:#666;margin-bottom:1rem}
 			.roi-savings{background:#e8f5e8;color:#123E2A;padding:1rem;border-radius:5px;font-weight:bold;text-align:center}
-			.detailed-step{display:flex;align-items:flex-start;margin-bottom:3rem;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.detailed-step{display:flex;align-items:flex-start;margin-bottom:3rem;padding:2rem;background:#fff;border-radius:4px;}
 			.detailed-step .step-number{background:#123E2A;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;margin-right:2rem;flex-shrink:0}
 			.step-content h3{color:#123E2A;margin-bottom:1rem}
 			.step-content ul{list-style:none;margin-top:1rem}
 			.step-content ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.step-content ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.advantages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.advantage-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.advantage-item{background:#fff;padding:2rem;border-radius:4px;}
 			.advantage-icon{font-size:3rem;margin-bottom:1rem;text-align:center}
 			.advantage-item h3{color:#123E2A;margin-bottom:1rem;text-align:center}
 			.advantage-item p{color:#666;margin-bottom:1rem;text-align:center}
@@ -990,7 +990,7 @@ import Nav from '../components/Nav.astro';
 			.advantage-details ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.advantage-details ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.frequency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.frequency-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.frequency-item{background:#fff;padding:2rem;border-radius:4px;}
 			.frequency-item h3{color:#123E2A;margin-bottom:1rem;text-align:center}
 			.usage-description{text-align:center;color:#666;margin-bottom:1rem;font-style:italic}
 			.testing-schedule{text-align:center;margin:1rem 0}
@@ -1007,14 +1007,14 @@ import Nav from '../components/Nav.astro';
 			.emergency-response h4{color:#123E2A;margin:2rem 0 1rem}
 			.response-grid{display:grid;gap:1rem;margin-top:1rem}
 			.response-item{display:flex;justify-content:space-between;padding:1rem;background:#f8f9fa;border-radius:5px}
-			.emergency-box{background:#d32f2f;color:#fff;padding:2rem;border-radius:10px;text-align:center}
+			.emergency-box{background:#d32f2f;color:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.phone-number{font-size:2rem;font-weight:bold;margin:1rem 0}
 			.phone-number a{color:#fff;text-decoration:none}
 			.emergency-note{margin-top:1rem;font-size:.9rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:5px}
 			.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.faq-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.faq-item{background:#fff;padding:2rem;border-radius:4px;}
 			.faq-item h3{color:#123E2A;margin-bottom:1rem}
-			.technical-details{background:#e8f5e8;padding:2rem;border-radius:10px;margin:2rem 0}
+			.technical-details{background:#e8f5e8;padding:2rem;border-radius:4px;margin:2rem 0}
 			.technical-details h4{color:#123E2A;text-align:center;margin-bottom:1rem}
 			.spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
 			.spec-item{background:#fff;padding:1rem;border-radius:5px;text-align:center;font-size:.9rem}
@@ -1023,7 +1023,7 @@ import Nav from '../components/Nav.astro';
 			.testing-comparison{background:#fff}
 			.comparison-content{max-width:1000px;margin:0 auto}
 			.comparison-intro{text-align:center;margin-bottom:2rem;font-size:1.1rem;color:#666}
-			.comparison-table{background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);overflow:hidden}
+			.comparison-table{background:#fff;border-radius:4px;overflow:hidden}
 			.comparison-header{display:grid;grid-template-columns:1fr 1fr 1fr;background:#123E2A;color:#fff;font-weight:bold}
 			.comparison-header > div{padding:1rem;text-align:center}
 			.comparison-row{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid #eee}
@@ -1035,7 +1035,7 @@ import Nav from '../components/Nav.astro';
 			.why-gmax-for-turf{margin-top:3rem}
 			.why-gmax-for-turf h3{color:#123E2A;text-align:center;margin-bottom:2rem}
 			.gmax-reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.reason-item{display:flex;align-items:flex-start;gap:1rem;padding:1.5rem;background:#f8f9fa;border-radius:10px}
+			.reason-item{display:flex;align-items:flex-start;gap:1rem;padding:1.5rem;background:#f8f9fa;border-radius:4px}
 			.reason-icon{font-size:2rem;flex-shrink:0}
 			.reason-content h4{color:#123E2A;margin-bottom:0.5rem}
 			.reason-content p{color:#666;font-size:.9rem}
@@ -1043,14 +1043,14 @@ import Nav from '../components/Nav.astro';
 			.equipment-showcase,.certification-showcase{margin-bottom:3rem}
 			.equipment-showcase h3,.certification-showcase h3{color:#123E2A;text-align:center;margin-bottom:2rem}
 			.equipment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.equipment-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
+			.equipment-item{background:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.equipment-icon{font-size:3rem;margin-bottom:1rem}
 			.equipment-item h4{color:#123E2A;margin-bottom:1rem}
 			.equipment-item p{color:#666;margin-bottom:1rem;font-size:.9rem}
 			.spec-details{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-			.spec-details span{background:#e8f5e8;color:#123E2A;padding:0.3rem 0.8rem;border-radius:15px;font-size:0.8rem;font-weight:bold}
+			.spec-details span{background:#e8f5e8;color:#123E2A;padding:0.3rem 0.8rem;border-radius:4px;font-size:0.8rem;font-weight:bold}
 			.certifications-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.cert-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
+			.cert-item{background:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.cert-badge{display:inline-block;background:#123E2A;color:#fff;padding:0.5rem 1rem;border-radius:20px;font-weight:bold;margin-bottom:1rem}
 			.cert-item h4{color:#123E2A;margin-bottom:1rem}
 			.cert-item p{color:#666;font-size:.9rem}

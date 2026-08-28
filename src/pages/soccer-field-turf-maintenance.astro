@@ -479,19 +479,19 @@ import Nav from '../components/Nav.astro';
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.hero-image{padding:2rem 0;background:#f8f9fa}
-			.field-showcase-image{width:100%;max-width:1000px;height:auto;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.15);display:block;margin:0 auto}
+			.field-showcase-image{width:100%;max-width:1000px;height:auto;border-radius:4px;display:block;margin:0 auto}
 			@media (max-width:768px){
 				.hero-image{padding:1rem 0}
-				.field-showcase-image{border-radius:10px}
+				.field-showcase-image{border-radius:4px}
 			}
 			.soccer-intro,.advanced-cleaning,.soccer-services,.soccer-problems,.soccer-specialties,.emergency-soccer,.soccer-faqs{padding:4rem 0}
 			.section-intro{text-align:center;font-size:1.1rem;color:#6B6F72;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
 			.soccer-intro h2,.advanced-cleaning h2,.soccer-services h2,.soccer-problems h2,.soccer-specialties h2,.emergency-soccer h2,.soccer-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.field-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
-			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;}
 			.stat-number{font-size:3rem;font-weight:bold;color:#123E2A;margin-bottom:0.5rem}
 			.stat-label{color:#666;font-size:1.1rem}
-			.cleaning-highlight{background:#fff;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);padding:3rem;margin-top:2rem}
+			.cleaning-highlight{background:#fff;border-radius:4px;padding:3rem;margin-top:2rem}
 			.cleaning-content h3{color:#123E2A;margin-bottom:1rem;font-size:1.8rem;text-align:center}
 			.cleaning-content p{text-align:center;font-size:1.1rem;color:#666;margin-bottom:2rem}
 			.cleaning-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
@@ -500,7 +500,7 @@ import Nav from '../components/Nav.astro';
 			.benefit-item h4{color:#123E2A;margin-bottom:1rem}
 			.benefit-item p{color:#666;font-size:.9rem}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.service-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);transition:transform .3s ease}
+			.service-item{background:#fff;padding:2rem;border-radius:4px;transition:transform .3s ease}
 			.service-item:hover{transform:translateY(-5px)}
 			.service-icon{font-size:3rem;margin-bottom:1rem;color:#6B6F72;font-weight:normal}
 			.service-item h3{color:#123E2A;margin-bottom:1rem}
@@ -508,12 +508,12 @@ import Nav from '../components/Nav.astro';
 			.service-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.problems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.problem-item{background:#f8f9fa;padding:2rem;border-radius:10px;border-left:4px solid #123E2A}
+			.problem-item{background:#f8f9fa;padding:2rem;border-radius:4px;border-left:4px solid #123E2A}
 			.problem-item h3{color:#123E2A;margin-bottom:1rem}
 			.problem-item p{margin-bottom:1rem}
 			.problem-item strong{color:#123E2A}
 			.level-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.level-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.level-item{background:#fff;padding:2rem;border-radius:4px;}
 			.level-item h3{color:#123E2A;margin-bottom:1rem;border-bottom:2px solid #3FAE49;padding-bottom:0.5rem}
 			.level-features p{margin-bottom:1rem;color:#666}
 			.level-features ul{list-style:none}
@@ -526,12 +526,12 @@ import Nav from '../components/Nav.astro';
 			.emergency-types ul li::before{content:"▫";position:absolute;left:0;color:#6B6F72}
 			.response-grid{display:grid;gap:1rem;margin-top:1rem}
 			.response-item{display:flex;justify-content:space-between;padding:1rem;background:#f8f9fa;border-radius:5px}
-			.emergency-box{background:#123E2A;color:#fff;padding:2rem;border-radius:10px;text-align:center}
+			.emergency-box{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.phone-number{font-size:2rem;font-weight:bold;margin:1rem 0}
 			.phone-number a{color:#fff;text-decoration:none}
 			.match-day-note{margin-top:1rem;font-size:.9rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:5px}
 			.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.faq-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.faq-item{background:#fff;padding:2rem;border-radius:4px;}
 			.faq-item h3{color:#123E2A;margin-bottom:1rem}
 			.advanced-cleaning{background:#f8f9fa}
 			.soccer-problems{background:#f8f9fa}
@@ -542,8 +542,8 @@ import Nav from '../components/Nav.astro';
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#3FAE49;color:#fff;box-shadow:0 2px 8px rgba(63,174,73,0.3)}
-			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px);box-shadow:0 4px 12px rgba(63,174,73,0.4)}
+			.btn-primary{background:#3FAE49;color:#fff;}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px);}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
 			.btn-secondary:hover{background:#fff;color:#123E2A}
 			footer{background:#111111;color:#fff;padding:3rem 0}

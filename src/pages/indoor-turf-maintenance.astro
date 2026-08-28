@@ -616,10 +616,10 @@ import Nav from '../components/Nav.astro';
 			.section-intro{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
 			.indoor-intro h2,.advanced-cleaning h2,.indoor-services h2,.indoor-problems h2,.facility-types h2,.texas-facilities h2,.indoor-advantages h2,.emergency-indoor h2,.indoor-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.field-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
-			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;}
 			.stat-number{font-size:3rem;font-weight:bold;color:#123E2A;margin-bottom:0.5rem}
 			.stat-label{color:#666;font-size:1.1rem}
-			.cleaning-highlight{background:#fff;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);padding:3rem;margin-top:2rem}
+			.cleaning-highlight{background:#fff;border-radius:4px;padding:3rem;margin-top:2rem}
 			.cleaning-content h3{color:#123E2A;margin-bottom:1rem;font-size:1.8rem;text-align:center}
 			.cleaning-content p{text-align:center;font-size:1.1rem;color:#666;margin-bottom:2rem}
 			.cleaning-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
@@ -628,7 +628,7 @@ import Nav from '../components/Nav.astro';
 			.benefit-item h4{color:#123E2A;margin-bottom:1rem}
 			.benefit-item p{color:#666;font-size:.9rem}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.service-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);transition:transform .3s ease}
+			.service-item{background:#fff;padding:2rem;border-radius:4px;transition:transform .3s ease}
 			.service-item:hover{transform:translateY(-5px)}
 			.service-icon{font-size:3rem;margin-bottom:1rem}
 			.service-item h3{color:#123E2A;margin-bottom:1rem}
@@ -636,19 +636,19 @@ import Nav from '../components/Nav.astro';
 			.service-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.problems-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.problem-item{background:#f8f9fa;padding:2rem;border-radius:10px;border-left:4px solid #123E2A}
+			.problem-item{background:#f8f9fa;padding:2rem;border-radius:4px;border-left:4px solid #123E2A}
 			.problem-item h3{color:#123E2A;margin-bottom:1rem}
 			.problem-item p{margin-bottom:1rem}
 			.problem-item strong{color:#123E2A}
 			.facility-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.facility-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.facility-item{background:#fff;padding:2rem;border-radius:4px;}
 			.facility-item h3{color:#123E2A;margin-bottom:1rem;border-bottom:2px solid #3FAE49;padding-bottom:0.5rem}
 			.facility-features p{margin-bottom:1rem;color:#666}
 			.facility-features ul{list-style:none}
 			.facility-features ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.facility-features ul li::before{content:"🏢";position:absolute;left:0}
 			.advantages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.advantage-item{text-align:center;padding:2rem;background:#fff;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.advantage-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;}
 			.advantage-icon{font-size:3rem;margin-bottom:1rem}
 			.advantage-item h3{color:#123E2A;margin-bottom:1rem}
 			.advantage-item p{color:#666}
@@ -659,21 +659,21 @@ import Nav from '../components/Nav.astro';
 			.emergency-types ul li::before{content:"⚠️";position:absolute;left:0}
 			.response-grid{display:grid;gap:1rem;margin-top:1rem}
 			.response-item{display:flex;justify-content:space-between;padding:1rem;background:#f8f9fa;border-radius:5px}
-			.emergency-box{background:#123E2A;color:#fff;padding:2rem;border-radius:10px;text-align:center}
+			.emergency-box{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.phone-number{font-size:2rem;font-weight:bold;margin:1rem 0}
 			.phone-number a{color:#fff;text-decoration:none}
 			.facility-note{margin-top:1rem;font-size:.9rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:5px}
 			.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.faq-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+			.faq-item{background:#fff;padding:2rem;border-radius:4px;}
 			.faq-item h3{color:#123E2A;margin-bottom:1rem}
 			.advanced-cleaning{background:#f8f9fa}
 			.indoor-problems{background:#f8f9fa}
 			.facility-types{background:#f8f9fa}
 			.texas-facilities{background:#fff}
 			.metro-areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem;margin-top:3rem}
-			.metro-area{background:#f8f9fa;padding:2rem;border-radius:10px;border-left:4px solid #123E2A}
+			.metro-area{background:#f8f9fa;padding:2rem;border-radius:4px;border-left:4px solid #123E2A}
 			.metro-area h3{color:#123E2A;margin-bottom:1.5rem;font-size:1.4rem}
-			.facility-highlight{background:#fff;padding:1.5rem;border-radius:8px;margin-bottom:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+			.facility-highlight{background:#fff;padding:1.5rem;border-radius:8px;margin-bottom:1.5rem;}
 			.facility-highlight h4{color:#123E2A;margin-bottom:1rem;font-size:1.2rem}
 			.facility-highlight p{color:#666;font-size:.95rem;line-height:1.5}
 			.facility-names{list-style:none;margin:0;padding:0}

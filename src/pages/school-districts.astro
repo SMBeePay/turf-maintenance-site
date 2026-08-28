@@ -41,12 +41,12 @@ import Nav from '../components/Nav.astro';
 			.hero h1{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.hero-subtitle{font-size:clamp(1rem,3vw,1.3rem);margin-bottom:2rem;opacity:.9;max-width:700px;margin-left:auto;margin-right:auto}
 			.hero-stats{display:flex;gap:2rem;justify-content:center;margin-top:2rem;flex-wrap:wrap}
-			.stat{text-align:center;padding:1rem;background:rgba(255,255,255,0.1);border-radius:10px;backdrop-filter:blur(10px)}
+			.stat{text-align:center;padding:1rem;background:rgba(255,255,255,0.1);border-radius:4px;backdrop-filter:blur(10px)}
 			.stat-number{font-size:2rem;font-weight:bold;color:#fff}
 			.stat-label{font-size:0.9rem;opacity:0.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
-			.btn-primary{background:#3FAE49;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:700;transition:all .3s ease;display:inline-block;box-shadow:0 2px 8px rgba(63,174,73,0.3)}
-			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px);box-shadow:0 4px 12px rgba(63,174,73,0.4)}
+			.btn-primary{background:#3FAE49;color:#fff;padding:1rem 2rem;text-decoration:none;border-radius:4px;font-weight:700;transition:background .2s ease;display:inline-block;text-transform:uppercase;letter-spacing:0.04em;font-size:0.9rem;}
+			.btn-primary:hover{background:#2F8C38;transform:translateY(-2px);}
 			@media (max-width:768px){
 				.nav-container{flex-direction:column;gap:1rem}
 				.nav-links{flex-wrap:wrap;justify-content:center;gap:1rem}
@@ -359,11 +359,11 @@ import Nav from '../components/Nav.astro';
 			.school-challenges,.school-solutions,.school-resources,.school-testimonial{padding:6rem 0}
 			.school-challenges h2,.school-solutions h2,.school-resources h2{text-align:center;margin-bottom:4rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.challenges-grid,.solutions-grid,.resources-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
-			.challenge-item,.resource-item{background:#F8F9FA;padding:2rem;border-radius:10px;text-align:center;border:1px solid #E5E7E9}
+			.challenge-item,.resource-item{background:#F8F9FA;padding:2rem;border-radius:4px;text-align:center;border:1px solid #E5E7E9}
 			.challenge-icon,.resource-icon{font-size:2.5rem;color:#3FAE49;margin-bottom:1rem}
 			.challenge-item h3,.resource-item h3{color:#111111;margin-bottom:1rem;font-size:1.3rem}
 			.challenge-item p,.resource-item p{color:#6B6F72;line-height:1.6;margin-bottom:1.5rem}
-			.solution-item{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+			.solution-item{background:#fff;padding:2rem;border-radius:4px;}
 			.solution-item h3{color:#123E2A;margin-bottom:1.5rem;font-size:1.4rem}
 			.solution-item ul{list-style:none}
 			.solution-item ul li{padding:0.5rem 0;padding-left:1.5rem;position:relative;color:#6B6F72}
