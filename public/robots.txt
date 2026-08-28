@@ -18,6 +18,7 @@ Allow: /soccer-field-turf-maintenance
 Allow: /baseball-field-turf-maintenance
 Allow: /indoor-turf-maintenance
 Allow: /gmax-testing-dallas
+Allow: /commercial-artificial-turf-cleaning
 
 # Location pages
 Allow: /locations/dallas-artificial-turf-maintenance

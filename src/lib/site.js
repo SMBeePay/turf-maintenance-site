@@ -50,6 +50,7 @@ export const NAV_LINKS = [
 			{ href: '/gmax-testing-dallas', label: 'GMAX Testing', key: 'gmax' },
 		],
 	},
+	{ href: '/commercial-artificial-turf-cleaning', label: 'Commercial', key: 'commercial' },
 	{ href: '/blog', label: 'Blog', key: 'blog' },
 	{ href: '/locations', label: 'Locations', key: 'locations' },
 	{ href: '/about', label: 'About', key: 'about' },
