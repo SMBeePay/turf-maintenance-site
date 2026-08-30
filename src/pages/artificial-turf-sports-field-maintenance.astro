@@ -291,15 +291,15 @@ import Nav from '../components/Nav.astro';
 				</div>
 			</section>
 
-			<section class="emergency-services">
+			<section class="priority-services">
 				<div class="container">
 					<h2>Priority Services & Availability</h2>
-					<div class="emergency-content">
-						<div class="emergency-info">
+					<div class="priority-content">
+						<div class="priority-info">
 							<h3>Rapid Response Team</h3>
 							<p>When your field faces unexpected damage or safety issues, our response team is ready to provide prompt assistance.</p>
 
-							<div class="emergency-types">
+							<div class="priority-types">
 								<h4>Priority Situations We Handle:</h4>
 								<ul>
 									<li>Severe weather damage (storms, hail, flooding)</li>
@@ -336,14 +336,14 @@ import Nav from '../components/Nav.astro';
 							</div>
 						</div>
 
-						<div class="emergency-contact">
-							<div class="emergency-box">
+						<div class="priority-contact">
+							<div class="priority-box">
 								<h3>Priority Line</h3>
 								<div class="phone-number">
 									<a href="tel:+14699819247">(469) 981-9247</a>
 								</div>
 								<p>Fast response for priority situations</p>
-								<div class="emergency-note">
+								<div class="priority-note">
 									<p><strong>Note:</strong> Priority service rates apply for after-hours and weekend responses. Call for immediate assistance and pricing.</p>
 								</div>
 							</div>
@@ -669,9 +669,9 @@ import Nav from '../components/Nav.astro';
 
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			.services-included,.common-problems,.maintenance-process,.why-choose-us,.emergency-services,.service-areas,.sport-specific-services,.faqs{padding:4rem 0}
+			.services-included,.common-problems,.maintenance-process,.why-choose-us,.priority-services,.service-areas,.sport-specific-services,.faqs{padding:4rem 0}
 			.section-intro{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
-			.services-included h2,.common-problems h2,.maintenance-process h2,.why-choose-us h2,.emergency-services h2,.service-areas h2,.sport-specific-services h2,.faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.services-included h2,.common-problems h2,.maintenance-process h2,.why-choose-us h2,.priority-services h2,.service-areas h2,.sport-specific-services h2,.faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
 			.service-item{background:#fff;padding:2rem;border-radius:4px;transition:transform .3s ease}
 			.service-item:hover{transform:translateY(-5px)}
@@ -693,17 +693,17 @@ import Nav from '../components/Nav.astro';
 			.reason-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;}
 			.reason-icon{font-size:3rem;margin-bottom:1rem}
 			.reason-item h3{color:#123E2A;margin-bottom:1rem}
-			.emergency-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem}
-			.emergency-types h4,.response-times h4{color:#123E2A;margin:2rem 0 1rem}
-			.emergency-types ul{list-style:none}
-			.emergency-types ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.emergency-types ul li::before{content:"⚠️";position:absolute;left:0}
+			.priority-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem}
+			.priority-types h4,.response-times h4{color:#123E2A;margin:2rem 0 1rem}
+			.priority-types ul{list-style:none}
+			.priority-types ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
+			.priority-types ul li::before{content:"⚠️";position:absolute;left:0}
 			.response-grid{display:grid;gap:1rem;margin-top:1rem}
 			.response-item{display:flex;justify-content:space-between;padding:1rem;background:#f8f9fa;border-radius:5px}
-			.emergency-box{background:#d32f2f;color:#fff;padding:2rem;border-radius:4px;text-align:center}
+			.priority-box{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.phone-number{font-size:2rem;font-weight:bold;margin:1rem 0}
 			.phone-number a{color:#fff;text-decoration:none}
-			.emergency-note{margin-top:1rem;font-size:.9rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:5px}
+			.priority-note{margin-top:1rem;font-size:.9rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:5px}
 			.coverage-intro{text-align:center;margin-bottom:3rem;font-size:1.1rem;color:#666}
 			.coverage-section{margin-bottom:3rem;padding:2rem;background:#fff;border-radius:4px;}
 			.coverage-section h3{color:#123E2A;margin-bottom:2rem}
@@ -760,7 +760,7 @@ import Nav from '../components/Nav.astro';
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
 			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
-				.emergency-content{grid-template-columns:1fr}
+				.priority-content{grid-template-columns:1fr}
 				.cities-grid{grid-template-columns:1fr}
 				.texas-regions{grid-template-columns:1fr}
 				.oklahoma-coverage{grid-template-columns:1fr}

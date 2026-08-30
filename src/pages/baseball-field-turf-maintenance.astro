@@ -364,15 +364,15 @@ import Nav from '../components/Nav.astro';
 				</div>
 			</section>
 
-			<section class="emergency-baseball">
+			<section class="priority-baseball">
 				<div class="container">
 					<h2>Baseball Field Priority Services</h2>
-					<div class="emergency-content">
-						<div class="emergency-situations">
+					<div class="priority-content">
+						<div class="priority-situations">
 							<h3>Game Day Priority Response</h3>
 							<p>When your baseball field faces unexpected issues before or during games, our team responds rapidly to keep your season on track.</p>
 
-							<div class="emergency-types">
+							<div class="priority-types">
 								<h4>Baseball-Specific Priority Issues:</h4>
 								<ul>
 									<li>Pitcher's mound damage or safety issues</li>
@@ -409,8 +409,8 @@ import Nav from '../components/Nav.astro';
 							</div>
 						</div>
 
-						<div class="emergency-contact">
-							<div class="emergency-box">
+						<div class="priority-contact">
+							<div class="priority-box">
 								<h3>Baseball Field Priority Line</h3>
 								<div class="phone-number">
 									<a href="tel:+14699819247">(469) 981-9247</a>
@@ -532,9 +532,9 @@ import Nav from '../components/Nav.astro';
 
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			.baseball-intro,.advanced-cleaning,.baseball-services,.baseball-problems,.baseball-specialties,.season-maintenance,.emergency-baseball,.baseball-faqs{padding:4rem 0}
+			.baseball-intro,.advanced-cleaning,.baseball-services,.baseball-problems,.baseball-specialties,.season-maintenance,.priority-baseball,.baseball-faqs{padding:4rem 0}
 			.section-intro{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
-			.baseball-intro h2,.advanced-cleaning h2,.baseball-services h2,.baseball-problems h2,.baseball-specialties h2,.season-maintenance h2,.emergency-baseball h2,.baseball-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.baseball-intro h2,.advanced-cleaning h2,.baseball-services h2,.baseball-problems h2,.baseball-specialties h2,.season-maintenance h2,.priority-baseball h2,.baseball-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.field-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
 			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;}
 			.stat-number{font-size:3rem;font-weight:bold;color:#123E2A;margin-bottom:0.5rem}
@@ -574,14 +574,14 @@ import Nav from '../components/Nav.astro';
 			.schedule-phase ul{list-style:none}
 			.schedule-phase ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.schedule-phase ul li::before{content:"📅";position:absolute;left:0}
-			.emergency-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem}
-			.emergency-types h4,.response-guarantees h4{color:#123E2A;margin:2rem 0 1rem}
-			.emergency-types ul{list-style:none}
-			.emergency-types ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.emergency-types ul li::before{content:"⚠️";position:absolute;left:0}
+			.priority-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem}
+			.priority-types h4,.response-guarantees h4{color:#123E2A;margin:2rem 0 1rem}
+			.priority-types ul{list-style:none}
+			.priority-types ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
+			.priority-types ul li::before{content:"⚠️";position:absolute;left:0}
 			.response-grid{display:grid;gap:1rem;margin-top:1rem}
 			.response-item{display:flex;justify-content:space-between;padding:1rem;background:#f8f9fa;border-radius:5px}
-			.emergency-box{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
+			.priority-box{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.phone-number{font-size:2rem;font-weight:bold;margin:1rem 0}
 			.phone-number a{color:#fff;text-decoration:none}
 			.game-day-note{margin-top:1rem;font-size:.9rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:5px}
@@ -610,7 +610,7 @@ import Nav from '../components/Nav.astro';
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
 			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
-				.emergency-content{grid-template-columns:1fr}
+				.priority-content{grid-template-columns:1fr}
 				.field-stats{grid-template-columns:repeat(2,1fr)}
 				.cleaning-benefits{grid-template-columns:1fr}
 				.cta-buttons{flex-direction:column;align-items:center}

@@ -354,23 +354,23 @@ import Nav from '../../components/Nav.astro';
 			</section>
 
 			<!-- Storm Response Services -->
-			<section class="emergency-services">
+			<section class="priority-services">
 				<div class="container">
 					<h2>Coastal Storm Response Sports Field Services</h2>
 					<p class="section-intro">Specialized response for coastal weather events and priority athletic facility needs</p>
 
-					<div class="emergency-grid">
-						<div class="emergency-item">
+					<div class="priority-grid">
+						<div class="priority-item">
 							<h3>Hurricane Storm Response</h3>
 							<p>Prompt post-hurricane field assessment and repairs to restore athletic facilities for community use and school sports programs.</p>
 						</div>
 
-						<div class="emergency-item">
+						<div class="priority-item">
 							<h3>Saltwater Flood Recovery</h3>
 							<p>Specialized remediation for fields affected by storm surge or saltwater flooding, including complete sanitization and accelerated restoration protocols.</p>
 						</div>
 
-						<div class="emergency-item">
+						<div class="priority-item">
 							<h3>Tournament Priority Support</h3>
 							<p>Priority scheduling for coastal athletic events and tournaments requiring immediate field optimization despite challenging weather conditions.</p>
 						</div>
@@ -444,16 +444,16 @@ import Nav from '../../components/Nav.astro';
 
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			.coastal-challenges,.hurricane-prep,.service-areas,.university-athletics,.school-districts,.coastal-services,.emergency-services,.local-success{padding:6rem 0}
+			.coastal-challenges,.hurricane-prep,.service-areas,.university-athletics,.school-districts,.coastal-services,.priority-services,.local-success{padding:6rem 0}
 			.coastal-challenges{background:#F8F9FA}
-			.coastal-challenges h2,.hurricane-prep h2,.service-areas h2,.university-athletics h2,.school-districts h2,.coastal-services h2,.emergency-services h2,.local-success h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.coastal-challenges h2,.hurricane-prep h2,.service-areas h2,.university-athletics h2,.school-districts h2,.coastal-services h2,.priority-services h2,.local-success h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.section-intro{text-align:center;font-size:1.1rem;color:#6B6F72;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
-			.challenges-grid,.prep-grid,.areas-grid,.university-services,.districts-grid,.services-grid,.emergency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
-			.challenge-item,.prep-item,.university-item,.district-item,.service-item,.emergency-item{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
-			.challenge-item:hover,.prep-item:hover,.university-item:hover,.district-item:hover,.service-item:hover,.emergency-item:hover{transform:translateY(-3px);}
+			.challenges-grid,.prep-grid,.areas-grid,.university-services,.districts-grid,.services-grid,.priority-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
+			.challenge-item,.prep-item,.university-item,.district-item,.service-item,.priority-item{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
+			.challenge-item:hover,.prep-item:hover,.university-item:hover,.district-item:hover,.service-item:hover,.priority-item:hover{transform:translateY(-3px);}
 			.challenge-icon{font-size:2.5rem;margin-bottom:1rem;display:block;text-align:center}
-			.challenge-item h3,.prep-item h3,.university-item h4,.district-item h4,.service-item h3,.emergency-item h3{color:#111111;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
-			.challenge-item p,.prep-item p,.university-item p,.district-item p,.service-item p,.emergency-item p{color:#6B6F72;line-height:1.6}
+			.challenge-item h3,.prep-item h3,.university-item h4,.district-item h4,.service-item h3,.priority-item h3{color:#111111;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
+			.challenge-item p,.prep-item p,.university-item p,.district-item p,.service-item p,.priority-item p{color:#6B6F72;line-height:1.6}
 			.hurricane-prep{background:#fff}
 			.hurricane-content{max-width:1000px;margin:0 auto}
 			.service-areas{background:#F8F9FA}
@@ -468,7 +468,7 @@ import Nav from '../../components/Nav.astro';
 			.university-content p{color:#6B6F72;margin-bottom:3rem;font-size:1.1rem}
 			.school-districts{background:#F8F9FA}
 			.coastal-services{background:#fff}
-			.emergency-services{background:#F0F9FF;border-top:1px solid #E5E7E9}
+			.priority-services{background:#F0F9FF;border-top:1px solid #E5E7E9}
 			.local-success{background:#F8F9FA;text-align:center}
 			.success-content{max-width:800px;margin:0 auto}
 			.success-content blockquote{font-size:1.3rem;color:#111111;font-style:italic;margin-bottom:2rem;line-height:1.6}
@@ -490,8 +490,8 @@ import Nav from '../../components/Nav.astro';
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
 			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
-				.coastal-challenges,.hurricane-prep,.service-areas,.university-athletics,.school-districts,.coastal-services,.emergency-services,.local-success{padding:4rem 0}
-				.challenges-grid,.prep-grid,.areas-grid,.university-services,.districts-grid,.services-grid,.emergency-grid{grid-template-columns:1fr;gap:1.5rem}
+				.coastal-challenges,.hurricane-prep,.service-areas,.university-athletics,.school-districts,.coastal-services,.priority-services,.local-success{padding:4rem 0}
+				.challenges-grid,.prep-grid,.areas-grid,.university-services,.districts-grid,.services-grid,.priority-grid{grid-template-columns:1fr;gap:1.5rem}
 				.cta-buttons,.hero-buttons{flex-direction:column;align-items:center}
 				.btn-primary,.btn-secondary{width:100%;max-width:280px}
 			}

@@ -46,6 +46,56 @@ import Nav from '../components/Nav.astro';
 		}
 		</script>
 
+		<!-- FAQ Schema -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "How often does commercial artificial turf need to be cleaned?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Most commercial properties do best on a monthly service schedule, though high-traffic areas like dog daycares or restaurant patios often need bi-weekly visits. Low-traffic accents, like corporate entrance landscaping, can sometimes go quarterly. We build the schedule around your property's actual usage."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "How much does commercial artificial turf cleaning cost?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Pricing depends on square footage, traffic level, and service frequency, so most commercial contracts are custom-quoted after a walkthrough. Recurring maintenance contracts are typically more cost-effective per visit than one-off cleanings. Contact us for a free property assessment and quote."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Is your turf cleaning process safe for pets?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes. We use pet-safe sanitization products specifically for dog daycares, pet resorts, and apartment dog runs. Our process targets the bacteria that cause urine odor at the fiber and backing level rather than just rinsing the surface, which is what a standard hose-down misses."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Can you set up a recurring maintenance contract for a property management company?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes, this is one of our most common commercial arrangements. We work directly with property managers and HOAs to set up recurring monthly or quarterly visits across single or multiple properties, with consistent invoicing and no need to call in each time."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Do you service indoor commercial turf, like trampoline parks or indoor golf facilities?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes. Indoor turf builds up odor and debris faster than outdoor turf since there's no sun or rain to help break it down naturally. Our indoor commercial protocols focus on odor control, static reduction, and fiber care for entertainment venues, fitness spaces, and simulator bays."
+					}
+				}
+			]
+		}
+		</script>
+
 		<link rel="prefetch" href="/contact">
 
 		<!-- Critical CSS -->
@@ -172,6 +222,34 @@ import Nav from '../components/Nav.astro';
 				</div>
 			</section>
 
+			<section class="faq-section">
+				<div class="container">
+					<h2>Commercial Turf Cleaning FAQ</h2>
+					<div class="faq-grid">
+						<div class="faq-item">
+							<h3>How often does commercial artificial turf need to be cleaned?</h3>
+							<p>Most commercial properties do best on a monthly service schedule, though high-traffic areas like dog daycares or restaurant patios often need bi-weekly visits. Low-traffic accents, like corporate entrance landscaping, can sometimes go quarterly. We build the schedule around your property's actual usage.</p>
+						</div>
+						<div class="faq-item">
+							<h3>How much does commercial artificial turf cleaning cost?</h3>
+							<p>Pricing depends on square footage, traffic level, and service frequency, so most commercial contracts are custom-quoted after a walkthrough. Recurring maintenance contracts are typically more cost-effective per visit than one-off cleanings.</p>
+						</div>
+						<div class="faq-item">
+							<h3>Is your turf cleaning process safe for pets?</h3>
+							<p>Yes. We use pet-safe sanitization products specifically for dog daycares, pet resorts, and apartment dog runs. Our process targets the bacteria that cause urine odor at the fiber and backing level rather than just rinsing the surface.</p>
+						</div>
+						<div class="faq-item">
+							<h3>Can you set up a recurring contract for a property management company?</h3>
+							<p>Yes — this is one of our most common commercial arrangements. We work directly with property managers and HOAs to set up recurring visits across single or multiple properties, with consistent invoicing.</p>
+						</div>
+						<div class="faq-item">
+							<h3>Do you service indoor commercial turf, like trampoline parks or indoor golf facilities?</h3>
+							<p>Yes. Indoor turf builds up odor and debris faster than outdoor turf since there's no sun or rain to help break it down naturally. Our indoor protocols focus on odor control, static reduction, and fiber care.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section class="cta">
 				<div class="container">
 					<h2>Get a Commercial Maintenance Quote</h2>
@@ -237,6 +315,11 @@ import Nav from '../components/Nav.astro';
 			.indoor-content a{color:#2F8C38;font-weight:600}
 			.why-it-matters{background:#fff}
 			.services-offered{background:#F8F9FA}
+			.faq-section{background:#fff;padding:6rem 0}
+			.faq-section h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+			.faq-item h3{color:#111111;margin-bottom:0.75rem;font-size:1.1rem;font-weight:600}
+			.faq-item p{color:#6B6F72;line-height:1.6}
 			.cta{background:#111111;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem);max-width:600px;margin-left:auto;margin-right:auto}
