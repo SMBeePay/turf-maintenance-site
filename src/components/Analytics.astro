@@ -84,49 +84,33 @@ const GTM_ID = 'GTM-XXXXXXX' // Replace with actual Google Tag Manager ID if usi
 </script>
 -->
 
-<!-- Google Search Console Verification -->
-<!-- Replace content value with your actual Google Search Console verification code -->
-<meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE" />
-
-<!-- Bing Webmaster Tools Verification -->
-<meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
-
-<!-- Facebook Domain Verification -->
-<meta name="facebook-domain-verification" content="YOUR_FB_DOMAIN_VERIFICATION" />
-
 <!-- Additional Analytics for Turf Maintenance Business -->
 <script>
-  // Track scroll depth for long service pages
+  // Track scroll depth for long service pages. Reads are gated behind
+  // requestAnimationFrame so scrollHeight (which forces layout) is read at
+  // most once per frame instead of on every scroll event - an unthrottled
+  // scroll listener doing layout reads is a common source of mobile jank.
   let scrollDepthTracked = {};
+  let scrollTicking = false;
   window.addEventListener('scroll', function() {
-    const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-    
-    [25, 50, 75, 90].forEach(threshold => {
-      if (scrollPercent >= threshold && !scrollDepthTracked[threshold]) {
-        scrollDepthTracked[threshold] = true;
-        gtag('event', 'scroll', {
-          event_category: 'engagement',
-          event_label: `${threshold}%`,
-          value: threshold
-        });
-      }
-    });
-  });
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(function() {
+      const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
 
-  // Track time on page for service pages (business critical metric)
-  let startTime = new Date().getTime();
-  
-  window.addEventListener('beforeunload', function() {
-    const timeSpent = Math.round((new Date().getTime() - startTime) / 1000);
-    
-    if (timeSpent > 30) { // Only track if user spent more than 30 seconds
-      gtag('event', 'engaged_time', {
-        event_category: 'engagement',
-        event_label: window.location.pathname,
-        value: timeSpent
+      [25, 50, 75, 90].forEach(threshold => {
+        if (scrollPercent >= threshold && !scrollDepthTracked[threshold]) {
+          scrollDepthTracked[threshold] = true;
+          gtag('event', 'scroll', {
+            event_category: 'engagement',
+            event_label: `${threshold}%`,
+            value: threshold
+          });
+        }
       });
-    }
-  });
+      scrollTicking = false;
+    });
+  }, { passive: true });
 
   // Track clicks on location-specific content
   document.addEventListener('click', function(e) {
