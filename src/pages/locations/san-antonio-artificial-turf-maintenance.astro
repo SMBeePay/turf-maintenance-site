@@ -356,23 +356,23 @@ import Nav from '../../components/Nav.astro';
 			</section>
 
 			<!-- Priority Services -->
-			<section class="emergency-services">
+			<section class="priority-services">
 				<div class="container">
 					<h2>San Antonio Sports Field Priority Services</h2>
 					<p class="section-intro">Fast response for weather damage, equipment issues, and priority sports field repairs across South Texas</p>
 
-					<div class="emergency-grid">
-						<div class="emergency-item">
+					<div class="priority-grid">
+						<div class="priority-item">
 							<h3>Military Base Priority Response</h3>
 							<p>Specialized services for military installation sports facilities, including expedited security clearance and base access protocols.</p>
 						</div>
 
-						<div class="emergency-item">
+						<div class="priority-item">
 							<h3>Tournament Priority Support</h3>
 							<p>Fast response for playoff games, tournaments, and championship events requiring field preparation or damage repair.</p>
 						</div>
 
-						<div class="emergency-item">
+						<div class="priority-item">
 							<h3>Weather Damage Assessment</h3>
 							<p>Rapid evaluation and repair of sports field damage from South Texas storms, hail, and extreme weather events with priority scheduling.</p>
 						</div>
@@ -446,16 +446,16 @@ import Nav from '../../components/Nav.astro';
 
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			.military-focus,.climate-challenges,.service-areas,.university-sports,.high-school-athletics,.sports-complexes,.emergency-services,.local-success{padding:6rem 0}
+			.military-focus,.climate-challenges,.service-areas,.university-sports,.high-school-athletics,.sports-complexes,.priority-services,.local-success{padding:6rem 0}
 			.military-focus{background:#F8F9FA}
-			.military-focus h2,.climate-challenges h2,.service-areas h2,.university-sports h2,.high-school-athletics h2,.sports-complexes h2,.emergency-services h2,.local-success h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.military-focus h2,.climate-challenges h2,.service-areas h2,.university-sports h2,.high-school-athletics h2,.sports-complexes h2,.priority-services h2,.local-success h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.section-intro{text-align:center;font-size:1.1rem;color:#6B6F72;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}
-			.military-grid,.challenges-grid,.areas-grid,.university-services,.schools-grid,.complex-grid,.emergency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
-			.military-item,.challenge-item,.university-item,.school-item,.complex-item,.emergency-item{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
-			.military-item:hover,.challenge-item:hover,.university-item:hover,.school-item:hover,.complex-item:hover,.emergency-item:hover{transform:translateY(-3px);}
+			.military-grid,.challenges-grid,.areas-grid,.university-services,.schools-grid,.complex-grid,.priority-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
+			.military-item,.challenge-item,.university-item,.school-item,.complex-item,.priority-item{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
+			.military-item:hover,.challenge-item:hover,.university-item:hover,.school-item:hover,.complex-item:hover,.priority-item:hover{transform:translateY(-3px);}
 			.military-icon{font-size:2.5rem;margin-bottom:1rem;display:block;text-align:center}
-			.military-item h3,.challenge-item h3,.university-item h4,.school-item h4,.complex-item h3,.emergency-item h3{color:#111111;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
-			.military-item p,.challenge-item p,.university-item p,.school-item p,.complex-item p,.emergency-item p{color:#6B6F72;line-height:1.6}
+			.military-item h3,.challenge-item h3,.university-item h4,.school-item h4,.complex-item h3,.priority-item h3{color:#111111;margin-bottom:1rem;font-size:1.3rem;font-weight:600}
+			.military-item p,.challenge-item p,.university-item p,.school-item p,.complex-item p,.priority-item p{color:#6B6F72;line-height:1.6}
 			.climate-challenges{background:#fff}
 			.challenge-item strong{color:#3FAE49;display:block;margin-bottom:0.5rem}
 			.service-areas{background:#F8F9FA}
@@ -470,7 +470,7 @@ import Nav from '../../components/Nav.astro';
 			.university-content p{color:#6B6F72;margin-bottom:3rem;font-size:1.1rem}
 			.high-school-athletics{background:#F8F9FA}
 			.sports-complexes{background:#fff}
-			.emergency-services{background:#F0F9FF;border-top:1px solid #E5E7E9}
+			.priority-services{background:#F0F9FF;border-top:1px solid #E5E7E9}
 			.local-success{background:#F8F9FA;text-align:center}
 			.success-content{max-width:800px;margin:0 auto}
 			.success-content blockquote{font-size:1.3rem;color:#111111;font-style:italic;margin-bottom:2rem;line-height:1.6}
@@ -492,8 +492,8 @@ import Nav from '../../components/Nav.astro';
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
 			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
-				.military-focus,.climate-challenges,.service-areas,.university-sports,.high-school-athletics,.sports-complexes,.emergency-services,.local-success{padding:4rem 0}
-				.military-grid,.challenges-grid,.areas-grid,.university-services,.schools-grid,.complex-grid,.emergency-grid{grid-template-columns:1fr;gap:1.5rem}
+				.military-focus,.climate-challenges,.service-areas,.university-sports,.high-school-athletics,.sports-complexes,.priority-services,.local-success{padding:4rem 0}
+				.military-grid,.challenges-grid,.areas-grid,.university-services,.schools-grid,.complex-grid,.priority-grid{grid-template-columns:1fr;gap:1.5rem}
 				.cta-buttons,.hero-buttons{flex-direction:column;align-items:center}
 				.btn-primary,.btn-secondary{width:100%;max-width:280px}
 			}

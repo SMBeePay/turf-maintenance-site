@@ -443,15 +443,15 @@ import Nav from '../components/Nav.astro';
 				</div>
 			</section>
 
-			<section class="emergency-indoor">
+			<section class="priority-indoor">
 				<div class="container">
 					<h2>Indoor Facility Priority Services</h2>
-					<div class="emergency-content">
-						<div class="emergency-situations">
+					<div class="priority-content">
+						<div class="priority-situations">
 							<h3>Indoor Priority Response</h3>
 							<p>Indoor facilities can't afford extended downtime. Our team provides rapid response for urgent maintenance needs that could shut down operations.</p>
 
-							<div class="emergency-types">
+							<div class="priority-types">
 								<h4>Indoor-Specific Priority Issues:</h4>
 								<ul>
 									<li>Air quality issues from cleaning products</li>
@@ -488,8 +488,8 @@ import Nav from '../components/Nav.astro';
 							</div>
 						</div>
 
-						<div class="emergency-contact">
-							<div class="emergency-box">
+						<div class="priority-contact">
+							<div class="priority-box">
 								<h3>Indoor Facility Priority Line</h3>
 								<div class="phone-number">
 									<a href="tel:+14699819247">(469) 981-9247</a>
@@ -612,9 +612,9 @@ import Nav from '../components/Nav.astro';
 
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			.indoor-intro,.advanced-cleaning,.indoor-services,.indoor-problems,.facility-types,.texas-facilities,.indoor-advantages,.emergency-indoor,.indoor-faqs{padding:4rem 0}
+			.indoor-intro,.advanced-cleaning,.indoor-services,.indoor-problems,.facility-types,.texas-facilities,.indoor-advantages,.priority-indoor,.indoor-faqs{padding:4rem 0}
 			.section-intro{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
-			.indoor-intro h2,.advanced-cleaning h2,.indoor-services h2,.indoor-problems h2,.facility-types h2,.texas-facilities h2,.indoor-advantages h2,.emergency-indoor h2,.indoor-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.indoor-intro h2,.advanced-cleaning h2,.indoor-services h2,.indoor-problems h2,.facility-types h2,.texas-facilities h2,.indoor-advantages h2,.priority-indoor h2,.indoor-faqs h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.field-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
 			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;}
 			.stat-number{font-size:3rem;font-weight:bold;color:#123E2A;margin-bottom:0.5rem}
@@ -652,14 +652,14 @@ import Nav from '../components/Nav.astro';
 			.advantage-icon{font-size:3rem;margin-bottom:1rem}
 			.advantage-item h3{color:#123E2A;margin-bottom:1rem}
 			.advantage-item p{color:#666}
-			.emergency-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem}
-			.emergency-types h4,.response-guarantees h4{color:#123E2A;margin:2rem 0 1rem}
-			.emergency-types ul{list-style:none}
-			.emergency-types ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.emergency-types ul li::before{content:"⚠️";position:absolute;left:0}
+			.priority-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem}
+			.priority-types h4,.response-guarantees h4{color:#123E2A;margin:2rem 0 1rem}
+			.priority-types ul{list-style:none}
+			.priority-types ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
+			.priority-types ul li::before{content:"⚠️";position:absolute;left:0}
 			.response-grid{display:grid;gap:1rem;margin-top:1rem}
 			.response-item{display:flex;justify-content:space-between;padding:1rem;background:#f8f9fa;border-radius:5px}
-			.emergency-box{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
+			.priority-box{background:#123E2A;color:#fff;padding:2rem;border-radius:4px;text-align:center}
 			.phone-number{font-size:2rem;font-weight:bold;margin:1rem 0}
 			.phone-number a{color:#fff;text-decoration:none}
 			.facility-note{margin-top:1rem;font-size:.9rem;background:rgba(255,255,255,.1);padding:1rem;border-radius:5px}
@@ -698,7 +698,7 @@ import Nav from '../components/Nav.astro';
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
 			.footer-section a:hover{color:#3FAE49}
 			@media (max-width:768px){
-				.emergency-content{grid-template-columns:1fr}
+				.priority-content{grid-template-columns:1fr}
 				.field-stats{grid-template-columns:repeat(2,1fr)}
 				.cleaning-benefits{grid-template-columns:1fr}
 				.advantages-grid{grid-template-columns:1fr}
