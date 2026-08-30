@@ -215,13 +215,13 @@ import Nav from '../../components/Nav.astro';
 						<div class="service-item">
 							<div class="service-icon">⚡</div>
 							<h3>Rapid Event Response</h3>
-							<p>Emergency services and quick turnarounds for Arlington's demanding event schedule.</p>
+							<p>Fast turnarounds for Arlington's demanding event schedule.</p>
 							<ul>
-								<li>Same-day emergency repairs</li>
+								<li>Same-day repair scheduling</li>
 								<li>Multi-event transitions</li>
 								<li>Weather contingency plans</li>
 								<li>Equipment failure recovery</li>
-								<li>24/7 event support</li>
+								<li>Flexible scheduling for event days</li>
 							</ul>
 						</div>
 
@@ -349,45 +349,6 @@ import Nav from '../../components/Nav.astro';
 				</div>
 			</section>
 
-			<section class="emergency-arlington">
-				<div class="container">
-					<div class="emergency-content">
-						<h2>Arlington Emergency Response</h2>
-						<p class="emergency-intro">Major events, championship games, and high-profile competitions can't wait. Our Arlington emergency response team provides immediate solutions for critical field issues.</p>
-						
-						<div class="emergency-grid">
-							<div class="emergency-service">
-								<div class="emergency-icon">⚡</div>
-								<h3>Immediate Response</h3>
-								<p>Priority deployment for major event emergencies and critical facility issues</p>
-							</div>
-							<div class="emergency-service">
-								<div class="emergency-icon">🏟️</div>
-								<h3>Event Continuity</h3>
-								<p>Rapid repairs to ensure events proceed as scheduled without delay</p>
-							</div>
-							<div class="emergency-service">
-								<div class="emergency-icon">🛠️</div>
-								<h3>Advanced Equipment</h3>
-								<p>Specialized tools and materials for complex facility emergency repairs</p>
-							</div>
-						</div>
-
-						<div class="emergency-contact-section">
-							<div class="emergency-phone-section">
-								<div class="emergency-phone">
-									<a href="tel:+14699819247">(469) 981-9247</a>
-								</div>
-								<p class="emergency-support">24/7 Emergency Response for Arlington's Premier Facilities</p>
-								<div class="priority-note">
-									<p><strong>Major Event Priority:</strong> Emergency calls during championships, tournaments, and major competitions receive immediate priority response.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			<section class="cta">
 				<div class="container">
 					<h2>Join Arlington's Championship Facilities</h2>
@@ -422,13 +383,12 @@ import Nav from '../../components/Nav.astro';
 							<li><a href="/services">Major Event Preparation</a></li>
 							<li><a href="/gmax-testing-dallas">Professional Testing</a></li>
 							<li><a href="/services">Broadcast Standards</a></li>
-							<li><a href="/services">Emergency Response</a></li>
+							<li><a href="/services">Priority Scheduling</a></li>
 						</ul>
 					</div>
 					<div class="footer-section">
 						<h3>Contact Arlington</h3>
 						<p>Major Event Hotline: (469) 981-9247</p>
-						<p>Email: andrew@texasturfmaintenance.com</p>
 						<p>Serving Texas Entertainment Capital</p>
 					</div>
 				</div>
@@ -437,7 +397,7 @@ import Nav from '../../components/Nav.astro';
 
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			.city-intro,.arlington-venues,.arlington-services,.arlington-excellence,.major-events,.testimonial-arlington,.emergency-arlington{padding:4rem 0}
+			.city-intro,.arlington-venues,.arlington-services,.arlington-excellence,.major-events,.testimonial-arlington{padding:4rem 0}
 			.intro-text{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
 			.city-intro h2,.arlington-venues h2,.arlington-services h2,.arlington-excellence h2,.major-events h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.arlington-highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}
@@ -486,19 +446,6 @@ import Nav from '../../components/Nav.astro';
 			.testimonial-content{background:#fff;padding:4rem;border-radius:20px;text-align:center;max-width:900px;margin:0 auto}
 			.testimonial-content blockquote{font-size:1.4rem;color:#666;font-style:italic;margin-bottom:2rem;line-height:1.6}
 			.testimonial-content cite{color:#123E2A;font-weight:bold;font-size:1.1rem}
-			.emergency-arlington{background:#d32f2f}
-			.emergency-content{text-align:center;color:#fff;max-width:1100px;margin:0 auto}
-			.emergency-content h2{margin-bottom:1rem;color:#fff;font-size:2.5rem}
-			.emergency-intro{margin-bottom:3rem;font-size:1.2rem;max-width:800px;margin-left:auto;margin-right:auto}
-			.emergency-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0}
-			.emergency-service{background:rgba(255,255,255,.1);padding:2.5rem;border-radius:4px}
-			.emergency-icon{font-size:3rem;margin-bottom:1rem}
-			.emergency-service h3{margin-bottom:1rem;font-size:1.3rem}
-			.emergency-contact-section{margin-top:4rem;background:rgba(255,255,255,.1);padding:3rem;border-radius:4px}
-			.emergency-phone{font-size:3rem;font-weight:bold;margin-bottom:1rem}
-			.emergency-phone a{color:#fff;text-decoration:none}
-			.emergency-support{font-size:1.2rem;margin-bottom:2rem}
-			.priority-note{background:rgba(255,255,255,.1);padding:1.5rem;border-radius:4px;font-size:.9rem}
 			.cta{background:#111111;color:#fff;padding:6rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem)}
 			.cta p{margin-bottom:2rem;font-size:clamp(1rem,2vw,1.1rem)}
@@ -520,7 +467,6 @@ import Nav from '../../components/Nav.astro';
 				.venue-showcase{grid-template-columns:1fr}
 				.feature-grid{grid-template-columns:repeat(2,1fr)}
 				.events-capabilities{grid-template-columns:1fr}
-				.emergency-grid{grid-template-columns:1fr}
 				.cta-buttons{flex-direction:column;align-items:center}
 				.btn-primary,.btn-secondary{width:100%;max-width:280px}
 			}

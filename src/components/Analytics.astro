@@ -52,17 +52,6 @@ const GTM_ID = 'GTM-XXXXXXX' // Replace with actual Google Tag Manager ID if usi
     }
   });
 
-  // Track emergency contact interactions
-  document.addEventListener('click', function(e) {
-    if (e.target.matches('.emergency-phone a, .btn-emergency')) {
-      gtag('event', 'emergency_contact', {
-        event_category: 'high_intent',
-        event_label: 'emergency_hotline',
-        value: 5
-      });
-    }
-  });
-
   // Track service page visits
   if (window.location.pathname.includes('/services') || 
       window.location.pathname.includes('maintenance') ||
@@ -199,7 +188,7 @@ const GTM_ID = 'GTM-XXXXXXX' // Replace with actual Google Tag Manager ID if usi
     "Artificial Turf Maintenance",
     "GMAX Safety Testing", 
     "Sports Field Cleaning",
-    "Emergency Turf Repairs",
+    "Turf Repairs",
     "Football Field Maintenance",
     "Soccer Field Maintenance",
     "Baseball Field Maintenance"

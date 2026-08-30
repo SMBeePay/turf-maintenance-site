@@ -14,8 +14,8 @@ import Nav from '../components/Nav.astro';
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<Analytics />
 		<title>Contact Texas Turf Maintenance | Free Artificial Turf Maintenance Quote Dallas Fort Worth | (469) 981-9247</title>
-		<meta name="description" content="Get your FREE artificial turf maintenance quote! Call (469) 981-9247 or request online assessment. 2-hour response time, 24/7 emergency service in Dallas Fort Worth area." />
-		<meta name="keywords" content="contact DFW turf pros, artificial turf maintenance quote dallas, free turf cleaning estimate, emergency turf repair fort worth" />
+		<meta name="description" content="Get your FREE artificial turf maintenance quote! Fill out the form below and we'll respond within 2 hours with a detailed assessment for your Dallas Fort Worth area field." />
+		<meta name="keywords" content="contact texas turf maintenance, artificial turf maintenance quote dallas, free turf cleaning estimate fort worth" />
 		<link rel="canonical" href="https://texasturfmaintenance.com/contact" />
 	</head>
 	<body>
@@ -26,31 +26,6 @@ import Nav from '../components/Nav.astro';
 				<div class="container">
 					<h1>Contact Texas Turf Maintenance</h1>
 					<p>Get your free artificial turf maintenance consultation today</p>
-				</div>
-			</section>
-
-			<section class="contact-options">
-				<div class="container">
-					<div class="contact-grid">
-						<div class="contact-method">
-							<div class="contact-icon">📞</div>
-							<h3>Call Us</h3>
-							<p><a href="tel:+14699819247">(469) 981-9247</a></p>
-							<p class="contact-note">Available 24/7 for emergencies</p>
-						</div>
-						<div class="contact-method">
-							<div class="contact-icon">✉️</div>
-							<h3>Email Us</h3>
-							<p><a href="mailto:andrew@texasturfmaintenance.com">andrew@texasturfmaintenance.com</a></p>
-							<p class="contact-note">Response within 2 hours</p>
-						</div>
-						<div class="contact-method">
-							<div class="contact-icon">⚡</div>
-							<h3>Emergency Service</h3>
-							<p><a href="tel:+14699819247">(469) 981-9247</a></p>
-							<p class="contact-note">24/7 rapid response available</p>
-						</div>
-					</div>
 				</div>
 			</section>
 
@@ -131,7 +106,6 @@ import Nav from '../components/Nav.astro';
 										<option value="routine">Routine Maintenance</option>
 										<option value="within-month">Within a Month</option>
 										<option value="within-week">Within a Week</option>
-										<option value="emergency">Emergency Service</option>
 									</select>
 								</div>
 							</div>
@@ -221,6 +195,12 @@ import Nav from '../components/Nav.astro';
 				</div>
 			</section>
 
+			<section class="phone-strip">
+				<div class="container">
+					<p>Prefer to talk it through first? Call <a href="tel:+14699819247">(469) 981-9247</a></p>
+				</div>
+			</section>
+
 			<section class="business-info">
 				<div class="container">
 					<div class="info-grid">
@@ -237,11 +217,7 @@ import Nav from '../components/Nav.astro';
 								</div>
 								<div class="hours-item">
 									<span>Sunday:</span>
-									<span>Emergency Service Only</span>
-								</div>
-								<div class="hours-item emergency">
-									<span>Emergency Service:</span>
-									<span>24/7 Available</span>
+									<span>Closed</span>
 								</div>
 							</div>
 						</div>
@@ -260,10 +236,6 @@ import Nav from '../components/Nav.astro';
 								<div class="response-item">
 									<span>Urgent Repairs:</span>
 									<span>Same day</span>
-								</div>
-								<div class="response-item">
-									<span>Emergency Service:</span>
-									<span>Within 4 hours</span>
 								</div>
 							</div>
 						</div>
@@ -290,7 +262,6 @@ import Nav from '../components/Nav.astro';
 					<div class="map-placeholder">
 						<p>Service Area: Dallas Fort Worth Metroplex</p>
 						<p>50-mile radius from Downtown Dallas</p>
-						<p>Emergency service available 24/7 within 25 miles</p>
 					</div>
 				</div>
 			</section>
@@ -325,7 +296,6 @@ import Nav from '../components/Nav.astro';
 					<div class="footer-section">
 						<h3>Contact</h3>
 						<p>Phone: (469) 981-9247</p>
-						<p>Email: andrew@texasturfmaintenance.com</p>
 					</div>
 				</div>
 			</div>
@@ -451,6 +421,29 @@ import Nav from '../components/Nav.astro';
 
 			.contact-form-section {
 				padding: 6rem 0;
+			}
+
+			.phone-strip {
+				background: #F8F9FA;
+				padding: 2rem 0;
+				text-align: center;
+				border-top: 1px solid #E5E7E9;
+				border-bottom: 1px solid #E5E7E9;
+			}
+
+			.phone-strip p {
+				font-size: 1.1rem;
+				color: #111111;
+			}
+
+			.phone-strip a {
+				color: #3FAE49;
+				font-weight: 700;
+				text-decoration: none;
+			}
+
+			.phone-strip a:hover {
+				color: #2F8C38;
 			}
 
 			.form-container {
@@ -620,11 +613,6 @@ import Nav from '../components/Nav.astro';
 				justify-content: space-between;
 				padding: 0.5rem 0;
 				border-bottom: 1px solid #eee;
-			}
-
-			.hours-item.emergency {
-				color: #3FAE49;
-				font-weight: bold;
 			}
 
 			.payment-list {
