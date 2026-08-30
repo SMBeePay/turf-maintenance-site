@@ -12,7 +12,8 @@ import Icon from '../components/Icon.astro';
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 		<Analytics />
 		<title>Texas Turf Maintenance - #1 Artificial Turf Maintenance Across Texas | Statewide Sports Field Experts</title>
 		<meta name="description" content="Professional artificial turf maintenance across Texas. Expert cleaning, infill replacement, seam repair for football, soccer & baseball fields in Dallas, Houston, Austin, San Antonio. Get a free quote!" />
@@ -41,7 +42,7 @@ import Icon from '../components/Icon.astro';
 			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
 			
 			/* Critical - Hero section (LCP element) */
-			.hero{background:linear-gradient(rgba(10,10,10,0.6),rgba(10,10,10,0.93)),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;background-attachment:fixed;color:#fff;padding:9rem 0 7rem;text-align:center;contain:layout style paint;border-bottom:4px solid #3FAE49}
+			.hero{background:linear-gradient(rgba(10,10,10,0.6),rgba(10,10,10,0.93)),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;color:#fff;padding:9rem 0 7rem;text-align:center;contain:layout style paint;border-bottom:4px solid #3FAE49}
 			.hero-content{max-width:820px;margin:0 auto;padding:0 20px}
 			.hero-eyebrow{font-size:0.8rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3FAE49;margin-bottom:1.25rem}
 			.hero h1{font-size:clamp(2.3rem,5.5vw,3.6rem);margin-bottom:1.25rem;font-weight:800;line-height:1.08;letter-spacing:-0.02em}
@@ -579,10 +580,6 @@ import Icon from '../components/Icon.astro';
 
 		<!-- Non-critical CSS loaded asynchronously -->
 		<style media="print" onload="this.media='all';this.onload=null;">
-			/* Mobile hero background optimization */
-			@media (max-width:768px){
-				.hero{background-attachment:scroll}
-			}
 			/* Shared eyebrow label */
 			.eyebrow{font-size:0.78rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3FAE49;margin-bottom:0.75rem;text-align:center}
 			.eyebrow-light{color:#3FAE49}
