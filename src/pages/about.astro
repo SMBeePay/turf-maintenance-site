@@ -1,5 +1,6 @@
 ---
 import Nav from '../components/Nav.astro';
+import Icon from '../components/Icon.astro';
 ---
 
 <html lang="en">
@@ -123,32 +124,32 @@ import Nav from '../components/Nav.astro';
 					<h2>Why Facilities Choose Texas Turf Maintenance</h2>
 					<div class="benefits-grid">
 						<div class="benefit-item">
-							<div class="benefit-icon">📍</div>
+							<div class="benefit-icon"><Icon name="map-pin" size={26} /></div>
 							<h3>Local Expertise</h3>
 							<p>Deep understanding of Texas climate challenges and local regulations affecting artificial turf maintenance.</p>
 						</div>
 						<div class="benefit-item">
-							<div class="benefit-icon">🏆</div>
+							<div class="benefit-icon"><Icon name="trophy" size={26} /></div>
 							<h3>Proven Track Record</h3>
 							<p>Over 1,000 successful maintenance projects with 98% customer satisfaction rate and numerous referrals.</p>
 						</div>
 						<div class="benefit-item">
-							<div class="benefit-icon">⚡</div>
+							<div class="benefit-icon"><Icon name="clock" size={26} /></div>
 							<h3>Rapid Response</h3>
 							<p>Fast scheduling with guaranteed response times for priority maintenance needs.</p>
 						</div>
 						<div class="benefit-item">
-							<div class="benefit-icon">🔧</div>
+							<div class="benefit-icon"><Icon name="shield-check" size={26} /></div>
 							<h3>Comprehensive Solutions</h3>
 							<p>Full-service maintenance from routine cleaning to major repairs, eliminating the need for multiple contractors.</p>
 						</div>
 						<div class="benefit-item">
-							<div class="benefit-icon">💰</div>
+							<div class="benefit-icon"><Icon name="calculator" size={26} /></div>
 							<h3>Cost-Effective Programs</h3>
 							<p>Preventive maintenance programs that extend turf life and reduce long-term replacement costs.</p>
 						</div>
 						<div class="benefit-item">
-							<div class="benefit-icon">✅</div>
+							<div class="benefit-icon"><Icon name="check-square" size={26} /></div>
 							<h3>Quality Guarantee</h3>
 							<p>100% satisfaction guarantee on all services with detailed documentation and follow-up inspections.</p>
 						</div>
@@ -241,46 +242,6 @@ import Nav from '../components/Nav.astro';
 				padding: 0 20px;
 			}
 
-			nav {
-				background: #123E2A;
-				padding: 1rem 0;
-				position: sticky;
-				top: 0;
-				z-index: 100;
-			}
-
-			.nav-container {
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 0 20px;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-
-			.logo {
-				font-size: 1.5rem;
-				font-weight: bold;
-				color: white;
-				text-decoration: none;
-			}
-
-			.nav-links {
-				display: flex;
-				list-style: none;
-				gap: 2rem;
-			}
-
-			.nav-links a {
-				color: white;
-				text-decoration: none;
-				transition: color 0.3s;
-			}
-
-			.nav-links a:hover, .nav-links a.active {
-				color: #3FAE49;
-			}
-
 			.page-hero {
 				background: linear-gradient(135deg, #111111, #2E332F);
 				color: white;
@@ -312,7 +273,7 @@ import Nav from '../components/Nav.astro';
 			.story-content p {
 				font-size: 1.1rem;
 				margin-bottom: 1.5rem;
-				color: #666;
+				color: #6B6F72;
 				max-width: 800px;
 				margin-left: auto;
 				margin-right: auto;
@@ -333,7 +294,7 @@ import Nav from '../components/Nav.astro';
 				background: white;
 				padding: 2rem;
 				border-radius: 4px;
-				
+				border: 1px solid #E5E7E9;
 			}
 
 			.mission-item h3 {
@@ -343,7 +304,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.mission-item p {
-				color: #666;
+				color: #6B6F72;
 				margin-bottom: 1rem;
 			}
 
@@ -355,7 +316,7 @@ import Nav from '../components/Nav.astro';
 				padding: 0.5rem 0;
 				padding-left: 1rem;
 				position: relative;
-				color: #666;
+				color: #6B6F72;
 			}
 
 			.mission-item ul li::before {
@@ -387,12 +348,7 @@ import Nav from '../components/Nav.astro';
 				background: white;
 				padding: 2rem;
 				border-radius: 4px;
-				
-				transition: transform 0.3s;
-			}
-
-			.expertise-item:hover {
-				transform: translateY(-5px);
+				border: 1px solid #E5E7E9;
 			}
 
 			.expertise-item h3 {
@@ -401,7 +357,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.expertise-item p {
-				color: #666;
+				color: #6B6F72;
 			}
 
 			.equipment-technology {
@@ -419,7 +375,7 @@ import Nav from '../components/Nav.astro';
 			.equipment-content > p {
 				text-align: center;
 				font-size: 1.1rem;
-				color: #666;
+				color: #6B6F72;
 				margin-bottom: 3rem;
 			}
 
@@ -433,7 +389,7 @@ import Nav from '../components/Nav.astro';
 				background: white;
 				padding: 2rem;
 				border-radius: 4px;
-				
+				border: 1px solid #E5E7E9;
 			}
 
 			.equipment-item h3 {
@@ -442,7 +398,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.equipment-item p {
-				color: #666;
+				color: #6B6F72;
 			}
 
 			.why-choose-us {
@@ -467,17 +423,19 @@ import Nav from '../components/Nav.astro';
 				padding: 2rem;
 				background: white;
 				border-radius: 4px;
-				
-				transition: transform 0.3s;
-			}
-
-			.benefit-item:hover {
-				transform: translateY(-5px);
+				border: 1px solid #E5E7E9;
 			}
 
 			.benefit-icon {
-				font-size: 3rem;
-				margin-bottom: 1rem;
+				width: 48px;
+				height: 48px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 1rem;
+				border: 1.5px solid #123E2A;
+				border-radius: 4px;
+				color: #123E2A;
 			}
 
 			.benefit-item h3 {
@@ -486,7 +444,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.benefit-item p {
-				color: #666;
+				color: #6B6F72;
 			}
 
 			.community-involvement {
@@ -504,7 +462,7 @@ import Nav from '../components/Nav.astro';
 			.community-content > p {
 				text-align: center;
 				font-size: 1.1rem;
-				color: #666;
+				color: #6B6F72;
 				margin-bottom: 3rem;
 			}
 
@@ -518,7 +476,7 @@ import Nav from '../components/Nav.astro';
 				background: white;
 				padding: 2rem;
 				border-radius: 4px;
-				
+				border: 1px solid #E5E7E9;
 			}
 
 			.community-item h3 {
@@ -527,7 +485,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.community-item p {
-				color: #666;
+				color: #6B6F72;
 			}
 
 			.cta {
@@ -559,7 +517,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.btn-primary:hover {
-				background: #f0f0f0;
+				background: #E5E7E9;
 				transform: translateY(-2px);
 			}
 
@@ -608,16 +566,6 @@ import Nav from '../components/Nav.astro';
 			}
 
 			@media (max-width: 768px) {
-				.nav-container {
-					flex-direction: column;
-					gap: 1rem;
-				}
-
-				.nav-links {
-					flex-wrap: wrap;
-					justify-content: center;
-				}
-
 				.page-hero h1 {
 					font-size: 2rem;
 				}

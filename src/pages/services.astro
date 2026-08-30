@@ -292,46 +292,6 @@ import Nav from '../components/Nav.astro';
 				padding: 0 20px;
 			}
 
-			nav {
-				background: #123E2A;
-				padding: 1rem 0;
-				position: sticky;
-				top: 0;
-				z-index: 100;
-			}
-
-			.nav-container {
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 0 20px;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-
-			.logo {
-				font-size: 1.5rem;
-				font-weight: bold;
-				color: white;
-				text-decoration: none;
-			}
-
-			.nav-links {
-				display: flex;
-				list-style: none;
-				gap: 2rem;
-			}
-
-			.nav-links a {
-				color: white;
-				text-decoration: none;
-				transition: color 0.3s;
-			}
-
-			.nav-links a:hover, .nav-links a.active {
-				color: #3FAE49;
-			}
-
 			.page-hero {
 				background: linear-gradient(135deg, #111111, #2E332F);
 				color: white;
@@ -357,7 +317,7 @@ import Nav from '../components/Nav.astro';
 				margin-bottom: 4rem;
 				background: white;
 				border-radius: 4px;
-				
+				border: 1px solid #E5E7E9;
 				overflow: hidden;
 			}
 
@@ -402,11 +362,11 @@ import Nav from '../components/Nav.astro';
 
 			.price {
 				display: inline-block;
-				background: #3FAE49;
-				color: white;
-				padding: 0.5rem 1rem;
-				border-radius: 25px;
-				font-weight: bold;
+				color: #123E2A;
+				font-weight: 700;
+				font-size: 1.05rem;
+				padding: 0.5rem 0;
+				border-top: 1px solid #E5E7E9;
 			}
 
 			.artificial-vs-natural {
@@ -493,16 +453,17 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.step-number {
-				display: inline-block;
-				width: 60px;
-				height: 60px;
-				background: #3FAE49;
-				color: white;
-				border-radius: 50%;
-				line-height: 60px;
-				font-size: 1.5rem;
-				font-weight: bold;
-				margin-bottom: 1rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 56px;
+				height: 56px;
+				margin: 0 auto 1rem;
+				border: 1.5px solid #123E2A;
+				border-radius: 4px;
+				color: #123E2A;
+				font-size: 1.3rem;
+				font-weight: 700;
 			}
 
 			.step h3 {
