@@ -37,6 +37,8 @@ Allow: /locations/richardson-artificial-turf-maintenance
 Allow: /locations/royse-city-artificial-turf-maintenance
 Allow: /locations/lewisville-artificial-turf-maintenance
 Allow: /locations/allen-artificial-turf-maintenance
+Allow: /locations/rockwall-artificial-turf-maintenance
+Allow: /locations/fate-artificial-turf-maintenance
 
 # Regional expansion location pages
 Allow: /locations/oklahoma-city-artificial-turf-maintenance
