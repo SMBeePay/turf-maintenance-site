@@ -1,5 +1,6 @@
 ---
 import Nav from '../../components/Nav.astro';
+import Icon from '../../components/Icon.astro';
 ---
 
 <html lang="en">
@@ -96,22 +97,22 @@ import Nav from '../../components/Nav.astro';
 					
 					<div class="city-highlights">
 						<div class="highlight-item">
-							<div class="highlight-icon">🏟️</div>
+							<div class="highlight-icon"><Icon name="trophy" size={28} /></div>
 							<h3>The Star Complex</h3>
 							<p>Maintaining facilities at the Dallas Cowboys' world headquarters</p>
 						</div>
 						<div class="highlight-item">
-							<div class="highlight-icon">⚽</div>
+							<div class="highlight-icon"><Icon name="shield" size={28} /></div>
 							<h3>FC Dallas</h3>
 							<p>Professional soccer field maintenance and training facility care</p>
 						</div>
 						<div class="highlight-item">
-							<div class="highlight-icon">🏈</div>
+							<div class="highlight-icon"><Icon name="school" size={28} /></div>
 							<h3>Frisco ISD</h3>
 							<p>Championship-level maintenance for premier high school programs</p>
 						</div>
 						<div class="highlight-item">
-							<div class="highlight-icon">🏆</div>
+							<div class="highlight-icon"><Icon name="trophy" size={28} /></div>
 							<h3>National Events</h3>
 							<p>Tournament and championship hosting facility preparation</p>
 						</div>
@@ -124,7 +125,7 @@ import Nav from '../../components/Nav.astro';
 					<h2>Premier Frisco Facilities We Maintain</h2>
 					<div class="facilities-showcase">
 						<div class="facility-category">
-							<h3>🏟️ Professional Sports Venues</h3>
+							<h3><Icon name="trophy" size={24} /> Professional Sports Venues</h3>
 							<div class="facility-list">
 								<div class="facility-item">
 									<h4>The Star in Frisco</h4>
@@ -148,7 +149,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="facility-category">
-							<h3>🏫 Educational Athletics</h3>
+							<h3><Icon name="building-2" size={24} /> Educational Athletics</h3>
 							<div class="facility-list">
 								<div class="facility-item">
 									<h4>Frisco Independent School District</h4>
@@ -164,7 +165,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="facility-category">
-							<h3>⚽ Youth Sports Complexes</h3>
+							<h3><Icon name="shield" size={24} /> Youth Sports Complexes</h3>
 							<div class="facility-list">
 								<div class="facility-item">
 									<h4>Championship Sports Complexes</h4>
@@ -187,7 +188,7 @@ import Nav from '../../components/Nav.astro';
 					<h2>Frisco-Specialized Services</h2>
 					<div class="services-grid">
 						<div class="service-item">
-							<div class="service-icon">🏆</div>
+							<div class="service-icon"><Icon name="trophy" size={30} /></div>
 							<h3>Professional-Grade Maintenance</h3>
 							<p>Championship-level field care for professional sports venues and broadcast-quality facilities.</p>
 							<ul>
@@ -200,7 +201,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">📺</div>
+							<div class="service-icon"><Icon name="sparkles" size={30} /></div>
 							<h3>Broadcast-Quality Aesthetics</h3>
 							<p>Maintaining the visual excellence required for national television broadcasts and media coverage.</p>
 							<ul>
@@ -213,7 +214,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">⚡</div>
+							<div class="service-icon"><Icon name="clock" size={30} /></div>
 							<h3>Rapid Event Response</h3>
 							<p>Priority services and quick turnarounds for Frisco's packed event calendar.</p>
 							<ul>
@@ -226,7 +227,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">🔧</div>
+							<div class="service-icon"><Icon name="shield-check" size={30} /></div>
 							<h3>Advanced Technology Solutions</h3>
 							<p>Cutting-edge maintenance techniques and equipment for Frisco's state-of-the-art facilities.</p>
 							<ul>
@@ -239,7 +240,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">🏃</div>
+							<div class="service-icon"><Icon name="gauge" size={30} /></div>
 							<h3>Multi-Sport Coordination</h3>
 							<p>Seamless transitions between different sports and events at multi-use Frisco facilities.</p>
 							<ul>
@@ -252,7 +253,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">🛡️</div>
+							<div class="service-icon"><Icon name="shield" size={30} /></div>
 							<h3>Elite Safety Standards</h3>
 							<p>Comprehensive safety testing and compliance for professional and high-profile amateur facilities.</p>
 							<ul>
@@ -278,19 +279,19 @@ import Nav from '../../components/Nav.astro';
 
 						<div class="excellence-pillars">
 							<div class="pillar">
-								<h4>🎯 Precision Execution</h4>
+								<h4><Icon name="gauge" size={22} /> Precision Execution</h4>
 								<p>Every detail perfected for professional and broadcast standards</p>
 							</div>
 							<div class="pillar">
-								<h4>⏱️ Timely Delivery</h4>
+								<h4><Icon name="clock" size={22} /> Timely Delivery</h4>
 								<p>Reliable service that never disrupts Frisco's demanding schedules</p>
 							</div>
 							<div class="pillar">
-								<h4>🔍 Quality Assurance</h4>
+								<h4><Icon name="clipboard-check" size={22} /> Quality Assurance</h4>
 								<p>Rigorous testing and verification of all work performed</p>
 							</div>
 							<div class="pillar">
-								<h4>🚀 Innovation Leadership</h4>
+								<h4><Icon name="sparkles" size={22} /> Innovation Leadership</h4>
 								<p>Implementing the latest techniques and technologies</p>
 							</div>
 						</div>
@@ -346,17 +347,17 @@ import Nav from '../../components/Nav.astro';
 
 						<div class="priority-features">
 							<div class="priority-feature">
-								<div class="feature-icon">⚡</div>
+								<div class="feature-icon"><Icon name="clock" size={30} /></div>
 								<h3>Priority Response</h3>
 								<p>Fast deployment for professional and high-stakes events</p>
 							</div>
 							<div class="priority-feature">
-								<div class="feature-icon">🏆</div>
+								<div class="feature-icon"><Icon name="trophy" size={30} /></div>
 								<h3>Championship Standards</h3>
 								<p>Every repair meets broadcast and professional quality standards</p>
 							</div>
 							<div class="priority-feature">
-								<div class="feature-icon">🔧</div>
+								<div class="feature-icon"><Icon name="shield-check" size={30} /></div>
 								<h3>Advanced Equipment</h3>
 								<p>Specialized tools and materials for complex facility repairs</p>
 							</div>
@@ -519,53 +520,51 @@ import Nav from '../../components/Nav.astro';
 			.intro-text{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
 			.city-intro h2,.frisco-facilities h2,.frisco-services h2,.frisco-approach h2,.frisco-partnerships h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.city-highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:3rem}
-			.highlight-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;transition:transform .3s ease}
-			.highlight-item:hover{transform:translateY(-5px)}
-			.highlight-icon{font-size:3rem;margin-bottom:1rem}
+			.highlight-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;border:1px solid #E5E7E9}
+			.highlight-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:#123E2A}
 			.highlight-item h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
 			.frisco-facilities{background:#f8f9fa}
 			.facilities-showcase{display:grid;gap:3rem}
-			.facility-category{background:#fff;padding:3rem;border-radius:4px;}
-			.facility-category h3{color:#123E2A;margin-bottom:2rem;font-size:1.5rem;text-align:center}
+			.facility-category{background:#fff;padding:3rem;border-radius:4px;border:1px solid #E5E7E9}
+			.facility-category h3{color:#123E2A;margin-bottom:2rem;font-size:1.5rem;text-align:center;display:flex;align-items:center;justify-content:center;gap:.5rem}
 			.facility-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
 			.facility-item{background:#f8f9fa;padding:2rem;border-radius:4px}
 			.facility-item h4{color:#123E2A;margin-bottom:1rem}
 			.facility-item p{margin-bottom:1rem;color:#666}
 			.facility-item ul{list-style:none;margin:0}
 			.facility-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative;color:#555}
-			.facility-item ul li::before{content:"⭐";position:absolute;left:0}
+			.facility-item ul li::before{content:"•";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.service-item{background:#fff;padding:2rem;border-radius:4px;transition:transform .3s ease}
-			.service-item:hover{transform:translateY(-5px)}
-			.service-icon{font-size:3rem;margin-bottom:1rem;display:block}
+			.service-item{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
+			.service-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;color:#123E2A}
 			.service-item h3{color:#123E2A;margin-bottom:1rem}
 			.service-item ul{list-style:none;margin-top:1rem}
 			.service-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.frisco-approach{background:#f8f9fa}
 			.approach-content{display:grid;gap:3rem;max-width:1000px;margin:0 auto}
-			.approach-intro{text-align:center;background:#fff;padding:3rem;border-radius:4px;}
+			.approach-intro{text-align:center;background:#fff;padding:3rem;border-radius:4px;border:1px solid #E5E7E9}
 			.approach-intro h3{color:#123E2A;margin-bottom:1rem;font-size:1.5rem}
 			.excellence-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}
-			.pillar{background:#fff;padding:2rem;border-radius:4px;text-align:center}
-			.pillar h4{color:#123E2A;margin-bottom:1rem}
+			.pillar{background:#fff;padding:2rem;border-radius:4px;text-align:center;border:1px solid #E5E7E9}
+			.pillar h4{color:#123E2A;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:.5rem}
 			.partnership-content{display:grid;gap:3rem}
-			.partnership-highlight{background:#fff;padding:3rem;border-radius:4px;text-align:center}
+			.partnership-highlight{background:#fff;padding:3rem;border-radius:4px;text-align:center;border:1px solid #E5E7E9}
 			.partnership-highlight h3{color:#123E2A;margin-bottom:1rem;font-size:1.5rem}
 			.partnership-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.benefit{background:#fff;padding:2rem;border-radius:4px;}
+			.benefit{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
 			.benefit h4{color:#123E2A;margin-bottom:1rem}
 			.testimonial-section{background:#f8f9fa}
-			.testimonial-highlight{background:#fff;padding:4rem;border-radius:20px;text-align:center;max-width:900px;margin:0 auto}
+			.testimonial-highlight{background:#fff;padding:4rem;border-radius:20px;text-align:center;max-width:900px;margin:0 auto;border:1px solid #E5E7E9}
 			.testimonial-highlight blockquote{font-size:1.4rem;color:#666;font-style:italic;margin-bottom:2rem;line-height:1.6}
 			.testimonial-highlight cite{color:#123E2A;font-weight:bold;font-size:1.1rem}
-			.priority-frisco{background:#d32f2f}
+			.priority-frisco{background:#123E2A}
 			.priority-showcase{text-align:center;color:#fff;max-width:1000px;margin:0 auto}
 			.priority-showcase h2{margin-bottom:1rem;color:#fff;font-size:2.5rem}
 			.priority-showcase > p{margin-bottom:3rem;font-size:1.2rem}
 			.priority-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:3rem 0}
 			.priority-feature{background:rgba(255,255,255,.1);padding:2rem;border-radius:4px}
-			.feature-icon{font-size:3rem;margin-bottom:1rem}
+			.feature-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:#fff}
 			.priority-feature h3{margin-bottom:1rem;font-size:1.3rem}
 			.priority-contact{margin-top:3rem;background:rgba(255,255,255,.1);padding:3rem;border-radius:4px}
 			.priority-phone{font-size:3rem;font-weight:bold;margin-bottom:1rem}

@@ -1,5 +1,6 @@
 ---
 import Nav from '../../components/Nav.astro';
+import Icon from '../../components/Icon.astro';
 ---
 
 <html lang="en">
@@ -124,7 +125,7 @@ import Nav from '../../components/Nav.astro';
 					<h2>Trusted by Fort Worth's Premier Facilities</h2>
 					<div class="client-categories">
 						<div class="client-category">
-							<h3>🏛️ Major Universities</h3>
+							<h3><Icon name="building-2" size={24} /> Major Universities</h3>
 							<ul>
 								<li>Texas Christian University (TCU) Athletic Facilities</li>
 								<li>University of Texas at Arlington (nearby)</li>
@@ -134,7 +135,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="client-category">
-							<h3>🏫 School Districts</h3>
+							<h3><Icon name="school" size={24} /> School Districts</h3>
 							<ul>
 								<li>Fort Worth Independent School District</li>
 								<li>Keller Independent School District</li>
@@ -146,7 +147,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="client-category">
-							<h3>🏈 High School Programs</h3>
+							<h3><Icon name="trophy" size={24} /> High School Programs</h3>
 							<ul>
 								<li>Trinity High School</li>
 								<li>Paschal High School</li>
@@ -158,7 +159,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="client-category">
-							<h3>⚽ Youth & Community</h3>
+							<h3><Icon name="shield" size={24} /> Youth & Community</h3>
 							<ul>
 								<li>Fort Worth Youth Soccer Association</li>
 								<li>Trinity River Sports Complex</li>
@@ -177,7 +178,7 @@ import Nav from '../../components/Nav.astro';
 					<h2>Fort Worth Turf Maintenance Services</h2>
 					<div class="services-grid">
 						<div class="service-item">
-							<div class="service-icon">🏆</div>
+							<div class="service-icon"><Icon name="trophy" size={28} /></div>
 							<h3>Championship-Level Field Care</h3>
 							<p>Premium maintenance for TCU and high-profile athletic programs requiring broadcast-quality field conditions.</p>
 							<ul>
@@ -190,7 +191,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">🏫</div>
+							<div class="service-icon"><Icon name="school" size={28} /></div>
 							<h3>School District Programs</h3>
 							<p>Comprehensive maintenance programs tailored for Fort Worth ISD and surrounding district budgets and schedules.</p>
 							<ul>
@@ -203,7 +204,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">🌡️</div>
+							<div class="service-icon"><Icon name="shield-check" size={28} /></div>
 							<h3>Texas Heat Management</h3>
 							<p>Specialized care for Fort Worth's extreme summer temperatures and weather challenges.</p>
 							<ul>
@@ -216,7 +217,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">⚡</div>
+							<div class="service-icon"><Icon name="clock" size={28} /></div>
 							<h3>Rapid Response Services</h3>
 							<p>Priority scheduling for Fort Worth's active sports calendar and unexpected issues.</p>
 							<ul>
@@ -229,7 +230,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">🔬</div>
+							<div class="service-icon"><Icon name="gauge" size={28} /></div>
 							<h3>GMAX Safety Testing</h3>
 							<p>Professional safety testing and compliance for insurance and liability protection.</p>
 							<ul>
@@ -242,7 +243,7 @@ import Nav from '../../components/Nav.astro';
 						</div>
 
 						<div class="service-item">
-							<div class="service-icon">⚽</div>
+							<div class="service-icon"><Icon name="stripes" size={28} /></div>
 							<h3>Multi-Sport Field Solutions</h3>
 							<p>Specialized maintenance for Fort Worth's multi-use facilities hosting football, soccer, and other sports.</p>
 							<ul>
@@ -262,32 +263,32 @@ import Nav from '../../components/Nav.astro';
 					<h2>Why Fort Worth Chooses Texas Turf Maintenance</h2>
 					<div class="advantages-grid">
 						<div class="advantage-item">
-							<h3>🎯 Local Expertise</h3>
+							<h3><Icon name="map-pin" size={22} /> Local Expertise</h3>
 							<p>Deep understanding of Fort Worth's athletic community, from TCU's championship aspirations to youth league development programs.</p>
 						</div>
 
 						<div class="advantage-item">
-							<h3>🏃 Quick Response Times</h3>
+							<h3><Icon name="clock" size={22} /> Quick Response Times</h3>
 							<p>Strategic Fort Worth area positioning ensures rapid response for emergencies and urgent maintenance needs.</p>
 						</div>
 
 						<div class="advantage-item">
-							<h3>🤝 Community Partnership</h3>
+							<h3><Icon name="check-square" size={22} /> Community Partnership</h3>
 							<p>Proud supporters of Fort Worth athletics with special programs for youth leagues and community organizations.</p>
 						</div>
 
 						<div class="advantage-item">
-							<h3>🔧 Advanced Equipment</h3>
+							<h3><Icon name="gauge" size={22} /> Advanced Equipment</h3>
 							<p>State-of-the-art maintenance equipment specifically designed for Texas climate challenges and high-use facilities.</p>
 						</div>
 
 						<div class="advantage-item">
-							<h3>💰 Value-Focused</h3>
+							<h3><Icon name="calculator" size={22} /> Value-Focused</h3>
 							<p>Competitive pricing with flexible contract options designed for Fort Worth's diverse range of athletic programs.</p>
 						</div>
 
 						<div class="advantage-item">
-							<h3>📋 Proven Results</h3>
+							<h3><Icon name="clipboard-check" size={22} /> Proven Results</h3>
 							<p>Track record of success with Fort Worth's most demanding facilities, from championship games to daily practices.</p>
 						</div>
 					</div>
@@ -487,37 +488,36 @@ import Nav from '../../components/Nav.astro';
 			.intro-text{text-align:center;font-size:1.1rem;color:#666;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
 			.city-intro h2,.fort-worth-clients h2,.fort-worth-services h2,.fort-worth-advantages h2,.fort-worth-process h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
 			.city-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
-			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;}
+			.stat-item{text-align:center;padding:2rem;background:#fff;border-radius:4px;border:1px solid #E5E7E9}
 			.stat-number{font-size:3rem;font-weight:bold;color:#123E2A;margin-bottom:0.5rem}
 			.stat-label{color:#666;font-size:1.1rem}
 			.fort-worth-clients{background:#f8f9fa}
 			.client-categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
-			.client-category{background:#fff;padding:2rem;border-radius:4px;}
-			.client-category h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem}
+			.client-category{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
+			.client-category h3{color:#123E2A;margin-bottom:1rem;font-size:1.3rem;display:flex;align-items:center;gap:.5rem}
 			.client-category ul{list-style:none;margin:0}
 			.client-category ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.client-category ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.service-item{background:#fff;padding:2rem;border-radius:4px;transition:transform .3s ease}
-			.service-item:hover{transform:translateY(-5px)}
-			.service-icon{font-size:3rem;margin-bottom:1rem;display:block}
+			.service-item{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
+			.service-icon{margin-bottom:1rem;display:flex;align-items:center;color:#123E2A}
 			.service-item h3{color:#123E2A;margin-bottom:1rem}
 			.service-item ul{list-style:none;margin-top:1rem}
 			.service-item ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
 			.service-item ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
 			.fort-worth-advantages{background:#f8f9fa}
 			.advantages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.advantage-item{background:#fff;padding:2rem;border-radius:4px;}
-			.advantage-item h3{color:#123E2A;margin-bottom:1rem}
+			.advantage-item{background:#fff;padding:2rem;border-radius:4px;border:1px solid #E5E7E9}
+			.advantage-item h3{color:#123E2A;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
 			.process-steps{display:flex;flex-direction:column;gap:2rem;max-width:800px;margin:0 auto}
-			.process-step{display:flex;align-items:flex-start;gap:2rem;padding:2rem;background:#fff;border-radius:4px;}
+			.process-step{display:flex;align-items:flex-start;gap:2rem;padding:2rem;background:#fff;border-radius:4px;border:1px solid #E5E7E9}
 			.step-number{background:#123E2A;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:bold;flex-shrink:0}
 			.step-content h3{color:#123E2A;margin-bottom:1rem}
 			.fort-worth-testimonial{background:#f8f9fa}
-			.testimonial{background:#fff;padding:3rem;border-radius:4px;text-align:center;max-width:800px;margin:0 auto}
+			.testimonial{background:#fff;padding:3rem;border-radius:4px;text-align:center;max-width:800px;margin:0 auto;border:1px solid #E5E7E9}
 			.testimonial blockquote{font-size:1.3rem;color:#666;font-style:italic;margin-bottom:2rem;line-height:1.6}
 			.testimonial cite{color:#123E2A;font-weight:bold}
-			.priority-contact{background:#d32f2f}
+			.priority-contact{background:#123E2A}
 			.priority-box{text-align:center;color:#fff}
 			.priority-box h2{margin-bottom:1rem;color:#fff}
 			.priority-box p{margin-bottom:2rem}
