@@ -28,6 +28,8 @@ Allow: /locations/frisco-artificial-turf-maintenance
 Allow: /locations/irving-artificial-turf-maintenance
 Allow: /locations/arlington-artificial-turf-maintenance
 Allow: /locations/mckinney-artificial-turf-maintenance
+Allow: /locations/garland-artificial-turf-maintenance
+Allow: /locations/grand-prairie-artificial-turf-maintenance
 
 # Regional expansion location pages
 Allow: /locations/oklahoma-city-artificial-turf-maintenance

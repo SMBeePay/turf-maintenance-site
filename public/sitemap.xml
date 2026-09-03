@@ -219,6 +219,20 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://texasturfmaintenance.com/locations/garland-artificial-turf-maintenance</loc>
+        <lastmod>2026-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://texasturfmaintenance.com/locations/grand-prairie-artificial-turf-maintenance</loc>
+        <lastmod>2026-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
     <!-- GMAX Testing Services -->
     <url>
