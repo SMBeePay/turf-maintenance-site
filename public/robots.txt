@@ -30,6 +30,10 @@ Allow: /locations/arlington-artificial-turf-maintenance
 Allow: /locations/mckinney-artificial-turf-maintenance
 Allow: /locations/garland-artificial-turf-maintenance
 Allow: /locations/grand-prairie-artificial-turf-maintenance
+Allow: /locations/denton-artificial-turf-maintenance
+Allow: /locations/mesquite-artificial-turf-maintenance
+Allow: /locations/carrollton-artificial-turf-maintenance
+Allow: /locations/richardson-artificial-turf-maintenance
 
 # Regional expansion location pages
 Allow: /locations/oklahoma-city-artificial-turf-maintenance
