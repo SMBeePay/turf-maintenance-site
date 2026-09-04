@@ -1,0 +1,237 @@
+---
+import Nav from '../components/Nav.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+		<title>Artificial Turf Maintenance ROI Calculator | Texas Turf Maintenance</title>
+		<meta name="description" content="Calculate the real cost savings of professional artificial turf maintenance versus premature field replacement. Free interactive calculator for athletic directors and facility managers." />
+		<meta name="keywords" content="turf maintenance roi calculator, artificial turf cost savings calculator, field replacement cost calculator, turf maintenance budget planning" />
+		<link rel="canonical" href="https://texasturfmaintenance.com/roi-calculator" />
+		<link rel="prefetch" href="/contact">
+
+		<style>
+			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			.page-hero{background:linear-gradient(135deg,#111111,#2E332F);color:#fff;padding:6rem 0 4rem;text-align:center;contain:layout style paint}
+			.page-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
+			.page-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9;max-width:700px;margin:0 auto}
+			.container{max-width:1000px;margin:0 auto;padding:0 20px}
+			@media (max-width:768px){.page-hero{padding:4rem 0 3rem}}
+		</style>
+	</head>
+	<body>
+		<Nav active="services" />
+
+		<main>
+			<section class="page-hero">
+				<div class="container">
+					<h1>Turf Maintenance ROI Calculator</h1>
+					<p>See what deferred maintenance actually costs — estimate how much professional upkeep can save versus premature field replacement.</p>
+				</div>
+			</section>
+
+			<section class="calculator-section">
+				<div class="container">
+					<div class="calculator-card">
+						<h2>Estimate Your Savings</h2>
+						<p class="calculator-intro">Enter your field details below. This is a planning estimate, not a quote — every field's actual condition affects the real numbers.</p>
+
+						<div class="calc-form">
+							<div class="calc-field">
+								<label for="fieldSize">Field size (square feet)</label>
+								<input type="number" id="fieldSize" min="1000" step="1000" value="80000" />
+							</div>
+
+							<div class="calc-field">
+								<label for="tier">Maintenance level</label>
+								<select id="tier">
+									<option value="0.625">Basic ($0.50–$0.75/sq ft/yr) — cleaning &amp; visual inspection only</option>
+									<option value="1.0" selected>Standard ($0.75–$1.25/sq ft/yr) — cleaning, infill leveling, quarterly deep clean</option>
+									<option value="1.625">Premium ($1.25–$2.00/sq ft/yr) — monthly service, priority scheduling, advanced fiber care</option>
+								</select>
+							</div>
+
+							<button type="button" id="calcButton" class="btn-primary">Calculate My Savings</button>
+						</div>
+
+						<div class="calc-results" id="calcResults" hidden>
+							<div class="results-grid">
+								<div class="result-item">
+									<span class="result-label">Estimated annual maintenance cost</span>
+									<span class="result-value" id="resAnnualCost">—</span>
+								</div>
+								<div class="result-item">
+									<span class="result-label">Estimated life extension</span>
+									<span class="result-value" id="resLifeExtension">—</span>
+								</div>
+								<div class="result-item">
+									<span class="result-label">Total maintenance cost over that extension</span>
+									<span class="result-value" id="resTotalMaintCost">—</span>
+								</div>
+								<div class="result-item">
+									<span class="result-label">Estimated replacement cost this defers</span>
+									<span class="result-value" id="resReplacementCost">—</span>
+								</div>
+								<div class="result-item highlight">
+									<span class="result-label">Estimated net savings</span>
+									<span class="result-value" id="resNetSavings">—</span>
+								</div>
+							</div>
+							<p class="results-note">These figures use industry-standard planning ranges: field replacement typically runs $8–$15 per square foot, and a consistent maintenance program typically extends usable field life by 5–10 years depending on service level. Your field's actual savings depend on its current condition, usage volume, and local climate exposure — a free assessment gives you real numbers.</p>
+						</div>
+					</div>
+
+					<div class="assumptions-card">
+						<h3>How this estimate works</h3>
+						<ul class="assumptions-list">
+							<li><Icon name="calculator" size={20} /> Annual maintenance cost = field size × your selected tier's per-square-foot rate</li>
+							<li><Icon name="clock" size={20} /> Life extension = 5 years (Basic), 7.5 years (Standard), or 10 years (Premium) beyond an unmaintained field's typical ~8-year usable life</li>
+							<li><Icon name="layers" size={20} /> Replacement cost avoided = field size × $11.50/sq ft (the midpoint of the typical $8–$15/sq ft replacement range)</li>
+							<li><Icon name="shield-check" size={20} /> Net savings = replacement cost avoided − total maintenance spend over the extension period</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta">
+				<div class="container">
+					<h2>Want the Real Numbers for Your Field?</h2>
+					<p>This calculator gives you a planning estimate. A free on-site assessment gives you an actual quote based on your field's real condition.</p>
+					<div class="cta-buttons">
+						<a href="/contact" class="btn-primary">Schedule Free Assessment</a>
+						<a href="tel:+14699819247" class="btn-secondary">Call (469) 981-9247</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>Texas Turf Maintenance</h3>
+						<p class="footer-tagline">Clean. Safe. Game Ready.</p>
+						<p>Professional artificial turf maintenance across Texas.</p>
+					</div>
+					<div class="footer-section">
+						<h3>Resources</h3>
+						<ul>
+							<li><a href="/athletic-directors-guide">Athletic Director's Guide</a></li>
+							<li><a href="/gmax-compliance-checklist">GMAX Compliance Checklist</a></li>
+							<li><a href="/what-does-gmax-score-mean">What Does a GMAX Score Mean?</a></li>
+							<li><a href="/blog">Blog</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h3>Services</h3>
+						<ul>
+							<li><a href="/services">All Services</a></li>
+							<li><a href="/locations">Service Areas</a></li>
+							<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h3>Contact</h3>
+						<p>Phone: <a href="tel:+14699819247">(469) 981-9247</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<style media="print" onload="this.media='all';this.onload=null;">
+			.calculator-section{padding:4rem 0}
+			.calculator-card{background:#fff;border:1px solid #E5E7E9;border-radius:4px;padding:2.5rem;margin-bottom:2rem}
+			.calculator-card h2{color:#123E2A;margin-bottom:0.75rem;font-size:clamp(1.6rem,3vw,2rem)}
+			.calculator-intro{color:#6B6F72;margin-bottom:2rem}
+			.calc-form{display:grid;gap:1.5rem;margin-bottom:1rem}
+			.calc-field label{display:block;font-weight:600;color:#123E2A;margin-bottom:0.5rem;font-size:0.95rem}
+			.calc-field input,.calc-field select{width:100%;padding:0.75rem;border:1px solid #E5E7E9;border-radius:4px;font-family:inherit;font-size:1rem;color:#111111}
+			.calc-field input:focus,.calc-field select:focus{outline:2px solid #3FAE49;outline-offset:1px}
+			#calcButton{justify-self:start;margin-top:0.5rem}
+			.calc-results{margin-top:2.5rem;padding-top:2rem;border-top:1px solid #E5E7E9}
+			.results-grid{display:grid;gap:1rem;margin-bottom:1.5rem}
+			.result-item{display:flex;justify-content:space-between;align-items:center;padding:1rem;background:#f8f9fa;border-radius:4px;gap:1rem;flex-wrap:wrap}
+			.result-item.highlight{background:#123E2A;color:#fff}
+			.result-label{font-weight:600;color:#123E2A}
+			.result-item.highlight .result-label{color:#fff}
+			.result-value{font-weight:800;font-size:1.3rem;color:#123E2A}
+			.result-item.highlight .result-value{color:#3FAE49}
+			.results-note{font-size:0.88rem;color:#6B6F72;line-height:1.6}
+			.assumptions-card{background:#f8f9fa;border-radius:4px;padding:2rem;margin-bottom:2rem}
+			.assumptions-card h3{color:#123E2A;margin-bottom:1.25rem;font-size:1.2rem}
+			.assumptions-list{list-style:none}
+			.assumptions-list li{display:flex;align-items:flex-start;gap:0.75rem;padding:0.6rem 0;color:#333;font-size:0.95rem}
+			.assumptions-list svg{color:#3FAE49;flex-shrink:0;margin-top:0.1rem}
+			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:4px;font-weight:700;transition:all .2s ease;text-align:center;min-width:140px;text-transform:uppercase;font-size:0.9rem;letter-spacing:0.04em;border:none;cursor:pointer;font-family:inherit}
+			.btn-primary{background:#3FAE49;color:#fff}
+			.btn-primary:hover{background:#2F8C38}
+			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
+			.cta{background:#111111;color:#fff;padding:5rem 0;text-align:center}
+			.cta h2{margin-bottom:1rem;font-size:clamp(1.8rem,4vw,2.3rem)}
+			.cta p{margin-bottom:2rem;font-size:1.1rem;color:#B8BDB6;max-width:600px;margin-left:auto;margin-right:auto}
+			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+			footer{background:#111111;color:#fff;padding:3rem 0}
+			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem}
+			.footer-section h3{margin-bottom:0.75rem;color:#fff}
+			.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
+			.footer-section p{color:#B8BDB6}
+			.footer-section ul{list-style:none}
+			.footer-section ul li{margin-bottom:0.5rem}
+			.footer-section a{color:#ccc;text-decoration:none;transition:color .2s ease}
+			.footer-section a:hover{color:#3FAE49}
+			@media (max-width:600px){
+				.result-item{flex-direction:column;align-items:flex-start}
+			}
+		</style>
+
+		<script>
+			const button = document.getElementById('calcButton');
+			const results = document.getElementById('calcResults');
+
+			const fmt = (n: number) =>
+				n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+
+			button?.addEventListener('click', () => {
+				const sizeInput = document.getElementById('fieldSize') as HTMLInputElement;
+				const tierInput = document.getElementById('tier') as HTMLSelectElement;
+
+				const size = Math.max(1000, Number(sizeInput.value) || 0);
+				const rate = Number(tierInput.value);
+
+				const lifeExtensionByRate: Record<string, number> = {
+					'0.625': 5,
+					'1.0': 7.5,
+					'1.625': 10,
+				};
+				const extensionYears = lifeExtensionByRate[tierInput.value] ?? 7.5;
+
+				const annualCost = size * rate;
+				const totalMaintCost = annualCost * extensionYears;
+				const replacementCost = size * 11.5;
+				const netSavings = replacementCost - totalMaintCost;
+
+				(document.getElementById('resAnnualCost') as HTMLElement).textContent = fmt(annualCost) + '/yr';
+				(document.getElementById('resLifeExtension') as HTMLElement).textContent = `~${extensionYears} years`;
+				(document.getElementById('resTotalMaintCost') as HTMLElement).textContent = fmt(totalMaintCost);
+				(document.getElementById('resReplacementCost') as HTMLElement).textContent = fmt(replacementCost);
+				(document.getElementById('resNetSavings') as HTMLElement).textContent = fmt(Math.max(0, netSavings));
+
+				if (results) {
+					results.hidden = false;
+					results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,201 @@
+---
+import Nav from '../components/Nav.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+		<title>Athletic Director's Guide to Artificial Turf Maintenance | Texas Turf Maintenance</title>
+		<meta name="description" content="A complete guide for athletic directors and facility managers: maintenance schedules, budget planning, safety compliance, and how to evaluate a maintenance provider." />
+		<meta name="keywords" content="athletic director turf maintenance guide, turf maintenance budget planning, artificial turf maintenance schedule, sports field maintenance compliance" />
+		<link rel="canonical" href="https://texasturfmaintenance.com/athletic-directors-guide" />
+		<link rel="prefetch" href="/contact">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": "Athletic Director's Guide to Artificial Turf Maintenance",
+			"description": "A complete guide for athletic directors and facility managers covering maintenance schedules, budget planning, safety compliance, and how to evaluate a maintenance provider.",
+			"author": { "@id": "https://texasturfmaintenance.com/#organization" },
+			"publisher": { "@id": "https://texasturfmaintenance.com/#organization" },
+			"mainEntityOfPage": "https://texasturfmaintenance.com/athletic-directors-guide"
+		}
+		</script>
+
+		<style>
+			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
+			.page-hero{background:linear-gradient(135deg,#111111,#2E332F);color:#fff;padding:6rem 0 4rem;text-align:center;contain:layout style paint}
+			.page-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
+			.page-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9;max-width:700px;margin:0 auto}
+			.container{max-width:900px;margin:0 auto;padding:0 20px}
+			@media (max-width:768px){.page-hero{padding:4rem 0 3rem}}
+		</style>
+	</head>
+	<body>
+		<Nav active="services" />
+
+		<main>
+			<section class="page-hero">
+				<div class="container">
+					<h1>Athletic Director's Guide to Artificial Turf Maintenance</h1>
+					<p>A practical reference for planning maintenance schedules, budgets, and compliance — written for the people who actually manage the fields.</p>
+				</div>
+			</section>
+
+			<section class="guide-section">
+				<div class="container">
+					<nav class="toc" aria-label="Guide contents">
+						<h2>In This Guide</h2>
+						<ol>
+							<li><a href="#why-it-matters">Why Maintenance Matters More Than It Looks</a></li>
+							<li><a href="#schedule">Recommended Maintenance Schedule</a></li>
+							<li><a href="#budget">Budget Planning</a></li>
+							<li><a href="#compliance">Safety &amp; Compliance Requirements</a></li>
+							<li><a href="#choosing-a-provider">Choosing a Maintenance Provider</a></li>
+							<li><a href="#repair-or-replace">When to Repair vs. Replace</a></li>
+						</ol>
+					</nav>
+
+					<article class="guide-body">
+						<h2 id="why-it-matters"><Icon name="shield-check" size={26} /> Why Maintenance Matters More Than It Looks</h2>
+						<p>Artificial turf doesn't need mowing or watering, which is exactly why it's easy to under-budget for its upkeep. But turf fibers, infill, and drainage systems degrade under UV exposure, heat, and repeated impact whether or not anyone is watching. Left alone, a field doesn't fail gradually and gracefully — it fails at the compaction and drainage level first, well before it looks obviously worn, and that's exactly when injury risk (and liability exposure) climbs.</p>
+						<p>The financial case is straightforward: routine maintenance runs roughly $0.50–$2.00 per square foot annually depending on service level, while full field replacement runs $8–$15 per square foot. A consistent maintenance program typically extends usable field life by 5–10 years. Deferred maintenance doesn't save money — it just moves the cost from an annual line item to a much larger capital expense, sooner than it needed to happen.</p>
+
+						<h2 id="schedule"><Icon name="clock" size={26} /> Recommended Maintenance Schedule</h2>
+						<p>The right frequency depends on usage volume and your local climate, but as a general baseline:</p>
+						<ul class="guide-list">
+							<li><strong>High-traffic fields</strong> (daily practice + games, multiple teams sharing the surface): bi-weekly to monthly grooming, quarterly deep cleaning, annual infill audit.</li>
+							<li><strong>Standard-use fields</strong> (single team, regular season use): monthly grooming during active season, quarterly deep cleaning, annual infill audit.</li>
+							<li><strong>Low-traffic fields</strong> (occasional use, backup/practice-only): quarterly grooming and cleaning, annual full inspection.</li>
+						</ul>
+						<p>Regardless of usage tier, build in extra inspection passes after severe weather (hail, high winds, flooding) and before high-visibility events — those are the two situations most likely to surface a problem you didn't know you had.</p>
+
+						<h2 id="budget"><Icon name="calculator" size={26} /> Budget Planning</h2>
+						<p>A realistic turf maintenance budget has four distinct line items, and treating them as one lump sum is the most common planning mistake:</p>
+						<ul class="guide-list">
+							<li><strong>Routine maintenance</strong> — grooming, cleaning, infill leveling. This is your predictable, recurring cost.</li>
+							<li><strong>GMAX/safety testing</strong> — typically annual, sometimes required by your insurance carrier or athletic conference. Budget this separately since it's often overlooked until a renewal deadline forces the issue.</li>
+							<li><strong>Reactive repairs</strong> — seam repair, storm damage, high-traffic patching. Budget a contingency line even in years you don't expect to need it.</li>
+							<li><strong>End-of-life planning</strong> — start setting aside toward replacement well before the field is showing obvious wear, so a failing field doesn't turn into an unplanned, last-minute capital request.</li>
+						</ul>
+
+						<h2 id="compliance"><Icon name="clipboard-check" size={26} /> Safety &amp; Compliance Requirements</h2>
+						<p>Depending on your district, conference, and insurance carrier, you may be responsible for several overlapping requirements:</p>
+						<ul class="guide-list">
+							<li><strong>GMAX impact testing</strong> — measures how much a surface absorbs impact; used as a proxy for concussion risk. See our <a href="/gmax-compliance-checklist">GMAX Compliance Checklist</a> for a full walkthrough.</li>
+							<li><strong>UIL and conference standards</strong> — Texas high school athletics carry specific field safety expectations; check with your conference for current requirements.</li>
+							<li><strong>Insurance carrier requirements</strong> — many carriers now ask for documented maintenance and testing records as part of liability coverage.</li>
+							<li><strong>ADA and accessibility standards</strong> — relevant for surrounding walkways and access points, not the turf itself, but commonly reviewed together during facility audits.</li>
+						</ul>
+						<p>Keep dated records of every maintenance visit, test result, and repair — not just for compliance, but because it's the single best defense if a liability question ever comes up.</p>
+
+						<h2 id="choosing-a-provider"><Icon name="check-square" size={26} /> Choosing a Maintenance Provider</h2>
+						<p>Questions worth asking before you sign a contract:</p>
+						<ul class="guide-list">
+							<li>Are you licensed and insured for the work, and can you provide proof?</li>
+							<li>Do you provide GMAX testing directly, or do I need a separate vendor?</li>
+							<li>What's included in a "standard visit," specifically — grooming only, or grooming plus inspection and reporting?</li>
+							<li>How do you handle scheduling around our athletic calendar and game-day blackout dates?</li>
+							<li>What's your response time for storm damage or an urgent safety issue?</li>
+							<li>Can you provide references from other school districts or facilities you currently service?</li>
+						</ul>
+
+						<h2 id="repair-or-replace"><Icon name="layers" size={26} /> When to Repair vs. Replace</h2>
+						<p>Most turf problems are repairable — seam separation, localized wear, infill migration, and drainage issues can all typically be corrected without full replacement. Replacement becomes the right call when GMAX readings are consistently high across the field (not just in one worn spot), when infill depth is uniformly depleted rather than displaced, or when the backing itself is failing rather than just the surface fibers. A qualified assessment can usually tell you which situation you're in — worth getting before you commit to either a repair budget or a replacement capital request.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="cta">
+				<div class="container">
+					<h2>Want a Second Set of Eyes on Your Field?</h2>
+					<p>We provide free assessments for athletic directors and facility managers planning their next maintenance cycle or budget.</p>
+					<div class="cta-buttons">
+						<a href="/contact" class="btn-primary">Schedule Free Assessment</a>
+						<a href="tel:+14699819247" class="btn-secondary">Call (469) 981-9247</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>Texas Turf Maintenance</h3>
+						<p class="footer-tagline">Clean. Safe. Game Ready.</p>
+						<p>Professional artificial turf maintenance across Texas.</p>
+					</div>
+					<div class="footer-section">
+						<h3>Resources</h3>
+						<ul>
+							<li><a href="/roi-calculator">ROI Calculator</a></li>
+							<li><a href="/gmax-compliance-checklist">GMAX Compliance Checklist</a></li>
+							<li><a href="/what-does-gmax-score-mean">What Does a GMAX Score Mean?</a></li>
+							<li><a href="/blog">Blog</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h3>Services</h3>
+						<ul>
+							<li><a href="/services">All Services</a></li>
+							<li><a href="/locations">Service Areas</a></li>
+							<li><a href="/gmax-testing-dallas">GMAX Testing</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h3>Contact</h3>
+						<p>Phone: <a href="tel:+14699819247">(469) 981-9247</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<style media="print" onload="this.media='all';this.onload=null;">
+			.guide-section{padding:4rem 0}
+			.toc{background:#f8f9fa;border-radius:4px;padding:2rem;margin-bottom:3rem}
+			.toc h2{color:#123E2A;font-size:1.2rem;margin-bottom:1rem}
+			.toc ol{list-style:decimal;padding-left:1.25rem}
+			.toc ol li{padding:0.3rem 0}
+			.toc a{color:#3FAE49;text-decoration:none;font-weight:600}
+			.toc a:hover{text-decoration:underline}
+			.guide-body h2{display:flex;align-items:center;gap:0.6rem;color:#123E2A;font-size:clamp(1.4rem,3vw,1.7rem);margin:3rem 0 1rem}
+			.guide-body h2:first-child{margin-top:0}
+			.guide-body svg{color:#3FAE49;flex-shrink:0}
+			.guide-body p{color:#333;margin-bottom:1rem}
+			.guide-body a{color:#3FAE49;font-weight:600}
+			.guide-list{list-style:none;margin:1rem 0 1.5rem}
+			.guide-list li{padding:0.6rem 0;padding-left:1.5rem;position:relative;color:#333;border-bottom:1px solid #E5E7E9}
+			.guide-list li:last-child{border-bottom:none}
+			.guide-list li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
+			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:4px;font-weight:700;transition:all .2s ease;text-align:center;min-width:140px;text-transform:uppercase;font-size:0.9rem;letter-spacing:0.04em}
+			.btn-primary{background:#3FAE49;color:#fff}
+			.btn-primary:hover{background:#2F8C38}
+			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
+			.btn-secondary:hover{background:#fff;color:#123E2A}
+			.cta{background:#111111;color:#fff;padding:5rem 0;text-align:center}
+			.cta h2{margin-bottom:1rem;font-size:clamp(1.8rem,4vw,2.3rem)}
+			.cta p{margin-bottom:2rem;font-size:1.1rem;color:#B8BDB6;max-width:600px;margin-left:auto;margin-right:auto}
+			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+			footer{background:#111111;color:#fff;padding:3rem 0}
+			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem}
+			.footer-section h3{margin-bottom:0.75rem;color:#fff}
+			.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
+			.footer-section p{color:#B8BDB6}
+			.footer-section ul{list-style:none}
+			.footer-section ul li{margin-bottom:0.5rem}
+			.footer-section a{color:#ccc;text-decoration:none;transition:color .2s ease}
+			.footer-section a:hover{color:#3FAE49}
+		</style>
+	</body>
+</html>
