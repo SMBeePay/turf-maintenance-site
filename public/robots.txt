@@ -18,6 +18,9 @@ Allow: /soccer-field-turf-maintenance
 Allow: /baseball-field-turf-maintenance
 Allow: /indoor-turf-maintenance
 Allow: /gmax-testing-dallas
+Allow: /roi-calculator
+Allow: /athletic-directors-guide
+Allow: /gmax-compliance-checklist
 Allow: /commercial-artificial-turf-cleaning
 
 # Location pages
