@@ -1,6 +1,6 @@
 ---
 import '../styles/theme.css';
-import { SITE_NAME, NAV_LINKS, PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
+import { SITE_NAME, NAV_LINKS } from '../lib/site.js';
 
 interface Props {
 	active?: string;
@@ -13,7 +13,6 @@ function isActive(link) {
 	return (link.children ?? []).some((child) => child.key === active);
 }
 
-const phonePath = 'M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2';
 ---
 
 <header class="site-header">
@@ -42,14 +41,7 @@ const phonePath = 'M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A
 			</ul>
 
 			<div class="nav-actions">
-				<a href={PHONE_TEL} class="nav-phone">
-					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={phonePath} /></svg>
-					<span class="nav-phone-text">
-						<span class="nav-phone-label">Free quotes</span>
-						<span class="nav-phone-number">{PHONE_DISPLAY}</span>
-					</span>
-				</a>
-				<a href="/contact" class="nav-quote">Free Quote</a>
+				<a href="/contact" class="nav-quote">Get a Free Quote</a>
 				<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
 					<span class="sr-only">Menu</span>
 					<span class="nav-toggle-bar"></span>
@@ -63,11 +55,7 @@ const phonePath = 'M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A
 
 
 <div class="mobile-cta-bar">
-	<a href={PHONE_TEL} class="mobile-cta-call">
-		<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={phonePath} /></svg>
-		Call Now
-	</a>
-	<a href="/contact" class="mobile-cta-quote">Free Quote</a>
+	<a href="/contact" class="mobile-cta-quote">Get a Free Quote</a>
 </div>
 
 <script>
@@ -220,34 +208,6 @@ const phonePath = 'M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A
 		gap: 1.25rem;
 		flex-shrink: 0;
 	}
-	.nav-phone {
-		display: flex;
-		align-items: center;
-		gap: 0.6rem;
-		color: var(--forest-900);
-		text-decoration: none;
-	}
-	.nav-phone svg {
-		color: var(--accent);
-	}
-	.nav-phone-text {
-		display: flex;
-		flex-direction: column;
-		line-height: 1.15;
-	}
-	.nav-phone-label {
-		font-family: var(--font-display);
-		font-size: 0.66rem;
-		font-weight: 700;
-		letter-spacing: 0.18em;
-		text-transform: uppercase;
-		color: var(--gray-500);
-	}
-	.nav-phone-number {
-		font-family: var(--font-display);
-		font-size: 1.15rem;
-		font-weight: 800;
-	}
 	.nav-quote {
 		display: inline-flex;
 		align-items: center;
@@ -360,7 +320,6 @@ const phonePath = 'M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A
 		.logo img {
 			height: 42px;
 		}
-		.nav-phone,
 		.nav-actions > .nav-quote {
 			display: none;
 		}
@@ -375,8 +334,7 @@ const phonePath = 'M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A
 		}
 
 		.mobile-cta-bar {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
+			display: block;
 			position: fixed;
 			left: 0;
 			right: 0;
@@ -402,7 +360,6 @@ const phonePath = 'M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A
 		}
 		.mobile-cta-quote {
 			background: var(--accent);
-			clip-path: polygon(14px 0, 100% 0, 100% 100%, 0 100%);
 		}
 		:global(body) {
 			padding-bottom: calc(58px + env(safe-area-inset-bottom));

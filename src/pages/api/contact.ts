@@ -66,7 +66,7 @@ export const POST: APIRoute = async ({ request }) => {
 	if (!apiKey) {
 		console.error('RESEND_API_KEY is not configured — contact form cannot deliver email.');
 		return new Response(
-			JSON.stringify({ ok: false, error: 'The contact form is not fully set up yet. Please call us directly.' }),
+			JSON.stringify({ ok: false, error: 'The contact form is not fully set up yet. Please try again later.' }),
 			{ status: 500 },
 		);
 	}
@@ -92,7 +92,7 @@ export const POST: APIRoute = async ({ request }) => {
 	if (!resendResponse.ok) {
 		const errorText = await resendResponse.text();
 		console.error('Resend API error:', resendResponse.status, errorText);
-		return new Response(JSON.stringify({ ok: false, error: 'Could not send your request. Please call us directly.' }), {
+		return new Response(JSON.stringify({ ok: false, error: 'Could not send your request. Please try again in a few minutes.' }), {
 			status: 502,
 		});
 	}
