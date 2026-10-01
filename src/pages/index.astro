@@ -773,15 +773,6 @@ import Icon from '../components/Icon.astro';
 				optimizeResourceLoading();
 				measureWebVitals();
 			});
-
-			// Service Worker for caching (optional)
-			if ('serviceWorker' in navigator) {
-				window.addEventListener('load', () => {
-					navigator.serviceWorker.register('/sw.js').catch(() => {
-						// Silently fail if no service worker
-					});
-				});
-			}
 		</script>
 	</body>
 </html>
