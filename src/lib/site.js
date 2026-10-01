@@ -53,11 +53,3 @@ export const NAV_LINKS = [
 	{ href: '/contact', label: 'Contact', key: 'contact' },
 ];
 
-// Short proof points shown in the sitewide trust bar under the header.
-// Keep these strictly factual — no ratings or counts we can't back up.
-export const TRUST_POINTS = [
-	{ icon: 'trophy', label: 'Sports Field & Commercial Specialists' },
-	{ icon: 'gauge', label: 'GMAX Safety Testing' },
-	{ icon: 'pin', label: 'Serving Texas, OK, AR & LA' },
-	{ icon: 'shield', label: 'Free, No-Obligation Quotes' },
-];

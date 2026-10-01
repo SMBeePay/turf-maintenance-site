@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" fill="none">
+  <!-- Simplified Texas Turf Maintenance "T" mark, used as a large
+       decorative watermark. The official artwork lives alongside it in
+       this folder; use that wherever the logo itself is shown. -->
+  <path fill="#3FAE49" d="M0 0h120v26H0z"/>
+  <path fill="#3FAE49" d="M36 26h44v12L50 130H36z"/>
+  <path fill="#3FAE49" d="M86 40v90H58z"/>
+  <path stroke="#123E2A" stroke-width="3" stroke-linecap="round" d="M64 128c4-18 9-34 18-54M72 128c3-15 7-28 13-42M80 128c2-12 4-22 6-30"/>
+</svg>

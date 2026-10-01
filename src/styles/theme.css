@@ -1,61 +1,58 @@
 /*
- * Sitewide design system.
+ * Sitewide design system, built from the Texas Turf Maintenance brand
+ * guide: Forest #123E2A, Turf Green #3FAE49, Light Gray #E5E7E9,
+ * Gray #6B6F72, Black #111111; heavy geometric type to match the
+ * wordmark; the "— CLEAN. SAFE. GAME READY. —" ruled tagline; and the
+ * angled cut of the T mark.
  *
  * Imported once from Nav.astro (every page renders <Nav />), so it ships on
  * every page. Page-level <style> blocks reference these tokens via var()
  * instead of literal hex values; change a token here and it changes
  * everywhere.
- *
- * Brand hues follow the Texas Turf Maintenance brand book (deep green
- * #123E2A, accent green #3FAE49). The type system and the cream/paper
- * surfaces match the Clean Green Turf site.
  */
 
 :root {
-	/* Ink */
-	--ink: #11140f;
-	--ink-soft: #4a5049;
-	--ink-faint: #7b8279;
-
-	/* Brand greens */
-	--forest-950: #0a2318;
-	--forest-900: #123e2a;
-	--forest-800: #1a5238;
-	--forest-700: #23664a;
-	--accent: #3fae49;
+	/* Brand palette */
+	--forest-900: #123e2a; /* Forest */
+	--forest-950: #0a2318; /* deepest shade, for footers and overlays */
+	--forest-800: #1b5236;
+	--accent: #3fae49; /* Turf Green */
 	--accent-700: #2f8c38;
 	--accent-500: #5cc566;
-	--accent-100: #e3f5e4;
+	--accent-100: #e8f5e9;
+	--gray-200: #e5e7e9; /* Light Gray */
+	--gray-500: #6b6f72; /* Gray */
+	--ink: #111111; /* Black */
 
-	/* Surfaces */
-	--cream: #faf7ee;
-	--cream-deep: #f2ecd9;
-	--paper: #fffdf8;
-	--border: #e4ddc9;
-	--border-strong: #cfc6a9;
+	/* Roles */
+	--ink-soft: var(--gray-500);
+	--ink-faint: #8d9194;
+	--surface: #ffffff;
+	--surface-alt: #f3f4f5;
+	--border: var(--gray-200);
 
 	/* Status */
 	--danger: #c0392b;
 	--danger-100: #fdecea;
 	--warning: #d9822b;
 	--warning-100: #fdf2e3;
-	--star: #f5b400;
 
-	/* Type */
-	--font-display: 'Oswald', 'Arial Narrow', sans-serif;
-	--font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	/* Type: Montserrat matches the heavy geometric wordmark; Inter keeps
+	   long-form copy easy to read. */
+	--font-display: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
-	/* Shape */
-	--radius-sm: 4px;
-	--radius: 8px;
-	--radius-lg: 10px;
-	--shadow-sm: 0 1px 3px rgba(18, 20, 15, 0.1);
-	--shadow: 0 10px 26px -10px rgba(18, 20, 15, 0.28);
-	--shadow-lg: 0 26px 60px -18px rgba(18, 20, 15, 0.38);
+	/* Shape: squared-off, like the logo */
+	--radius-sm: 2px;
+	--radius: 4px;
+	--shadow: 0 10px 24px -12px rgba(17, 17, 17, 0.25);
+	--shadow-lg: 0 24px 48px -20px rgba(17, 17, 17, 0.35);
 
-	/* Dark hero overlay, used over photos and as the plain hero fill */
-	--hero-fill: linear-gradient(135deg, var(--forest-950) 0%, var(--forest-900) 60%, var(--forest-800) 100%);
-	--hero-overlay: linear-gradient(90deg, rgba(10, 35, 24, 0.9) 0%, rgba(10, 35, 24, 0.72) 55%, rgba(10, 35, 24, 0.45) 100%);
+	/* Angled edge taken from the slash in the T mark */
+	--slant: 48px;
+
+	--hero-fill: var(--forest-900);
+	--hero-overlay: linear-gradient(90deg, rgba(10, 35, 24, 0.92) 0%, rgba(18, 62, 42, 0.78) 55%, rgba(18, 62, 42, 0.4) 100%);
 }
 
 html {
@@ -65,21 +62,19 @@ html {
 body {
 	font-family: var(--font-sans);
 	color: var(--ink);
-	background: var(--cream);
+	background: var(--surface);
 	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4 {
 	font-family: var(--font-display);
-	text-transform: uppercase;
-	letter-spacing: 0.01em;
-	line-height: 1.12;
+	letter-spacing: -0.01em;
+	line-height: 1.15;
 	text-wrap: balance;
 }
-h1 { font-weight: 700; }
-h2, h3 { font-weight: 600; }
-h4 { font-weight: 500; letter-spacing: 0.02em; }
+h1 { font-weight: 900; }
+h2 { font-weight: 800; }
+h3, h4 { font-weight: 700; }
 
 p { text-wrap: pretty; }
 
@@ -95,81 +90,101 @@ a { color: var(--accent-700); }
 	outline-offset: 2px;
 }
 
-/* Buttons. Pages define their own colors and padding for these classes;
-   this sets the shared type treatment so every CTA reads the same. */
+/* Buttons. Pages set their own colors and padding for these classes;
+   this gives every CTA the same squared, tracked-caps treatment as the
+   logo's "TURF MAINTENANCE" line. */
 .btn-primary,
 .btn-secondary,
 .cta-button,
 .submit-btn,
 button[type='submit'] {
 	font-family: var(--font-display);
+	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 0.04em;
-	font-weight: 600;
+	letter-spacing: 0.06em;
+	border-radius: var(--radius-sm) !important;
 }
 
-/* Big numbers (stat bands, step badges, prices) use the display face. */
+/* Numbers in stat bands, step badges and prices */
 .stat-number,
 .step-number,
 .service-price,
 .package-price,
-.price,
-.big-number {
+.price {
 	font-family: var(--font-display);
-	letter-spacing: 0.01em;
+	font-weight: 800;
 }
 
-/* Small section labels above headings. */
+/* Section labels styled after the logo tagline: tracked caps between
+   two short rules. Left-aligned labels drop the leading rule. */
 .eyebrow {
 	display: inline-flex;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 0.75rem;
 	font-family: var(--font-display);
-	font-size: 0.85rem;
-	font-weight: 500;
-	letter-spacing: 0.16em;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.22em;
 	text-transform: uppercase;
-	color: var(--accent-500);
+	color: var(--accent-700);
+}
+.eyebrow::before,
+.eyebrow::after {
+	content: '';
+	width: 28px;
+	height: 2px;
+	background: currentColor;
 }
 
-/* Plain-text page heroes get a subtle turf texture so they read as part
-   of the brand instead of a flat gradient. */
+/* Plain page heroes: solid Forest with the T mark as a watermark and
+   the bottom edge cut on the same angle as the mark's slash. */
 .page-hero {
 	position: relative;
 	overflow: hidden;
 	isolation: isolate;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--slant)), 0 100%);
+	padding-bottom: calc(6rem + var(--slant)) !important;
 }
 .page-hero::after {
 	content: '';
 	position: absolute;
-	inset: 0;
 	z-index: -1;
-	background: url('/images/turf-texture.webp') center / cover no-repeat;
-	opacity: 0.16;
-	mix-blend-mode: luminosity;
+	right: 6%;
+	bottom: calc(var(--slant) + 1.5rem);
+	width: 200px;
+	height: 217px;
+	background: url('/images/brand/t-mark-outline.svg') center / contain no-repeat;
+	opacity: 0.14;
 	pointer-events: none;
 }
-.page-hero h1 {
-	letter-spacing: 0.01em;
-}
-.page-hero::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 4px;
-	background: var(--accent);
+.page-hero p {
+	color: rgba(255, 255, 255, 0.85);
 }
 
 /* Footer: every page has its own footer markup (with page-specific
    links); this gives them all the same look. */
 footer {
-	font-family: var(--font-sans);
 	border-top: 4px solid var(--accent);
 }
 footer h3,
 footer h4 {
 	color: #fff;
-	letter-spacing: 0.04em;
+	font-size: 0.85rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+	:root {
+		--slant: 28px;
+	}
+	.page-hero {
+		padding-bottom: calc(3.5rem + var(--slant)) !important;
+	}
+	.page-hero::after {
+		width: 120px;
+		height: 130px;
+		right: -24px;
+		opacity: 0.1;
+	}
 }

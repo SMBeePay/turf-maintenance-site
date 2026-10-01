@@ -13,8 +13,8 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-		<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 		<Analytics />
 		<title>Texas Turf Maintenance - #1 Artificial Turf Maintenance Across Texas | Statewide Sports Field Experts</title>
 		<meta name="description" content="Professional artificial turf maintenance across Texas. Expert cleaning, infill replacement, seam repair for football, soccer & baseball fields in Dallas, Houston, Austin, San Antonio. Get a free quote!" />
@@ -42,11 +42,11 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
 			.nav-links a:hover,.nav-links a.active{color:var(--accent)}
 			
 			/* Critical - Hero section (LCP element) */
-			.hero{background:var(--hero-overlay),url('/images/sports-complex-aerial-view-optimized.jpg');background-size:cover;background-position:center;color:#fff;padding:7.5rem 0 7rem;text-align:left;contain:layout style paint;border-bottom:4px solid var(--accent)}
-			.hero-content{max-width:1240px;margin:0 auto;padding:0 24px}.hero-content>*{max-width:760px}
-			.hero-eyebrow{font-family:var(--font-display);font-size:0.9rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent-500);margin-bottom:1rem}
-			.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:1.25rem;font-weight:700;line-height:1.02;letter-spacing:0.005em}
-			.hero-subtitle{font-size:clamp(1.05rem,2.4vw,1.35rem);margin-bottom:1rem;opacity:.9;max-width:640px}.hero-services{font-family:var(--font-display);font-size:0.95rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-500)}
+			.hero{position:relative;isolation:isolate;overflow:hidden;background:var(--forest-900) url('/images/sports-complex-aerial-view-optimized.jpg') right center/cover no-repeat;color:#fff;padding:7rem 0 calc(7rem + var(--slant));text-align:left;clip-path:polygon(0 0,100% 0,100% calc(100% - var(--slant)),0 100%)}.hero::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--forest-900);clip-path:polygon(0 0,62% 0,48% 100%,0 100%)}.hero::after{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(18,62,42,.55),rgba(18,62,42,.15))}
+			.hero-content{max-width:1240px;margin:0 auto;padding:0 24px}.hero-content>*{max-width:600px}
+			.hero-eyebrow{display:flex;align-items:center;gap:.75rem;font-family:var(--font-display);font-size:.78rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent-500);margin-bottom:1.25rem}.hero-eyebrow::before{content:'';width:32px;height:2px;background:currentColor}
+			.hero h1{font-size:clamp(2.4rem,5.2vw,4rem);margin-bottom:1.25rem;font-weight:900;line-height:1.04;letter-spacing:-0.02em}.hero h1 span{color:var(--accent-500)}
+			.hero-subtitle{font-size:clamp(1.05rem,2.2vw,1.2rem);line-height:1.65;margin-bottom:1rem;color:rgba(255,255,255,.85);max-width:540px}
 			.hero-buttons{display:flex;gap:1rem;justify-content:flex-start;flex-wrap:wrap;margin-top:2rem}.btn-phone{display:inline-flex!important;align-items:center;justify-content:center;gap:.55rem}
 
 			/* Critical - Button styles */
@@ -54,7 +54,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
 			.btn-primary{background:var(--accent);color:#fff}
 			.btn-primary:hover{background:var(--accent-700)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:var(--paper);color:var(--forest-900)}
+			.btn-secondary:hover{background:var(--surface);color:var(--forest-900)}
 			
 			/* Critical - Container */
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -63,7 +63,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
 			@media (max-width:768px){
 				.nav-container{flex-direction:column;gap:1rem}
 				.nav-links{flex-wrap:wrap;justify-content:center;gap:1rem}
-				.hero{padding:3.5rem 0 4rem}
+			.hero{padding:3.5rem 0 calc(4rem + var(--slant))}.hero::before{clip-path:none;background:rgba(18,62,42,.88)}
 				.hero-buttons{flex-direction:column;align-items:stretch;gap:.75rem}
 				.btn-primary,.btn-secondary{width:100%;max-width:320px}
 			}
@@ -353,10 +353,9 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
 		<main>
 			<section class="hero">
 				<div class="hero-content">
-					<p class="hero-eyebrow">Texas &middot; Sports Fields &middot; Commercial Properties</p>
-					<h1>Professional Artificial Turf Maintenance</h1>
+					<p class="hero-eyebrow">Clean. Safe. Game Ready.</p>
+					<h1>Professional Artificial Turf <span>Maintenance</span></h1>
 					<p class="hero-subtitle">Expert cleaning, repair, and restoration for artificial turf sports fields — proudly serving Dallas-Fort Worth, Houston, Austin, San Antonio and communities across Texas</p>
-					<p class="hero-services">Deep Cleaning &middot; Infill &amp; Grooming &middot; Repair &middot; GMAX Testing</p>
 					<div class="hero-buttons">
 						<a href="/contact" class="btn-primary">Get My Free Quote</a>
 						<a href={PHONE_TEL} class="btn-secondary btn-phone">
@@ -564,7 +563,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
 			.trust-item span{font-family:var(--font-display);font-size:1.05rem;font-weight:500;text-transform:uppercase;letter-spacing:0.06em}
 
 			/* Core Services Section */
-			.core-services{padding:6rem 0;background:var(--paper)}
+			.core-services{padding:6rem 0;background:var(--surface)}
 			.services-header{text-align:center;margin-bottom:3.5rem}
 			.services-header h2{font-size:clamp(2rem,4vw,2.5rem);color:var(--ink);margin-bottom:1rem;font-weight:800;letter-spacing:-0.01em}
 			.services-subtitle{font-size:1.1rem;color:var(--ink-soft);max-width:700px;margin:0 auto}
@@ -578,7 +577,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
 			.service-link:hover{color:var(--accent-700)}
 
 			/* We Serve strip */
-			.we-serve{background:var(--cream-deep);padding:4rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+			.we-serve{background:var(--surface-alt);padding:4rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 			.markets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;margin-top:1rem}
 			.market-item{text-align:center;padding:0 1rem}
 			.market-item svg{color:var(--accent);margin-bottom:0.75rem}
@@ -599,7 +598,7 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../lib/site.js';
 			.why-choose-list svg{color:var(--accent);flex-shrink:0;margin-top:0.15rem}
 
 			/* Lead Magnets Section */
-			.lead-magnets{background:var(--paper);padding:6rem 0;border-top:1px solid var(--border)}
+			.lead-magnets{background:var(--surface);padding:6rem 0;border-top:1px solid var(--border)}
 			.lead-magnets h2{text-align:center;margin-bottom:1rem;font-size:clamp(2rem,4vw,2.5rem);color:var(--ink);font-weight:800}
 			.lead-magnets .section-intro{text-align:center;font-size:1.1rem;color:var(--ink-soft);margin-bottom:3.5rem;max-width:700px;margin-left:auto;margin-right:auto}
 			.magnets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
