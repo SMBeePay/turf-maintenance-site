@@ -6,9 +6,8 @@
 export const SITE_NAME = 'Texas Turf Maintenance';
 export const TAGLINE = 'Clean. Safe. Game Ready.';
 
-// Brand palette, per the Texas Turf Maintenance brand book (v1.0).
-// Applied directly as literal hex values across pages for now — see the
-// note in Nav.astro about migrating to CSS custom properties.
+// Brand palette, per the Texas Turf Maintenance brand book (v1.0). The CSS
+// equivalents live as custom properties in src/styles/theme.css.
 export const BRAND = {
 	green900: '#123E2A', // primary dark green (PMS 3435 C)
 	green900Deep: '#0A2318', // footer/deepest shade
@@ -52,4 +51,13 @@ export const NAV_LINKS = [
 	{ href: '/locations', label: 'Locations', key: 'locations' },
 	{ href: '/about', label: 'About', key: 'about' },
 	{ href: '/contact', label: 'Contact', key: 'contact' },
+];
+
+// Short proof points shown in the sitewide trust bar under the header.
+// Keep these strictly factual — no ratings or counts we can't back up.
+export const TRUST_POINTS = [
+	{ icon: 'trophy', label: 'Sports Field & Commercial Specialists' },
+	{ icon: 'gauge', label: 'GMAX Safety Testing' },
+	{ icon: 'pin', label: 'Serving Texas, OK, AR & LA' },
+	{ icon: 'shield', label: 'Free, No-Obligation Quotes' },
 ];

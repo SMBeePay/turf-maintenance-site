@@ -11,8 +11,8 @@ import Nav from '../components/Nav.astro';
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-		<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 		<Analytics />
 		<title>Artificial Turf Maintenance Services Dallas Fort Worth | Deep Cleaning, Infill Replacement & Repair</title>
 		<meta name="description" content="Professional artificial turf services in DFW: deep cleaning ($0.50/sq ft), infill replacement ($1.25/sq ft), seam repair, and priority repair services. Sports field specialists." />
@@ -265,9 +265,9 @@ import Nav from '../components/Nav.astro';
 			}
 
 			body {
-				font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				font-family:var(--font-sans);
 				line-height: 1.6;
-				color: #111111;
+				color: var(--ink);
 			}
 
 			.container {
@@ -277,7 +277,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.page-hero {
-				background: linear-gradient(135deg, #111111, #2E332F);
+				background: var(--hero-fill);
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -299,9 +299,9 @@ import Nav from '../components/Nav.astro';
 
 			.service-item {
 				margin-bottom: 4rem;
-				background: white;
+				background: var(--paper);
 				border-radius: 4px;
-				border: 1px solid #E5E7E9;
+				border: 1px solid var(--border);
 				overflow: hidden;
 			}
 
@@ -310,7 +310,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.service-content h2 {
-				color: #123E2A;
+				color: var(--forest-900);
 				margin-bottom: 1rem;
 				font-size: 2rem;
 			}
@@ -318,7 +318,7 @@ import Nav from '../components/Nav.astro';
 			.service-content p {
 				margin-bottom: 1.5rem;
 				font-size: 1.1rem;
-				color: #6B6F72;
+				color: var(--ink-soft);
 			}
 
 			.service-features {
@@ -336,7 +336,7 @@ import Nav from '../components/Nav.astro';
 				content: "✓";
 				position: absolute;
 				left: 0;
-				color: #3FAE49;
+				color: var(--accent);
 				font-weight: bold;
 			}
 
@@ -346,15 +346,15 @@ import Nav from '../components/Nav.astro';
 
 			.price {
 				display: inline-block;
-				color: #123E2A;
+				color: var(--forest-900);
 				font-weight: 700;
 				font-size: 1.05rem;
 				padding: 0.5rem 0;
-				border-top: 1px solid #E5E7E9;
+				border-top: 1px solid var(--border);
 			}
 
 			.artificial-vs-natural {
-				background: #f8f9fa;
+				background: var(--cream-deep);
 				padding: 6rem 0;
 			}
 
@@ -362,7 +362,7 @@ import Nav from '../components/Nav.astro';
 				text-align: center;
 				margin-bottom: 3rem;
 				font-size: 2.5rem;
-				color: #123E2A;
+				color: var(--forest-900);
 			}
 
 			.comparison-content {
@@ -373,7 +373,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.comparison-text h3 {
-				color: #123E2A;
+				color: var(--forest-900);
 				margin-bottom: 2rem;
 				font-size: 1.8rem;
 			}
@@ -393,7 +393,7 @@ import Nav from '../components/Nav.astro';
 				content: "✓";
 				position: absolute;
 				left: 0;
-				color: #3FAE49;
+				color: var(--accent);
 				font-weight: bold;
 				font-size: 1.2rem;
 			}
@@ -408,13 +408,13 @@ import Nav from '../components/Nav.astro';
 			.image-caption {
 				margin-top: 1rem;
 				font-style: italic;
-				color: #6B6F72;
+				color: var(--ink-soft);
 				font-size: 0.95rem;
 				text-align: center;
 			}
 
 			.service-process {
-				background: white;
+				background: var(--paper);
 				padding: 6rem 0;
 			}
 
@@ -422,7 +422,7 @@ import Nav from '../components/Nav.astro';
 				text-align: center;
 				margin-bottom: 3rem;
 				font-size: 2.5rem;
-				color: #123E2A;
+				color: var(--forest-900);
 			}
 
 			.process-steps {
@@ -443,20 +443,20 @@ import Nav from '../components/Nav.astro';
 				width: 56px;
 				height: 56px;
 				margin: 0 auto 1rem;
-				border: 1.5px solid #123E2A;
+				border: 1.5px solid var(--forest-900);
 				border-radius: 4px;
-				color: #123E2A;
+				color: var(--forest-900);
 				font-size: 1.3rem;
 				font-weight: 700;
 			}
 
 			.step h3 {
-				color: #123E2A;
+				color: var(--forest-900);
 				margin-bottom: 1rem;
 			}
 
 			.cta {
-				background: #111111;
+				background: var(--forest-950);
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -474,7 +474,7 @@ import Nav from '../components/Nav.astro';
 
 			.btn-primary {
 				display: inline-block;
-				background: #3FAE49;
+				background: var(--accent);
 				color: white;
 				padding: 1rem 2rem;
 				text-decoration: none;
@@ -485,13 +485,13 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.btn-primary:hover {
-				background: #2F8C38;
+				background: var(--accent-700);
 				transform: translateY(-2px);
 				
 			}
 
 			footer {
-				background: #111111;
+				background: var(--forest-950);
 				color: white;
 				padding: 3rem 0;
 			}
@@ -508,7 +508,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.footer-tagline {
-				color: #3FAE49;
+				color: var(--accent);
 				font-weight: 600;
 				letter-spacing: 0.04em;
 				margin-bottom: 0.75rem;
@@ -531,7 +531,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.footer-section a:hover {
-				color: #3FAE49;
+				color: var(--accent);
 			}
 
 			@media (max-width: 768px) {

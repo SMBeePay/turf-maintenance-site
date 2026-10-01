@@ -11,8 +11,8 @@ import Nav from '../components/Nav.astro';
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-		<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 		<Analytics />
 		<title>Contact Texas Turf Maintenance | Free Artificial Turf Maintenance Quote Dallas Fort Worth | (469) 981-9247</title>
 		<meta name="description" content="Get your FREE artificial turf maintenance quote! Fill out the form below and we'll respond within 2 hours with a detailed assessment for your Dallas Fort Worth area field." />
@@ -305,9 +305,9 @@ import Nav from '../components/Nav.astro';
 			}
 
 			body {
-				font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				font-family:var(--font-sans);
 				line-height: 1.6;
-				color: #111111;
+				color: var(--ink);
 			}
 
 			.container {
@@ -317,7 +317,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			nav {
-				background: #123E2A;
+				background: var(--forest-900);
 				padding: 1rem 0;
 				position: sticky;
 				top: 0;
@@ -353,11 +353,11 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.nav-links a:hover, .nav-links a.active {
-				color: #3FAE49;
+				color: var(--accent);
 			}
 
 			.page-hero {
-				background: linear-gradient(135deg, #111111, #2E332F);
+				background: var(--hero-fill);
 				color: white;
 				padding: 6rem 0;
 				text-align: center;
@@ -375,7 +375,7 @@ import Nav from '../components/Nav.astro';
 
 			.contact-options {
 				padding: 4rem 0;
-				background: #f8f9fa;
+				background: var(--cream-deep);
 			}
 
 			.contact-grid {
@@ -386,7 +386,7 @@ import Nav from '../components/Nav.astro';
 
 			.contact-method {
 				text-align: center;
-				background: white;
+				background: var(--paper);
 				padding: 2rem;
 				border-radius: 4px;
 				
@@ -398,12 +398,12 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.contact-method h3 {
-				color: #123E2A;
+				color: var(--forest-900);
 				margin-bottom: 1rem;
 			}
 
 			.contact-method a {
-				color: #3FAE49;
+				color: var(--accent);
 				text-decoration: none;
 				font-weight: bold;
 				font-size: 1.1rem;
@@ -411,7 +411,7 @@ import Nav from '../components/Nav.astro';
 
 			.contact-note {
 				font-size: 0.9rem;
-				color: #666;
+				color: var(--ink-soft);
 				margin-top: 0.5rem;
 			}
 
@@ -420,26 +420,26 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.phone-strip {
-				background: #F8F9FA;
+				background: var(--cream-deep);
 				padding: 2rem 0;
 				text-align: center;
-				border-top: 1px solid #E5E7E9;
-				border-bottom: 1px solid #E5E7E9;
+				border-top: 1px solid var(--border);
+				border-bottom: 1px solid var(--border);
 			}
 
 			.phone-strip p {
 				font-size: 1.1rem;
-				color: #111111;
+				color: var(--ink);
 			}
 
 			.phone-strip a {
-				color: #3FAE49;
+				color: var(--accent);
 				font-weight: 700;
 				text-decoration: none;
 			}
 
 			.phone-strip a:hover {
-				color: #2F8C38;
+				color: var(--accent-700);
 			}
 
 			.form-container {
@@ -453,18 +453,18 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.form-intro h2 {
-				color: #123E2A;
+				color: var(--forest-900);
 				margin-bottom: 1rem;
 				font-size: 2.5rem;
 			}
 
 			.form-intro p {
-				color: #666;
+				color: var(--ink-soft);
 				font-size: 1.1rem;
 			}
 
 			.contact-form {
-				background: white;
+				background: var(--paper);
 				padding: 3rem;
 				border-radius: 4px;
 				
@@ -485,7 +485,7 @@ import Nav from '../components/Nav.astro';
 				display: block;
 				margin-bottom: 0.5rem;
 				font-weight: bold;
-				color: #123E2A;
+				color: var(--forest-900);
 			}
 
 			.form-group input,
@@ -493,7 +493,7 @@ import Nav from '../components/Nav.astro';
 			.form-group textarea {
 				width: 100%;
 				padding: 0.75rem;
-				border: 2px solid #e0e0e0;
+				border: 2px solid var(--border);
 				border-radius: 5px;
 				font-size: 1rem;
 				transition: border-color 0.3s;
@@ -503,7 +503,7 @@ import Nav from '../components/Nav.astro';
 			.form-group select:focus,
 			.form-group textarea:focus {
 				outline: none;
-				border-color: #3FAE49;
+				border-color: var(--accent);
 			}
 
 			.checkbox-group {
@@ -526,7 +526,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.btn-submit {
-				background: #3FAE49;
+				background: var(--accent);
 				color: white;
 				padding: 1rem 2rem;
 				border: none;
@@ -539,7 +539,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.btn-submit:hover {
-				background: #2F8C38;
+				background: var(--accent-700);
 			}
 
 			.btn-submit:disabled {
@@ -569,13 +569,13 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.form-status.error {
-				background: #fdecea;
+				background: var(--danger-100);
 				color: #a3271f;
 				border: 1px solid #f3c1bc;
 			}
 
 			.business-info {
-				background: #f8f9fa;
+				background: var(--cream-deep);
 				padding: 6rem 0;
 			}
 
@@ -586,14 +586,14 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.info-section {
-				background: white;
+				background: var(--paper);
 				padding: 2rem;
 				border-radius: 4px;
 				
 			}
 
 			.info-section h3 {
-				color: #123E2A;
+				color: var(--forest-900);
 				margin-bottom: 1.5rem;
 				text-align: center;
 			}
@@ -608,7 +608,7 @@ import Nav from '../components/Nav.astro';
 				display: flex;
 				justify-content: space-between;
 				padding: 0.5rem 0;
-				border-bottom: 1px solid #eee;
+				border-bottom: 1px solid var(--border);
 			}
 
 			.payment-list {
@@ -618,7 +618,7 @@ import Nav from '../components/Nav.astro';
 
 			.payment-item {
 				padding: 0.5rem 0;
-				color: #666;
+				color: var(--ink-soft);
 			}
 
 			.service-area-map {
@@ -627,20 +627,20 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.service-area-map h2 {
-				color: #123E2A;
+				color: var(--forest-900);
 				margin-bottom: 1rem;
 				font-size: 2.5rem;
 			}
 
 			.service-area-map p {
-				color: #666;
+				color: var(--ink-soft);
 				margin-bottom: 2rem;
 				font-size: 1.1rem;
 			}
 
 			.map-placeholder {
-				background: #f8f9fa;
-				border: 2px dashed #ddd;
+				background: var(--cream-deep);
+				border: 2px dashed var(--border);
 				padding: 4rem;
 				border-radius: 4px;
 				margin: 2rem auto;
@@ -649,11 +649,11 @@ import Nav from '../components/Nav.astro';
 
 			.map-placeholder p {
 				margin-bottom: 0.5rem;
-				color: #666;
+				color: var(--ink-soft);
 			}
 
 			footer {
-				background: #111111;
+				background: var(--forest-950);
 				color: white;
 				padding: 3rem 0;
 			}
@@ -670,7 +670,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.footer-tagline {
-				color: #3FAE49;
+				color: var(--accent);
 				font-weight: 600;
 				letter-spacing: 0.04em;
 				margin-bottom: 0.75rem;
@@ -693,7 +693,7 @@ import Nav from '../components/Nav.astro';
 			}
 
 			.footer-section a:hover {
-				color: #3FAE49;
+				color: var(--accent);
 			}
 
 			@media (max-width: 768px) {

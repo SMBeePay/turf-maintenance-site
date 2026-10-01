@@ -1,0 +1,175 @@
+/*
+ * Sitewide design system.
+ *
+ * Imported once from Nav.astro (every page renders <Nav />), so it ships on
+ * every page. Page-level <style> blocks reference these tokens via var()
+ * instead of literal hex values; change a token here and it changes
+ * everywhere.
+ *
+ * Brand hues follow the Texas Turf Maintenance brand book (deep green
+ * #123E2A, accent green #3FAE49). The type system and the cream/paper
+ * surfaces match the Clean Green Turf site.
+ */
+
+:root {
+	/* Ink */
+	--ink: #11140f;
+	--ink-soft: #4a5049;
+	--ink-faint: #7b8279;
+
+	/* Brand greens */
+	--forest-950: #0a2318;
+	--forest-900: #123e2a;
+	--forest-800: #1a5238;
+	--forest-700: #23664a;
+	--accent: #3fae49;
+	--accent-700: #2f8c38;
+	--accent-500: #5cc566;
+	--accent-100: #e3f5e4;
+
+	/* Surfaces */
+	--cream: #faf7ee;
+	--cream-deep: #f2ecd9;
+	--paper: #fffdf8;
+	--border: #e4ddc9;
+	--border-strong: #cfc6a9;
+
+	/* Status */
+	--danger: #c0392b;
+	--danger-100: #fdecea;
+	--warning: #d9822b;
+	--warning-100: #fdf2e3;
+	--star: #f5b400;
+
+	/* Type */
+	--font-display: 'Oswald', 'Arial Narrow', sans-serif;
+	--font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+	/* Shape */
+	--radius-sm: 4px;
+	--radius: 8px;
+	--radius-lg: 10px;
+	--shadow-sm: 0 1px 3px rgba(18, 20, 15, 0.1);
+	--shadow: 0 10px 26px -10px rgba(18, 20, 15, 0.28);
+	--shadow-lg: 0 26px 60px -18px rgba(18, 20, 15, 0.38);
+
+	/* Dark hero overlay, used over photos and as the plain hero fill */
+	--hero-fill: linear-gradient(135deg, var(--forest-950) 0%, var(--forest-900) 60%, var(--forest-800) 100%);
+	--hero-overlay: linear-gradient(90deg, rgba(10, 35, 24, 0.9) 0%, rgba(10, 35, 24, 0.72) 55%, rgba(10, 35, 24, 0.45) 100%);
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-family: var(--font-sans);
+	color: var(--ink);
+	background: var(--cream);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	line-height: 1.12;
+	text-wrap: balance;
+}
+h1 { font-weight: 700; }
+h2, h3 { font-weight: 600; }
+h4 { font-weight: 500; letter-spacing: 0.02em; }
+
+p { text-wrap: pretty; }
+
+a { color: var(--accent-700); }
+
+::selection {
+	background: var(--accent);
+	color: #fff;
+}
+
+:focus-visible {
+	outline: 3px solid var(--accent);
+	outline-offset: 2px;
+}
+
+/* Buttons. Pages define their own colors and padding for these classes;
+   this sets the shared type treatment so every CTA reads the same. */
+.btn-primary,
+.btn-secondary,
+.cta-button,
+.submit-btn,
+button[type='submit'] {
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	font-weight: 600;
+}
+
+/* Big numbers (stat bands, step badges, prices) use the display face. */
+.stat-number,
+.step-number,
+.service-price,
+.package-price,
+.price,
+.big-number {
+	font-family: var(--font-display);
+	letter-spacing: 0.01em;
+}
+
+/* Small section labels above headings. */
+.eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-family: var(--font-display);
+	font-size: 0.85rem;
+	font-weight: 500;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--accent-500);
+}
+
+/* Plain-text page heroes get a subtle turf texture so they read as part
+   of the brand instead of a flat gradient. */
+.page-hero {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+}
+.page-hero::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: url('/images/turf-texture.webp') center / cover no-repeat;
+	opacity: 0.16;
+	mix-blend-mode: luminosity;
+	pointer-events: none;
+}
+.page-hero h1 {
+	letter-spacing: 0.01em;
+}
+.page-hero::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 4px;
+	background: var(--accent);
+}
+
+/* Footer: every page has its own footer markup (with page-specific
+   links); this gives them all the same look. */
+footer {
+	font-family: var(--font-sans);
+	border-top: 4px solid var(--accent);
+}
+footer h3,
+footer h4 {
+	color: #fff;
+	letter-spacing: 0.04em;
+}

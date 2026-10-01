@@ -10,8 +10,8 @@ import Nav from '../components/Nav.astro';
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-		<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 		<title>Artificial Turf Maintenance Blog Dallas | Expert Tips & Industry Insights</title>
 		<meta name="description" content="Expert insights on artificial turf maintenance, GMAX testing, athlete safety, and facility management. Educational content from Dallas turf maintenance professionals." />
 		<meta name="keywords" content="artificial turf blog dallas, turf maintenance tips, GMAX testing education, sports field safety blog, turf maintenance insights" />
@@ -29,14 +29,14 @@ import Nav from '../components/Nav.astro';
 		<!-- Critical CSS -->
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
-			nav{background:#123E2A;padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
+			body{font-family:var(--font-sans);line-height:1.6;color:var(--ink);font-display:swap}
+			nav{background:var(--forest-900);padding:1rem 0;position:sticky;top:0;z-index:100;contain:layout style paint}
 			.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
 			.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
 			.nav-links{display:flex;list-style:none;gap:2rem;margin:0}
 			.nav-links a{color:#fff;text-decoration:none;transition:color .3s ease}
-			.nav-links a:hover,.nav-links a.active{color:#3FAE49}
-			.page-hero{background:linear-gradient(135deg,#111111,#2E332F);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
+			.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+			.page-hero{background:var(--hero-fill);color:#fff;padding:6rem 0;text-align:center;contain:layout style paint}
 			.page-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.page-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9}
 			.container{max-width:1200px;margin:0 auto;padding:0 20px}
@@ -272,70 +272,70 @@ import Nav from '../components/Nav.astro';
 		<!-- Non-critical CSS -->
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.blog-intro,.featured-posts,.blog-categories,.newsletter-signup,.expert-consultation{padding:4rem 0}
-			.blog-intro h2,.featured-posts h2,.blog-categories h2,.newsletter-signup h2,.expert-consultation h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:#123E2A}
+			.blog-intro h2,.featured-posts h2,.blog-categories h2,.newsletter-signup h2,.expert-consultation h2{text-align:center;margin-bottom:3rem;font-size:clamp(2rem,4vw,2.5rem);color:var(--forest-900)}
 			.intro-content{text-align:center;max-width:800px;margin:0 auto}
-			.intro-content p{font-size:1.1rem;color:#666}
+			.intro-content p{font-size:1.1rem;color:var(--ink-soft)}
 			.posts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
-			.blog-post{background:#fff;border-radius:4px;padding:2rem;transition:transform .3s ease}
+			.blog-post{background:var(--paper);border-radius:4px;padding:2rem;transition:transform .3s ease}
 			.blog-post:hover{transform:translateY(-5px)}
-			.blog-post.featured{border:3px solid #123E2A;background:linear-gradient(145deg,#fff,#f8f9fa)}
+			.blog-post.featured{border:3px solid var(--forest-900);background:linear-gradient(145deg,#fff,var(--cream-deep))}
 			.post-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
 			.post-category{padding:.5rem 1rem;border-radius:20px;font-size:.8rem;font-weight:bold;text-transform:uppercase}
-			.post-category.safety{background:#ffebee;color:#d32f2f}
+			.post-category.safety{background:var(--danger-100);color:var(--danger)}
 			.post-category.education{background:#e3f2fd;color:#1976d2}
-			.post-category.maintenance{background:#e8f5e8;color:#123E2A}
-			.post-category.business{background:#fff3e0;color:#f57c00}
-			.post-date{color:#666;font-size:.9rem}
-			.blog-post h3{color:#123E2A;margin-bottom:1rem;line-height:1.3}
-			.blog-post h3 a{color:#123E2A;text-decoration:none}
-			.blog-post h3 a:hover{color:#0A2318}
-			.post-excerpt{color:#666;margin-bottom:1rem;line-height:1.6}
+			.post-category.maintenance{background:var(--accent-100);color:var(--forest-900)}
+			.post-category.business{background:var(--warning-100);color:var(--warning)}
+			.post-date{color:var(--ink-soft);font-size:.9rem}
+			.blog-post h3{color:var(--forest-900);margin-bottom:1rem;line-height:1.3}
+			.blog-post h3 a{color:var(--forest-900);text-decoration:none}
+			.blog-post h3 a:hover{color:var(--forest-950)}
+			.post-excerpt{color:var(--ink-soft);margin-bottom:1rem;line-height:1.6}
 			.post-stats{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;font-size:.9rem}
-			.reading-time{color:#666}
+			.reading-time{color:var(--ink-soft)}
 			.post-tags{display:flex;gap:.5rem}
-			.tag{background:#f0f0f0;color:#666;padding:.3rem .6rem;border-radius:4px;font-size:.8rem}
-			.read-more{color:#123E2A;text-decoration:none;font-weight:bold}
-			.read-more:hover{color:#0A2318}
-			.coming-soon{background:#ff9800;color:#fff;padding:.5rem 1rem;border-radius:20px;font-size:.9rem;font-weight:bold}
+			.tag{background:var(--border);color:var(--ink-soft);padding:.3rem .6rem;border-radius:4px;font-size:.8rem}
+			.read-more{color:var(--forest-900);text-decoration:none;font-weight:bold}
+			.read-more:hover{color:var(--forest-950)}
+			.coming-soon{background:var(--warning);color:#fff;padding:.5rem 1rem;border-radius:20px;font-size:.9rem;font-weight:bold}
 			.categories-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.category-card{background:#fff;padding:2rem;border-radius:4px;text-align:center;transition:transform .3s ease}
+			.category-card{background:var(--paper);padding:2rem;border-radius:4px;text-align:center;transition:transform .3s ease}
 			.category-card:hover{transform:translateY(-5px)}
-			.category-card.safety{border-top:4px solid #d32f2f}
+			.category-card.safety{border-top:4px solid var(--danger)}
 			.category-card.education{border-top:4px solid #1976d2}
-			.category-card.maintenance{border-top:4px solid #123E2A}
-			.category-card.business{border-top:4px solid #f57c00}
+			.category-card.maintenance{border-top:4px solid var(--forest-900)}
+			.category-card.business{border-top:4px solid var(--warning)}
 			.category-icon{font-size:3rem;margin-bottom:1rem}
-			.category-card h3{color:#123E2A;margin-bottom:1rem}
-			.category-card p{color:#666;margin-bottom:1rem}
-			.category-count{color:#999;font-size:.9rem}
-			.newsletter-signup{background:#f8f9fa}
+			.category-card h3{color:var(--forest-900);margin-bottom:1rem}
+			.category-card p{color:var(--ink-soft);margin-bottom:1rem}
+			.category-count{color:var(--ink-faint);font-size:.9rem}
+			.newsletter-signup{background:var(--cream-deep)}
 			.newsletter-content{max-width:600px;margin:0 auto;text-align:center}
-			.newsletter-content p{color:#666;margin-bottom:2rem}
+			.newsletter-content p{color:var(--ink-soft);margin-bottom:2rem}
 			.signup-benefits{text-align:left;margin:2rem 0}
 			.signup-benefits ul{list-style:none}
 			.signup-benefits ul li{padding:.5rem 0;padding-left:1.5rem;position:relative}
-			.signup-benefits ul li::before{content:"✓";position:absolute;left:0;color:#3FAE49;font-weight:bold}
+			.signup-benefits ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:bold}
 			.newsletter-form{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
-			.newsletter-form input{flex:1;padding:1rem;border:2px solid #ddd;border-radius:5px;font-size:1rem;min-width:250px}
-			.newsletter-form button{background:#123E2A;color:#fff;padding:1rem 2rem;border:none;border-radius:5px;font-weight:bold;cursor:pointer;transition:background .3s ease}
-			.newsletter-form button:hover{background:#0A2318}
-			.privacy-note{color:#999;font-size:.9rem}
-			.expert-consultation{background:#123E2A;color:#fff;text-align:center}
+			.newsletter-form input{flex:1;padding:1rem;border:2px solid var(--border);border-radius:5px;font-size:1rem;min-width:250px}
+			.newsletter-form button{background:var(--forest-900);color:#fff;padding:1rem 2rem;border:none;border-radius:5px;font-weight:bold;cursor:pointer;transition:background .3s ease}
+			.newsletter-form button:hover{background:var(--forest-950)}
+			.privacy-note{color:var(--ink-faint);font-size:.9rem}
+			.expert-consultation{background:var(--forest-900);color:#fff;text-align:center}
 			.expert-consultation h2{color:#fff;margin-bottom:1rem}
 			.expert-consultation p{margin-bottom:2rem;opacity:.9}
 			.consultation-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:5px;font-weight:bold;transition:all .3s ease;text-align:center;min-width:140px}
-			.btn-primary{background:#fff;color:#123E2A}
-			.btn-primary:hover{background:#f0f0f0;transform:translateY(-2px)}
+			.btn-primary{background:var(--paper);color:var(--forest-900)}
+			.btn-primary:hover{background:var(--border);transform:translateY(-2px)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#123E2A}
-			footer{background:#111111;color:#fff;padding:3rem 0}
+			.btn-secondary:hover{background:var(--paper);color:var(--forest-900)}
+			footer{background:var(--forest-950);color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
-			.footer-section h3{margin-bottom:0.5rem;color:#fff}.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
+			.footer-section h3{margin-bottom:0.5rem;color:#fff}.footer-tagline{color:var(--accent);font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .3s ease}
-			.footer-section a:hover{color:#3FAE49}
+			.footer-section a:hover{color:var(--accent)}
 			@media (max-width:768px){
 				.posts-grid{grid-template-columns:1fr}
 				.categories-grid{grid-template-columns:1fr}

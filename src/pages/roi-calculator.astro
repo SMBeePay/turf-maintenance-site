@@ -11,8 +11,8 @@ import Icon from '../components/Icon.astro';
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-		<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 		<title>Artificial Turf Maintenance ROI Calculator | Texas Turf Maintenance</title>
 		<meta name="description" content="Calculate the real cost savings of professional artificial turf maintenance versus premature field replacement. Free interactive calculator for athletic directors and facility managers." />
 		<meta name="keywords" content="turf maintenance roi calculator, artificial turf cost savings calculator, field replacement cost calculator, turf maintenance budget planning" />
@@ -21,8 +21,8 @@ import Icon from '../components/Icon.astro';
 
 		<style>
 			*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-			body{font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#111111;font-display:swap}
-			.page-hero{background:linear-gradient(135deg,#111111,#2E332F);color:#fff;padding:6rem 0 4rem;text-align:center;contain:layout style paint}
+			body{font-family:var(--font-sans);line-height:1.6;color:var(--ink);font-display:swap}
+			.page-hero{background:var(--hero-fill);color:#fff;padding:6rem 0 4rem;text-align:center;contain:layout style paint}
 			.page-hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem;font-weight:700;line-height:1.2}
 			.page-hero p{font-size:clamp(1rem,3vw,1.2rem);opacity:.9;max-width:700px;margin:0 auto}
 			.container{max-width:1000px;margin:0 auto;padding:0 20px}
@@ -150,46 +150,46 @@ import Icon from '../components/Icon.astro';
 
 		<style media="print" onload="this.media='all';this.onload=null;">
 			.calculator-section{padding:4rem 0}
-			.calculator-card{background:#fff;border:1px solid #E5E7E9;border-radius:4px;padding:2.5rem;margin-bottom:2rem}
-			.calculator-card h2{color:#123E2A;margin-bottom:0.75rem;font-size:clamp(1.6rem,3vw,2rem)}
-			.calculator-intro{color:#6B6F72;margin-bottom:2rem}
+			.calculator-card{background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:2.5rem;margin-bottom:2rem}
+			.calculator-card h2{color:var(--forest-900);margin-bottom:0.75rem;font-size:clamp(1.6rem,3vw,2rem)}
+			.calculator-intro{color:var(--ink-soft);margin-bottom:2rem}
 			.calc-form{display:grid;gap:1.5rem;margin-bottom:1rem}
-			.calc-field label{display:block;font-weight:600;color:#123E2A;margin-bottom:0.5rem;font-size:0.95rem}
-			.calc-field input,.calc-field select{width:100%;padding:0.75rem;border:1px solid #E5E7E9;border-radius:4px;font-family:inherit;font-size:1rem;color:#111111}
-			.calc-field input:focus,.calc-field select:focus{outline:2px solid #3FAE49;outline-offset:1px}
+			.calc-field label{display:block;font-weight:600;color:var(--forest-900);margin-bottom:0.5rem;font-size:0.95rem}
+			.calc-field input,.calc-field select{width:100%;padding:0.75rem;border:1px solid var(--border);border-radius:4px;font-family:inherit;font-size:1rem;color:var(--ink)}
+			.calc-field input:focus,.calc-field select:focus{outline:2px solid var(--accent);outline-offset:1px}
 			#calcButton{justify-self:start;margin-top:0.5rem}
-			.calc-results{margin-top:2.5rem;padding-top:2rem;border-top:1px solid #E5E7E9}
+			.calc-results{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border)}
 			.results-grid{display:grid;gap:1rem;margin-bottom:1.5rem}
-			.result-item{display:flex;justify-content:space-between;align-items:center;padding:1rem;background:#f8f9fa;border-radius:4px;gap:1rem;flex-wrap:wrap}
-			.result-item.highlight{background:#123E2A;color:#fff}
-			.result-label{font-weight:600;color:#123E2A}
+			.result-item{display:flex;justify-content:space-between;align-items:center;padding:1rem;background:var(--cream-deep);border-radius:4px;gap:1rem;flex-wrap:wrap}
+			.result-item.highlight{background:var(--forest-900);color:#fff}
+			.result-label{font-weight:600;color:var(--forest-900)}
 			.result-item.highlight .result-label{color:#fff}
-			.result-value{font-weight:800;font-size:1.3rem;color:#123E2A}
-			.result-item.highlight .result-value{color:#3FAE49}
-			.results-note{font-size:0.88rem;color:#6B6F72;line-height:1.6}
-			.assumptions-card{background:#f8f9fa;border-radius:4px;padding:2rem;margin-bottom:2rem}
-			.assumptions-card h3{color:#123E2A;margin-bottom:1.25rem;font-size:1.2rem}
+			.result-value{font-weight:800;font-size:1.3rem;color:var(--forest-900)}
+			.result-item.highlight .result-value{color:var(--accent)}
+			.results-note{font-size:0.88rem;color:var(--ink-soft);line-height:1.6}
+			.assumptions-card{background:var(--cream-deep);border-radius:4px;padding:2rem;margin-bottom:2rem}
+			.assumptions-card h3{color:var(--forest-900);margin-bottom:1.25rem;font-size:1.2rem}
 			.assumptions-list{list-style:none}
-			.assumptions-list li{display:flex;align-items:flex-start;gap:0.75rem;padding:0.6rem 0;color:#333;font-size:0.95rem}
-			.assumptions-list svg{color:#3FAE49;flex-shrink:0;margin-top:0.1rem}
+			.assumptions-list li{display:flex;align-items:flex-start;gap:0.75rem;padding:0.6rem 0;color:var(--ink-soft);font-size:0.95rem}
+			.assumptions-list svg{color:var(--accent);flex-shrink:0;margin-top:0.1rem}
 			.btn-primary,.btn-secondary{display:inline-block;padding:1rem 2rem;text-decoration:none;border-radius:4px;font-weight:700;transition:all .2s ease;text-align:center;min-width:140px;text-transform:uppercase;font-size:0.9rem;letter-spacing:0.04em;border:none;cursor:pointer;font-family:inherit}
-			.btn-primary{background:#3FAE49;color:#fff}
-			.btn-primary:hover{background:#2F8C38}
+			.btn-primary{background:var(--accent);color:#fff}
+			.btn-primary:hover{background:var(--accent-700)}
 			.btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
-			.btn-secondary:hover{background:#fff;color:#123E2A}
-			.cta{background:#111111;color:#fff;padding:5rem 0;text-align:center}
+			.btn-secondary:hover{background:var(--paper);color:var(--forest-900)}
+			.cta{background:var(--hero-fill);color:#fff;padding:5rem 0;text-align:center}
 			.cta h2{margin-bottom:1rem;font-size:clamp(1.8rem,4vw,2.3rem)}
 			.cta p{margin-bottom:2rem;font-size:1.1rem;color:#B8BDB6;max-width:600px;margin-left:auto;margin-right:auto}
 			.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-			footer{background:#111111;color:#fff;padding:3rem 0}
+			footer{background:var(--forest-950);color:#fff;padding:3rem 0}
 			.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem}
 			.footer-section h3{margin-bottom:0.75rem;color:#fff}
-			.footer-tagline{color:#3FAE49;font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
+			.footer-tagline{color:var(--accent);font-weight:600;letter-spacing:0.04em;margin-bottom:0.75rem;font-size:0.85rem;text-transform:uppercase}
 			.footer-section p{color:#B8BDB6}
 			.footer-section ul{list-style:none}
 			.footer-section ul li{margin-bottom:0.5rem}
 			.footer-section a{color:#ccc;text-decoration:none;transition:color .2s ease}
-			.footer-section a:hover{color:#3FAE49}
+			.footer-section a:hover{color:var(--accent)}
 			@media (max-width:600px){
 				.result-item{flex-direction:column;align-items:flex-start}
 			}

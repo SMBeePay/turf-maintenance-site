@@ -1,5 +1,6 @@
 ---
-import { SITE_NAME, NAV_LINKS } from '../lib/site.js';
+import '../styles/theme.css';
+import { SITE_NAME, NAV_LINKS, PHONE_DISPLAY, PHONE_TEL, TRUST_POINTS } from '../lib/site.js';
 
 interface Props {
 	active?: string;
@@ -11,40 +12,79 @@ function isActive(link) {
 	if (link.key === active) return true;
 	return (link.children ?? []).some((child) => child.key === active);
 }
+
+const trustIcons = {
+	trophy: 'M8 4h8v4a4 4 0 0 1-8 0V4ZM6 5H4v2a4 4 0 0 0 4 4M18 5h2v2a4 4 0 0 1-4 4M10 15v3H8v2h8v-2h-2v-3',
+	gauge: 'M12 4a9 9 0 0 0-7.6 13.8M12 4a9 9 0 0 1 7.6 13.8M12 4v3m0 5 4-3M4.4 17.8h15.2',
+	pin: 'M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Zm0-8.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z',
+	shield: 'M12 2 4 5v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V5l-8-3Zm-3 9 2 2 4-4',
+};
+const phonePath = 'M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2';
 ---
 
-<nav>
-	<div class="nav-container">
-		<a href="/" class="logo">
-			<img src="/images/brand/nav-logo-reverse-green.png" alt={SITE_NAME} width="487" height="170" />
-		</a>
+<header class="site-header">
+	<nav aria-label="Primary">
+		<div class="nav-container">
+			<a href="/" class="logo">
+				<img src="/images/brand/nav-logo-reverse-green.png" alt={SITE_NAME} width="487" height="170" />
+			</a>
 
-		<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
-			<span class="sr-only">Menu</span>
-			<span class="nav-toggle-bar"></span>
-			<span class="nav-toggle-bar"></span>
-			<span class="nav-toggle-bar"></span>
-		</button>
+			<ul class="nav-links" id="primary-nav">
+				{NAV_LINKS.map((link) => (
+					<li class={link.children ? 'has-children' : undefined}>
+						<a href={link.href} class={isActive(link) ? 'active' : undefined}>
+							{link.label}
+							{link.children && <span class="caret" aria-hidden="true">▾</span>}
+						</a>
+						{link.children && (
+							<ul class="dropdown">
+								{link.children.map((child) => (
+									<li><a href={child.href} class={child.key === active ? 'active' : undefined}>{child.label}</a></li>
+								))}
+							</ul>
+						)}
+					</li>
+				))}
+			</ul>
 
-		<ul class="nav-links" id="primary-nav">
-			{NAV_LINKS.map((link) => (
-				<li class={link.children ? 'has-children' : undefined}>
-					<a href={link.href} class={isActive(link) ? 'active' : undefined}>
-						{link.label}
-						{link.children && <span class="caret" aria-hidden="true">▾</span>}
-					</a>
-					{link.children && (
-						<ul class="dropdown">
-							{link.children.map((child) => (
-								<li><a href={child.href} class={child.key === active ? 'active' : undefined}>{child.label}</a></li>
-							))}
-						</ul>
-					)}
+			<div class="nav-actions">
+				<a href={PHONE_TEL} class="nav-phone">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={phonePath} /></svg>
+					<span class="nav-phone-text">
+						<span class="nav-phone-label">Call for a free quote</span>
+						<span class="nav-phone-number">{PHONE_DISPLAY}</span>
+					</span>
+				</a>
+				<a href="/contact" class="nav-quote">Free Quote</a>
+				<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+					<span class="sr-only">Menu</span>
+					<span class="nav-toggle-bar"></span>
+					<span class="nav-toggle-bar"></span>
+					<span class="nav-toggle-bar"></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div class="trust-bar">
+		<ul class="trust-list">
+			{TRUST_POINTS.map((point) => (
+				<li>
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={trustIcons[point.icon]} /></svg>
+					{point.label}
 				</li>
 			))}
 		</ul>
-	</div>
-</nav>
+</div>
+
+<div class="mobile-cta-bar">
+	<a href={PHONE_TEL} class="mobile-cta-call">
+		<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={phonePath} /></svg>
+		Call Now
+	</a>
+	<a href="/contact" class="mobile-cta-quote">Free Quote</a>
+</div>
 
 <script>
 	const toggle = document.querySelector('.nav-toggle');
@@ -58,7 +98,7 @@ function isActive(link) {
 	// Tap-to-open dropdowns on touch/mobile, where :hover doesn't apply.
 	document.querySelectorAll('.nav-links > li.has-children > a').forEach((trigger) => {
 		trigger.addEventListener('click', (event) => {
-			if (window.innerWidth > 768) return;
+			if (window.innerWidth > 1100) return;
 			const parent = trigger.parentElement;
 			if (parent && !parent.classList.contains('dropdown-open')) {
 				event.preventDefault();
@@ -70,24 +110,23 @@ function isActive(link) {
 </script>
 
 <style>
-	/* Brand colors (see BRAND in src/lib/site.js) are literal hex here and
-	   across the site's page-level styles rather than CSS custom properties —
-	   a future cleanup, not required for this rebrand pass. */
-	nav {
-		background: #123E2A;
-		padding: 0.75rem 0;
+	.site-header {
 		position: sticky;
 		top: 0;
 		z-index: 100;
 	}
+	nav {
+		background: var(--forest-950);
+		border-bottom: 3px solid var(--accent);
+	}
 	.nav-container {
-		max-width: 1200px;
+		max-width: 1240px;
 		margin: 0 auto;
-		padding: 0 20px;
+		padding: 0 24px;
+		min-height: 80px;
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		gap: 1rem;
+		gap: 1.5rem;
 	}
 	.logo {
 		display: flex;
@@ -95,7 +134,7 @@ function isActive(link) {
 		flex-shrink: 0;
 	}
 	.logo img {
-		height: 40px;
+		height: 46px;
 		width: auto;
 		display: block;
 	}
@@ -108,29 +147,12 @@ function isActive(link) {
 		clip: rect(0, 0, 0, 0);
 	}
 
-	.nav-toggle {
-		display: none;
-		flex-direction: column;
-		justify-content: center;
-		gap: 5px;
-		background: none;
-		border: none;
-		padding: 8px;
-		cursor: pointer;
-	}
-	.nav-toggle-bar {
-		width: 24px;
-		height: 2px;
-		background: #fff;
-		border-radius: 1px;
-	}
-
 	.nav-links {
 		display: flex;
 		align-items: center;
 		list-style: none;
-		gap: 0.5rem;
-		margin: 0;
+		gap: 0.15rem;
+		margin: 0 auto 0 0.5rem;
 		padding: 0;
 	}
 	.nav-links > li {
@@ -138,20 +160,24 @@ function isActive(link) {
 	}
 	.nav-links a {
 		display: block;
-		padding: 0.5rem 0.75rem;
-		color: #fff;
+		padding: 0.5rem 0.7rem;
+		color: #d4e3d6;
 		text-decoration: none;
+		font-family: var(--font-display);
 		font-size: 0.95rem;
+		font-weight: 500;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
 		white-space: nowrap;
-		transition: color 0.3s ease;
+		transition: color 0.2s ease;
 	}
 	.nav-links a:hover,
 	.nav-links a.active {
-		color: #3FAE49;
+		color: var(--accent-500);
 	}
 	.caret {
 		font-size: 0.7em;
-		margin-left: 2px;
+		margin-left: 3px;
 	}
 
 	/* Desktop dropdown */
@@ -160,11 +186,12 @@ function isActive(link) {
 		position: absolute;
 		top: 100%;
 		left: 0;
-		min-width: 220px;
-		background: #fff;
-		border-radius: 8px;
-		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-		padding: 0.5rem 0;
+		min-width: 230px;
+		background: var(--paper);
+		border-top: 3px solid var(--accent);
+		border-radius: 0 0 var(--radius) var(--radius);
+		box-shadow: var(--shadow-lg);
+		padding: 0.4rem 0;
 		margin: 0;
 		list-style: none;
 		z-index: 10;
@@ -175,32 +202,141 @@ function isActive(link) {
 		display: block;
 	}
 	.dropdown a {
-		color: #111111;
+		color: var(--forest-900);
 		padding: 0.6rem 1.1rem;
 		font-size: 0.92rem;
 	}
 	.dropdown a:hover,
 	.dropdown a.active {
-		color: #3FAE49;
-		background: #E5E7E9;
+		color: var(--accent-700);
+		background: var(--accent-100);
 	}
 
-	@media (max-width: 768px) {
+	.nav-actions {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+		flex-shrink: 0;
+	}
+	.nav-phone {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		color: #fff;
+		text-decoration: none;
+	}
+	.nav-phone svg {
+		color: var(--accent-500);
+	}
+	.nav-phone-text {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.15;
+	}
+	.nav-phone-label {
+		font-size: 0.7rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: #a9c2ad;
+	}
+	.nav-phone-number {
+		font-family: var(--font-display);
+		font-size: 1.35rem;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	.nav-quote {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--accent);
+		color: #fff !important;
+		font-family: var(--font-display);
+		font-size: 1rem;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 0.85rem 1.6rem;
+		border-radius: var(--radius-sm);
+		transition: background 0.2s ease;
+	}
+	.nav-quote:hover {
+		background: var(--accent-700);
+	}
+
+	.nav-toggle {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5px;
+		background: none;
+		border: none;
+		padding: 10px 6px;
+		cursor: pointer;
+	}
+	.nav-toggle-bar {
+		width: 24px;
+		height: 2px;
+		background: #fff;
+		border-radius: 1px;
+	}
+
+	/* Trust bar */
+	.trust-bar {
+		background: var(--forest-900);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	}
+	.trust-list {
+		max-width: 1240px;
+		margin: 0 auto;
+		padding: 0.7rem 24px;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 0.5rem 2.75rem;
+	}
+	.trust-list li {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: #e4efe5;
+		font-family: var(--font-display);
+		font-size: 0.88rem;
+		font-weight: 500;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+	.trust-list svg {
+		color: var(--accent-500);
+	}
+
+	/* Mobile sticky call/quote bar */
+	.mobile-cta-bar {
+		display: none;
+	}
+
+	@media (max-width: 1100px) {
 		.nav-toggle {
 			display: flex;
 		}
-
 		.nav-links {
 			display: none;
 			flex-direction: column;
 			align-items: stretch;
-			width: 100%;
 			position: absolute;
 			top: 100%;
 			left: 0;
-			background: #123E2A;
-			padding: 0.5rem 0 1rem;
-			box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+			right: 0;
+			margin: 0;
+			background: var(--forest-950);
+			border-top: 1px solid rgba(255, 255, 255, 0.08);
+			padding: 0.5rem 0 1.25rem;
+			box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
+			max-height: calc(100vh - 80px);
+			overflow-y: auto;
 		}
 		.nav-links.open {
 			display: flex;
@@ -209,29 +345,98 @@ function isActive(link) {
 			width: 100%;
 		}
 		.nav-links a {
-			padding: 0.75rem 20px;
+			padding: 0.85rem 24px;
+			font-size: 1.05rem;
 		}
-
+		.nav-container {
+			justify-content: space-between;
+		}
 		.dropdown {
 			position: static;
 			box-shadow: none;
-			background: #0A2318;
+			border-top: 0;
+			background: rgba(255, 255, 255, 0.04);
 			border-radius: 0;
 			padding: 0;
+		}
+		.has-children:hover > .dropdown,
+		.has-children:focus-within > .dropdown {
 			display: none;
 		}
 		.has-children.dropdown-open > .dropdown {
 			display: block;
 		}
 		.dropdown a {
-			color: #fff;
-			padding: 0.65rem 20px 0.65rem 2.5rem;
-			font-size: 0.9rem;
+			color: #d4e3d6;
+			padding: 0.7rem 24px 0.7rem 2.75rem;
+			font-size: 0.95rem;
 		}
 		.dropdown a:hover,
 		.dropdown a.active {
 			background: transparent;
-			color: #3FAE49;
+			color: var(--accent-500);
+		}
+	}
+
+	@media (max-width: 720px) {
+		.nav-container {
+			min-height: 64px;
+			padding: 0 16px;
+		}
+		.logo img {
+			height: 38px;
+		}
+		.nav-phone,
+		.nav-actions > .nav-quote {
+			display: none;
+		}
+		.nav-links {
+			max-height: calc(100vh - 64px);
+		}
+		.nav-links a {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+		.trust-bar {
+			display: none;
+		}
+
+		.mobile-cta-bar {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 99;
+			padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+			background: var(--forest-950);
+			border-top: 3px solid var(--accent);
+		}
+		.mobile-cta-bar a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+			min-height: 48px;
+			border-radius: var(--radius-sm);
+			font-family: var(--font-display);
+			font-size: 1rem;
+			font-weight: 600;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #fff;
+		}
+		.mobile-cta-call {
+			border: 2px solid rgba(255, 255, 255, 0.85);
+		}
+		.mobile-cta-quote {
+			background: var(--accent);
+		}
+		:global(body) {
+			padding-bottom: calc(74px + env(safe-area-inset-bottom));
 		}
 	}
 </style>
